@@ -1,0 +1,33 @@
+preset: preset1
+accent:
+  color-1: '#e31c3d'
+zenith:
+  section-preset: disabled
+navtop:
+  section-preset: accent2
+header:
+  section-preset: accent2
+  text-color: '#212121'
+intro:
+  section-preset: accent2
+features:
+  section-preset: accent2
+  text-color: '#ffffff'
+utility:
+  section-preset: accent2
+testimonials:
+  section-preset: disabled
+expanded:
+  section-preset: accent2
+  text-color: '#ffffff'
+mainbottom:
+  section-preset: accent2
+footertop:
+  section-preset: accent2
+footerbottom:
+  section-preset: accent2
+nadir:
+  link-color: '#0071bc'
+offcanvas:
+  background: '#0071bc'
+  toggle-color: '#0071bc'

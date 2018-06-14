@@ -1,0 +1,4 @@
+enabled: '1'
+content: 'Powered by <a href="http://szoupi.com" title="szoupi" class="g-powered-by">SZOUPI</a>'
+css:
+  class: g-branding

@@ -1,0 +1,32 @@
+.hikashop_product_image,
+.hikashop_product_price_full,
+span.hikashop_product_name, 
+span.hikashop_product_code_list {
+	margin: 1rem 0;
+}
+span.hikashop_product_name{
+	font-size:1.2rem;
+	line-height: $core-line-height*1.5;
+}
+input.hikashop_cart_input_button {
+	color: #ffffff !important; //overide default.css hikashop style
+}
+
+div.hikashop_product_stock  {
+	margin: 1rem;
+}
+div.hikashop_container .thumbnail{
+	border: .5px solid #fff;
+}
+
+span.hikashop_product_price, 
+.hikashop_checkout_cart_additional, 
+.hikashop_checkout_cart_payment, 
+.hikashop_checkout_cart_coupon, 
+.hikashop_checkout_cart_additional {
+    color: $base-text-color;
+    line-height: $core-line-height;
+    font-size: 1.2rem;
+    font-style: normal;
+    font-family: get-font-family($font-family-default);
+}

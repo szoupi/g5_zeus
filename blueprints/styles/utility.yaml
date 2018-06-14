@@ -1,0 +1,33 @@
+name: Utility Styles
+description: Utility section styles for the Zeus theme
+type: section
+
+form:
+  fields:
+
+    section-preset:
+      type: select.select
+      label: Section Preset Colors
+      description: 'Choose a preset set of colors for the current block based on the accent colors'
+      placeholder: 'Select...'
+      default: accent2
+      options:
+        base: Base      
+        primary: Primary
+        accent1: Contrast - Accent 1
+        accent2: Light - Accent 2
+        accent3: Dark - Accent 3
+        disabled: Disabled - Use values below
+    text-color:
+      type: input.colorpicker
+      label: Text
+      default: "#212121"
+    link-color:
+      type: input.colorpicker
+      label: Link
+      default: "#112e51"
+    background:
+      type: input.colorpicker
+      label: Custom Background
+      description: 'Choose a custom background color.'
+      default: "#9bdaf1"

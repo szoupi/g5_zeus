@@ -1,0 +1,8 @@
+a {
+    color: $base-dominant-color;
+    @include transition(all 0.2s);
+    &:hover {
+        color: inherit;
+        text-decoration: underline;
+    }
+}

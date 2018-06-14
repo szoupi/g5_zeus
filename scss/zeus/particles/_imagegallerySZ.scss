@@ -1,0 +1,179 @@
+.image-gallery-sz {
+    position: relative;
+
+    h2, p, a{
+        text-align: center;
+        margin-top: 1.5rem;
+    }
+
+
+    @include breakpoint(tablet-range) {
+        .g-content {
+            padding: 0;
+        }     
+    }
+
+    @include breakpoint(mobile-only) {
+        .g-content {
+            padding: 0;
+        }
+
+        p, a {
+            margin-top: 0;
+        }  
+
+    }
+
+
+    /*###### HOVER EFFECT ###############################*/
+
+    .above {
+        overflow: hidden;
+        position: relative;
+        text-align: center;
+        box-shadow: 1px 1px 2px #e6e6e6;
+        cursor: default;
+
+        img {
+            display: block;
+            position: relative;
+        }
+
+        h2 {
+            text-transform: uppercase;
+            color: #fff !important;
+            text-align: center;
+            position: relative;
+            padding: 0.5rem; 
+            background: rgba(0, 0, 0, 0.8);
+            margin: 0; 
+        }
+
+        p {
+            position: relative;
+            top: 35%;
+            transform: translateY(-50%);
+            color: #fff;
+            // margin: 0;
+            text-align: center;
+
+            // @include breakpoint(desktop-range) {
+
+            // }
+
+            // @include breakpoint(tablet-range) {
+            // }
+
+            // @include breakpoint(mobile-only) {
+            // }
+
+            // @include breakpoint(small-mobile-range) {
+            // }
+        }
+
+
+        .container, .content {
+            position: absolute;
+            overflow: hidden;
+            top: 0;
+            right:0; 
+            bottom: 0;
+            left: 0;
+        }
+
+        a.info {
+            display: inline-block;
+            vertical-align: bottom;
+            text-decoration: none;
+            // margin: 0.625rem 1.25rem;
+            color: #fff;
+            text-transform: uppercase;
+            box-shadow: 0 0 1px #000;
+        }
+
+        a.info:hover {
+            box-shadow: 0 0 5px #000;
+        }
+
+        
+    }
+    
+    
+
+    /*EFFECT  SLIDEIN ###############*/
+
+    .effect-slidein { 
+        img {
+            transition: all 0.2s linear;
+        }
+        
+        .container {
+            opacity: 0;
+            background-color: fadeout($accent-color-3, 20%);
+            transition: all 0.4s ease-in-out;
+        }
+
+        
+        h2, p, a.info {
+            opacity: 0;
+            transition: all 0.2s ease-in-out;
+        }
+        
+        h2 {
+            transform: translateY(-100px);
+        }
+
+        p { 
+            top:25%;
+            transform: translateY(-100px);
+            margin: 0;
+        }
+
+        &:hover {
+            
+            img { 
+                transform: scale(1.1);
+            } 
+            .container { 
+                opacity: 1;
+            }
+            
+            h2, p, a.info {
+                opacity: 1;
+                transform: translateY(0px);
+            }
+
+            p {
+                transition-delay: 0.1s;
+            }
+
+            a.info {
+                transition-delay: 0.2s;
+            }
+        }   
+    }
+
+
+
+    // CARD EFFECT
+    .card {
+    /* Add shadows to create the "card" effect */
+    box-shadow: 0 4px 8px 0 rgba(0,0,0,0.2);
+    transition: 0.3s;
+    border-radius: 5px; 
+
+        /* On mouse-over, add a deeper shadow */
+        &:hover {
+            box-shadow: 0 8px 16px 0 rgba(0,0,0,0.2);
+        }
+
+        img {
+            border-radius: 5px 5px 0 0;
+        }
+        
+        /* Add some padding inside the card container */
+        .container {
+            padding: 2px 1rem;
+        }
+    }
+}

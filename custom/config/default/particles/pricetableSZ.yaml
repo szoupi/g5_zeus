@@ -1,0 +1,47 @@
+enabled: '1'
+image: ''
+mainicon: 'fa fa-diamond fa-3x'
+headline: 'Select Your Plan'
+description: ''
+link: ''
+linktext: ''
+pricetables:
+  -
+    image: ''
+    icon: 'fa fa-diamond fa-3x'
+    price: 0.01$
+    description: "Morbi non sodales nisi.\nSuspendisse feugiat quam\nMorbi non sodales nisi.\nSuspendisse feugiat quam"
+    line1: 'Morbi non sodales nisi.'
+    line2: 'Suspendisse feugiat quam'
+    line3: 'Morbi non sodales nisi.'
+    line4: 'Morbi non sodales nisi.'
+    link: '#'
+    linktext: 'Enroll Now!'
+    class: ''
+    title: table1
+  -
+    image: ''
+    icon: 'fa fa-diamond fa-3x'
+    price: 0.03$
+    description: "Morbi non sodales nisi.\nSuspendisse feugiat quam\nMorbi non sodales nisi.\nSuspendisse feugiat quam"
+    line1: 'Suspendisse feugiat quam'
+    line2: 'Morbi non sodales nisi.'
+    line3: 'Suspendisse feugiat quam'
+    line4: 'Morbi non sodales nisi.'
+    link: '#'
+    linktext: 'Enroll Now!'
+    class: box1
+    title: table2
+  -
+    image: ''
+    icon: 'fa fa-diamond fa-3x'
+    price: 0.02$
+    description: "Morbi non sodales nisi.\nSuspendisse feugiat quam\nMorbi non sodales nisi.\nSuspendisse feugiat quam"
+    line1: 'Morbi non sodales nisi.'
+    line2: 'Suspendisse feugiat quam'
+    line3: 'Morbi non sodales nisi.'
+    line4: 'Suspendisse feugiat quam'
+    link: '#'
+    linktext: 'Enroll Now!'
+    class: ''
+    title: table3

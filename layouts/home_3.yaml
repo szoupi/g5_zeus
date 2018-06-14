@@ -1,0 +1,392 @@
+version: 2
+preset:
+  image: 'gantry-admin://images/layouts/default.png'
+  name: home_3
+  timestamp: 1490038588
+layout:
+  /zenith/: {  }
+  /navtop/:
+    -
+      - logo-3393
+  /navigation/:
+    -
+      - 'menu-6550 70'
+      - 'social-7128 30'
+  /header/:
+    -
+      - 'customcontentSZ-5107 50'
+      - 'imagegallerySZ-9219 50'
+  /intro/:
+    -
+      - customcontentSZ-6683
+  /features/:
+    -
+      - contentcubes-7850
+  /utility/:
+    -
+      - custom-2730
+  /above/:
+    -
+      - imagegallerySZ-3581
+  /testimonials/:
+    -
+      - custom-4417
+    -
+      - testimonialSZ-7620
+  /expanded/:
+    -
+      - pricetableSZ-8713
+  /container-main/:
+    -
+      -
+        'aside 25': {  }
+      -
+        'mainbar 50':
+          -
+            - system-messages-9330
+          -
+            - system-content-2446
+      -
+        'sidebar 25': {  }
+  /mainbottom/: {  }
+  /footertop/: {  }
+  footer: {  }
+  /footerbottom/: {  }
+  /nadir/: {  }
+  offcanvas:
+    -
+      - mobile-menu-5697
+structure:
+  zenith:
+    type: section
+    attributes:
+      boxed: ''
+  navtop:
+    type: section
+    attributes:
+      boxed: ''
+  navigation:
+    type: section
+    attributes:
+      boxed: '0'
+      class: ''
+      background: ''
+      backgroundOverlay: 'rgba(0, 0, 0, 0)'
+      backgroundAttachment: ''
+      backgroundRepeat: ''
+      backgroundPosition: ''
+      backgroundSize: ''
+  header:
+    attributes:
+      boxed: '2'
+      class: ''
+      background: ''
+      backgroundOverlay: ''
+      backgroundAttachment: ''
+      backgroundRepeat: ''
+      backgroundPosition: ''
+      backgroundSize: ''
+  intro:
+    type: section
+    attributes:
+      boxed: '0'
+      class: ''
+      background: 'gantry-media://demos/gabriele-motter.jpg'
+      backgroundOverlay: 'rgba(250, 250, 250, 0)'
+      backgroundAttachment: fixed
+      backgroundRepeat: ''
+      backgroundPosition: 'center center'
+      backgroundSize: cover
+  features:
+    type: section
+    attributes:
+      boxed: '0'
+      class: ''
+      background: ''
+      backgroundOverlay: ''
+      backgroundAttachment: ''
+      backgroundRepeat: ''
+      backgroundPosition: ''
+      backgroundSize: cover
+  utility:
+    type: section
+    attributes:
+      boxed: '0'
+      class: ''
+      background: 'gantry-media://demos/gabriele-motter.jpg'
+      backgroundOverlay: 'rgba(0, 0, 0, 0)'
+      backgroundAttachment: fixed
+      backgroundRepeat: ''
+      backgroundPosition: 'center center'
+      backgroundSize: cover
+  above:
+    type: section
+    attributes:
+      boxed: '2'
+      class: ''
+      background: ''
+      backgroundOverlay: 'rgba(0, 0, 0, 0)'
+      backgroundAttachment: ''
+      backgroundRepeat: ''
+      backgroundPosition: ''
+      backgroundSize: ''
+  testimonials:
+    type: section
+    attributes:
+      boxed: ''
+      class: ''
+      background: 'gantry-media://demos/background_blue_lines.png'
+      backgroundOverlay: 'rgba(0, 0, 0, 0)'
+      backgroundAttachment: ''
+      backgroundRepeat: ''
+      backgroundPosition: ''
+      backgroundSize: cover
+  expanded:
+    type: section
+    attributes:
+      boxed: ''
+  aside:
+    attributes:
+      class: ''
+    block:
+      fixed: '1'
+  mainbar:
+    type: section
+    subtype: main
+  sidebar:
+    type: section
+    subtype: aside
+    attributes:
+      class: ''
+    block:
+      fixed: '1'
+  container-main:
+    attributes:
+      boxed: ''
+  mainbottom:
+    type: section
+    attributes:
+      boxed: ''
+  footertop:
+    type: section
+    attributes:
+      boxed: ''
+  footer:
+    inherit:
+      outline: default
+      include:
+        - attributes
+        - children
+  footerbottom:
+    type: section
+    attributes:
+      boxed: ''
+  nadir:
+    type: section
+    attributes:
+      boxed: ''
+  offcanvas:
+    attributes:
+      position: g-offcanvas-right
+      class: ''
+      extra: {  }
+      swipe: '1'
+      css3animation: '1'
+content:
+  logo-3393:
+    title: 'Logo / Image'
+    attributes:
+      class: g-logo
+    block:
+      variations: center
+  menu-6550:
+    block:
+      variations: align-left
+  social-7128:
+    block:
+      variations: align-right
+  customcontentSZ-5107:
+    title: 'Custom Content'
+    attributes:
+      height: ''
+      headline: 'HOMEPAGE OUTLINE 3'
+      description: "<p>Tip 1:Change background from \"Section Settings\". <br />\nTip 2: Change height from \"Block height\" field of current particle</p>\n"
+      link: '#'
+      linktext: Download
+      link2: '#'
+      linktext2: 'Read More'
+    block:
+      variations: center
+  imagegallerySZ-9219:
+    title: Image
+    attributes:
+      galleryimages:
+        -
+          image: 'gantry-media://demos/jump.jpg'
+          effect: none
+          headline: ''
+          description: ''
+          link: ''
+          linktext: ''
+          title: 'item 1'
+    block:
+      variations: nopaddingall
+  customcontentSZ-6683:
+    title: 'Custom Content'
+    attributes:
+      height: ''
+      headline: ''
+      description: ''
+      subitems:
+        -
+          icon: 'fa fa-joomla fa-5x'
+          subtitle: Subtitle
+          description: 'Morbi non sodales nisi. Suspendisse feugiat quam Morbi non sodales nisi. '
+          class: ''
+          title: TITLE
+        -
+          icon: 'fa fa-wordpress fa-5x'
+          subtitle: Subtitle
+          description: 'Morbi non sodales nisi. Suspendisse feugiat quam Morbi non sodales nisi. '
+          class: ''
+          title: TITLE
+        -
+          icon: 'fa fa-grav fa-5x'
+          subtitle: Subtitle
+          description: 'Morbi non sodales nisi. Suspendisse feugiat quam Morbi non sodales nisi. '
+          class: ''
+          title: TITLE
+    block:
+      variations: center
+  contentcubes-7850:
+    title: 'Content Cubes'
+  custom-2730:
+    title: 'put something'
+    attributes:
+      html: "<div style=\"font-size:3rem;\">PUT SOMETHING INSPIRATIONAL HERE</div>\n<div>Change height:> Particle settings > Block > Tag attributes</div>"
+    block:
+      variations: center
+      extra:
+        -
+          style: 'height:13rem;'
+  imagegallerySZ-3581:
+    title: 'Image Gallery'
+    attributes:
+      galleryimages:
+        -
+          image: 'gantry-media://demos/jump.jpg'
+          effect: slidein
+          headline: Headline
+          description: 'some text goes here'
+          link: '#'
+          linktext: 'Read More'
+          title: 'item 1'
+        -
+          image: 'gantry-media://demos/phone.jpg'
+          effect: slidein
+          headline: Headline
+          description: 'some text goes here'
+          link: '#'
+          linktext: 'Shop Now'
+          title: 'item 2'
+        -
+          image: 'gantry-media://demos/jump.jpg'
+          effect: slidein
+          headline: Headline
+          description: 'some text goes here'
+          link: '#'
+          linktext: 'Download Now'
+          title: 'item 3'
+        -
+          image: 'gantry-media://demos/phone.jpg'
+          effect: slidein
+          headline: Headline
+          description: 'some text goes here'
+          link: '#'
+          linktext: 'Read More'
+          title: 'item 4'
+  custom-4417:
+    title: 'Custom HTML'
+    attributes:
+      html: '<h2>THEY SAID ABOUT US</h2>'
+    block:
+      variations: center
+  testimonialSZ-7620:
+    title: Testimonials
+    attributes:
+      testimonials:
+        -
+          icon: 'fa fa-quote-left fa-3x'
+          quote: 'You''ll come to learn a great deal if you study the Insignificant in depth.'
+          author: 'Odysseus Elytis'
+          authorattribute: Poet
+          image: 'gantry-media://demos/oliver_hardy.jpg'
+          effect: card
+          class: ''
+          title: quote1
+        -
+          icon: 'fa fa-quote-left fa-3x'
+          quote: 'We cannot solve our problems with the same thinking we used when we created them.'
+          author: Ainstein
+          authorattribute: Scientist
+          image: 'gantry-media://demos/einstein.jpg'
+          effect: card
+          class: ''
+          title: quote2
+        -
+          icon: 'fa fa-quote-left fa-3x'
+          quote: 'The only true wisdom is in knowing you know nothing.'
+          author: Socrates
+          authorattribute: 'Greek Philosopher'
+          image: 'gantry-media://demos/chaplin.jpeg'
+          effect: card
+          class: ''
+          title: quote3
+  pricetableSZ-8713:
+    title: 'Price Table'
+    attributes:
+      pricetables:
+        -
+          image: ''
+          icon: 'fa fa-diamond fa-3x'
+          price: 0.00$
+          description: "Morbi non sodales nisi.\nSuspendisse feugiat quam\nMorbi non sodales nisi.\nSuspendisse feugiat quam"
+          line1: 'Morbi non sodales nisi.'
+          line2: 'Suspendisse feugiat quam'
+          line3: 'Morbi non sodales nisi.'
+          line4: 'Morbi non sodales nisi.'
+          link: '#'
+          linktext: 'Enroll Now!'
+          class: ''
+          title: table1
+        -
+          image: ''
+          icon: 'fa fa-diamond fa-3x'
+          price: 0.00$
+          description: "Morbi non sodales nisi.\nSuspendisse feugiat quam\nMorbi non sodales nisi.\nSuspendisse feugiat quam"
+          line1: 'Suspendisse feugiat quam'
+          line2: 'Morbi non sodales nisi.'
+          line3: 'Suspendisse feugiat quam'
+          line4: 'Morbi non sodales nisi.'
+          link: '#'
+          linktext: 'Enroll Now!'
+          class: box1
+          title: table2
+        -
+          image: ''
+          icon: 'fa fa-diamond fa-3x'
+          price: 0.00$
+          description: "Morbi non sodales nisi.\nSuspendisse feugiat quam\nMorbi non sodales nisi.\nSuspendisse feugiat quam"
+          line1: 'Morbi non sodales nisi.'
+          line2: 'Suspendisse feugiat quam'
+          line3: 'Morbi non sodales nisi.'
+          line4: 'Suspendisse feugiat quam'
+          link: '#'
+          linktext: 'Enroll Now!'
+          class: ''
+          title: table3
+    block:
+      variations: center
+  system-content-2446:
+    attributes:
+      enabled: 0

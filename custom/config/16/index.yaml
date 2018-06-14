@@ -1,0 +1,89 @@
+name: '16'
+timestamp: 1528308120
+version: 7
+preset:
+  image: 'gantry-admin://images/layouts/default.png'
+  name: default
+  timestamp: 1490038588
+positions: {  }
+sections:
+  zenith: Zenith
+  navtop: Navtop
+  navigation: Navigation
+  intro: Intro
+  features: Features
+  utility: Utility
+  above: Above
+  testimonials: Testimonials
+  expanded: Expanded
+  mainbottom: Mainbottom
+  footertop: Footertop
+  footerbottom: Footerbottom
+  nadir: Nadir
+  header: Header
+  aside: Aside
+  sidebar: Sidebar
+  mainbar: Mainbar
+  footer: Footer
+  offcanvas: Offcanvas
+particles:
+  logo:
+    logo-4393: 'Logo / Image'
+    logo-5853: 'Logo / Image'
+  menu:
+    menu-9267: Menu
+  spacer:
+    spacer-1487: Spacer
+    spacer-8384: Spacer
+  messages:
+    system-messages-4781: 'System Messages'
+  module:
+    position-module-9237: 'articles category grouped'
+    position-module-8662: latest-articles
+  content:
+    system-content-8152: 'Page Content'
+  copyright:
+    copyright-2542: Copyright
+  horizontalmenu:
+    horizontalmenu-9730: 'Horizontal Menu'
+  totop:
+    totop-5454: 'To Top'
+  socialfloatingSZ:
+    socialfloatingSZ-7485: 'Social Floating'
+  mobile-menu:
+    mobile-menu-7880: Mobile-menu
+inherit:
+  default:
+    zenith: zenith
+    navtop: navtop
+    navigation: navigation
+    logo-4393: logo-9501
+    menu-9267: menu-6609
+    header: header
+    intro: intro
+    features: features
+    utility: utility
+    above: above
+    testimonials: testimonials
+    expanded: expanded
+    aside: aside
+    spacer-1487: spacer-2395
+    mainbar: mainbar
+    system-messages-4781: system-messages-2617
+    position-module-9237: position-module-9693
+    system-content-8152: system-content-1966
+    sidebar: sidebar
+    spacer-8384: spacer-4623
+    position-module-8662: position-module-8967
+    mainbottom: mainbottom
+    footertop: footertop
+    footer: footer
+    logo-5853: logo-9571
+    copyright-2542: copyright-1736
+    horizontalmenu-9730: horizontalmenu-9034
+    totop-5454: totop-8670
+    socialfloatingSZ-7485: socialfloatingSZ-2700
+    footerbottom: footerbottom
+    nadir: nadir
+    offcanvas: offcanvas
+    mobile-menu-7880: mobile-menu-5697

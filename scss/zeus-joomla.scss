@@ -1,0 +1,51 @@
+// REQUIRED DEPENDENCIES - DO NOT CHANGE
+
+// Load Third Party Libraries
+@import "vendor/bourbon/bourbon";
+
+// Load Nucleus Configuration
+@import "configuration/nucleus/base";
+
+// Load Nucleus Mixins and Functions
+@import "nucleus/functions/base";
+@import "nucleus/mixins/base";
+
+// Load Optional Nucleus Assets
+@import "nucleus/theme/alerts";
+
+// Load Theme Variable Driven Nucleus Elements
+@import "joomla/theme/base";
+
+// Load Template Configuration
+@import "configuration/base";
+
+//-------------------------------------------
+
+// JOOMLA TEMPLATE SPECIFIC
+@import "zeus-joomla/styles/core";
+@import "zeus-joomla/styles/typography";
+@import "zeus-joomla/styles/forms";
+@import "zeus-joomla/styles/buttons";
+@import "zeus-joomla/styles/tabs";
+@import "zeus-joomla/styles/tags";
+@import "zeus-joomla/styles/utilities";
+@import "zeus-joomla/styles/modules";
+
+//styles for specific modules
+@import "zeus-joomla/styles/szmodules";
+
+// JOOMLA TEMPLATE SPECIFIC COMPONENTS STYLING
+@import "zeus-joomla/components/content";
+@import "zeus-joomla/components/contact";
+@import "zeus-joomla/components/users";
+@import "zeus-joomla/components/search";
+
+// JOOMLA TEMPLATE SPECIFIC PARTICLES STYLING
+@import "zeus-joomla/particles/popupmodule";
+
+//-------------------------------------------
+
+// BREAKPOINTS
+@import "joomla/theme/breakpoints/base";
+
+//-------------------------------------------

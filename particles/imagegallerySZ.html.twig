@@ -1,0 +1,49 @@
+{% extends '@nucleus/partials/particle.html.twig' %}
+
+{% block particle %}
+    <div class="image-gallery-sz">
+        <div class="g-grid">
+            {% for galleryimage in particle.galleryimages %}
+                <div class="g-block">
+                    <div class="g-content">
+                        <div class="{# apply image effects #}
+                                    {% if galleryimage.effect == 'above' %}above
+                                    {% elseif galleryimage.effect == 'slidein' %}above effect-slidein 
+                                    {% elseif galleryimage.effect == 'card' %}card
+                                    {% endif %}">
+                            {% if galleryimage.image %}
+                                <img src="{{ url(galleryimage.image) }}" class="" alt="{{ galleryimage.headline|e }}" />
+                            {% endif %}
+
+                            <div class="container" >  
+                            
+                                {# HEADLINE #}
+                                {% if galleryimage.headline %}
+                                    <h2>
+                                        {{ galleryimage.headline|raw }}
+                                    </h2>
+                                {% endif %}
+
+                                {# DESCRIPTION #}
+                                {% if galleryimage.description %}
+                                    <p class="image-gallery-descr hidden-phone hidden-tablet"> 
+                                        {{ galleryimage.description|raw }}
+                                    </p>
+                                {% endif %}
+
+                                {# LINK #}
+                                {% if galleryimage.linktext %}
+                                    <p>
+                                        <a href="{{ galleryimage.link|e }}" class="button info">
+                                            {{ galleryimage.linktext|e }}
+                                        </a>
+                                    </p>
+                                {% endif %}
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            {% endfor %}
+        </div>
+    </div>
+{% endblock %}

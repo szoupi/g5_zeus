@@ -1,0 +1,169 @@
+////////////////////////////////////////////////////
+/*MODULES ARTICLES CATEGORY*/
+#mod-articles-category-group h3{
+	background-color: black;
+	color: lighten($base-text-color, 80%) ;
+	padding-left: 10px;
+
+}
+
+
+
+/*select the first image of each category group
+ which is the second div (the first div is for the heading)*/
+ .category-module li div:nth-child(2) img {
+	/*width: 100%;*/
+}
+
+.category-module img {
+	float: left;
+}
+
+
+
+.mod-articles-category-title h2{
+	margin-top: 0;
+	color:$accent-color-1 !important;
+	
+}
+
+
+
+////////////////////////////////////////////////////
+/*MODULES ARTICLES LATEST NEWS*/
+
+div.latestnews {
+	
+
+	h1, h2, h3, h4, h5, h6 {
+	    margin: 0;
+
+	}
+
+	hr {
+		margin:5px 0;
+		border-top-width:1px;
+		border-bottom-width: 0;
+		border-style: solid;
+	}
+}
+
+
+.text-uppercase{
+	text-transform: uppercase;
+}
+
+
+////////////////////////////////////////////////////
+/*ARTICLES MODULE NEWS FLASH*/
+.newsflash-title {
+	margin-bottom: 0;
+}
+
+
+ul.newsflash-default {
+	margin: 0;
+}
+
+.newsflash-default div.newsflash-item hr {
+	margin: 0 0 .1rem 0;
+}
+
+/*SHOW FIRST PICTURE ONLY
+select the image in the first newsflash-item div
+first-of-type is used because other elements appear prior to div*/
+.newsflash-default div.newsflash-item:first-of-type .sz-intro-image {
+	display: inline-block;
+}
+
+.newsflash-default div.newsflash-item:first-of-type .newsflash-title{
+	font-size: 150%;
+}
+
+/*HIDE ALL PICTURES*/
+.newsflash-default div.newsflash-item .sz-intro-image {
+	display: none;
+}
+
+// for medium screens and above
+@media all and (min-width: $breakpoints-desktop-container) {
+	.newsflash-default div.newsflash-item:first-of-type  {
+		float: left;
+		width: 42%;
+		margin-right: 2%;
+		border-right: 1px dashed #B0ADAD;
+		padding: 1rem 1rem 0 0; 
+	}
+
+	.newsflash-default div.newsflash-item {
+		float: right;
+		clear: right;
+		width: 55%;
+	}
+}
+
+@media all and (max-width: $breakpoints-desktop-container) {
+	.newsflash-default div.newsflash-item img.sz-intro-image {
+		 max-height: 150px;
+	}
+}
+
+.newsflash-default div.newsflash-item div.newsflash-introtext{
+	display: none;
+}
+
+
+/////////////////////// horizontal
+.newsflash-horiz div img.sz-intro-image {
+	float: left;
+	margin: 0 2rem 2rem 0;
+	width: 35%;
+}
+.newsflash-horiz .readmore{
+	float: right;
+	margin-bottom: 1rem;
+}
+
+.newsflash-horiz hr {
+	clear: right;
+}
+.newsflash-horiz .newsflash-title{
+	margin-top: 0;
+}
+
+/////////////////////// vertical
+ul.newsflash-vert {
+	margin:0;
+
+	a.readmore {
+		margin:1rem 0;
+		display: block;
+	}
+	hr {
+		margin: .5rem 0 0.5rem 0;
+	}
+
+	div.newsflash-introtext {
+		margin-top: .4rem;
+	}
+
+}
+
+
+/*LABELS*/
+.label, .badge {
+	background-color: $accent-color-1;
+	a{
+		color: white;
+	}
+}
+
+// Module titles
+h2.sz-module-title  {
+		background-color: black;
+		color: lighten($base-text-color, 80%) !important;
+		padding-left: 10px;
+
+	
+
+}

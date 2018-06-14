@@ -1,0 +1,9 @@
+preset: preset1
+features:
+  text-color: '#ffffff'
+  background-predefined-color: accent3
+above:
+  background-predefined-color: accent2
+expanded:
+  text-color: '#ffffff'
+  background-predefined-color: accent3

@@ -1,0 +1,172 @@
+#g-zenith {
+	margin: $sectionsdim-zenith-margin 0;
+    padding: $sectionsdim-zenith-padding 0;
+    position: relative;
+    
+    //SECTION PRESETS    
+	@if $zenith-section-preset {
+        //PRIMARY
+        @if $zenith-section-preset == 'primary' {
+            color: $white; //variable from _colors
+            a {
+                color: $accent-color-1;
+                &:hover {
+                    color: fadeout($accent-color-1, 40%);
+                }
+            }
+            background-color: $base-dominant-color;
+        
+        //BASE     
+        } @else if $zenith-section-preset == 'base' {
+            color: $base-text-color; 
+            a {
+                color: $base-dominant-color;
+                &:hover {
+                    color: fadeout($base-dominant-color, 40%);
+                }
+            }
+            background-color: $base-background;
+        
+        //ACCENT 1
+        } @else if $zenith-section-preset == 'accent1' {
+            color: $white; 
+            a {
+                color: $base-dominant-color;
+                &:hover {
+                    color: fadeout($base-dominant-color, 40%);
+                }
+            }
+            background-color: $accent-color-1;
+        
+        //ACCENT 2    
+        } @else if $zenith-section-preset == 'accent2' {
+            color: $base-text-color; 
+            a {
+                color: $accent-color-3;
+                &:hover {
+                    color: fadeout($accent-color-3, 40%);
+                }
+            }
+            background-color: $accent-color-2;
+        
+        //ACCENT 3    
+        } @else if $zenith-section-preset == 'accent3' {
+            color: $white; 
+            a {
+                color: $accent-color-1;
+                &:hover {
+                    color: fadeout($accent-color-1, 40%);
+                }
+            }
+            background-color: $accent-color-3;
+        
+        //IF section PRESETS ARE DISABLED SELECT CUSTOM VALUES    
+        } @else if $zenith-section-preset == 'disabled' {
+        	color: $zenith-text-color;
+            // LINKS
+            a {
+                color: $zenith-link-color;
+                &:hover {
+                    color: fadeout($zenith-link-color, 40%);
+                }
+            }
+            background-color:$zenith-background;
+        }
+    }
+
+    // HEADING2
+    h2 {
+        font-weight: 300;
+        line-height: $core-line-height;
+
+        @include breakpoint(large-mobile-range) {
+            font-size: 1.35rem;
+        }
+
+        em {
+            font-weight: $font-weight-medium;
+        }
+
+        &.large-heading {
+            font-size: $h2-font-size * 2;
+
+            @include breakpoint(tablet-range) {
+                font-size: $h2-font-size * 1.25;
+            }
+
+            @include breakpoint(mobile-only) {
+                font-size: $h2-font-size;
+            }
+        }
+    }
+
+    // BUTTONS
+    .button {
+        color: $white;
+    }
+
+}
+
+@media print {
+	#g-zenith {
+		background: #fff !important;
+		color: #000 !important;
+	}
+}
+
+
+// @if $zenith-background-image {
+    //     background: url($zenith-background-image) center center no-repeat;
+    //     background-size: cover;
+ 
+    //     // ENABLE BACKGROUND OVERLAY
+    //     @if $zenith-background-overlay == 'enabled' {
+    //         &:before {
+    //             position: absolute;
+    //             width: 100%;
+    //             height: 100%;
+    //             top: 0;
+    //             bottom: 0;
+    //             left: 0;
+    //             right: 0;
+    //             content: "";
+    //             z-index: -1;
+    //             opacity: 0.85;
+
+                // // BACKGROUND OVERLAY COLOR
+                // @if $zenith-background-overlay-color == 'dominant' {
+                //     background-color: $base-dominant-color;
+
+                // } @else if $zenith-background-overlay-color == 'accent1' {
+                //     background-color: $accent-color-1;
+                // }
+                // @else if $zenith-background-overlay-color == 'accent2' {
+                //     background-color: $accent-color-2;
+                // }
+
+    //             // OPACITY
+    //             opacity: 0.60;
+    //                 -moz-opacity: 60%;
+    //                 -webkit-opacity: 60%;
+    //             // @include linear-gradient(40deg, $base-dominant-color, $accent-color-1);
+    //         }
+    //     }
+    // }
+    
+    
+    // 	@if $zenith-background-predefined-color {
+//         @if $zenith-background-predefined-color == 'dominant' {
+//             background-color: $base-dominant-color;
+//         } @else if $zenith-background-predefined-color == 'accent1' {
+//             background-color: $accent-color-1;
+//         }
+//         @else if $zenith-background-predefined-color == 'accent2' {
+//             background-color: $accent-color-2;
+//         }
+//         @else if $zenith-background-predefined-color == 'accent3' {
+//             background-color: $accent-color-3;
+//         }
+//         @else if $zenith-background-predefined-color == 'custom' {
+//             background-color: $zenith-background;
+//         }
+// 	}

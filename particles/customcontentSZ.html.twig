@@ -1,0 +1,60 @@
+{% extends '@nucleus/partials/particle.html.twig' %}
+
+{% block particle %}
+    <div class="content-particle sz-customcontentSZ" >
+        <div class="g-grid " >
+            <div class="g-block">
+                <div class="g-content">
+                    <div "
+                        {#HEIGHT#}
+                        {% if particle.height %} 
+                            style='height: {{ particle.height }};'>
+                        {% else %}
+                            >
+                        {% endif %}
+                        {#IMAGE#}
+                        {% if particle.image %}
+                            <img src="{{ url(particle.image) }}" class="logo-large" alt="{{ particle.headline|e }}" />
+                        {% endif %}
+                        
+                        {#ICON#}
+                        {% if particle.mainicon %}  
+                            <i class="{{ particle.mainicon }} sz-customcontent-icons" style="display:block;"></i>
+                        {% endif %}
+                        
+                        {#HEADLINE#}
+                        {% if particle.headline %}
+                            <h1>{{ particle.headline|raw }}</h1>
+                        {% endif %}
+                        
+                        {#DESCRIPTION#}
+                        {% if particle.description %}
+                            <div class="customcontent-description">{{ particle.description|raw }}</div>
+                        {% endif %}
+                        
+                        {#BUTTONS-LINKS#}
+                        {% if particle.linktext %}
+                            <a href="{{ particle.link|e }}" class="button">{{ particle.linktext|e }}</a>
+                        {% endif %}
+                        {% if particle.linktext2 %}
+                            <a href="{{ particle.link2|e }}" class="button button-outline">{{ particle.linktext2|e }}</a>
+                        {% endif %}
+                    </div>
+                </div>
+            </div>
+        </div>
+        <div class="g-grid">
+            {% for subitem in particle.subitems %}
+                <div class="g-block {{ subitem.class }}">
+                    <div class="g-content">
+                        <i class="{{ subitem.icon }} subitem-icons"></i>
+                        <h1>{{ subitem.title|raw }}</h1>
+                        {{ subitem.subtitle|raw }}
+                        </br>
+                        {{ subitem.description|raw }}
+                    </div>
+                </div>
+            {% endfor %}
+        </div>
+    </div>
+{% endblock %}

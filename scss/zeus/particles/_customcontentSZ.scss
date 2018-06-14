@@ -1,0 +1,41 @@
+.sz-customcontentSZ {
+    
+        @include breakpoint(mobile-only) {
+            min-height: 100vh !important;    
+        }
+        
+        @include breakpoint(small-mobile-range) {
+            min-height: 100vh !important;    
+        }
+
+    .customcontent-description {
+        padding: 1.5rem 0;
+        
+        @include breakpoint(mobile-only) {
+            padding: 0.5rem 0;    
+        }
+        
+        @include breakpoint(small-mobile-range) {
+            padding: 0.5rem 0;    
+        }
+    }
+    
+    .button {
+
+        @include breakpoint(desktop-range) {
+            margin-top: 2rem;    
+        }
+        
+        @include breakpoint(tablet-range) {
+            margin-top: 1rem;    
+        }
+        
+        @include breakpoint(mobile-only) {
+            margin: 0.5;    
+        }
+        
+        @include breakpoint(small-mobile-range) {
+            margin: 0.5;    
+        }
+    }
+}

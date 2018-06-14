@@ -1,0 +1,11 @@
+enabled: '1'
+date:
+  start: '2016'
+  end: now
+owner: szoupi
+link: 'http://szoupi.com'
+target: _blank
+additional:
+  text: 'Powered by <a href = "http://gantry.org/">Gantry5</a> framework'
+css:
+  class: ''

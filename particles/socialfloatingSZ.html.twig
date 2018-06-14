@@ -1,0 +1,25 @@
+{% extends '@nucleus/partials/particle.html.twig' %}
+
+{% block particle %}
+    {% if particle.title %}<h2 class="g-title">{{ particle.title|raw }}</h2>{% endif %}
+    <div class="{% if particle.position == 'bottom' %} sz-bottom 
+    			{% elseif particle.position == 'right' %} sz-right sz-social-floating 
+    			{% else %} sz-left sz-social-floating size-100%
+    			{% endif %} {{ particle.css.class }}">
+        <ul>
+	        {% for item in particle.items %}
+		            <li>
+			            <a target="{{ particle.target|default('_blank')|e }}" href="{{ item.link|e }}" title="{{ item.text|e }}" aria-label="{{ item.text|e }}">
+			                {% if particle.display in ['both', 'icons_only'] %}
+			                	<span class="sz-social-floating-icon {{ item.icon|e }}"></span>
+			                {% endif %}
+			                {# text only option is disabled in .yaml file #}
+			                {% if particle.display in ['both', 'text_only'] %}
+			                	<span class="sz-social-floating-text">{{ item.text|e }}</span>
+			                {% endif %}
+			            </a>
+		        	</li>
+	        {% endfor %}
+        </ul>
+    </div>
+{% endblock %}

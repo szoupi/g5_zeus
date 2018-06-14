@@ -1,0 +1,78 @@
+{% extends '@nucleus/partials/particle.html.twig' %}
+
+{#TODO add css from tnds#}
+{#    change variables here#}
+{#    change class here#}
+
+{% block particle %}
+    <div class="content-particle">
+        <div class="g-grid">
+            <div class="g-block">
+                <div class="g-content">
+                    {% if particle.image %}
+                        <img src="{{ url(particle.image) }}" style="margin-bottom:1rem;" alt="{{ particle.headline|e }}" />
+                    {% endif %}
+                    {% if particle.mainicon %}  
+                        <div>
+                            <i class="{{ particle.mainicon }} " style="display:block;"></i>
+                        </div>
+                    {% endif %}
+
+                    {% if particle.headline %}
+                        <h1>{{ particle.headline|raw }}</h1>
+                    {% endif %}
+                    {% if particle.description %}
+                        <div class="">{{ particle.description|raw }}</div>
+                    {% endif %}
+                    {% if particle.linktext %}
+                        <p><a href="{{ particle.link|e }}" class="button">{{ particle.linktext|e }}</a></p>
+                    {% endif %}
+                </div>
+            </div>
+        </div>
+        <div class="g-grid">
+            {% for pricetable in particle.pricetables %}
+                <div class="g-block {{ pricetable.class }}">
+                    <div class="g-content">
+                        <ul class="sz-pricetable">
+                            {% if pricetable.image %}
+                                <img src="{{ url(pricetable.image) }}" class="sz-price-image" alt="{{ pricetable.title|e }}" />
+                            {% endif %}
+                            {% if pricetable.icon %}
+                                <li class="sz-icon"><i class="{{ pricetable.icon }} pricetable-icons"></i> </li>
+                            {% endif %}
+                            {% if pricetable.title %}
+                                <li class="sz-title">{{ pricetable.title|raw }}</li>
+                            {% endif %}
+                            {% if pricetable.price %}
+                                <li class=" sz-light sz-price">{{ pricetable.price|raw }}</li>
+                            {% endif %}
+                            {% if pricetable.description %}
+                                <li>{{ pricetable.description|raw }}</li>                            
+                            {% endif %}
+                            {% if pricetable.line1 %}
+                                <li>{{ pricetable.line1|raw }}</li>
+                            {% endif %}
+                            {% if pricetable.line2 %}
+                                <li>{{ pricetable.line2|raw }}</li>
+                            {% endif %}
+                            {% if pricetable.line3 %}
+                                <li>{{ pricetable.line3|raw }}</li>
+                            {% endif %}
+                            {% if pricetable.line4 %}
+                                <li>{{ pricetable.line4|raw }}</li>
+                            {% endif %}
+                            {% if pricetable.linktext %}
+                                <li class="sz-link">
+                                    <a href="{{ pricetable.link }}">
+                                        <span class="button button-square">{{ pricetable.linktext }}</span>
+                                    </a>
+                                </li>
+                            {% endif %}
+                        </ul>
+                    </div>
+                </div>
+            {% endfor %}
+        </div>
+    </div>
+{% endblock %}

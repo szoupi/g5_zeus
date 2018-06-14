@@ -1,0 +1,64 @@
+name: 21
+timestamp: 1495993965
+version: 7
+preset:
+  image: 'gantry-admin://images/layouts/default.png'
+  name: default
+  timestamp: 1490038588
+positions: {  }
+sections:
+  zenith: Zenith
+  navtop: Navtop
+  navigation: Navigation
+  intro: Intro
+  features: Features
+  utility: Utility
+  above: Above
+  testimonials: Testimonials
+  expanded: Expanded
+  mainbottom: Mainbottom
+  footertop: Footertop
+  footerbottom: Footerbottom
+  nadir: Nadir
+  header: Header
+  aside: Aside
+  sidebar: Sidebar
+  mainbar: Mainbar
+  footer: Footer
+  offcanvas: Offcanvas
+particles:
+  customcontentSZ:
+    customcontentSZ-5107: HEADER
+  custom:
+    custom-3604: box2
+    custom-4561: box2
+    custom-9202: 'box outline'
+    custom-9118: 'box gradient'
+  logo:
+    logo-8132: 'Logo / Image'
+    logo-5153: 'Logo / Image'
+  menu:
+    menu-5346: Menu
+  copyright:
+    copyright-6519: Copyright
+  horizontalmenu:
+    horizontalmenu-2348: 'Horizontal Menu'
+  totop:
+    totop-9082: 'To Top'
+  socialfloatingSZ:
+    socialfloatingSZ-1616: 'Social Floating'
+  mobile-menu:
+    mobile-menu-5409: Mobile-menu
+inherit:
+  default:
+    navigation: navigation
+    footer: footer
+    offcanvas: offcanvas
+    logo-8132: logo-9501
+    menu-5346: menu-6609
+    logo-5153: logo-9571
+    copyright-6519: copyright-1736
+    horizontalmenu-2348: horizontalmenu-9034
+    totop-9082: totop-8670
+    socialfloatingSZ-1616: socialfloatingSZ-2700
+    mobile-menu-5409: mobile-menu-5697

@@ -1,0 +1,48 @@
+.noliststyle {
+	list-style: none;
+}
+
+.g-uppercase {
+	text-transform: uppercase;
+}
+
+.g-notexttransform {
+	text-transform: none;
+}
+
+.g-positive-margin-top {
+	margin-top: 23rem;
+}
+
+.g-negative-margin-bottom {
+	margin-bottom: -25rem;
+}
+
+.g-img-circle {
+    border-radius: 50%;
+}
+
+	// FOR DESKTOP AND ABOVE
+	// @media all and (min-width: $breakpoints-desktop-container)
+	
+// // FIELDS 
+// dl.fields-container {
+// 	@include breakpoint(desktop-only) {
+// 	    position: fixed; 
+// 	    top: 100px; 
+// 	    left: 2rem;
+// 	    width: 25%; 
+
+// 	}
+	
+// }
+
+.sz-fixed {
+    background: $accent-color-2;
+    padding: 0.5rem;
+}
+
+// could be done as fields.scss
+span.field-label {
+	font-weight: 800;
+}

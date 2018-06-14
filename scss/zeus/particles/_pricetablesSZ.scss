@@ -1,0 +1,58 @@
+//-------------------------------------------//
+
+// PRICE TABLES ORIGINAL STYLING
+
+/*
+ *  Price tables - particle
+ */
+
+.sz-pricetable {
+    list-style-type: none;
+    border: 1px solid #eee;
+    margin: 0;
+    padding: 0;
+    -webkit-transition: 0.3s;
+    transition: 0.3s;
+    
+    &:hover {
+        box-shadow: 0 0.6rem 1rem 0 rgba(0,0,0,0.2)
+    }
+
+    li {
+        border-bottom: 1px solid $accent-color-2;
+        padding: 1rem;
+        text-align: center;
+    }
+
+    .sz-price-image {
+        
+    }
+    
+    .sz-icon {
+        color: white;
+        background-color:$accent-color-3;
+        border-bottom: 0px;
+    }
+    .sz-title {
+        color: white;
+        font-size:1.5rem;
+        font-weight: 800;
+        background-color:$accent-color-3;
+    }
+    
+    .sz-price{
+        font-size:1.2rem;
+        font-weight: 800;  
+    }
+    
+    .sz-light {
+            background-color: $accent-color-2;
+        }
+    .sz-dark {
+        background-color:black;
+    }
+    
+    .sz-link {
+        
+    }
+}

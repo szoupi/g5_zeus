@@ -1,0 +1,197 @@
+version: 2
+preset:
+  image: 'gantry-admin://images/layouts/default.png'
+  name: default
+  timestamp: 1490038588
+layout:
+  /zenith/: {  }
+  /navtop/: {  }
+  /navigation/:
+    -
+      - 'logo-9501 25'
+      - 'menu-6609 75'
+  /header/:
+    -
+      - customcontentSZ-5107
+  /intro/: {  }
+  /features/: {  }
+  /utility/: {  }
+  /above/: {  }
+  /testimonials/: {  }
+  /expanded/: {  }
+  /container-main/:
+    -
+      -
+        'aside 25':
+          -
+            - spacer-spacer-2395
+      -
+        'mainbar 50':
+          -
+            - system-messages-2617
+          -
+            - system-content-1966
+  /mainbottom/: {  }
+  /footertop/: {  }
+  /footer/:
+    -
+      - 'logo-9571 21'
+      - 'copyright-1736 26'
+      - 'horizontalmenu-9034 24'
+      - 'totop-8670 29'
+    -
+      - socialfloatingSZ-2700
+  /footerbottom/: {  }
+  /nadir/: {  }
+  offcanvas:
+    -
+      - mobile-menu-5697
+structure:
+  zenith:
+    type: section
+    attributes:
+      boxed: ''
+  navtop:
+    type: section
+    attributes:
+      boxed: ''
+  navigation:
+    type: section
+    attributes:
+      boxed: '0'
+      class: ''
+      background: ''
+      backgroundOverlay: 'rgba(0, 0, 0, 0)'
+      backgroundAttachment: ''
+      backgroundRepeat: ''
+      backgroundPosition: ''
+      backgroundSize: ''
+  header:
+    attributes:
+      boxed: ''
+      class: ''
+      background: 'gantry-media://demos/gabriele-motter.jpg'
+      backgroundOverlay: ''
+      backgroundAttachment: fixed
+      backgroundRepeat: ''
+      backgroundPosition: 'center center'
+      backgroundSize: cover
+  intro:
+    type: section
+    attributes:
+      boxed: '0'
+      class: ''
+      background: ''
+      backgroundOverlay: 'rgba(0, 0, 0, 0)'
+      backgroundAttachment: ''
+      backgroundRepeat: ''
+      backgroundPosition: ''
+      backgroundSize: ''
+  features:
+    type: section
+    attributes:
+      boxed: '2'
+      class: ''
+      background: 'gantry-media://demos/background_blue_lines.png'
+      backgroundOverlay: 'rgba(0, 0, 0, 0)'
+      backgroundAttachment: ''
+      backgroundRepeat: ''
+      backgroundPosition: ''
+      backgroundSize: cover
+  utility:
+    type: section
+    attributes:
+      boxed: '0'
+      class: ''
+      background: ''
+      backgroundOverlay: 'rgba(0, 0, 0, 0)'
+      backgroundAttachment: ''
+      backgroundRepeat: ''
+      backgroundPosition: ''
+      backgroundSize: ''
+  above:
+    type: section
+    attributes:
+      boxed: ''
+  testimonials:
+    type: section
+    attributes:
+      boxed: ''
+      class: ''
+      background: 'gantry-media://demos/background_blue_lines.png'
+      backgroundOverlay: 'rgba(0, 0, 0, 0)'
+      backgroundAttachment: ''
+      backgroundRepeat: ''
+      backgroundPosition: ''
+      backgroundSize: cover
+  expanded:
+    type: section
+    attributes:
+      boxed: ''
+  aside:
+    attributes:
+      class: ''
+    block:
+      fixed: '1'
+  mainbar:
+    type: section
+    subtype: main
+  sidebar:
+    type: section
+    subtype: aside
+    attributes:
+      class: ''
+    block:
+      fixed: '1'
+  container-main:
+    attributes:
+      boxed: ''
+  mainbottom:
+    type: section
+    attributes:
+      boxed: ''
+  footertop:
+    type: section
+    attributes:
+      boxed: ''
+  footer:
+    attributes:
+      boxed: ''
+  footerbottom:
+    type: section
+    attributes:
+      boxed: ''
+  nadir:
+    type: section
+    attributes:
+      boxed: ''
+  offcanvas:
+    attributes:
+      position: g-offcanvas-left
+      class: ''
+      extra: {  }
+      swipe: '1'
+      css3animation: '1'
+content:
+  logo-9501:
+    title: 'Logo / Image'
+  customcontentSZ-5107:
+    title: 'Custom Content'
+    attributes:
+      height: 40vh
+      headline: ''
+      description: "\n"
+      link: ''
+      linktext: ''
+      link2: ''
+      linktext2: ''
+    block:
+      variations: center
+  logo-9571:
+    title: 'Logo / Image'
+  horizontalmenu-9034:
+    title: 'Horizontal Menu'
+  totop-8670:
+    title: 'To Top'
+  socialfloatingSZ-2700:
+    title: 'Social Floating'

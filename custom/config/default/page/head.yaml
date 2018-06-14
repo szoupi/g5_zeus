@@ -1,0 +1,28 @@
+meta: {  }
+head_bottom: ''
+atoms:
+  -
+    id: fixed-header-7426
+    type: fixed-header
+    title: 'Fixed Header'
+    attributes:
+      enabled: '1'
+      cssselector: .sz-translation
+      mobile: disable
+      secondtrigger: '0'
+      secondoffset: ''
+  -
+    id: frameworks-7641
+    type: frameworks
+    title: 'JavaScript Frameworks'
+    attributes:
+      enabled: '1'
+      jquery:
+        enabled: '1'
+        ui_core: '0'
+        ui_sortable: '0'
+      bootstrap:
+        enabled: '0'
+      mootools:
+        enabled: '0'
+        more: '0'

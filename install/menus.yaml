@@ -1,0 +1,9 @@
+zeus-theme:
+  title: 'Zeus Theme'
+  description: 'Sample menu for Zeus theme.'
+
+  items:
+    zeus:
+      title: 'Home'
+      outline: home
+      home: 1

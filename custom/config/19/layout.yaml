@@ -1,0 +1,327 @@
+version: 2
+preset:
+  image: 'gantry-admin://images/layouts/default.png'
+  name: default
+  timestamp: 1490038588
+layout:
+  zenith: {  }
+  navtop: {  }
+  navigation: {  }
+  /header/:
+    -
+      - bloglayoutSZ-9204
+  /intro/:
+    -
+      - bloglayoutSZ-9166
+  features: {  }
+  utility: {  }
+  above: {  }
+  testimonials: {  }
+  expanded: {  }
+  /container-main/:
+    -
+      -
+        'aside 25':
+          -
+            - spacer-4815
+          -
+            - position-module-9437
+      -
+        'mainbar 50':
+          -
+            - system-messages-9625
+          -
+            - position-position-1064
+          -
+            - system-content-8244
+          -
+            - position-module-5305
+          -
+            - position-module-9421
+          -
+            - position-module-6937
+      -
+        'sidebar 25':
+          -
+            - spacer-5006
+          -
+            - position-position-5140
+          -
+            - position-module-3469
+  mainbottom: {  }
+  footertop: {  }
+  footer: {  }
+  footerbottom: {  }
+  nadir: {  }
+  offcanvas: {  }
+structure:
+  zenith:
+    type: section
+    inherit:
+      outline: default
+      include:
+        - attributes
+        - block
+        - children
+  navtop:
+    type: section
+    inherit:
+      outline: default
+      include:
+        - attributes
+        - block
+        - children
+  navigation:
+    type: section
+    inherit:
+      outline: default
+      include:
+        - attributes
+        - block
+        - children
+  header:
+    attributes:
+      boxed: ''
+      class: ''
+      background: ''
+      backgroundOverlay: ''
+      backgroundAttachment: fixed
+      backgroundRepeat: ''
+      backgroundPosition: 'center center'
+      backgroundSize: cover
+  intro:
+    type: section
+    attributes:
+      boxed: '0'
+      class: ''
+      background: ''
+      backgroundOverlay: 'rgba(0, 0, 0, 0)'
+      backgroundAttachment: ''
+      backgroundRepeat: ''
+      backgroundPosition: ''
+      backgroundSize: ''
+  features:
+    type: section
+    inherit:
+      outline: default
+      include:
+        - attributes
+        - block
+        - children
+  utility:
+    type: section
+    inherit:
+      outline: default
+      include:
+        - attributes
+        - block
+        - children
+  above:
+    type: section
+    inherit:
+      outline: default
+      include:
+        - attributes
+        - block
+        - children
+  testimonials:
+    type: section
+    inherit:
+      outline: default
+      include:
+        - attributes
+        - block
+        - children
+  expanded:
+    type: section
+    inherit:
+      outline: default
+      include:
+        - attributes
+        - block
+        - children
+  aside:
+    attributes:
+      class: ''
+      background: ''
+      backgroundOverlay: 'rgba(0, 0, 0, 0)'
+      backgroundAttachment: ''
+      backgroundRepeat: ''
+      backgroundPosition: ''
+      backgroundSize: ''
+    block:
+      fixed: '1'
+  mainbar:
+    type: section
+    subtype: main
+    attributes:
+      class: ''
+      background: ''
+      backgroundOverlay: 'rgba(0, 0, 0, 0)'
+      backgroundAttachment: ''
+      backgroundRepeat: ''
+      backgroundPosition: ''
+      backgroundSize: ''
+  sidebar:
+    type: section
+    subtype: aside
+    attributes:
+      class: ''
+      background: ''
+      backgroundOverlay: 'rgba(0, 0, 0, 0)'
+      backgroundAttachment: ''
+      backgroundRepeat: ''
+      backgroundPosition: ''
+      backgroundSize: ''
+    block:
+      fixed: '1'
+  container-main:
+    attributes:
+      boxed: ''
+  mainbottom:
+    type: section
+    inherit:
+      outline: default
+      include:
+        - attributes
+        - block
+        - children
+  footertop:
+    type: section
+    inherit:
+      outline: default
+      include:
+        - attributes
+        - block
+        - children
+  footer:
+    inherit:
+      outline: default
+      include:
+        - attributes
+        - block
+        - children
+  footerbottom:
+    type: section
+    inherit:
+      outline: default
+      include:
+        - attributes
+        - block
+        - children
+  nadir:
+    type: section
+    inherit:
+      outline: default
+      include:
+        - attributes
+        - block
+        - children
+  offcanvas:
+    inherit:
+      outline: default
+      include:
+        - attributes
+        - block
+        - children
+content:
+  bloglayoutSZ-9204:
+    title: 'Blog layout - list'
+    attributes:
+      layout: list
+      article:
+        filter:
+          categories: '11,2,12,13,14,15'
+          articles: ''
+          featured: include
+        limit:
+          total: '5'
+          columns: '2'
+          start: '0'
+        sort:
+          orderby: publish_up
+          ordering: ASC
+  bloglayoutSZ-9166:
+    title: 'Blog layout - default'
+    attributes:
+      layout: default
+      article:
+        filter:
+          categories: '11,12,13,14,15'
+          articles: ''
+          featured: include
+        limit:
+          total: '4'
+          columns: '4'
+          start: '0'
+        sort:
+          orderby: publish_up
+          ordering: ASC
+        display:
+          text:
+            limit: '100'
+  spacer-4815:
+    inherit:
+      outline: default
+      include:
+        - attributes
+        - block
+      particle: spacer-2395
+  position-module-9437:
+    title: 'newsflash vertical'
+    attributes:
+      module_id: '125'
+      key: newsflash-vertical
+  system-messages-9625:
+    inherit:
+      outline: default
+      include:
+        - attributes
+        - block
+      particle: system-messages-2617
+  position-position-1064:
+    title: breadcrumbs
+    attributes:
+      key: breadcrumbs
+  system-content-8244:
+    inherit:
+      outline: default
+      include:
+        - attributes
+        - block
+      particle: system-content-1966
+  position-module-5305:
+    title: 'newsflash default'
+    attributes:
+      module_id: '101'
+      key: newsflash-default
+  position-module-9421:
+    title: articles-category
+    attributes:
+      module_id: '95'
+      key: articles-category
+  position-module-6937:
+    title: 'newsflash horizontal'
+    attributes:
+      module_id: '121'
+      key: newsflash-horizontal
+  spacer-5006:
+    inherit:
+      outline: default
+      include:
+        - attributes
+        - block
+      particle: spacer-4623
+  position-position-5140:
+    title: sidebar
+    inherit:
+      outline: default
+      include:
+        - attributes
+        - block
+      particle: position-position-3512
+  position-module-3469:
+    title: 'latest articles'
+    attributes:
+      module_id: '123'
+      key: latest-articles

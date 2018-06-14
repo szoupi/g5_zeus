@@ -1,0 +1,424 @@
+version: 2
+preset:
+  image: 'gantry-admin://images/layouts/default.png'
+  name: default
+  timestamp: 1490038588
+layout:
+  /zenith/: {  }
+  /navtop/: {  }
+  navigation: {  }
+  /header/:
+    -
+      - customcontentSZ-5107
+  /intro/:
+    -
+      - custom-8642
+    -
+      - imagegallerySZ-3581
+    -
+      - imagegallerySZ-3358
+    -
+      - imagegallerySZ-3171
+  /features/:
+    -
+      - owlcarousel-2455
+  /utility/:
+    -
+      - contenttabs-6250
+  /above/:
+    -
+      - custom-1615
+    -
+      - contentcubes-7850
+  /testimonials/:
+    -
+      - custom-4995
+    -
+      - testimonialSZ-3654
+    -
+      - testimonialSZ-9046
+  /expanded/:
+    -
+      - custom-1476
+    -
+      - pricetableSZ-8713
+  /container-main/:
+    -
+      -
+        'aside 25': {  }
+      -
+        'mainbar 50': {  }
+      -
+        'sidebar 25': {  }
+  /mainbottom/: {  }
+  /footertop/: {  }
+  /footer/:
+    -
+      - 'logo-9571 21'
+      - 'copyright-1736 26'
+      - 'horizontalmenu-9034 24'
+      - 'totop-8670 29'
+    -
+      - socialfloatingSZ-2700
+  /footerbottom/: {  }
+  /nadir/: {  }
+  offcanvas:
+    -
+      - mobile-menu-5697
+structure:
+  zenith:
+    type: section
+    attributes:
+      boxed: ''
+  navtop:
+    type: section
+    attributes:
+      boxed: ''
+  navigation:
+    type: section
+    inherit:
+      outline: default
+      include:
+        - attributes
+        - children
+  header:
+    attributes:
+      boxed: ''
+      class: ''
+      background: 'gantry-media://demos/gabriele-motter.jpg'
+      backgroundOverlay: ''
+      backgroundAttachment: fixed
+      backgroundRepeat: ''
+      backgroundPosition: 'center center'
+      backgroundSize: cover
+  intro:
+    type: section
+    attributes:
+      boxed: '0'
+      class: ''
+      background: ''
+      backgroundOverlay: 'rgba(0, 0, 0, 0)'
+      backgroundAttachment: ''
+      backgroundRepeat: ''
+      backgroundPosition: ''
+      backgroundSize: ''
+  features:
+    type: section
+    attributes:
+      boxed: '0'
+      class: ''
+      background: 'gantry-media://demos/background_blue_lines.png'
+      backgroundOverlay: 'rgba(0, 0, 0, 0)'
+      backgroundAttachment: ''
+      backgroundRepeat: ''
+      backgroundPosition: ''
+      backgroundSize: cover
+  utility:
+    type: section
+    attributes:
+      boxed: '0'
+      class: ''
+      background: ''
+      backgroundOverlay: 'rgba(0, 0, 0, 0)'
+      backgroundAttachment: ''
+      backgroundRepeat: ''
+      backgroundPosition: ''
+      backgroundSize: ''
+  above:
+    type: section
+    attributes:
+      boxed: ''
+  testimonials:
+    type: section
+    attributes:
+      boxed: ''
+      class: ''
+      background: ''
+      backgroundOverlay: 'rgba(0, 0, 0, 0)'
+      backgroundAttachment: ''
+      backgroundRepeat: ''
+      backgroundPosition: ''
+      backgroundSize: cover
+  expanded:
+    type: section
+    attributes:
+      boxed: ''
+  aside:
+    attributes:
+      class: ''
+    block:
+      fixed: '1'
+  mainbar:
+    type: section
+    subtype: main
+  sidebar:
+    type: section
+    subtype: aside
+    attributes:
+      class: ''
+    block:
+      fixed: '1'
+  container-main:
+    attributes:
+      boxed: ''
+  mainbottom:
+    type: section
+    attributes:
+      boxed: ''
+  footertop:
+    type: section
+    attributes:
+      boxed: ''
+  footer:
+    attributes:
+      boxed: ''
+  footerbottom:
+    type: section
+    attributes:
+      boxed: ''
+  nadir:
+    type: section
+    attributes:
+      boxed: ''
+  offcanvas:
+    attributes:
+      position: g-offcanvas-left
+      class: ''
+      extra: {  }
+      swipe: '1'
+      css3animation: '1'
+content:
+  customcontentSZ-5107:
+    title: 'Custom Content'
+    attributes:
+      height: 50vh
+      headline: ZEUS
+      description: "<p>Combine Custom Content Particle with Section Background <br />to create appealing content without writing html/css code.</p>\n<p>TIP: Use vh values in block height for best fit in all media screens. </p>\n"
+      link: '#'
+      linktext: 'Primary link'
+      link2: '#'
+      linktext2: 'Secondary link'
+    block:
+      variations: center
+  custom-8642:
+    title: TITLE
+    attributes:
+      html: '<h1>IMAGE GALLERY PARTICLE VARIATIONS</h1>'
+    block:
+      variations: center
+  imagegallerySZ-3581:
+    title: 'Image Gallery'
+  imagegallerySZ-3358:
+    title: 'Image Gallery'
+    attributes:
+      galleryimages:
+        -
+          image: 'gantry-media://demos/jump.jpg'
+          effect: slidein
+          headline: Headline
+          description: 'some text goes here'
+          link: '#'
+          linktext: 'Read More'
+          title: 'item 1'
+        -
+          image: 'gantry-media://demos/phone.jpg'
+          effect: slidein
+          headline: Headline
+          description: 'some text goes here'
+          link: '#'
+          linktext: 'Shop Now'
+          title: 'item 2'
+  imagegallerySZ-3171:
+    title: 'Image Gallery'
+    attributes:
+      galleryimages:
+        -
+          image: 'gantry-media://demos/gabriele-motter.jpg'
+          effect: above
+          headline: Headline
+          description: 'some text goes here'
+          link: '#'
+          linktext: 'Read More'
+          title: 'item 1'
+        -
+          image: 'gantry-media://demos/jump.jpg'
+          effect: above
+          headline: Headline
+          description: 'some text goes here'
+          link: '#'
+          linktext: 'Read More'
+          title: item2
+  owlcarousel-2455:
+    title: 'Owl Carousel'
+    attributes:
+      enabled: 0
+    block:
+      variations: center
+  contenttabs-6250:
+    title: 'Content Tabs'
+    attributes:
+      items:
+        -
+          content: "<ul>\n<li>Visual Menu Editor</li>\n<li>Visual Layout Manager</li>\n<li>Unlimited Undo/Redo</li>\n<li>SCSS / LESS Support</li>\n<li>Off-Canvas Panel</li>\n<li>Particles System</li>\n<li>Twig-based Templating</li>\n<li>YAML-based Configuration</li>\n</ul>"
+          title: Gantry5
+        -
+          content: 'Eu est dolorem tibique. Ad alia assum sensibus duo, cu mel omnis tamquam nusquam. Ad adhuc convenire assentior per, ullum nostro ea sea. Ex cum assum omnium aperiam, vim cu dico tantas labitur. Omnis eruditi sed at, est detracto facilisi in.'
+          title: Zeus
+        -
+          content: "Eu est dolorem tibique. Ad alia assum sensibus duo, cu mel omnis tamquam nusquam. Ad adhuc convenire assentior per, ullum nostro ea sea. Ex cum assum omnium aperiam, vim cu dico tantas labitur. Omnis eruditi sed at, est detracto facilisi in. <br />\nEu est dolorem tibique. Ad alia assum sensibus duo, cu mel omnis tamquam nusquam. Ad adhuc convenire assentior per, ullum nostro ea sea. Ex cum assum omnium aperiam, vim cu dico tantas labitur. Omnis eruditi sed at, est detracto facilisi in.\n"
+          title: 'More features'
+  custom-1615:
+    title: 'Custom HTML'
+    attributes:
+      html: '<h1>CONTENT CUBES PARTICLE</h1>'
+    block:
+      variations: center
+  contentcubes-7850:
+    title: 'Content Cubes'
+    attributes:
+      items:
+        -
+          image: 'gantry-media://demos/phone.jpg'
+          imageposition: left
+          label: label
+          title: HEADLINE
+          content: 'Eu est dolorem tibique. Ad alia assum sensibus duo, cu mel omnis tamquam nusquam. Ad adhuc convenire assentior per, ullum nostro ea sea. Ex cum assum omnium aperiam, vim cu dico tantas labitur. Omnis eruditi sed at, est detracto facilisi in. '
+          tags:
+            -
+              icon: 'fa fa-tag'
+              link: '#'
+              target: _self
+              text: tag
+            -
+              icon: 'fa fa-tag'
+              link: '#'
+              target: _self
+              text: 'another tag'
+          link: 'http://gantry.org/blog/gantry5-wins-joscar'
+          linktext: '&rarr;'
+          buttonclass: ''
+          buttontarget: _self
+          name: 'Item 1'
+        -
+          image: 'gantry-media://demos/jump.jpg'
+          imageposition: right
+          label: label
+          title: HEADLINE
+          content: 'Eu est dolorem tibique. Ad alia assum sensibus duo, cu mel omnis tamquam nusquam. Ad adhuc convenire assentior per, ullum nostro ea sea. Ex cum assum omnium aperiam, vim cu dico tantas labitur. Omnis eruditi sed at, est detracto facilisi in. '
+          tags:
+            -
+              icon: 'fa fa-tag'
+              link: '#'
+              target: _self
+              text: 'more tags'
+            -
+              icon: 'fa fa-tag'
+              link: '#'
+              target: _self
+              text: tag
+          link: 'http://gantry.org'
+          linktext: '&rarr;'
+          buttonclass: ''
+          buttontarget: _self
+          name: 'Item 2'
+  custom-4995:
+    title: TITLE
+    attributes:
+      html: '<h1>TESTIMONIALS PARTICLE </h1>'
+    block:
+      variations: center
+  testimonialSZ-3654:
+    title: Testimonials
+    attributes:
+      headline: 'Arrow effect'
+  testimonialSZ-9046:
+    title: Testimonials
+    attributes:
+      headline: 'Card Effect'
+      testimonials:
+        -
+          icon: 'fa fa-quote-left fa-3x'
+          quote: 'You''ll come to learn a great deal if you study the Insignificant in depth.'
+          author: 'Odysseus Elytis'
+          authorattribute: Poet
+          image: 'gantry-media://demos/oliver_hardy.jpg'
+          effect: card
+          class: ''
+          title: quote1
+        -
+          icon: 'fa fa-quote-left fa-3x'
+          quote: 'We cannot solve our problems with the same thinking we used when we created them.'
+          author: Ainstein
+          authorattribute: Scientist
+          image: 'gantry-media://demos/einstein.jpg'
+          effect: card
+          class: ''
+          title: quote2
+        -
+          icon: 'fa fa-quote-left fa-3x'
+          quote: 'The only true wisdom is in knowing you know nothing.'
+          author: Socrates
+          authorattribute: 'Greek Philosopher'
+          image: 'gantry-media://demos/chaplin.jpeg'
+          effect: card
+          class: ''
+          title: quote3
+  custom-1476:
+    title: 'Custom HTML'
+    attributes:
+      html: '<h1>PRICE TABLE PARTICLE </h1>'
+    block:
+      variations: center
+  pricetableSZ-8713:
+    title: 'Price Table'
+    attributes:
+      pricetables:
+        -
+          image: ''
+          icon: 'fa fa-diamond fa-3x'
+          price: 0.01$
+          description: "Morbi non sodales nisi.\nSuspendisse feugiat quam\nMorbi non sodales nisi.\nSuspendisse feugiat quam"
+          line1: 'Morbi non sodales nisi.'
+          line2: 'Suspendisse feugiat quam'
+          line3: 'Morbi non sodales nisi.'
+          line4: 'Morbi non sodales nisi.'
+          link: '#'
+          linktext: 'Enroll Now!'
+          class: ''
+          title: table1
+        -
+          image: ''
+          icon: 'fa fa-heart fa-3x'
+          price: 0.03$
+          description: "Morbi non sodales nisi.\nSuspendisse feugiat quam\nMorbi non sodales nisi.\nSuspendisse feugiat quam"
+          line1: 'Suspendisse feugiat quam'
+          line2: 'Morbi non sodales nisi.'
+          line3: 'Suspendisse feugiat quam'
+          line4: 'Morbi non sodales nisi.'
+          link: '#'
+          linktext: 'Enroll Now!'
+          class: ''
+          title: table2
+        -
+          image: ''
+          icon: 'fa fa-diamond fa-3x'
+          price: 0.02$
+          description: "Morbi non sodales nisi.\nSuspendisse feugiat quam\nMorbi non sodales nisi.\nSuspendisse feugiat quam"
+          line1: 'Morbi non sodales nisi.'
+          line2: 'Suspendisse feugiat quam'
+          line3: 'Morbi non sodales nisi.'
+          line4: 'Suspendisse feugiat quam'
+          link: '#'
+          linktext: 'Enroll Now!'
+          class: ''
+          title: table3
+    block:
+      variations: center
+  logo-9571:
+    title: 'Logo / Image'
+  horizontalmenu-9034:
+    title: 'Horizontal Menu'
+  totop-8670:
+    title: 'To Top'
+  socialfloatingSZ-2700:
+    title: 'Social Floating'

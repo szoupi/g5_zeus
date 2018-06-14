@@ -1,0 +1,4 @@
+1) I made a menu item - categorie blog
+2) a made an article with that category
+3) and when I select the menu item it shows the article and it gives a message.
+"Warning: extract() expects parameter 1 to be array, object given in D:\xampp\htdocs\simpli\templates\g5_zeus\includes\getImageSource.php on line 24".

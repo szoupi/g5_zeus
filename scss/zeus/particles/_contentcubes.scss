@@ -1,0 +1,134 @@
+.g-contentcubes {
+ 
+    .cube-items-wrapper {
+        // background: $base-background; //TODO: CHANGE THIS to the section(?) value
+        // color: $white;
+
+        // Images Position
+        .cube-row {
+            &.g-grid {
+                &.image-position-right {
+                    flex-flow: row-reverse wrap;
+                }
+            }
+        }
+
+        // Images
+        .cube-image-wrapper {
+            position: relative;
+            z-index: 1;
+            overflow: hidden;
+
+            img {
+                display: block;
+                height: auto;
+
+                // @include transform(scale3d(1.8, 1.8, 1));
+                // @include transition(transform 0.5s cubic-bezier(0.7, 0, 0.3, 1));
+            }
+
+            &:hover {
+                img {
+                    @include transform(scale3d(1, 1, 1));
+                }
+            }
+
+            &:after {
+                position: absolute;
+                top: 0;
+                right: 0;
+                z-index: 1;
+                width: 100%;
+                height: 100%;
+                content: "";
+            }
+        }
+
+        // Content
+        .cube-content-wrapper {
+            max-width: 80%;
+            margin: 0 auto;
+            padding: 2rem;
+            //3 next lines for aligning vertically
+            position: relative;
+            top: 50%;
+            transform: translateY(-50%);
+
+            @include breakpoint(desktop-range) {
+                // padding: 2rem;
+            }
+
+            @include breakpoint(tablet-range) {
+                // max-width: 18.5rem;
+                padding: 2rem 1rem;
+            }
+
+            @include breakpoint(mobile-only) {
+                padding: 2rem 0.5rem;
+            }
+
+            @include breakpoint(small-mobile-range) {
+                // max-width: 14.5rem;
+            }
+
+            // Label
+            .item-label {
+                display: inline-block;
+                background: $base-dominant-color;
+                color:$white;
+                padding: 0.35em 0.85em;
+                margin-bottom: 0.5rem;
+                font-size: $core-font-size - 0.1875;
+                line-height: 1.1538;
+                font-weight: $font-weight-semibold;
+                border-radius: 2.5rem;
+                text-align: center;
+            }
+
+            // Title
+            .item-title {
+                font-size: $core-font-size + 0.125;
+                font-weight: $font-weight-semibold;
+                line-height: $core-line-height - 0.22;
+                margin-bottom: 1rem;
+
+                a.item-link {
+                    display: block;
+                    // color: $white ;
+
+                    .item-link-text {
+                        display: inline-block;
+                        margin-left: 0.25rem;
+                        @include transition(transform 0.3s);
+                    }
+
+                    &:hover {
+                        .item-link-text {
+                            @include transform(translate3d(15px, 0, 0));
+                        }
+                    }
+                }
+            }
+
+            // Tags
+            .item-tags {
+                .tag {
+                    margin-right: 0.5rem;
+                    margin-bottom: 0.5rem;
+                    padding: 0.35rem 0;
+                    color: fadeout($white, 40%);
+                    text-transform: uppercase;
+                    font-size: $core-font-size - 0.1875;
+                    font-weight: $font-weight-semibold;
+                    line-height: $core-line-height - 0.85;
+
+                    .fa {
+                        margin-right: 0.15rem;
+                        font-size: $core-font-size;
+                        vertical-align: text-top;
+                    }
+                }
+            }
+        }
+    }
+}

@@ -1,0 +1,115 @@
+#g-expanded {
+	margin: $sectionsdim-expanded-margin 0;
+    padding: $sectionsdim-expanded-padding 0;
+    position: relative;
+    
+    //SECTION PRESETS    
+	@if $expanded-section-preset {
+        //PRIMARY
+        @if $expanded-section-preset == 'primary' {
+            color: $white; //variable from _colors
+            a {
+                color: $accent-color-1;
+                &:hover {
+                    color: fadeout($accent-color-1, 40%);
+                }
+            }
+            background-color: $base-dominant-color;
+        
+        //BASE     
+        } @else if $expanded-section-preset == 'base' {
+            color: $base-text-color; 
+            a {
+                color: $base-dominant-color;
+                &:hover {
+                    color: fadeout($base-dominant-color, 40%);
+                }
+            }
+            background-color: $base-background;
+        
+        //ACCENT 1
+        } @else if $expanded-section-preset == 'accent1' {
+            color: $white; 
+            a {
+                color: $base-dominant-color;
+                &:hover {
+                    color: fadeout($base-dominant-color, 40%);
+                }
+            }
+            background-color: $accent-color-1;
+        
+        //ACCENT 2    
+        } @else if $expanded-section-preset == 'accent2' {
+            color: $base-text-color; 
+            a {
+                color: $accent-color-3;
+                &:hover {
+                    color: fadeout($accent-color-3, 40%);
+                }
+            }
+            background-color: $accent-color-2;
+        
+        //ACCENT 3    
+        } @else if $expanded-section-preset == 'accent3' {
+            color: $white; 
+            a {
+                color: $accent-color-1;
+                &:hover {
+                    color: fadeout($accent-color-1, 40%);
+                }
+            }
+            background-color: $accent-color-3;
+        
+        //IF section PRESETS ARE DISABLED SELECT CUSTOM VALUES    
+        } @else if $expanded-section-preset == 'disabled' {
+        	color: $expanded-text-color;
+            // LINKS
+            a {
+                color: $expanded-link-color;
+                &:hover {
+                    color: fadeout($expanded-link-color, 40%);
+                }
+            }
+            background-color:$expanded-background;
+        }
+    }
+
+    // HEADING2
+    h2 {
+        font-weight: 300;
+        line-height: $core-line-height;
+
+        @include breakpoint(large-mobile-range) {
+            font-size: 1.35rem;
+        }
+
+        em {
+            font-weight: $font-weight-medium;
+        }
+
+        &.large-heading {
+            font-size: $h2-font-size * 2;
+
+            @include breakpoint(tablet-range) {
+                font-size: $h2-font-size * 1.25;
+            }
+
+            @include breakpoint(mobile-only) {
+                font-size: $h2-font-size;
+            }
+        }
+    }
+
+    // BUTTONS
+    .button {
+        color: $white;
+    }
+
+}
+
+@media print {
+	#g-expanded {
+		background: #fff !important;
+		color: #000 !important;
+	}
+}

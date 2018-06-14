@@ -1,0 +1,73 @@
+{% extends '@nucleus/partials/particle.html.twig' %}
+
+{% block particle %}
+
+<div class="sz-testimonial {{ particle.css.class }}">
+    <div class="g-grid">
+        <div class="g-block">
+
+            {#HEADLINE#}
+            {% if particle.headline %}
+                <h2>{{ particle.headline|raw }}</h2>
+            {% endif %}
+
+            {#HEADLINE DESCRIPTION#}
+            {% if particle.description %}
+                <div class="sz-testimonial-descr">{{ particle.description|raw }}</div>
+            {% endif %}
+        </div>
+    </div>
+
+    <div class="g-grid">
+        {% for item in particle.testimonials %}
+            <div class="g-block {{ field.class }} ">
+                <div class="g-content">
+
+                    <div class="
+                        {# apply image effects #}
+                        {% if item.effect == 'arrow' %} 
+                        	arrow 
+                        {% else %}
+                        	card
+                    	{% endif %}
+                    ">
+                    
+						<div class="sz-quote-container">
+	                        {#ICON#}
+	                        {% if item.icon %}  
+	                            <i class="{{ item.icon }} sz-icons"></i>
+	                        {% endif %}
+
+	                        {#QUOTE#}
+	                        {% if item.quote %}
+	                            <div class="sz-quote">{{ item.quote|raw }}</div>
+	                        {% endif %}
+
+						</div>
+
+						<div class="sz-author-container">
+	                        {#IMAGE#}
+	                        {% if item.image %}
+	                            <img src="{{ url(item.image) }}" class="sz-img" alt="{{ item.name|e }}" />
+	                        {% endif %}
+
+
+	                        {#AUTHOR#}
+	                        {% if item.author %}
+	                            <h5>{{ item.author|raw }}</h5>
+			                        
+			                        {#AUTHOR ATTRIBUTE#}
+			                        {% if item.authorattribute %}
+			                            <div class="sz-author-attr">{{ item.authorattribute|raw }}</div>
+			                        {% endif %}
+	                        {% endif %}
+
+                       </div>
+                    </div>
+                </div>
+            </div>
+        {% endfor %}
+    </div>
+</div>
+
+{% endblock %}

@@ -1,0 +1,148 @@
+// Font Import
+@include import-font($font-family-default);
+@include import-font($font-family-title);
+
+body {
+    font-family: get-font-family($font-family-default);
+    font-weight: $font-weight-regular;
+}
+
+// Headings
+h1, h2, h3, h4, h5 {
+    font-family: get-font-family($font-family-title);
+    font-weight: $font-weight-regular;
+    margin-top: $base-content-margin * 2;
+    margin-bottom: $base-content-margin/2;
+}
+
+h1 {
+    font-weight: $font-weight-bold;
+}
+
+h4 {
+    font-size: $h4-font-size;
+}
+
+// Blockquote
+blockquote {
+    font-family: get-font-family($font-family-quote);
+    border-left: 10px solid $rule-color;
+
+    p {
+        font-size: $core-font-size + 0.1;
+        color: lighten($base-text-color, 20%);
+    }
+
+    cite {
+        display: block;
+        text-align: right;
+        color: $base-text-color;
+        font-size: $core-font-size + 0.2;
+    }
+}
+
+// Inline and Code
+code,
+kbd,
+pre,
+samp {
+    font-family: $font-family-mono;
+}
+
+code {
+    background: $code-bg;
+    color: darken($code-text,10%);
+}
+
+pre {
+    padding: 1rem;
+    margin: 2rem 0;
+    background: $pre-bg;
+    border: 1px solid $base-border-color;
+    border-radius: $core-border-radius;
+    line-height: 1.15;
+    font-size: $core-font-size - 0.1;
+    color: $pre-text;
+    
+    code {
+        background: inherit;
+        font-size: $core-font-size - 0.1;
+    }
+
+    &.prettyprint {
+        border-color: $border-color-light !important;
+    }
+}
+
+// Additional
+hr {
+    margin: 1.5rem 0;
+    border-bottom: 1px solid $rule-color;
+}
+
+
+
+
+
+/*###### LISTS STYLING ###############################*/
+.sz-zeus-list {
+    ul {
+        list-style: none;
+        padding: 0;
+    }
+    li {
+        padding-left: 0;
+    }
+    li:before {
+        content: "\f00c"; /* fa-check */
+        font-family: FontAwesome;
+        display: inline-block;
+        margin-left: -1.5em; 
+        width: 1.5em; 
+    } 
+    
+    /*###### Different styles */
+    &.check-square {
+        li:before {
+            content: "\f14a"; /* fa-check-square */
+        } 
+    }
+    &.check-square-o {
+        li:before {
+            content: "\f046"; /* fa-check-square-o */
+        } 
+    }
+    &.check-circle {
+        li:before {
+            content: "\f058"; /* fa-check-circle */
+        } 
+    }
+    &.check-circle-o {
+        li:before {
+            content: "\f05d"; /* fa-check-circle-o */
+        } 
+    }
+    &.cog {
+        li:before {
+            content: "\f013"; /* fa-cog */
+        } 
+    }
+    &.circle {
+        li:before {
+            content: "\f111"; /* fa-circle */
+        } 
+    }
+    &.chevron-circle-right {
+        li:before {
+            content: "\f138"; /* fa-chevron-circle-right */
+        } 
+    }
+    &.square-o {
+        li:before {
+            content: "\f096"; /* fa-square-o */
+        } 
+    }
+}
+
+/*###### END OF LISTS STYLING ###############################*/
+

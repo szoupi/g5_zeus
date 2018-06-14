@@ -1,0 +1,9 @@
+preset: preset1
+base:
+  content-margin: 0.5rem
+  content-padding: 0.5rem
+features:
+  text-color: '#ffffff'
+  link-color: '#0071bc'
+testimonials:
+  text-color: '#ffffff'

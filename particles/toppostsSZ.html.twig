@@ -1,0 +1,148 @@
+{% extends '@nucleus/partials/particle.html.twig' %}
+
+{% set attr_extra = particle.extra|attribute_array %}
+{% set article_settings = particle.article %}
+{% set filter = article_settings.filter %}
+{% set sort = article_settings.sort %}
+{% set limit = article_settings.limit %}
+{% set display = article_settings.display %}
+
+{# Category Finder  ############################}
+{% set category_options = filter.categories ? {id: [filter.categories|split(','), 0]} : {} %}
+{% set categories = joomla.finder('category', category_options).published(1).language().limit(0).find() %}
+
+{# Content Finder  ############################}
+{% if filter.articles %}
+    {% set article_options = filter.articles ? {id: [filter.articles|replace(' ', '')|split(',')]} : {} %}
+    {% set article_finder = joomla.finder('content', article_options).published(1).language() %}
+{% else %}
+    {% set article_finder = joomla.finder('content').category(categories).published(1).language() %}
+{% endif %}
+
+{% set featured = filter.featured|default('include') %}
+{% if featured == 'exclude' %}
+    {% do article_finder.featured(false) %}
+{% elseif featured == 'only' %}
+    {% do article_finder.featured(true) %}
+{% endif %}
+
+{% set start = limit.start + max(0, ajax.start|int) %}
+{% do article_finder.order(sort.orderby, sort.ordering).limit(limit.total).start(start) %}
+{% set total = article_finder.count() %}
+{% set articles = article_finder.find() %}
+
+{% block particle %}
+
+
+    {# All Articles  ############################}
+    <div class="g-topposts-sz g-joomla-articles{% if particle.css.class %} {{ particle.css.class }}{% endif %}" {{- attr_extra|raw }}>
+
+                
+        {# LAYOUTS  DEFAULT ############################}
+        {% if particle.layout == 'top5' %}
+            top5
+            
+        {# LAYOYT LIST ################################}
+        {% elseif particle.layout == 'list' %}
+        
+        {# LAYOUT FEATURED ################################}
+        {% elseif particle.layout == 'top5_1+4' %}
+    
+            {% for article in articles  %}
+                <div class="g-grid sz-featured">
+                    
+                            
+                            
+                        {#IMAGE ############################}
+                        {% if display.image.enabled and article.images.image_intro or article.images.image_fulltext %}
+                            
+                            {% if article.images.image_intro and display.image.enabled == 'intro' or display.image.enabled == 'show' %}
+                                <a href="{{ article.route }}">
+                                    <div class="g-block">
+                                        <img src="{{ url(article.images.image_intro) }}" alt="{{ article.title }}"> 
+                            {% elseif article.images.image_fulltext and display.image.enabled == 'full' %}
+                                <a href="{{ article.route }}">
+                                    <div class="g-block">
+                                        <img src="{{ url(article.images.image_fulltext) }}" alt="{{ article.title }}"> 
+                            {% endif %}
+                            
+                        {#if no image available, show default.jpg image#}
+                        {% else %}
+                                                  
+                            <a href="{{ article.route }}">
+                                <div class="g-block">
+                                    <img src="templates/g5_zeus/images/default.jpg" alt="{{ article.title }}">
+                        {% endif %}
+
+                                    <div class="g-content">
+                                        <div class="g-array-item">
+                                            
+                                        {#TITLE ############################}
+                                            <div class="g-array-item-title">
+                                                <h3 class="g-item-title">
+                                                    <a href="{{ article.route }}">{{ display.title.limit ? article.title|truncate_text(display.title.limit) : article.title }}</a>
+                                                </h3>
+                                            </div>
+                                            
+                                        </div>
+                                    </div>
+
+                                </div>    {# END g-block sz-featured #}
+                            </a>
+                    
+            
+                            {#META INFO#}
+                            {#{% if display.date.enabled or display.author.enabled or display.category.enabled or display.hits.enabled %}#}
+                            {#    <div class="g-array-item-details">#}
+                                    {#DATE ############################}
+                            {#        {% if display.date.enabled %}#}
+                            {#            <span class="g-array-item-date">#}
+                            {#                {% if display.date.enabled == 'published' %}#}
+                            {#                    <i class="fa fa-clock-o" aria-hidden="true"></i>{{ article.publish_up|date(display.date.format) }}#}
+                            {#                {% elseif display.date.enabled == 'modified' %}#}
+                            {#                    <i class="fa fa-clock-o" aria-hidden="true"></i>{{ article.modified|date(display.date.format) }}#}
+                            {#                {% else %}#}
+                            {#                    <i class="fa fa-clock-o" aria-hidden="true"></i>{{ article.created|date(display.date.format) }}#}
+                            {#                {% endif %}#}
+                            {#            </span>#}
+                            {#        {% endif %}#}
+                                    
+                                    {#AUTHOR ############################}
+                            {#        {% if display.author.enabled %}#}
+                            {#            <span class="g-array-item-author">#}
+                            {#                <i class="fa fa-user" aria-hidden="true"></i>{{ article.author.name }}#}
+                            {#            </span>#}
+                            {#        {% endif %}#}
+
+                                    {#CATEGORY ############################}
+                            {#        {% if display.category.enabled %}#}
+                            {#            {% set category_link = display.category.enabled == 'link' %}#}
+                            {#            <span class="g-array-item-category">#}
+                            {#                {% set cat = article.categories|last %}#}
+                            {#                {% if category_link %}#}
+                            {#                    <a href="{{ cat.route }}">#}
+                            {#                        <i class="fa fa-folder-open" aria-hidden="true"></i>{{ cat.title }}#}
+                            {#                    </a>#}
+                            {#                {% else %}#}
+                            {#                    <i class="fa fa-folder-open" aria-hidden="true"></i>{{ cat.title }}#}
+                            {#                {% endif %}#}
+                            {#            </span>#}
+                            {#        {% endif %}#}
+                                    
+                            {#    </div>#}
+                            {#{% endif %}#}
+                                
+                        
+                    
+                    
+                </div>
+                {# END GRID #}
+            {% endfor %}
+            {# END ARTICLe #}
+            
+        {% endif %}
+        {# END LAYOUT STYLE #}
+ 
+    </div>
+{% endblock %}
+

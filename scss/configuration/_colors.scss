@@ -1,0 +1,140 @@
+// TODO ADD COLORS FOR OTHER SECTIONS
+
+// Basics
+$white:                         #ffffff;
+$black:                         #000000;
+$off-white:                     #eceff3;
+
+// Base
+$base-text-color:               #212121 !default;
+$base-background:               #ffffff !default;
+$base-border-color:             #e0e0e5 !default;
+$base-background-image:			false !default;
+$base-dominant-color:			#0071bc !default;
+
+// Accents
+$accent-color-1:                #e31c3d !default;
+$accent-color-2:                #9bdaf1 !default;
+$accent-color-3:                #112e51 !default;
+
+// Page Surround
+$pagesurround-background:       $base-background !default;
+
+// zenith
+$zenith-background-predefined-color:   custom !default;
+$zenith-background:             #000000 !default;
+$zenith-text-color:             #ffffff !default;
+$zenith-link-color:				#0071bc !default;
+
+// navtop
+$navtop-background:             #ffffff !default;
+$navtop-text-color:             #212121 !default;
+$navtop-link-color:				#0071bc !default;
+
+// Navigation
+$navigation-background:         #0071bc !default;
+$navigation-text-color:         #ffffff !default;
+$navigation-link-color:			#ffffff !default;
+
+// Header
+$header-background:             #ffffff !default;
+$header-text-color:             #212121 !default;
+$header-link-color:				#0071bc !default;
+$header-background-predefined-color:   custom !default;
+
+// Intro
+$intro-background:              #ffffff !default;
+$intro-text-color:              #212121 !default;
+$intro-link-color:			    #0071bc !default;
+$intro-background-predefined-color:   custom !default;
+
+// Features
+$features-background:           #ffffff !default;
+$features-text-color:           #ffffff !default;
+$features-link-color:			#0071bc !default;
+$features-background-predefined-color:   custom !default;
+
+// Utility
+$utility-background:            #ffffff !default;
+$utility-text-color:            #212121 !default;
+$utility-link-color:			#0071bc !default;
+$utility-background-predefined-color:   custom !default;
+
+// Above
+$above-background:              #ffffff !default;
+$above-text-color:              #212121 !default;
+$above-link-color:			    #0071bc !default;
+$above-background-predefined-color:   accent2 !default;
+
+// Testimonials
+$testimonials-background:       #ffffff !default;
+$testimonials-text-color:       #212121 !default;
+$testimonials-link-color:		#0071bc !default;
+$testimonials-background-predefined-color:   custom !default;
+
+// Expanded
+$expanded-background:           #ffffff !default;
+$expanded-text-color:           #ffffff !default;
+$expanded-link-color:			#0071bc !default;
+$expanded-background-predefined-color:   accent3 !default;
+
+// mainbottom
+$mainbottom-background:         #ffffff !default;
+$mainbottom-text-color:         #212121 !default;
+$mainbottom-link-color:			#0071bc !default;
+$mainbottom-background-predefined-color:   custom !default;
+
+// footertop
+$footertop-background:          #ffffff !default;
+$footertop-text-color:          #212121 !default;
+$footertop-link-color:			#0071bc !default;
+$footertop-background-predefined-color:   custom !default;
+
+// Footer
+$footer-background:             #ffffff !default;
+$footer-text-color:             #212121 !default;
+$footer-link-color:				#9bdaf1 !default;
+$footer-background-predefined-color:   accent3 !default;
+
+// Footerbottom
+$footerbottom-background:             #ffffff !default;
+$footerbottom-text-color:             #212121 !default;
+$footerbottom-link-color:			  #0071bc !default;
+$footerbottom-background-predefined-color:   custom !default;
+
+// Nadir
+$nadir-background:             #000000 !default;
+$nadir-text-color:             #ffffff !default;
+$nadir-link-color:			   #0071bc !default;
+$nadir-background-predefined-color:   custom !default;
+
+
+// Off Canvas
+$offcanvas-background:          #0071bc !default;
+$offcanvas-text-color:          #eceeef !default;
+$offcanvas-toggle-color:        #eceeef !default;
+
+// Block Variations
+$box1-background:               $base-dominant-color !default;
+$box2-background:               $accent-color-1 !default;
+
+// System Messages and Alerts
+$warning-color:                 #c09853;
+$error-color:                   #b94a48;
+$info-color:                    #3a87ad;
+$success-color:                 #468847;
+
+// Typography
+$rule-color:                    $base-border-color;
+$code-text:                     #c7254e;
+$code-bg:                       #f9f2f4;
+$pre-text:                      #237794;
+$pre-bg:                        #f6f6f6;
+
+// Borders
+$border-color-hover:            $base-dominant-color;
+$border-color-focus:            $base-dominant-color;
+$border-color-light:            rgba(0, 0, 0, 0.1);
+
+// Shadows
+$base-box-shadow:               0 0 4px fadeout($base-dominant-color, 50%);

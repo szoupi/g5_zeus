@@ -1,0 +1,58 @@
+name: Zenith Styles
+description: Zenith section styles for the Zeus theme
+type: section
+
+form:
+  fields:
+
+    section-preset:
+      type: select.select
+      label: Section Preset Colors
+      description: 'Choose a preset set of colors for the current block based on the accent colors'
+      placeholder: 'Select...'
+      default: disabled
+      options:
+        base: Base      
+        primary: Primary
+        accent1: Contrast - Accent 1
+        accent2: Light - Accent 2
+        accent3: Dark - Accent 3
+        disabled: Disabled - Use values below
+    text-color:
+      type: input.colorpicker
+      label: Text
+      default: "#ffffff"
+    link-color:
+      type: input.colorpicker
+      label: Link
+      default: "#0071bc"
+    background:
+      type: input.colorpicker
+      label: Custom Background
+      description: 'Choose a custom background color.'
+      default: "#000000"
+    # background-image:
+    #   type: input.imagepicker
+    #   label: BG Image
+    #   default: ''
+    # background-overlay:
+    #   type: select.select
+    #   label: BG Overlay
+    #   description: 'Enables the overlay made of accent colors.'
+    #   placeholder: 'Select...'
+    # # default: enabled
+    #   options:
+    #     enabled: Enabled
+    #     disabled: Disabled
+    # background-predefined-color:
+    #   type: select.select
+    #   label: Predefined Background
+    #   description: 'Choose a predifined background color'
+    #   placeholder: 'Select...'
+    #   default: base
+    #   options:
+    #     custom: Custom Background Color
+    #     dominant: Primary Colors
+    #     accent1: Contrast - Accent 1
+    #     accent2: Light Primary - Accent 2
+    #     accent3: Dark Primary - Accent 3

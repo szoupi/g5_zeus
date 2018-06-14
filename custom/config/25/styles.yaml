@@ -1,0 +1,10 @@
+preset: preset1
+base:
+  content-margin: 0.5rem
+  content-padding: 0.5rem
+features:
+  section-preset: base
+utility:
+  section-preset: accent3
+testimonials:
+  text-color: '#ffffff'
