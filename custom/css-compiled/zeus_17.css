@@ -5047,29 +5047,19 @@ input[type="color"]:focus, input[type="date"]:focus, input[type="datetime"]:focu
 }
 /* line 55, templates/g5_zeus/scss/zeus/particles/_toppostsSZ.scss */
 .g-topposts-sz div.g-grid.sz-featured {
+  /* put them at the end
+   so as not to be overiden
+   the first element 
+   */
   margin: 0;
   float: left;
 }
-/* line 58, templates/g5_zeus/scss/zeus/particles/_toppostsSZ.scss */
-.g-topposts-sz div.g-grid.sz-featured:first-of-type {
-  width: 50%;
-  height: 40vh;
-}
-/* line 63, templates/g5_zeus/scss/zeus/particles/_toppostsSZ.scss */
-.g-topposts-sz div.g-grid.sz-featured:first-of-type div a img {
-  min-width: 40rem;
-}
-/* line 67, templates/g5_zeus/scss/zeus/particles/_toppostsSZ.scss */
-.g-topposts-sz div.g-grid.sz-featured:nth-of-type(2), .g-topposts-sz div.g-grid.sz-featured:nth-of-type(3), .g-topposts-sz div.g-grid.sz-featured:nth-of-type(4), .g-topposts-sz div.g-grid.sz-featured:nth-of-type(5) {
-  width: 25%;
-  height: 20vh;
-}
-/* line 75, templates/g5_zeus/scss/zeus/particles/_toppostsSZ.scss */
+/* line 57, templates/g5_zeus/scss/zeus/particles/_toppostsSZ.scss */
 .g-topposts-sz div.g-grid.sz-featured .g-block {
   position: relative;
   overflow: hidden;
 }
-/* line 81, templates/g5_zeus/scss/zeus/particles/_toppostsSZ.scss */
+/* line 63, templates/g5_zeus/scss/zeus/particles/_toppostsSZ.scss */
 .g-topposts-sz div.g-grid.sz-featured .g-block img {
   position: absolute;
   top: 50%;
@@ -5079,7 +5069,7 @@ input[type="color"]:focus, input[type="date"]:focus, input[type="datetime"]:focu
   max-height: 100%;
   min-width: 20rem;
 }
-/* line 95, templates/g5_zeus/scss/zeus/particles/_toppostsSZ.scss */
+/* line 75, templates/g5_zeus/scss/zeus/particles/_toppostsSZ.scss */
 .g-topposts-sz div.g-grid.sz-featured .g-block .g-content {
   position: absolute;
   bottom: 0.9rem;
@@ -5089,13 +5079,31 @@ input[type="color"]:focus, input[type="date"]:focus, input[type="datetime"]:focu
   margin-left: 5%;
   width: 90%;
 }
-/* line 103, templates/g5_zeus/scss/zeus/particles/_toppostsSZ.scss */
+/* line 83, templates/g5_zeus/scss/zeus/particles/_toppostsSZ.scss */
 .g-topposts-sz div.g-grid.sz-featured .g-block .g-content .g-item-title {
   font-size: 1.1rem;
 }
-/* line 105, templates/g5_zeus/scss/zeus/particles/_toppostsSZ.scss */
+/* line 85, templates/g5_zeus/scss/zeus/particles/_toppostsSZ.scss */
 .g-topposts-sz div.g-grid.sz-featured .g-block .g-content .g-item-title a {
   color: white !important;
+}
+/* line 99, templates/g5_zeus/scss/zeus/particles/_toppostsSZ.scss */
+.g-topposts-sz div.g-grid.sz-featured:first-of-type {
+  width: 50%;
+  height: 40vh;
+}
+/* line 102, templates/g5_zeus/scss/zeus/particles/_toppostsSZ.scss */
+.g-topposts-sz div.g-grid.sz-featured:first-of-type div a img {
+  min-width: 40rem;
+}
+/* line 105, templates/g5_zeus/scss/zeus/particles/_toppostsSZ.scss */
+.g-topposts-sz div.g-grid.sz-featured:first-of-type .g-item-title {
+  font-size: 1.5rem !important;
+}
+/* line 110, templates/g5_zeus/scss/zeus/particles/_toppostsSZ.scss */
+.g-topposts-sz div.g-grid.sz-featured:nth-of-type(2), .g-topposts-sz div.g-grid.sz-featured:nth-of-type(3), .g-topposts-sz div.g-grid.sz-featured:nth-of-type(4), .g-topposts-sz div.g-grid.sz-featured:nth-of-type(5) {
+  width: 25%;
+  height: 20vh;
 }
 /* line 2, media/gantry5/engines/nucleus/scss/nucleus/theme/breakpoints/_flex.scss */
 .g-container {

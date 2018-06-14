@@ -53,24 +53,6 @@
     } // LAYOUT FEATURED ========================
     $main_blog_image_height: 40vh; 
     div.g-grid.sz-featured {
-        margin: 0;
-        float: left;
-        &:first-of-type {
-            width: 50%;
-            height: $main_blog_image_height;
-
-            // fix auto scale for main image
-            div a img {
-                min-width: 40rem;
-            }
-        }
-        &:nth-of-type(2),
-        &:nth-of-type(3),
-        &:nth-of-type(4),
-        &:nth-of-type(5) {
-            width: 25%;
-            height: $main_blog_image_height / 2;
-        }
         
         .g-block {
             position: relative;
@@ -90,8 +72,6 @@
                 
             }
             
-    
-
             .g-content {
                 position: absolute;
                 bottom: 0.9rem;
@@ -110,5 +90,29 @@
 
         }
         
+        /* put them at the end
+           so as not to be overiden
+           the first element 
+        */
+        margin: 0;
+        float: left;
+        &:first-of-type {
+            width: 50%;
+            height: $main_blog_image_height; // fix auto scale for main image
+            div a img {
+                min-width: 40rem;
+            }
+            .g-item-title {
+                font-size: 1.5rem !important;
+            }
+        }
+
+        &:nth-of-type(2),
+        &:nth-of-type(3),
+        &:nth-of-type(4),
+        &:nth-of-type(5) {
+            width: 25%;
+            height: $main_blog_image_height / 2;
+        }
     }
 }
