@@ -10,24 +10,6 @@ form:
       description: Globally enable the particle.
       default: true
 
-    # image:
-    #   type: input.imagepicker
-    #   label: Image
-    #   description: Select the main image.
-    #   placeholder: Select an image
-
-    # mainicon:
-    #   type: input.icon
-    #   label: Icon
-    #   description: Select the main icon
-
-    # height:
-    #   type: input.text
-    #   label: Block height
-    #   description: Specify the height of the block in rem, em or px units.      
-    #   default: "20rem"
-    #   pattern: '\d+(\.\d+){0,1}(rem|em|px|vh)'
-      
     headline:
       type: input.text
       label: Headline
@@ -59,32 +41,3 @@ form:
       type: input.text
       label: Secondary Link Text
       description: Customize the link text.
-      
-    # subitems:
-    #   type: collection.list
-    #   array: true
-    #   label: Child Items
-    #   description: Create each item to appear in the content row.
-    #   value: title
-    #   ajax: true
-
-    #   fields:
-    #     .icon:
-    #       type: input.icon
-    #       label: Icon
-
-    #     .title:
-    #       type: input.text
-    #       label: Title
-
-    #     .subtitle:
-    #       type: input.text
-    #       label: Sub Title
-
-    #     .description:
-    #       type: textarea.textarea
-    #       label: Description
-
-    #     .class:
-    #       type: input.block-variations
-    #       label: Variations

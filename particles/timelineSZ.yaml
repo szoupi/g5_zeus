@@ -1,6 +1,7 @@
-name: Call to action
-description: Displays Call to action buttons  
+name: Timeline
+description: Displays events in timeline format  
 type: particle
+icon: fa-calendar-times-o
 
 form:
   fields:
@@ -10,81 +11,59 @@ form:
       description: Globally enable the particle.
       default: true
 
-    # image:
-    #   type: input.imagepicker
-    #   label: Image
-    #   description: Select the main image.
-    #   placeholder: Select an image
 
-    # mainicon:
-    #   type: input.icon
-    #   label: Icon
-    #   description: Select the main icon
-
-    # height:
-    #   type: input.text
-    #   label: Block height
-    #   description: Specify the height of the block in rem, em or px units.      
-    #   default: "20rem"
-    #   pattern: '\d+(\.\d+){0,1}(rem|em|px|vh)'
-      
     headline:
       type: input.text
       label: Headline
       description: Customize the headline text.
-      placeholder: Enter headline
+      placeholder: Enter free text eg. 2018, 2000 Changed Career 
 
     description:
       type: textarea.textarea
       label: Description
-      description: Customize the description.
+      description: Describe the event.
       placeholder: Enter short description
-
-    link:
-      type: input.text
-      label: Primary Link
-      description: Specify the link address.
-
-    linktext:
-      type: input.text
-      label: Primary Link Text
-      description: Customize the link text.
-
-    link2:
-      type: input.text
-      label: Secondary Link
-      description: Specify the link address.
-
-    linktext2:
-      type: input.text
-      label: Secondary Link Text
-      description: Customize the link text.
       
-    # subitems:
-    #   type: collection.list
-    #   array: true
-    #   label: Child Items
-    #   description: Create each item to appear in the content row.
-    #   value: title
-    #   ajax: true
+    events:
+      type: collection.list
+      array: true
+      label: Events
+      description: Create timeline events.
+      value: title
+      ajax: true
 
-    #   fields:
-    #     .icon:
-    #       type: input.icon
-    #       label: Icon
+      fields:
+        .icon:
+          type: input.icon
+          label: Icon
 
-    #     .title:
-    #       type: input.text
-    #       label: Title
+        .date:
+          type: input.text
+          label: Date of the event
+          description: Customize the headline text.
+          placeholder: Enter free text eg. 2018, 2000 Changed Career           
 
-    #     .subtitle:
-    #       type: input.text
-    #       label: Sub Title
+        .subtitle:
+          type: input.text
+          label: Sub Title
 
-    #     .description:
-    #       type: textarea.textarea
-    #       label: Description
+        .description:
+          type: textarea.textarea
+          label: Description
+          description: Describe the event.
+          placeholder: Enter short description
+          
+        .position:
+          type: select.selectize
+          label: Position
+          description: Define the position of the block.
+          placeholder: left, right
+          default:  left
+          options:
+            left: left
+            right: right
 
-    #     .class:
-    #       type: input.block-variations
-    #       label: Variations
+        .class:
+          type: input.block-variations
+          label: Variations
+

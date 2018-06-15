@@ -5146,6 +5146,39 @@ input[type="color"]:focus, input[type="date"]:focus, input[type="datetime"]:focu
     width: 100%;
   }
 }
+/* line 1, templates/g5_zeus/scss/zeus/particles/_timelineSZ.scss */
+/* line 2, templates/g5_zeus/scss/zeus/particles/_timelineSZ.scss */
+.sz-timelineSZ h1, .sz-timelineSZ h2, .sz-timelineSZ h3, .sz-timelineSZ h4, .sz-timelineSZ h5 {
+  margin: 0;
+}
+/* line 6, templates/g5_zeus/scss/zeus/particles/_timelineSZ.scss */
+.sz-timelineSZ .timelineSZ-description {
+  padding: 1.5rem 0;
+}
+@media only all and (max-width: 47.938rem) {
+  .sz-timelineSZ .timelineSZ-description {
+    padding: 0.5rem 0;
+  }
+}
+@media only all and (max-width: 30rem) {
+  .sz-timelineSZ .timelineSZ-description {
+    padding: 0.5rem 0;
+  }
+}
+@media only all and (min-width: 60rem) and (max-width: 74.938rem) {
+}
+@media only all and (min-width: 48rem) and (max-width: 59.938rem) {
+}
+@media only all and (max-width: 47.938rem) {
+  .sz-timelineSZ {
+    width: 100%;
+  }
+}
+@media only all and (max-width: 30rem) {
+  .sz-timelineSZ {
+    width: 100%;
+  }
+}
 /* line 2, media/gantry5/engines/nucleus/scss/nucleus/theme/breakpoints/_flex.scss */
 .g-container {
   width: 75rem;

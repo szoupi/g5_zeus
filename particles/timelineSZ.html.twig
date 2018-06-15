@@ -1,10 +1,10 @@
 {% extends '@nucleus/partials/particle.html.twig' %}
 
 {% block particle %}
-    <div class="content-particle sz-calltoactionSZ" >
+    <div class="content-particle sz-timelineSZ" >
         <div class="g-grid">
             
-            <div class="g-block size-60">
+            <div class="g-block">
                 <div class="g-content">
                     <div>
                         {#HEADLINE#}
@@ -14,25 +14,45 @@
                         
                         {#DESCRIPTION#}
                         {% if particle.description %}
-                            <div class="calltoactionSZ-description">{{ particle.description|raw }}</div>
+                            <div class="timelineSZ-description">{{ particle.description|raw }}</div>
                         {% endif %}
                         
                     </div>
                 </div>
             </div>
-            
-            <div class="g-block size-40">
-                    <div class="g-content calltoactionSZ-buttons">
-                        {#BUTTONS-LINKS#}
-                        {% if particle.linktext %}
-                            <a href="{{ particle.link|e }}" class="button">{{ particle.linktext|e }}</a>
-                        {% endif %}
-                        {% if particle.linktext2 %}
-                            <a href="{{ particle.link2|e }}" class="button button-outline">{{ particle.linktext2|e }}</a>
-                        {% endif %}
-                </div>
-            </div>
-            
         </div>
+        
+        <div class="g-grid">
+            {% for event in particle.events %}
+                <div class="g-block {{ event.class }}">
+                    <div class="g-content">
+                        <i class="{{ event.icon }} event-icons"></i>
+                        <h1>{{ event.title|raw }}</h1>
+                        {{ event.subtitle|raw }}
+                        </br>
+                        {{ event.description|raw }}
+                        <p>date: {{ event.date }}</p>
+                        <p>position: {{ event.position }}</p>
+                    </div>
+                </div>
+            {% endfor %}
+        </div>
+        
+        
     </div>
 {% endblock %}
+
+{#<div class="timeline">#}
+{#  <div class="g-block left">#}
+{#    <div class="g-content">#}
+{#      <h2>2017</h2>#}
+{#      <p>Lorem ipsum..</p>#}
+{#    </div>#}
+{#  </div>#}
+{#  <div class="container right">#}
+{#    <div class="content">#}
+{#      <h2>2016</h2>#}
+{#      <p>Lorem ipsum..</p>#}
+{#    </div>#}
+{#  </div>#}
+{#</div>#}

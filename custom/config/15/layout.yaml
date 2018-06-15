@@ -12,6 +12,8 @@ layout:
       - custom-3590
     -
       - calltoactionSZ-7996
+    -
+      - timelineSZ-7602
   /intro/:
     -
       - custom-3975
@@ -228,6 +230,28 @@ content:
       html: '<h1>HEADER BASE</h1>'
   calltoactionSZ-7996:
     title: 'Call to action'
+  timelineSZ-7602:
+    title: Timeline
+    attributes:
+      headline: 'Timeline particle'
+      description: 'events of the world '
+      events:
+        -
+          icon: 'fa fa-calendar-times-o'
+          date: '2018'
+          subtitle: 'this is a subtitle'
+          description: 'fafd adf asd;f asd fasd fasd f'
+          position: left
+          class: ''
+          title: 'New item'
+        -
+          icon: 'fa fa-calendar-times-o'
+          date: '2020'
+          subtitle: hh
+          description: 'asdljkf a;sdf jal;ksdjf as;ldkfj asdlkfj asd;lkj '
+          position: right
+          class: ''
+          title: 'New item'
   custom-3975:
     title: INTRO
     attributes:

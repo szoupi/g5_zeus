@@ -1,5 +1,5 @@
 name: '15'
-timestamp: 1529059647
+timestamp: 1529073032
 version: 7
 preset:
   image: 'gantry-admin://images/layouts/default.png'
@@ -44,6 +44,8 @@ particles:
     calltoactionSZ-9704: 'Call to action'
     calltoactionSZ-3107: 'Call to action'
     calltoactionSZ-2500: 'Call to action'
+  timelineSZ:
+    timelineSZ-7602: Timeline
   spacer:
     spacer-2711: Spacer
     spacer-1722: Spacer
