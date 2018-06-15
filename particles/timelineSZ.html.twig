@@ -1,0 +1,38 @@
+{% extends '@nucleus/partials/particle.html.twig' %}
+
+{% block particle %}
+    <div class="content-particle sz-calltoactionSZ" >
+        <div class="g-grid">
+            
+            <div class="g-block size-60">
+                <div class="g-content">
+                    <div>
+                        {#HEADLINE#}
+                        {% if particle.headline %}
+                            <h1>{{ particle.headline|raw }}</h1>
+                        {% endif %}
+                        
+                        {#DESCRIPTION#}
+                        {% if particle.description %}
+                            <div class="calltoactionSZ-description">{{ particle.description|raw }}</div>
+                        {% endif %}
+                        
+                    </div>
+                </div>
+            </div>
+            
+            <div class="g-block size-40">
+                    <div class="g-content calltoactionSZ-buttons">
+                        {#BUTTONS-LINKS#}
+                        {% if particle.linktext %}
+                            <a href="{{ particle.link|e }}" class="button">{{ particle.linktext|e }}</a>
+                        {% endif %}
+                        {% if particle.linktext2 %}
+                            <a href="{{ particle.link2|e }}" class="button button-outline">{{ particle.linktext2|e }}</a>
+                        {% endif %}
+                </div>
+            </div>
+            
+        </div>
+    </div>
+{% endblock %}
