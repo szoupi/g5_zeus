@@ -1,7 +1,7 @@
-name: Top Posts
+name: Featured Articles
 description: Display up to five selected posts/articles in various layouts.
 type: particle
-icon: fa-joomla
+icon: fa-newspaper-o
 
 form:
   fields:
@@ -14,12 +14,12 @@ form:
     layout:
       type: select.selectize
       label: Layout
-      description: Select an layout for the portfolio 
+      description: Select a layout for the portfolio 
       placeholder: 'Select...'
-      default:  top5_1+4
+      default:  hierarchic
       options:
-        top5_1+4: top 5 (1 + 4)
-        top5_1+2: top 3 (1 + )
+        hierarchic: hierarchic
+        equal: equal
         # Headlines: Headlines
         # Mosaic: Mosaic
         # Strips: Strips
@@ -67,6 +67,7 @@ form:
               default: 5
               options:
                 3: 3
+                4: 4
                 5: 5
               overridable: false
 

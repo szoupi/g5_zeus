@@ -10,7 +10,7 @@ layout:
   header: {  }
   /intro/:
     -
-      - toppostsSZ-9977
+      - featuredarticlesSZ-9331
   features: {  }
   utility: {  }
   above: {  }
@@ -202,10 +202,9 @@ structure:
         - block
         - children
 content:
-  toppostsSZ-9977:
-    title: 'Top Posts'
+  featuredarticlesSZ-9331:
+    title: 'Featured Articles'
     attributes:
-      layout: top5_1+4
       article:
         filter:
           categories: ''
@@ -217,9 +216,6 @@ content:
         sort:
           orderby: publish_up
           ordering: ASC
-        display:
-          title:
-            limit: '40'
   spacer-2355:
     inherit:
       outline: default

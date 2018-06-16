@@ -1,5 +1,5 @@
 name: '17'
-timestamp: 1528991961
+timestamp: 1529149825
 version: 7
 preset:
   image: 'gantry-admin://images/layouts/default.png'
@@ -32,8 +32,8 @@ particles:
     logo-1745: 'Logo / Image'
   menu:
     menu-3863: Menu
-  toppostsSZ:
-    toppostsSZ-9977: 'Top Posts'
+  featuredarticlesSZ:
+    featuredarticlesSZ-9331: 'Featured Articles'
   spacer:
     spacer-2355: Spacer
     spacer-3075: Spacer
