@@ -1,5 +1,5 @@
-name: 14
-timestamp: 1529047451
+name: '14'
+timestamp: 1496956353
 version: 7
 preset:
   image: 'gantry-admin://images/layouts/default.png'
@@ -27,6 +27,11 @@ sections:
   footer: Footer
   offcanvas: Offcanvas
 particles:
+  logo:
+    logo-6904: 'Logo / Image'
+    logo-9571: 'Logo / Image'
+  menu:
+    menu-1531: Menu
   customcontentSZ:
     customcontentSZ-5107: 'Custom Content'
   custom:
@@ -43,15 +48,12 @@ particles:
   pricetableSZ:
     pricetableSZ-8713: 'Price Table'
   spacer:
-    spacer-4931: Spacer
-    spacer-9540: Spacer
+    spacer-spacer-4931: Spacer
+    spacer-spacer-9540: Spacer
   messages:
     system-messages-9633: 'System Messages'
   content:
     system-content-7113: 'Page Content'
-  logo:
-    logo-9571: 'Logo / Image'
-    logo-6904: 'Logo / Image'
   copyright:
     copyright-1736: Copyright
   horizontalmenu:
@@ -62,8 +64,6 @@ particles:
     socialfloatingSZ-2700: 'Social Floating'
   mobile-menu:
     mobile-menu-5697: Mobile-menu
-  menu:
-    menu-1531: Menu
 inherit:
   default:
     navigation: navigation
