@@ -1,12 +1,11 @@
-name: 18
-timestamp: 1528234785
+name: '18'
+timestamp: 1529240080
 version: 7
 preset:
   image: 'gantry-admin://images/layouts/default.png'
   name: default
   timestamp: 1490038588
-positions:
-  sidebar: sidebar
+positions: {  }
 sections:
   zenith: Zenith
   navtop: Navtop
@@ -28,63 +27,46 @@ sections:
   footer: Footer
   offcanvas: Offcanvas
 particles:
+  calltoactionSZ:
+    calltoactionSZ-9676: 'Call to action'
+    calltoactionSZ-5285: 'Call to action'
+    calltoactionSZ-8266: 'Call to action'
+    calltoactionSZ-2363: 'Call to action'
+    calltoactionSZ-9958: 'Call to action'
+    calltoactionSZ-6371: 'Call to action'
+    calltoactionSZ-5747: 'Call to action'
+    calltoactionSZ-5315: 'Call to action'
+    calltoactionSZ-7644: 'Call to action'
+    calltoactionSZ-7298: 'Call to action'
+    calltoactionSZ-6589: 'Call to action'
+    calltoactionSZ-5752: 'Call to action'
+    calltoactionSZ-5990: 'Call to action'
+    calltoactionSZ-5585: 'Call to action'
+    calltoactionSZ-8705: 'Call to action'
+    calltoactionSZ-4495: 'Call to action'
+    calltoactionSZ-3465: 'Call to action'
+  custom:
+    custom-9493: 'Custom HTML'
   logo:
-    logo-9958: 'Logo / Image'
-    logo-3070: 'Logo / Image'
+    logo-9501: 'Logo / Image'
+    logo-9571: 'Logo / Image'
   menu:
-    menu-9003: Menu
-  customcontentSZ:
-    customcontentSZ-9921: 'Custom Content'
+    menu-6609: Menu
   spacer:
-    spacer-2678: Spacer
-    spacer-8820: Spacer
+    spacer-2395: Spacer
+    spacer-4623: Spacer
   messages:
-    system-messages-1808: 'System Messages'
+    system-messages-2617: 'System Messages'
   content:
-    system-content-5835: 'Page Content'
-  position:
-    position-position-3039: sidebar
+    system-content-1966: 'Page Content'
   copyright:
-    copyright-1874: Copyright
+    copyright-1736: Copyright
   horizontalmenu:
-    horizontalmenu-7528: 'Horizontal Menu'
+    horizontalmenu-9034: 'Horizontal Menu'
   totop:
-    totop-3105: 'To Top'
+    totop-8670: 'To Top'
   socialfloatingSZ:
-    socialfloatingSZ-8802: 'Social Floating'
+    socialfloatingSZ-2700: 'Social Floating'
   mobile-menu:
-    mobile-menu-4333: Mobile-menu
-inherit:
-  default:
-    zenith: zenith
-    navtop: navtop
-    navigation: navigation
-    header: header
-    intro: intro
-    features: features
-    utility: utility
-    above: above
-    testimonials: testimonials
-    expanded: expanded
-    aside: aside
-    mainbar: mainbar
-    sidebar: sidebar
-    mainbottom: mainbottom
-    footertop: footertop
-    footer: footer
-    footerbottom: footerbottom
-    nadir: nadir
-    offcanvas: offcanvas
-    logo-9958: logo-9501
-    menu-9003: menu-6609
-    spacer-2678: spacer-2395
-    system-messages-1808: system-messages-2617
-    system-content-5835: system-content-1966
-    spacer-8820: spacer-4623
-    position-position-3039: position-position-3512
-    logo-3070: logo-9571
-    copyright-1874: copyright-1736
-    horizontalmenu-7528: horizontalmenu-9034
-    totop-3105: totop-8670
-    socialfloatingSZ-8802: socialfloatingSZ-2700
-    mobile-menu-4333: mobile-menu-5697
+    mobile-menu-5697: Mobile-menu
+inherit: {  }

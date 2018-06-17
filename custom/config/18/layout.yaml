@@ -4,137 +4,180 @@ preset:
   name: default
   timestamp: 1490038588
 layout:
-  zenith: {  }
-  navtop: {  }
-  navigation: {  }
-  header: {  }
-  intro: {  }
-  features: {  }
-  utility: {  }
-  above: {  }
-  testimonials: {  }
-  expanded: {  }
+  /zenith/:
+    -
+      - 'calltoactionSZ-9676 50'
+      - 'custom-9493 50'
+  /navtop/:
+    -
+      - calltoactionSZ-5285
+  /navigation/:
+    -
+      - 'logo-9501 25'
+      - 'menu-6609 75'
+    -
+      - calltoactionSZ-8266
+  /header/:
+    -
+      - calltoactionSZ-2363
+  /intro/:
+    -
+      - calltoactionSZ-9958
+  /features/:
+    -
+      - calltoactionSZ-6371
+  /utility/:
+    -
+      - calltoactionSZ-5747
+  /above/:
+    -
+      - calltoactionSZ-5315
+  /testimonials/:
+    -
+      - calltoactionSZ-7644
+  /expanded/:
+    -
+      - calltoactionSZ-7298
   /container-main/:
     -
       -
-        'aside 25': {  }
+        'aside 25':
+          -
+            - spacer-2395
       -
-        'mainbar 50': {  }
+        'mainbar 50':
+          -
+            - system-messages-2617
+          -
+            - calltoactionSZ-6589
+          -
+            - system-content-1966
       -
-        'sidebar 25': {  }
-  mainbottom: {  }
-  footertop: {  }
-  footer: {  }
-  footerbottom: {  }
-  nadir: {  }
-  offcanvas: {  }
+        'sidebar 25':
+          -
+            - spacer-4623
+  /mainbottom/:
+    -
+      - calltoactionSZ-5752
+  /footertop/:
+    -
+      - calltoactionSZ-5990
+  /footer/:
+    -
+      - 'logo-9571 21'
+      - 'copyright-1736 26'
+      - 'horizontalmenu-9034 24'
+      - 'totop-8670 29'
+    -
+      - socialfloatingSZ-2700
+    -
+      - calltoactionSZ-5585
+  /footerbottom/:
+    -
+      - calltoactionSZ-8705
+  /nadir/:
+    -
+      - calltoactionSZ-4495
+  offcanvas:
+    -
+      - mobile-menu-5697
+    -
+      - calltoactionSZ-3465
 structure:
   zenith:
     type: section
-    inherit:
-      outline: default
-      include:
-        - attributes
-        - block
-        - children
+    attributes:
+      boxed: ''
   navtop:
     type: section
-    inherit:
-      outline: default
-      include:
-        - attributes
-        - block
-        - children
+    attributes:
+      boxed: ''
   navigation:
     type: section
-    inherit:
-      outline: default
-      include:
-        - attributes
-        - block
-        - children
+    attributes:
+      boxed: '0'
+      class: ''
+      background: ''
+      backgroundOverlay: 'rgba(0, 0, 0, 0)'
+      backgroundAttachment: ''
+      backgroundRepeat: ''
+      backgroundPosition: ''
+      backgroundSize: ''
   header:
-    inherit:
-      outline: default
-      include:
-        - attributes
-        - block
-        - children
+    attributes:
+      boxed: ''
+      class: ''
+      background: ''
+      backgroundOverlay: ''
+      backgroundAttachment: fixed
+      backgroundRepeat: ''
+      backgroundPosition: 'center center'
+      backgroundSize: cover
   intro:
     type: section
-    inherit:
-      outline: default
-      include:
-        - attributes
-        - block
-        - children
+    attributes:
+      boxed: '0'
+      class: ''
+      background: ''
+      backgroundOverlay: 'rgba(0, 0, 0, 0)'
+      backgroundAttachment: ''
+      backgroundRepeat: ''
+      backgroundPosition: ''
+      backgroundSize: ''
   features:
     type: section
-    inherit:
-      outline: default
-      include:
-        - attributes
-        - block
-        - children
+    attributes:
+      boxed: '2'
+      class: ''
+      background: 'gantry-media://demos/background_blue_lines.png'
+      backgroundOverlay: 'rgba(0, 0, 0, 0)'
+      backgroundAttachment: ''
+      backgroundRepeat: ''
+      backgroundPosition: ''
+      backgroundSize: cover
   utility:
     type: section
-    inherit:
-      outline: default
-      include:
-        - attributes
-        - block
-        - children
+    attributes:
+      boxed: '0'
+      class: ''
+      background: ''
+      backgroundOverlay: 'rgba(0, 0, 0, 0)'
+      backgroundAttachment: ''
+      backgroundRepeat: ''
+      backgroundPosition: ''
+      backgroundSize: ''
   above:
     type: section
-    inherit:
-      outline: default
-      include:
-        - attributes
-        - block
-        - children
+    attributes:
+      boxed: ''
   testimonials:
     type: section
-    inherit:
-      outline: default
-      include:
-        - attributes
-        - block
-        - children
+    attributes:
+      boxed: ''
+      class: ''
+      background: 'gantry-media://demos/background_blue_lines.png'
+      backgroundOverlay: 'rgba(0, 0, 0, 0)'
+      backgroundAttachment: ''
+      backgroundRepeat: ''
+      backgroundPosition: ''
+      backgroundSize: cover
   expanded:
     type: section
-    inherit:
-      outline: default
-      include:
-        - attributes
-        - block
-        - children
+    attributes:
+      boxed: ''
   aside:
-    inherit:
-      outline: default
-      include:
-        - attributes
-        - block
-        - children
+    attributes:
+      class: ''
     block:
       fixed: '1'
   mainbar:
     type: section
     subtype: main
-    inherit:
-      outline: default
-      include:
-        - attributes
-        - block
-        - children
   sidebar:
     type: section
     subtype: aside
-    inherit:
-      outline: default
-      include:
-        - attributes
-        - block
-        - children
+    attributes:
+      class: ''
     block:
       fixed: '1'
   container-main:
@@ -142,47 +185,113 @@ structure:
       boxed: ''
   mainbottom:
     type: section
-    inherit:
-      outline: default
-      include:
-        - attributes
-        - block
-        - children
+    attributes:
+      boxed: ''
   footertop:
     type: section
-    inherit:
-      outline: default
-      include:
-        - attributes
-        - block
-        - children
+    attributes:
+      boxed: ''
   footer:
-    inherit:
-      outline: default
-      include:
-        - attributes
-        - block
-        - children
+    attributes:
+      boxed: ''
   footerbottom:
     type: section
-    inherit:
-      outline: default
-      include:
-        - attributes
-        - block
-        - children
+    attributes:
+      boxed: ''
   nadir:
     type: section
-    inherit:
-      outline: default
-      include:
-        - attributes
-        - block
-        - children
+    attributes:
+      boxed: ''
   offcanvas:
-    inherit:
-      outline: default
-      include:
-        - attributes
-        - block
-        - children
+    attributes:
+      position: g-offcanvas-left
+      class: ''
+      extra: {  }
+      swipe: '1'
+      css3animation: '1'
+content:
+  calltoactionSZ-9676:
+    title: 'Call to action'
+    attributes:
+      headline: 'Call to action particle - ZENITH'
+  custom-9493:
+    title: 'Custom HTML'
+    attributes:
+      html: '<button class="button">button</button> <a class="button button-2" href="#"> link button 2</a>'
+  calltoactionSZ-5285:
+    title: 'Call to action'
+    attributes:
+      headline: 'Call to action particle - NAVTOP'
+  logo-9501:
+    title: 'Logo / Image'
+  calltoactionSZ-8266:
+    title: 'Call to action'
+    attributes:
+      headline: 'Call to action particle - NAVIGATION'
+  calltoactionSZ-2363:
+    title: 'Call to action'
+    attributes:
+      headline: 'Call to action particle - HEADER'
+  calltoactionSZ-9958:
+    title: 'Call to action'
+    attributes:
+      headline: 'Call to action particle - INTRO'
+  calltoactionSZ-6371:
+    title: 'Call to action'
+    attributes:
+      headline: 'Call to action particle - FEATURE'
+  calltoactionSZ-5747:
+    title: 'Call to action'
+    attributes:
+      headline: 'Call to action particle - UTILITY'
+  calltoactionSZ-5315:
+    title: 'Call to action'
+    attributes:
+      headline: 'Call to action particle - ABOVE'
+  calltoactionSZ-7644:
+    title: 'Call to action'
+    attributes:
+      headline: 'Call to action particle - TESTIMONIALS'
+  calltoactionSZ-7298:
+    title: 'Call to action'
+    attributes:
+      headline: 'Call to action particle - EXPANDED'
+  calltoactionSZ-6589:
+    title: 'Call to action'
+    attributes:
+      headline: 'Call to action particle - MAINBAR'
+  system-content-1966:
+    attributes:
+      enabled: 0
+  calltoactionSZ-5752:
+    title: 'Call to action'
+    attributes:
+      headline: 'Call to action particle - MAINBOTTOM'
+  calltoactionSZ-5990:
+    title: 'Call to action'
+    attributes:
+      headline: 'Call to action particle - FOOTERTOP'
+  logo-9571:
+    title: 'Logo / Image'
+  horizontalmenu-9034:
+    title: 'Horizontal Menu'
+  totop-8670:
+    title: 'To Top'
+  socialfloatingSZ-2700:
+    title: 'Social Floating'
+  calltoactionSZ-5585:
+    title: 'Call to action'
+    attributes:
+      headline: 'Call to action particle - FOOTER'
+  calltoactionSZ-8705:
+    title: 'Call to action'
+    attributes:
+      headline: 'Call to action particle - FOOTERBOTTOM'
+  calltoactionSZ-4495:
+    title: 'Call to action'
+    attributes:
+      headline: 'Call to action particle - NADIR'
+  calltoactionSZ-3465:
+    title: 'Call to action'
+    attributes:
+      headline: 'Call to action particle - OFFCANVAS'

@@ -17,12 +17,9 @@
     text-shadow: none;
     @include transition(all 0.2s);
 
-    &:hover, &:active, &:focus {
-        background: darken($base-dominant-color, 10%);
-        color: $white;
-    }
 }
 
+// colors are customized inside sections scss
 .button {
     @extend %g-button;
 
@@ -63,26 +60,11 @@
     }
 
     &.button-2 {
-        background: $accent-color-1;
-
         @include transition(all 0.2s);
-
-        &:hover, &:active, &:focus {
-            background: darken($accent-color-1, 10%);
-            color: $white;
-        }
     }
 
     &.button-outline {
         background: transparent;
-        color: $base-dominant-color;
-        border-color: $base-dominant-color;
-
-        &:hover, &:active, &:focus {
-            background: $base-dominant-color;
-            border-color: transparent;
-            color: $white;
-        }
     }
 
     &.button-gradient {
@@ -102,4 +84,5 @@
     &.button-square {
         border-radius: 0;
     }
+
 }

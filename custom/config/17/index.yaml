@@ -1,5 +1,5 @@
-name: '17'
-timestamp: 1529013746
+name: 17
+timestamp: 1529237953
 version: 7
 preset:
   image: 'gantry-admin://images/layouts/default.png'
@@ -27,11 +27,6 @@ sections:
   footer: Footer
   offcanvas: Offcanvas
 particles:
-  logo:
-    logo-9700: 'Logo / Image'
-    logo-1745: 'Logo / Image'
-  menu:
-    menu-3863: Menu
   featuredarticlesSZ:
     featuredarticlesSZ-9554: 'Featured Articles'
   spacer:
@@ -41,6 +36,14 @@ particles:
     system-messages-1764: 'System Messages'
   content:
     system-content-5957: 'Page Content'
+  calltoactionSZ:
+    calltoactionSZ-7457: 'Call to action'
+    calltoactionSZ-2236: 'Call to action'
+  logo:
+    logo-9700: 'Logo / Image'
+    logo-1745: 'Logo / Image'
+  menu:
+    menu-3863: Menu
   module:
     position-module-9006: latest-articles
   copyright:
@@ -58,8 +61,6 @@ inherit:
     zenith: zenith
     navtop: navtop
     navigation: navigation
-    logo-9700: logo-9501
-    menu-3863: menu-6609
     header: header
     features: features
     utility: utility
@@ -69,17 +70,19 @@ inherit:
     spacer-2355: spacer-2395
     system-messages-1764: system-messages-2617
     sidebar: sidebar
-    spacer-3075: spacer-4623
-    position-module-9006: position-module-8967
     mainbottom: mainbottom
     footertop: footertop
     footer: footer
+    footerbottom: footerbottom
+    nadir: nadir
+    offcanvas: offcanvas
+    logo-9700: logo-9501
+    menu-3863: menu-6609
+    spacer-3075: spacer-4623
+    position-module-9006: position-module-8967
     logo-1745: logo-9571
     copyright-9961: copyright-1736
     horizontalmenu-6578: horizontalmenu-9034
     totop-7087: totop-8670
     socialfloatingSZ-9606: socialfloatingSZ-2700
-    footerbottom: footerbottom
-    nadir: nadir
-    offcanvas: offcanvas
     mobile-menu-3312: mobile-menu-5697

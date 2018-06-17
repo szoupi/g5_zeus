@@ -185,10 +185,12 @@ content:
     title: 'articles category grouped'
     attributes:
       module_id: '97'
+      key: articles-category-grouped
   position-module-8967:
     title: latest-articles
     attributes:
       module_id: '90'
+      key: latest-articles
   logo-9571:
     title: 'Logo / Image'
   horizontalmenu-9034:

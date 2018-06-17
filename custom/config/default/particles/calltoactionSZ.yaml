@@ -1,0 +1,7 @@
+enabled: '1'
+headline: 'Call to action particle'
+description: 'enter short description'
+link: '#'
+linktext: 'Primary link'
+link2: '#'
+linktext2: 'Secondary link'

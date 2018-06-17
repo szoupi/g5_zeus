@@ -1,0 +1,24 @@
+enabled: '1'
+layout: hierarchic
+article:
+  display:
+    image:
+      enabled: intro
+    text:
+      type: intro
+      limit: ''
+      formatting: text
+    title:
+      limit: ''
+    date:
+      enabled: published
+      format: 'l, F d, Y'
+    author:
+      enabled: show
+    category:
+      enabled: link
+    hits:
+      enabled: show
+css:
+  class: ''
+extra: {  }
