@@ -25,10 +25,10 @@
                     <div class="g-content calltoactionSZ-buttons">
                         {#BUTTONS-LINKS#}
                         {% if particle.linktext %}
-                            <a href="{{ particle.link|e }}" class="button">{{ particle.linktext|e }}</a>
+                            <a href="{{ particle.link|e }}" class="button" role="button">{{ particle.linktext|e }}</a>
                         {% endif %}
                         {% if particle.linktext2 %}
-                            <a href="{{ particle.link2|e }}" class="button button-outline">{{ particle.linktext2|e }}</a>
+<a href="{{ particle.link2|e }}" class="button button-outline" role="button">{{ particle.linktext2|e }}</a>
                         {% endif %}
                 </div>
             </div>

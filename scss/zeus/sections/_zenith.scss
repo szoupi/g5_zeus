@@ -116,7 +116,7 @@
                 &:hover,
                 &:active,
                 &:focus {
-                    background: darken($base-dominant-color, 20%);
+                    background: $accent-color-3;
                     color: $white;
                 }
 
@@ -126,7 +126,7 @@
                     &:hover,
                     &:active,
                     &:focus {
-                        background: $base-dominant-color;
+                        background: $accent-color-3;
                         color: $white;
                     }
                 } // used as secondary button
@@ -136,7 +136,7 @@
                     &:hover,
                     &:active,
                     &:focus {
-                        background: $accent-color-1; 
+                        background: $accent-color-3;
                         border-color: transparent;
                         color: $white;
                     }
