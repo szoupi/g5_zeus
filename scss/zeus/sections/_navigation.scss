@@ -216,6 +216,46 @@
         opacity: 0.8;
         padding-top: 0;
     }
+
+    // BUTTONS
+    // see also zeus/styles/_buttons.scss
+    // no selections here
+    .button {
+
+        color: $white;
+        background: $accent-color-1;
+        &:hover,
+        &:active,
+        &:focus {
+            background: $accent-color-3;
+            color: $white;
+        }
+        &.button-2 {
+            background: $accent-color-2;
+            color: $black;
+            @include transition(all 0.2s);
+            &:hover,
+            &:active,
+            &:focus {
+                background: $accent-color-3;
+                color: $white;
+            }
+        } // used as secondary button
+        &.button-outline {
+            color: $base-dominant-color;
+            background: $white;
+            border-color: $base-dominant-color;
+            &:hover,
+            &:active,
+            &:focus {
+                background: $accent-color-3;
+                border-color: transparent;
+                color: $white;
+            }
+        }
+    }
+
+
 }
 
 @media print {

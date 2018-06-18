@@ -35,6 +35,43 @@
 		left: $offcanvas-width - 3rem;
 		top: 1rem;
 	}
+
+    // BUTTONS
+    // see also zeus/styles/_buttons.scss
+	// no style selections here
+    .button {
+    			color: $white;
+    			background: $accent-color-1;
+    			&:hover,
+    			&:active,
+    			&:focus {
+    				background: $accent-color-3;
+    				color: $white;
+    			}
+    			&.button-2 {
+    				background: $accent-color-1;
+    				@include transition(all 0.2s);
+    				&:hover,
+    				&:active,
+    				&:focus {
+    					background: $accent-color-3;
+    					color: $white;
+    				}
+    			} // used as secondary button
+    			&.button-outline {
+    				color: $accent-color-1;
+    				background: $white;
+    				border-color: $accent-color-3;
+    				&:hover,
+    				&:active,
+    				&:focus {
+    					background: $accent-color-1;
+    					border-color: transparent;
+    					color: $white;
+    				}
+    			}
+    		}
+
 }
 
 .g-offcanvas-toggle {

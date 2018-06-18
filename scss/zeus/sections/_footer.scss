@@ -142,8 +142,197 @@
     }
 
     // BUTTONS
+    // see also zeus/styles/_buttons.scss
     .button {
-        color: $white;
+        @if $footer-section-preset {
+            @if $footer-section-preset=='primary' {
+                color: $white;
+                background: $accent-color-3;
+                &:hover,
+                &:active,
+                &:focus {
+                    background: $accent-color-1;
+                    color: $white;
+                }
+                &.button-2 {
+                    background: $accent-color-1;
+                    @include transition(all 0.2s);
+                    &:hover,
+                    &:active,
+                    &:focus {
+                        background: $accent-color-3;
+                        color: $white;
+                    }
+                } // used as secondary button
+                &.button-outline {
+                    color: $accent-color-1;
+                    background: $white;
+                    border-color: $accent-color-3;
+                    &:hover,
+                    &:active,
+                    &:focus {
+                        background: $accent-color-1;
+                        border-color: transparent;
+                        color: $white;
+                    }
+                }
+            }
+            @else if $footer-section-preset=='base' {
+                color: $white;
+                &:hover,
+                &:active,
+                &:focus {
+                    background: $accent-color-3;
+                    color: $white;
+                }
+                &.button-2 {
+                    background: $accent-color-1;
+                    @include transition(all 0.2s);
+                    &:hover,
+                    &:active,
+                    &:focus {
+                        background: $accent-color-3;
+                        color: $white;
+                    }
+                } // used as secondary button
+                &.button-outline {
+                    color: $base-dominant-color;
+                    border-color: $base-dominant-color;
+                    &:hover,
+                    &:active,
+                    &:focus {
+                        background: $accent-color-3;
+                        border-color: transparent;
+                        color: $white;
+                    }
+                }
+            }
+            @else if $footer-section-preset=='accent1' {
+                color: $white;
+                &:hover,
+                &:active,
+                &:focus {
+                    background: $accent-color-3;
+                    color: $white;
+                }
+                &.button-2 {
+                    background: $accent-color-2;
+                    color: $black;
+                    @include transition(all 0.2s);
+                    &:hover,
+                    &:active,
+                    &:focus {
+                        background: $accent-color-3;
+                        color: $white;
+                    }
+                } // used as secondary button
+                &.button-outline {
+                    color: $base-dominant-color;
+                    background: $white;
+                    border-color: $base-dominant-color;
+                    &:hover,
+                    &:active,
+                    &:focus {
+                        background: $accent-color-3;
+                        border-color: transparent;
+                        color: $white;
+                    }
+                }
+            }
+            @else if $footer-section-preset=='accent2' {
+                color: $white;
+                background: $accent-color-3;
+                &:hover,
+                &:active,
+                &:focus {
+                    background: $accent-color-1;
+                    color: $white;
+                }
+                &.button-2 {
+                    background: $accent-color-1;
+                    @include transition(all 0.2s);
+                    &:hover,
+                    &:active,
+                    &:focus {
+                        background: $accent-color-3;
+                        color: $white;
+                    }
+                } // used as secondary button
+                &.button-outline {
+                    color: $accent-color-1;
+                    background: $white;
+                    border-color: $accent-color-3;
+                    &:hover,
+                    &:active,
+                    &:focus {
+                        background: $accent-color-1;
+                        border-color: transparent;
+                        color: $white;
+                    }
+                }
+            }
+            @else if $footer-section-preset=='accent3' {
+                color: $white;
+                background: $accent-color-1;
+                &:hover,
+                &:active,
+                &:focus {
+                    background: $base-dominant-color;
+                    color: $white;
+                }
+                &.button-2 {
+                    background: $base-dominant-color;
+                    @include transition(all 0.2s);
+                    &:hover,
+                    &:active,
+                    &:focus {
+                        background: $accent-color-1;
+                        color: $white;
+                    }
+                } // used as secondary button
+                &.button-outline {
+                    color: $base-dominant-color;
+                    background: $white;
+                    border-color: $accent-color-1;
+                    &:hover,
+                    &:active,
+                    &:focus {
+                        background: $base-dominant-color;
+                        border-color: transparent;
+                        color: $white;
+                    }
+                }
+            }
+            @else if $footer-section-preset=='disabled' {
+                color: $white;
+                &:hover,
+                &:active,
+                &:focus {
+                    background: lighten($base-dominant-color, 30%);
+                    color: $black;
+                }
+                &.button-2 {
+                    background: $accent-color-1;
+                    @include transition(all 0.2s);
+                    &:hover,
+                    &:active,
+                    &:focus {
+                        background: darken($accent-color-1, 10%);
+                        color: $white;
+                    }
+                } // used as secondary button
+                &.button-outline {
+                    color: $white;
+                    border-color: $base-dominant-color;
+                    &:hover,
+                    &:active,
+                    &:focus {
+                        background: $base-dominant-color; // border-color: transparent;
+                        // color: $white;
+                    }
+                }
+            }
+        }
     }
     
 }

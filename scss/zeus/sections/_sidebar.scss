@@ -1,7 +1,43 @@
 #g-sidebar {
     background-color: $base-background;
     color: $base-text-color;
-    padding: $section-padding 0;
+	padding: $section-padding 0;
+	
+    // BUTTONS
+    // see also zeus/styles/_buttons.scss
+    // no style selections here
+    .button {
+    	color: $white;
+    	&:hover,
+    	&:active,
+    	&:focus {
+    		background: $accent-color-3;
+    		color: $white;
+    	}
+    	&.button-2 {
+    		background: $accent-color-1;
+    		@include transition(all 0.2s);
+    		&:hover,
+    		&:active,
+    		&:focus {
+    			background: $accent-color-3;
+    			color: $white;
+    		}
+    	} // used as secondary button
+    	&.button-outline {
+    		color: $base-dominant-color;
+    		border-color: $base-dominant-color;
+    		&:hover,
+    		&:active,
+    		&:focus {
+    			background: $accent-color-3;
+    			border-color: transparent;
+    			color: $white;
+    		}
+    	}
+    }
+
+
 }
 
 @media print {

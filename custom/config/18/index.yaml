@@ -1,5 +1,5 @@
 name: '18'
-timestamp: 1529357323
+timestamp: 1529364608
 version: 7
 preset:
   image: 'gantry-admin://images/layouts/default.png'
@@ -45,8 +45,6 @@ particles:
     calltoactionSZ-8705: 'Call to action'
     calltoactionSZ-4495: 'Call to action'
     calltoactionSZ-3465: 'Call to action'
-  custom:
-    custom-9493: 'Custom HTML'
   logo:
     logo-9501: 'Logo / Image'
     logo-9571: 'Logo / Image'
@@ -57,6 +55,8 @@ particles:
     spacer-4623: Spacer
   messages:
     system-messages-2617: 'System Messages'
+  custom:
+    custom-9493: 'Custom HTML'
   content:
     system-content-1966: 'Page Content'
   copyright:

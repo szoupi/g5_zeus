@@ -6,8 +6,7 @@ preset:
 layout:
   /zenith/:
     -
-      - 'calltoactionSZ-9676 50'
-      - 'custom-9493 50'
+      - calltoactionSZ-9676
   /navtop/:
     -
       - calltoactionSZ-5285
@@ -49,7 +48,8 @@ layout:
           -
             - system-messages-2617
           -
-            - calltoactionSZ-6589
+            - 'custom-9493 50'
+            - 'calltoactionSZ-6589 50'
           -
             - system-content-1966
       -
@@ -214,61 +214,51 @@ content:
     title: 'Call to action'
     attributes:
       headline: 'Call to action particle - ZENITH'
-  custom-9493:
-    title: 'Custom HTML'
-    attributes:
-      html: '<button class="button">button</button> <a class="button button-2" href="#"> link button 2</a>'
   calltoactionSZ-5285:
     title: 'Call to action'
     attributes:
-      enabled: 0
       headline: 'Call to action particle - NAVTOP'
   logo-9501:
     title: 'Logo / Image'
   calltoactionSZ-8266:
     title: 'Call to action'
     attributes:
-      enabled: 0
       headline: 'Call to action particle - NAVIGATION'
   calltoactionSZ-2363:
     title: 'Call to action'
     attributes:
-      enabled: 0
       headline: 'Call to action particle - HEADER'
   calltoactionSZ-9958:
     title: 'Call to action'
     attributes:
-      enabled: 0
       headline: 'Call to action particle - INTRO'
   calltoactionSZ-6371:
     title: 'Call to action'
     attributes:
-      enabled: 0
       headline: 'Call to action particle - FEATURE'
   calltoactionSZ-5747:
     title: 'Call to action'
     attributes:
-      enabled: 0
       headline: 'Call to action particle - UTILITY'
   calltoactionSZ-5315:
     title: 'Call to action'
     attributes:
-      enabled: 0
       headline: 'Call to action particle - ABOVE'
   calltoactionSZ-7644:
     title: 'Call to action'
     attributes:
-      enabled: 0
       headline: 'Call to action particle - TESTIMONIALS'
   calltoactionSZ-7298:
     title: 'Call to action'
     attributes:
-      enabled: 0
       headline: 'Call to action particle - EXPANDED'
+  custom-9493:
+    title: 'Custom HTML'
+    attributes:
+      html: '<button class="button">button</button> <a class="button button-2" href="#"> link button 2</a>'
   calltoactionSZ-6589:
     title: 'Call to action'
     attributes:
-      enabled: 0
       headline: 'Call to action particle - MAINBAR'
   system-content-1966:
     attributes:
@@ -276,12 +266,10 @@ content:
   calltoactionSZ-5752:
     title: 'Call to action'
     attributes:
-      enabled: 0
       headline: 'Call to action particle - MAINBOTTOM'
   calltoactionSZ-5990:
     title: 'Call to action'
     attributes:
-      enabled: 0
       headline: 'Call to action particle - FOOTERTOP'
   logo-9571:
     title: 'Logo / Image'
@@ -294,20 +282,16 @@ content:
   calltoactionSZ-5585:
     title: 'Call to action'
     attributes:
-      enabled: 0
       headline: 'Call to action particle - FOOTER'
   calltoactionSZ-8705:
     title: 'Call to action'
     attributes:
-      enabled: 0
       headline: 'Call to action particle - FOOTERBOTTOM'
   calltoactionSZ-4495:
     title: 'Call to action'
     attributes:
-      enabled: 0
       headline: 'Call to action particle - NADIR'
   calltoactionSZ-3465:
     title: 'Call to action'
     attributes:
-      enabled: 0
       headline: 'Call to action particle - OFFCANVAS'
