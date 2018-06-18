@@ -1,7 +1,7 @@
 {% extends '@nucleus/partials/particle.html.twig' %}
 
 {% block particle %}
-    <div class="content-particle sz-timelineSZ" >
+    <div class="content-particle timelineSZ" >
         <div class="g-grid">
             
             <div class="g-block">
@@ -14,7 +14,7 @@
                         
                         {#DESCRIPTION#}
                         {% if particle.description %}
-                            <div class="timelineSZ-description">{{ particle.description|raw }}</div>
+                            <div class="sz-timeline-description">{{ particle.description|raw }}</div>
                         {% endif %}
                         
                     </div>
@@ -22,17 +22,15 @@
             </div>
         </div>
         
-        <div class="g-grid">
+        <div class="sz-timeline">
             {% for event in particle.events %}
-                <div class="g-block {{ event.class }}">
-                    <div class="g-content">
+                <div class="container {{ event.position }} {{ event.class }}">
+                    <div class="content">
                         <i class="{{ event.icon }} event-icons"></i>
-                        <h1>{{ event.title|raw }}</h1>
-                        {{ event.subtitle|raw }}
-                        </br>
-                        {{ event.description|raw }}
-                        <p>date: {{ event.date }}</p>
-                        <p>position: {{ event.position }}</p>
+                        <h1>{{ event.date }}</h1>
+                        <h2>{{ event.eventTitle|raw }}</h2>
+                        
+                        <p>{{ event.description|raw }}</p>
                     </div>
                 </div>
             {% endfor %}
@@ -41,18 +39,3 @@
         
     </div>
 {% endblock %}
-
-{#<div class="timeline">#}
-{#  <div class="g-block left">#}
-{#    <div class="g-content">#}
-{#      <h2>2017</h2>#}
-{#      <p>Lorem ipsum..</p>#}
-{#    </div>#}
-{#  </div>#}
-{#  <div class="container right">#}
-{#    <div class="content">#}
-{#      <h2>2016</h2>#}
-{#      <p>Lorem ipsum..</p>#}
-{#    </div>#}
-{#  </div>#}
-{#</div>#}

@@ -15,13 +15,13 @@ form:
     headline:
       type: input.text
       label: Headline
-      description: Customize the headline text.
-      placeholder: Enter free text eg. 2018, 2000 Changed Career 
+      description: Title for the timeline
+      placeholder: Enter free text 
 
     description:
       type: textarea.textarea
       label: Description
-      description: Describe the event.
+      description: Short description for the timeline.
       placeholder: Enter short description
       
     events:
@@ -43,9 +43,9 @@ form:
           description: Customize the headline text.
           placeholder: Enter free text eg. 2018, 2000 Changed Career           
 
-        .subtitle:
+        .eventTitle:
           type: input.text
-          label: Sub Title
+          label: Event Title
 
         .description:
           type: textarea.textarea

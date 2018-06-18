@@ -1,4 +1,36 @@
 enabled: '1'
-headline: ''
-description: ''
-events: {  }
+headline: 'My timeline'
+description: 'this is my timeline particle'
+events:
+  -
+    icon: ''
+    date: '2000'
+    eventTitle: 'consectetur '
+    description: 'Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum'
+    position: left
+    class: ''
+    title: '2000'
+  -
+    icon: ''
+    date: '2018 November'
+    eventTitle: 'Lorem ipsum dolor '
+    description: 'Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat '
+    position: right
+    class: ''
+    title: '2018 Nov'
+  -
+    icon: ''
+    date: '2019'
+    eventTitle: 'dolore magna aliqua'
+    description: 'Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud '
+    position: left
+    class: ''
+    title: '2019'
+  -
+    icon: ''
+    date: '2020'
+    eventTitle: 'eiusmod tempor in'
+    description: 'Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor inLorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor in'
+    position: left
+    class: ''
+    title: '2020'

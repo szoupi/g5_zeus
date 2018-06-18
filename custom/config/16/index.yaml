@@ -1,10 +1,10 @@
-name: 16
-timestamp: 1529237953
+name: '16'
+timestamp: 1529318241
 version: 7
 preset:
   image: 'gantry-admin://images/layouts/default.png'
   name: default
-  timestamp: 1490038588
+  timestamp: 1529047451
 positions: {  }
 sections:
   zenith: Zenith
@@ -27,66 +27,26 @@ sections:
   footer: Footer
   offcanvas: Offcanvas
 particles:
-  calltoactionSZ:
-    calltoactionSZ-1768: 'Call to action'
-    calltoactionSZ-5138: 'Call to action'
   logo:
-    logo-4393: 'Logo / Image'
-    logo-5853: 'Logo / Image'
+    logo-9501: 'Logo / Image'
+    logo-9571: 'Logo / Image'
   menu:
-    menu-9267: Menu
+    menu-6609: Menu
+  timelineSZ:
+    timelineSZ-8086: Timeline
   spacer:
-    spacer-1487: Spacer
-    spacer-8384: Spacer
+    spacer-2395: Spacer
+    spacer-4623: Spacer
   messages:
-    system-messages-4781: 'System Messages'
-  module:
-    position-module-9237: 'articles category grouped'
-    position-module-8662: latest-articles
-  content:
-    system-content-8152: 'Page Content'
+    system-messages-2617: 'System Messages'
   copyright:
-    copyright-2542: Copyright
+    copyright-1736: Copyright
   horizontalmenu:
-    horizontalmenu-9730: 'Horizontal Menu'
+    horizontalmenu-9034: 'Horizontal Menu'
   totop:
-    totop-5454: 'To Top'
+    totop-8670: 'To Top'
   socialfloatingSZ:
-    socialfloatingSZ-7485: 'Social Floating'
+    socialfloatingSZ-2700: 'Social Floating'
   mobile-menu:
-    mobile-menu-7880: Mobile-menu
-inherit:
-  default:
-    zenith: zenith
-    navtop: navtop
-    navigation: navigation
-    header: header
-    intro: intro
-    features: features
-    utility: utility
-    above: above
-    testimonials: testimonials
-    expanded: expanded
-    aside: aside
-    mainbar: mainbar
-    sidebar: sidebar
-    mainbottom: mainbottom
-    footertop: footertop
-    footer: footer
-    footerbottom: footerbottom
-    nadir: nadir
-    offcanvas: offcanvas
-    logo-4393: logo-9501
-    menu-9267: menu-6609
-    spacer-1487: spacer-2395
-    system-messages-4781: system-messages-2617
-    position-module-9237: position-module-9693
-    system-content-8152: system-content-1966
-    spacer-8384: spacer-4623
-    position-module-8662: position-module-8967
-    logo-5853: logo-9571
-    copyright-2542: copyright-1736
-    horizontalmenu-9730: horizontalmenu-9034
-    totop-5454: totop-8670
-    socialfloatingSZ-7485: socialfloatingSZ-2700
-    mobile-menu-7880: mobile-menu-5697
+    mobile-menu-5697: Mobile-menu
+inherit: {  }
