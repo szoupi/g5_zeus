@@ -1,3 +1,5 @@
 preset: preset1
+font:
+  family-title: 'Lato, Helvetica, Tahoma, Geneva, Arial, sans-serif'
 zenith:
-  section-preset: base
+  section-preset: accent3
