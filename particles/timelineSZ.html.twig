@@ -26,7 +26,6 @@
             {% for event in particle.events %}
                 <div class="container {{ event.position }} {{ event.class }}">
                     <div class="content">
-                        <i class="{{ event.icon }} event-icons"></i>
                         <h1>{{ event.date }}</h1>
                         <h2>{{ event.eventTitle|raw }}</h2>
                         

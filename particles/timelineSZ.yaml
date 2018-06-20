@@ -33,9 +33,6 @@ form:
       ajax: true
 
       fields:
-        .icon:
-          type: input.icon
-          label: Icon
 
         .date:
           type: input.text
