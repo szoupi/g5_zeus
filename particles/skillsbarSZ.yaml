@@ -1,0 +1,78 @@
+name: skill bars
+description: Displays events in skill bars format  
+type: particle
+icon: fa-calendar-times-o
+
+form:
+  fields:
+    enabled:
+      type: input.checkbox
+      label: Enabled
+      description: Globally enable the particle.
+      default: true
+
+
+    headline:
+      type: input.text
+      label: Headline
+      description: Title for the Skills bar
+      placeholder: Enter free text 
+
+    description:
+      type: textarea.textarea
+      label: Description
+      description: Short description for the skill bars.
+      placeholder: Enter short description
+      
+    bars:
+      type: collection.list
+      array: true
+      label: Skill Bars
+      description: Create skill bars.
+      value: title
+      ajax: true
+
+      fields:
+        .skillTitle:
+          type: input.text
+          label: Title
+          description: Short description of the skill.
+          
+        .percentance:
+          type: select.selectize
+          label: Percentance
+          description: How skilled are you?
+          default: 100
+          options:
+            0: 0%
+            5: 5%
+            5: 5%
+            15: 15%
+            20: 20%
+            25: 25%
+            30: 30%
+            35: 35%
+            40: 40%
+            45: 45%
+            50: 50%
+            55: 55%
+            60: 60%
+            65: 65%
+            70: 70%
+            75: 75%
+            80: 80%
+            85: 85%
+            90: 90%
+            95: 95%
+            100: 100%
+
+        .color:
+          type: input.colorpicker
+          label: Color
+          description: Select the var color.
+          default: "#ffffff"
+
+        # .class:
+        #   type: input.block-variations
+        #   label: Variations
+

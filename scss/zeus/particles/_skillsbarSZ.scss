@@ -1,0 +1,40 @@
+.skillbarSZ {
+    h1, h2, h3, h4, h5 {
+        margin: 0;
+    }
+
+   .sz-skillbars{
+       
+    /* Container for skill bars */
+    .container {
+        width: 100%; /* Full width */
+        background-color: #ddd; /* TODO: make it inline */
+    }
+    
+    .skills {
+        text-align: right; /* Right-align text */
+        padding-right: 20px; /* Add some right padding */
+        line-height: 40px; /* Set the line-height to center the text inside the skill bar, and to expand the height of the container */
+    }
+       
+       
+       
+       
+   }
+
+
+   
+
+    @include breakpoint(mobile-only) {
+       
+    }
+    @include breakpoint(desktop-range) {
+
+    }
+    @include breakpoint(tablet-range) {
+        
+    }
+    @include breakpoint(small-mobile-range) {
+        // width: 100%;
+    }
+}
