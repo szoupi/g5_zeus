@@ -3,18 +3,53 @@
 
    .sz-skillbars{
        
-    /* Container for skill bars */
     .container {
-        width: 100%; /* Full width */
-        background-color: #ddd; /* TODO: make it inline */
+        width: 100%;
+        background-color: #ddd;
+
     }
     
-    .skills {
-        color: $white;
-        text-align: right; 
-        padding-right: 1.5rem; 
-        line-height: 2.5rem;
+    .sz-skillsbar-percentance {
+        float: right;
     }
+
+    .skills {
+        animation: expanddiv 2s ease-out;
+    }
+
+    &.style1 {
+
+        span {
+            position: relative;
+            padding: 0 1rem;
+            font-size: 1.3rem;
+            top: 2.5rem;
+            
+            &.sz-skillsbar-title {
+                color: $white;
+                
+            }
+            
+        }
+        
+        .skills {
+            height: 3rem;
+        }
+        
+    }
+    
+   &.style2 {
+       
+        .skills {
+            height: 2px;
+        }
+        
+        .container {
+            margin-bottom: 1rem;
+        }
+        
+    }
+
        
        
        

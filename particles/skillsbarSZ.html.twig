@@ -22,16 +22,26 @@
             </div>
         </div>
 
+            <style>
+                    @keyframes expanddiv { 
+                    0%  { width:0px; } 
+                    100%{ width:{{ bar.percentance }}% ;}  
+                }
+            </style>
+
+
             <div class="g-block">
                 <div class="g-content">
-                    <div class="sz-skillbars">
+                    <div class="sz-skillbars  {{ particle.style }}">
                         {% for bar in particle.bars %}
-                            <h2>{{ bar.skillTitle|raw }}</h2>
-                            <div class="container">
+                            <span class="sz-skillsbar-title">{{ bar.skillTitle|raw }}</span>
+                            <span class="sz-skillsbar-percentance"> {{ bar.percentance }}%</span>
+                                <div class="container">
                                 <div class="skills" 
                                      style="width:{{ bar.percentance }}%;
-                                            background-color:{{ bar.color }};">
-                                    {{ bar.percentance }}%
+                                            background-color:{{ bar.color }};
+                                            transition: width 2s linear 1s;">
+                                
                                 </div>
                             </div>
                         {% endfor %}
@@ -41,3 +51,4 @@
         
     </div>
 {% endblock %}
+

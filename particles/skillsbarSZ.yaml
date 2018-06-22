@@ -1,7 +1,7 @@
 name: skill bars
 description: Displays events in skill bars format  
 type: particle
-icon: fa-calendar-times-o
+icon: fa-bars
 
 form:
   fields:
@@ -11,6 +11,14 @@ form:
       description: Globally enable the particle.
       default: true
 
+    style:
+      type: select.selectize
+      label: Style
+      description: Select a style for the bars
+      default: style1
+      options:
+          style1: style 1 
+          style2: style 2
 
     headline:
       type: input.text
