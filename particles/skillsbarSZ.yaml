@@ -70,7 +70,7 @@ form:
           type: input.colorpicker
           label: Color
           description: Select the var color.
-          default: "#ffffff"
+          default: "#0071bc"
 
         # .class:
         #   type: input.block-variations
