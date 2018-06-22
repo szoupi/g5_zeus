@@ -96,6 +96,7 @@ configuration:
     Utility:
       center: Center
       title-center: Centered Title
+      headings-center: Centered Headings
       equal-height: Equal Height
       disabled: Disabled
       align-right: Align Right

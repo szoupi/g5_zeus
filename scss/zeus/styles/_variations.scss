@@ -298,3 +298,10 @@ $css_multipliers: 2, 3;
         width: auto;
     }
 }
+
+// center heading
+.headings-center {
+    h1, h2, h3, h4, h5, h6 {
+        text-align: center;
+    }
+}
