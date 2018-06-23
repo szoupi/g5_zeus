@@ -1,74 +1,40 @@
 .skillbarSZ {
-
-
-   .sz-skillbars{
-       
-    .container {
-        width: 100%;
-        background-color: #ddd;
-
-    }
-    
-    .sz-skillsbar-percentance {
-        float: right;
-    }
-
-    .skills {
-        animation: expanddiv 2s ease-out;
-    }
-
-    &.style1 {
+    .sz-skillbars {
+        .container {
+            width: 100%;
+            background-color: #ddd;
+        }
+        .sz-skillsbar-percentance {
+            float: right;
+        }
+        .skills {
+            animation: expanddiv 2s ease-out;
+        }
 
         span {
-            position: relative;
-            padding: 0 1rem;
             font-size: 1.3rem;
-            top: 2.5rem;
-            
-            &.sz-skillsbar-title {
-                color: $white;
-                
+        }
+
+        &.style1 {
+            span {
+                position: relative;
+                padding: 0 1rem;
+                top: 2.5rem;
+                &.sz-skillsbar-title {
+                    color: $white;
+                }
             }
-            
+            .skills {
+                height: 3rem;
+            }
         }
-        
-        .skills {
-            height: 3rem;
+        &.style2 {
+            .skills {
+                height: 2px;
+            }
+            .container {
+                margin-bottom: 1rem;
+            }
         }
-        
-    }
-    
-   &.style2 {
-       
-        .skills {
-            height: 2px;
-        }
-        
-        .container {
-            margin-bottom: 1rem;
-        }
-        
-    }
-
-       
-       
-       
-       
-   }
-
-
-   
-
-    @include breakpoint(mobile-only) {
-       
-    }
-    @include breakpoint(desktop-range) {
-
-    }
-    @include breakpoint(tablet-range) {
-        
-    }
-    @include breakpoint(small-mobile-range) {
-        // width: 100%;
     }
 }

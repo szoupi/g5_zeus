@@ -11,6 +11,8 @@ layout:
   /intro/:
     -
       - featuredarticlesSZ-9554
+    -
+      - skillsbarSZ-1453
   features: {  }
   utility: {  }
   above: {  }
@@ -216,6 +218,10 @@ content:
         sort:
           orderby: publish_up
           ordering: ASC
+  skillsbarSZ-1453:
+    title: 'skill bars'
+    attributes:
+      style: style1
   spacer-2355:
     inherit:
       outline: default
