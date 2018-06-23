@@ -2,8 +2,8 @@ preset: preset1
 base:
   dominant-color: '#0071bc'
   text-color: '#212121'
-  background: '#ffffff'
-  background-image: 'gantry-media://demoimages/img20.jpg'
+  background: '#f5f5f5'
+  background-image: ''
   content-margin: 0.5rem
   content-padding: 0.5rem
 accent:
@@ -12,86 +12,86 @@ accent:
   color-3: '#112e51'
 font:
   family-default: 'Lato, Helvetica, Tahoma, Geneva, Arial, sans-serif'
-  family-title: family=Cabin+Condensed
+  family-title: 'Lato, Helvetica, Tahoma, Geneva, Arial, sans-serif'
   family-quote: 'Lato, Helvetica, Tahoma, Geneva, Arial, sans-serif'
 zenith:
   section-preset: disabled
-  text-color: '#ffffff'
+  text-color: '#f5f5f5'
   link-color: '#0071bc'
   background: '#000000'
 navtop:
-  section-preset: accent2
+  section-preset: disabled
   text-color: '#212121'
   link-color: '#0071bc'
-  background: '#ffffff'
+  background: '#f5f5f5'
 navigation:
-  text-color: '#ffffff'
-  link-color: '#ffffff'
+  text-color: '#f5f5f5'
+  link-color: '#f5f5f5'
   background: '#0071bc'
 header:
-  section-preset: accent3
+  section-preset: disabled
   text-color: '#212121'
-  link-color: '#8f734a'
-  background: '#ffffff'
+  link-color: '#0071bc'
+  background: '#f5f5f5'
 intro:
-  section-preset: accent2
+  section-preset: disabled
   text-color: '#212121'
   link-color: '#0071bc'
-  background: '#ffffff'
+  background: '#f5f5f5'
 features:
-  section-preset: accent2
-  text-color: '#ffffff'
+  section-preset: disabled
+  text-color: '#212121'
   link-color: '#0071bc'
-  background: '#ffffff'
+  background: '#f5f5f5'
 utility:
-  section-preset: accent3
+  section-preset: disabled
   text-color: '#212121'
   link-color: '#0071bc'
-  background: '#ffffff'
+  background: '#f5f5f5'
 above:
-  section-preset: accent2
+  section-preset: disabled
   text-color: '#212121'
   link-color: '#0071bc'
-  background: '#ffffff'
+  background: '#f5f5f5'
 testimonials:
-  section-preset: accent3
+  section-preset: disabled
   text-color: '#212121'
   link-color: '#0071bc'
-  background: '#ffffff'
+  background: '#f5f5f5'
 expanded:
-  section-preset: base
-  text-color: '#ffffff'
+  section-preset: disabled
+  text-color: '#212121'
   link-color: '#0071bc'
-  background: '#ffffff'
+  background: '#f5f5f5'
 mainbottom:
-  section-preset: accent2
+  section-preset: disabled
   text-color: '#212121'
   link-color: '#0071bc'
-  background: '#ffffff'
+  background: '#f5f5f5'
 footertop:
-  section-preset: accent2
+  section-preset: disabled
   text-color: '#212121'
   link-color: '#0071bc'
-  background: '#ffffff'
+  background: '#f5f5f5'
 footer:
-  section-preset: accent3
-  text-color: '#ffffff'
-  link-color: '#9bdaf1'
-  background: '#ffffff'
-footerbottom:
-  section-preset: accent2
+  section-preset: disabled
   text-color: '#212121'
   link-color: '#0071bc'
-  background: '#ffffff'
+  background: '#f5f5f5'
+footerbottom:
+  section-preset: disabled
+  text-color: '#212121'
+  link-color: '#0071bc'
+  background: '#f5f5f5'
 nadir:
   section-preset: disabled
-  text-color: '#ffffff'
+  text-color: '#f5f5f5'
   link-color: '#0071bc'
   background: '#000000'
 offcanvas:
   background: '#0071bc'
   text-color: '#eceeef'
-  toggle-color: '#ffffff'
+  toggle-color: '#f5f5f5'
   toggle-visibility: '1'
   width: 12rem
 breakpoints:
