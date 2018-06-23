@@ -3,7 +3,7 @@ base:
   dominant-color: '#0071bc'
   text-color: '#212121'
   background: '#ffffff'
-  background-image: ''
+  background-image: 'gantry-media://demoimages/img20.jpg'
   content-margin: 0.5rem
   content-padding: 0.5rem
 accent:
