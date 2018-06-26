@@ -1,5 +1,13 @@
 preset: preset1
 font:
   family-title: 'Lato, Helvetica, Tahoma, Geneva, Arial, sans-serif'
-zenith:
+header:
+  section-preset: base
+intro:
+  section-preset: primary
+features:
+  section-preset: accent1
+utility:
+  section-preset: accent2
+above:
   section-preset: accent3
