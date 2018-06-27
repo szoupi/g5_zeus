@@ -74,31 +74,30 @@
         }
     }
 
-    // HEADING2
-    h2 {
-        font-weight: 300;
-        line-height: $core-line-height;
+    // // HEADING2
+    // h2 {
+    //     line-height: $core-line-height;
 
-        @include breakpoint(large-mobile-range) {
-            font-size: 1.35rem;
-        }
+    //     @include breakpoint(large-mobile-range) {
+    //         font-size: 1.35rem;
+    //     }
 
-        em {
-            font-weight: $font-weight-medium;
-        }
+    //     em {
+    //         font-weight: $font-weight-medium;
+    //     }
 
-        &.large-heading {
-            font-size: $h2-font-size * 2;
+    //     &.large-heading {
+    //         font-size: $h2-font-size * 2;
 
-            @include breakpoint(tablet-range) {
-                font-size: $h2-font-size * 1.25;
-            }
+    //         @include breakpoint(tablet-range) {
+    //             font-size: $h2-font-size * 1.25;
+    //         }
 
-            @include breakpoint(mobile-only) {
-                font-size: $h2-font-size;
-            }
-        }
-    }
+    //         @include breakpoint(mobile-only) {
+    //             font-size: $h2-font-size;
+    //         }
+    //     }
+    // }
 
     // BUTTONS
     // see also zeus/styles/_buttons.scss

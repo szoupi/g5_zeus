@@ -26,8 +26,8 @@
             {% for event in particle.events %}
                 <div class="container {{ event.position }} {{ event.class }}">
                     <div class="content">
-                        <h1>{{ event.date }}</h1>
-                        <h2>{{ event.eventTitle|raw }}</h2>
+                        <h2>{{ event.date }}</h2>
+                        <h3>{{ event.eventTitle|raw }}</h3>
                         
                         <p>{{ event.description|raw }}</p>
                     </div>
