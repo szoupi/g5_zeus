@@ -1,0 +1,12 @@
+{% comment %} http://docs.gantry.org/gantry5/advanced/css-js-twig {% endcomment %}
+
+{% comment %} BUG: IT IS NOT TRIGGERED {% endcomment %}
+
+{% if particle.enabled %}
+
+    {% do gantry.load('jquery') %}
+    {% block javascript %}
+        <script src="{{ url('gantry-theme://particles/semanticui/visibility.min.js') }}" type="text/javascript"></script>
+    {% endblock %}  
+{% endif %}
+

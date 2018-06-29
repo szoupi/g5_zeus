@@ -1,4 +1,10 @@
 favicon: ''
 touchicon: ''
-css: {  }
+css:
+  -
+    location: 'https://cdnjs.cloudflare.com/ajax/libs/semantic-ui/2.3.2/semantic.min.css'
+    inline: ''
+    extra: {  }
+    priority: '0'
+    name: 'New item'
 javascript: {  }
