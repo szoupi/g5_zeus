@@ -3,18 +3,6 @@
 {% comment %} BUG: IT IS NOT TRIGGERED {% endcomment %}
 
 {% if particle.enabled %}
-{% comment %}
-<script src="https://ajax.googleapis.com/ajax/libs/jquery/3.3.1/jquery.min.js"></script>
-
-<script src="https://cdnjs.cloudflare.com/ajax/libs/semantic-ui/2.3.2/components/visibility.min.js"></script>
-
-<script>
-    $('.skillbarSZ')
-        .visibility({
-            type: 'fixed',
-        });
-</script>
-{% endcomment %}
 
     {% do gantry.load('jquery') %}
     {% block javascript %}

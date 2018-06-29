@@ -1,5 +1,5 @@
 meta: {  }
-head_bottom: "<script src=\"https://ajax.googleapis.com/ajax/libs/jquery/3.3.1/jquery.min.js\"></script>\n\n<script src=\"https://cdnjs.cloudflare.com/ajax/libs/semantic-ui/2.3.2/components/visibility.min.js\"></script>\n\n<script>\n$('.skillbarSZ')\n  .visibility({\n    type   : 'fixed',\n  })\n;\n</script>"
+head_bottom: ''
 atoms:
   -
     id: frameworks-7641
@@ -9,7 +9,7 @@ atoms:
       enabled: '1'
       jquery:
         enabled: '1'
-        ui_core: '1'
+        ui_core: '0'
         ui_sortable: '0'
       bootstrap:
         enabled: '0'
@@ -17,7 +17,7 @@ atoms:
         enabled: '0'
         more: '0'
   -
-    id: semanticUIvisibility-2918
+    id: semanticUIvisibility-5791
     type: semanticUIvisibility
     title: 'Semantic UI visibility'
     attributes:
