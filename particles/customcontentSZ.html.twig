@@ -7,14 +7,14 @@
                 <div class="g-content">
                     <div "
                         {#HEIGHT#}
-                        {% if particle.height %} 
-                            style='height: {{ particle.height }};'>
+                        {% if particle.height %}     
+                            style='min-height: {{ particle.height }};'>
                         {% else %}
                             >
                         {% endif %}
                         {#IMAGE#}
                         {% if particle.image %}
-                            <img src="{{ url(particle.image) }}" class="logo-large" alt="{{ particle.headline|e }}" />
+                            <img src="{{ url(particle.image) }}" class="logo-large" alt="{{ particle.titl|e }}" />
                         {% endif %}
                         
                         {#ICON#}
@@ -22,9 +22,9 @@
                             <i class="{{ particle.mainicon }} sz-customcontent-icons" style="display:block;"></i>
                         {% endif %}
                         
-                        {#HEADLINE#}
-                        {% if particle.headline %}
-                            <h1>{{ particle.headline|raw }}</h1>
+                        {#TITLE#}
+                        {% if particle.title %}
+                            <div class="sz-customcontent-title">{{ particle.title|raw }}</div>
                         {% endif %}
                         
                         {#DESCRIPTION#}
@@ -34,11 +34,14 @@
                         
                         {#BUTTONS-LINKS#}
                         {% if particle.linktext %}
-                            <a href="{{ particle.link|e }}" class="button" role="button">{{ particle.linktext|e }}</a>
+                            <a href="{{ particle.link|e }}" class="button {{ particle.linkstyle|default('') }}" role="button">{{ particle.linktext|e }}</a>
                         {% endif %}
                         {% if particle.linktext2 %}
-                            <a href="{{ particle.link2|e }}" class="button button-outline" role="button">{{ particle.linktext2|e }}</a>
+                            <a href="{{ particle.link2|e }}" class="button {{ particle.linkstyle2|default('') }}" role="button">{{ particle.linktext2|e }}</a>
                         {% endif %}
+                        {% if particle.linktext3 %}
+                            <a href="{{ particle.link3|e }}" class="button {{ particle.linkstyle3|default('') }}" role="button">{{ particle.linktext3|e }}</a>
+                        {% endif %}                        
                     </div>
                 </div>
             </div>

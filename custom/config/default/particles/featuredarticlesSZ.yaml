@@ -1,5 +1,5 @@
 enabled: '1'
-layout: hierarchic
+layout: 3-column
 article:
   display:
     image:

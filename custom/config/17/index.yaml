@@ -1,5 +1,5 @@
 name: '17'
-timestamp: 1529756871
+timestamp: 1530288704
 version: 7
 preset:
   image: 'gantry-admin://images/layouts/default.png'
@@ -32,19 +32,18 @@ particles:
     logo-1745: 'Logo / Image'
   menu:
     menu-3863: Menu
-  featuredarticlesSZ:
-    featuredarticlesSZ-9554: 'Featured Articles'
-  skillsbarSZ:
-    skillsbarSZ-1453: 'skill bars'
+  customcontentSZ:
+    customcontentSZ-7379: 'Custom Content'
   spacer:
     spacer-2355: Spacer
     spacer-3075: Spacer
   messages:
     system-messages-1764: 'System Messages'
-  content:
-    system-content-5957: 'Page Content'
   module:
+    position-module-8970: 'articles category grouped'
     position-module-9006: latest-articles
+  content:
+    system-content-4217: 'Page Content'
   copyright:
     copyright-9961: Copyright
   horizontalmenu:
@@ -62,14 +61,18 @@ inherit:
     navigation: navigation
     logo-9700: logo-9501
     menu-3863: menu-6609
-    header: header
+    intro: intro
     features: features
     utility: utility
     above: above
     testimonials: testimonials
     expanded: expanded
+    aside: aside
     spacer-2355: spacer-2395
+    mainbar: mainbar
     system-messages-1764: system-messages-2617
+    position-module-8970: position-module-9693
+    system-content-4217: system-content-1966
     sidebar: sidebar
     spacer-3075: spacer-4623
     position-module-9006: position-module-8967

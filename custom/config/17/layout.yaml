@@ -7,12 +7,10 @@ layout:
   zenith: {  }
   navtop: {  }
   navigation: {  }
-  header: {  }
-  /intro/:
+  /header/:
     -
-      - featuredarticlesSZ-9554
-    -
-      - skillsbarSZ-1453
+      - customcontentSZ-7379
+  intro: {  }
   features: {  }
   utility: {  }
   above: {  }
@@ -21,15 +19,9 @@ layout:
   /container-main/:
     -
       -
-        'aside 25':
-          -
-            - spacer-2355
+        'aside 25': {  }
       -
-        'mainbar 50':
-          -
-            - system-messages-1764
-          -
-            - system-content-5957
+        'mainbar 50': {  }
       -
         'sidebar 25': {  }
   mainbottom: {  }
@@ -64,23 +56,23 @@ structure:
         - block
         - children
   header:
+    attributes:
+      boxed: ''
+      class: ''
+      background: ''
+      backgroundOverlay: ''
+      backgroundAttachment: fixed
+      backgroundRepeat: ''
+      backgroundPosition: 'center center'
+      backgroundSize: cover
+  intro:
+    type: section
     inherit:
       outline: default
       include:
         - attributes
         - block
         - children
-  intro:
-    type: section
-    attributes:
-      boxed: '0'
-      class: ''
-      background: ''
-      backgroundOverlay: 'rgba(0, 0, 0, 0)'
-      backgroundAttachment: ''
-      backgroundRepeat: ''
-      backgroundPosition: ''
-      backgroundSize: ''
   features:
     type: section
     inherit:
@@ -122,27 +114,23 @@ structure:
         - block
         - children
   aside:
-    attributes:
-      class: ''
-      background: ''
-      backgroundOverlay: 'rgba(0, 0, 0, 0)'
-      backgroundAttachment: ''
-      backgroundRepeat: ''
-      backgroundPosition: ''
-      backgroundSize: ''
+    inherit:
+      outline: default
+      include:
+        - attributes
+        - block
+        - children
     block:
       fixed: '1'
   mainbar:
     type: section
     subtype: main
-    attributes:
-      class: ''
-      background: ''
-      backgroundOverlay: 'rgba(0, 0, 0, 0)'
-      backgroundAttachment: ''
-      backgroundRepeat: ''
-      backgroundPosition: ''
-      backgroundSize: ''
+    inherit:
+      outline: default
+      include:
+        - attributes
+        - block
+        - children
   sidebar:
     type: section
     subtype: aside
@@ -204,35 +192,12 @@ structure:
         - block
         - children
 content:
-  featuredarticlesSZ-9554:
-    title: 'Featured Articles'
+  customcontentSZ-7379:
+    title: 'Custom Content'
     attributes:
-      article:
-        filter:
-          categories: ''
-          articles: ''
-          featured: include
-        limit:
-          total: '5'
-          start: '0'
-        sort:
-          orderby: publish_up
-          ordering: ASC
-  skillsbarSZ-1453:
-    title: 'skill bars'
-    attributes:
-      style: style1
-  spacer-2355:
-    inherit:
-      outline: default
-      include:
-        - attributes
-        - block
-      particle: spacer-2395
-  system-messages-1764:
-    inherit:
-      outline: default
-      include:
-        - attributes
-        - block
-      particle: system-messages-2617
+      height: 50px
+      linkstyle: ''
+      linkstyle2: button-2
+      link3: '#'
+      linktext3: Prices
+      linkstyle3: button-outline

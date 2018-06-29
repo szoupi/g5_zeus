@@ -23,16 +23,16 @@ form:
 
     height:
       type: input.text
-      label: Block height
+      label: Block min height
       description: Specify the height of the block in rem, em or px units.      
       default: "20rem"
       pattern: '\d+(\.\d+){0,1}(rem|em|px|vh)'
       
-    headline:
+    title:
       type: input.text
-      label: Headline
-      description: Customize the headline text.
-      placeholder: Enter headline
+      label: Title
+      description: Customize the title text.
+      placeholder: Enter title
 
     description:
       type: textarea.textarea
@@ -49,6 +49,24 @@ form:
       type: input.text
       label: Primary Link Text
       description: Customize the link text.
+    
+    linkstyle:
+      type: select.select
+      label: Primary link style
+      description: 'Select a button style. These are button classes'
+      default: primary
+      options:
+        '' : primary
+        button-2: secondary
+        button-outline: outline
+        button-block: block
+        button-xlarge: xlarge
+        button-large: large
+        button-small: small
+        button-xsmall: xsmall
+        button-gradient: gradient
+        button-bevel: bevel
+        button-square: square
 
     link2:
       type: input.text
@@ -59,6 +77,52 @@ form:
       type: input.text
       label: Secondary Link Text
       description: Customize the link text.
+
+    linkstyle2:
+      type: select.select
+      label: Primary link style
+      description: 'Select a button style. These are button classes'
+      default: outline
+      options:
+        '' : primary
+        button-2: secondary
+        button-outline: outline
+        button-block: block
+        button-xlarge: xlarge
+        button-large: large
+        button-small: small
+        button-xsmall: xsmall
+        button-gradient: gradient
+        button-bevel: bevel
+        button-square: square      
+
+    link3:
+      type: input.text
+      label: Third Link
+      description: Specify the link address.
+
+    linktext3:
+      type: input.text
+      label: Third Link Text
+      description: Customize the link text.
+
+    linkstyle3:
+      type: select.select
+      label: Third link style
+      description: 'Select a button style. These are button classes'
+      default: ''
+      options:
+        '' : primary
+        button-2: secondary
+        button-outline: outline
+        button-block: block
+        button-xlarge: xlarge
+        button-large: large
+        button-small: small
+        button-xsmall: xsmall
+        button-gradient: gradient
+        button-bevel: bevel
+        button-square: square  
       
     subitems:
       type: collection.list
