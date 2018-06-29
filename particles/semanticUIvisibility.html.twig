@@ -1,12 +1,13 @@
-{% comment %} http://docs.gantry.org/gantry5/advanced/css-js-twig {% endcomment %}
+{#http://docs.gantry.org/gantry5/advanced/css-js-twig#}
 
-{% comment %} BUG: IT IS NOT TRIGGERED {% endcomment %}
+{#BUG: IT IS NOT TRIGGERED#}
+{% extends '@nucleus/partials/particle.html.twig' %}
+    
+{% block particle %}
+    {% if particle.enabled %}
+                <link rel="stylesheet" type="text/css" href="https://cdnjs.cloudflare.com/ajax/libs/semantic-ui/2.3.2/semantic.min.css" /> 
+                <script src="{{ url('https://cdnjs.cloudflare.com/ajax/libs/semantic-ui/2.3.2/semantic.min.js') }}" type="text/javascript"></script>
+    {% endif %}
+{% endblock %}
 
-{% if particle.enabled %}
-
-    {% do gantry.load('jquery') %}
-    {% block javascript %}
-        <script src="{{ url('gantry-theme://particles/semanticui/visibility.min.js') }}" type="text/javascript"></script>
-    {% endblock %}  
-{% endif %}
 

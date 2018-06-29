@@ -58,9 +58,9 @@
                     width: 0;
                     z-index: 1;
                     right: 30px;
-                    border: medium solid white;
+                    border: medium solid $accent-color-2    ;
                     border-width: 10px 0 10px 10px;
-                    border-color: transparent transparent transparent white;
+                    border-color: transparent transparent transparent $accent-color-2    ;
                 }
             }
             
@@ -76,9 +76,9 @@
                     width: 0;
                     z-index: 1;
                     left: 30px;
-                    border: medium solid white; //TODO: use accent color
+                    border: medium solid $accent-color-2 ; //TODO: use accent color
                     border-width: 10px 10px 10px 0;
-                    border-color: transparent white transparent transparent; //TODO: use accent color
+                    border-color: transparent $accent-color-2 transparent transparent; //TODO: use accent color
                 }
                 
                 // circle
