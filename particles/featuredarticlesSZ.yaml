@@ -16,9 +16,9 @@ form:
       label: Layout
       description: Select a layout for the portfolio 
       placeholder: 'Select...'
-      default:  hierarchic
+      default:  3-column
       options:
-        hierarchic: hierarchic
+        3-column: 3-column
         equal: equal
         # Headlines: Headlines
         # Mosaic: Mosaic
