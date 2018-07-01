@@ -109,7 +109,7 @@ form:
           type: select.select
           label: Link 2 style
           description: 'Select a button style. These are button classes'
-          default: ''
+          default: secondary
           options:
             '' : primary
             button-2: secondary
@@ -137,7 +137,7 @@ form:
           type: select.select
           label: Link 3 style
           description: 'Select a button style. These are button classes'
-          default: ''
+          default: outline
           options:
             '' : primary
             button-2: secondary
