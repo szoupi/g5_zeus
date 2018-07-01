@@ -3,10 +3,13 @@
     // LAYOUT FEATURED ========================
     display: grid;
     grid-gap: 0;
-    grid-template-columns: 2fr 1fr 1fr;
     grid-auto-rows: 1fr; // set equal height for each row
     min-height: 48vh;
-
+    
+    // typically min 48rem
+    @include breakpoint(no-mobile) {
+        grid-template-columns: 2fr 1fr 1fr;
+    }
 
     div.g-grid.sz-featured-box {
         
@@ -41,7 +44,7 @@
         
         @include breakpoint(mobile-only){
             .g-block {
-                height: 20vh;
+                min-height: 15vh;
             }
         }
 
@@ -60,7 +63,7 @@
                 
 
                 div a img {
-                    min-width: 45rem;
+                    min-width: 52rem;
                 }
                 
                 .g-item-title {
@@ -73,7 +76,7 @@
             &:nth-of-type(4),
             &:nth-of-type(5) {
                 div a img {
-                    min-width: 24rem;
+                    min-width: 26rem;
                 }
             }
         }

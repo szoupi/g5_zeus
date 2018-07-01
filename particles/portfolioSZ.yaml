@@ -1,0 +1,99 @@
+name: Portfolio
+description: Displays a group of images
+type: particle
+icon: fa-image
+
+form:
+  fields:
+    enabled:
+      type: input.checkbox
+      label: Enabled
+      description: Globally enable the particle.
+      default: true
+
+    headline:
+      type: input.text
+      label: Headline
+      description: Customize the headline text.
+      placeholder: Enter headline
+
+    description:
+      type: textarea.textarea
+      label: Description
+      description: Customize the description.
+      placeholder: Enter short description
+
+    style:
+      type: select.selectize
+      label: Style
+      description: Select a style for the porfolio
+      placeholder: 'Select...'
+      default: Default
+      options:
+        grid4: Grid - 4 equal columns
+        mansonry: masonry
+
+    portfolios:
+      type: collection.list
+      array: true
+      label: Portfolios
+      description: Create each portfolio to appear in the content row.
+      value: title
+      ajax: true
+
+      fields:
+        .image:
+          type: input.imagepicker
+          label: Image
+          description: Select the main image.
+
+        .maintitle:
+          type: input.text
+          label: Title
+          description: Customize the headline text.
+          placeholder: Enter title
+
+        .description:
+          type: textarea.textarea
+          label: Description
+          description: Customize the description.
+          placeholder: Enter short description
+
+        .tags:
+          type: collection.list
+          array: true
+          label: Tags
+          description: Create each tag to display.
+          value: text
+          ajax: true          
+
+        .link1:
+          type: input.text
+          label: Link
+          description: Specify the link address.
+
+        .linktext1:
+          type: input.text
+          label: Link Text
+          description: Customize the link text.
+
+        .link2:
+          type: input.text
+          label: Link
+          description: Specify the link address.
+
+        .linktext2:
+          type: input.text
+          label: Link Text
+          description: Customize the link text.
+
+
+        .link3:
+          type: input.text
+          label: Link
+          description: Specify the link address.
+
+        .linktext3:
+          type: input.text
+          label: Link Text
+          description: Customize the link text.          

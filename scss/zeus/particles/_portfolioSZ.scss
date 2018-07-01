@@ -1,0 +1,47 @@
+.portfolio-sz {
+    .g-content{
+        padding-left: 0;
+        padding-right: 0;
+        margin-left: 0;
+        margin-right: 0;
+
+    }
+    .sz-customcontent-title {
+        font-size: 3rem;
+        line-height: 120%;
+        font-weight: 800;
+    }
+
+
+
+    // css grid
+    .portfolio-sz-wrapper {
+        display: grid;
+        height: 100%;
+        grid-template-rows: repeat(2, 1fr);
+
+        // typically min 48rem
+        @include breakpoint(no-mobile){
+            grid-template-columns: repeat(2, 1fr);
+        }
+
+        // typically min 60rem
+        @include breakpoint(desktop-only) {
+            grid-template-columns: repeat(4, 1fr);
+        }
+    }
+        
+    .portfolio-sz-gutter {
+        grid-gap: 1rem;
+    }
+
+    // position: relative;
+    .portfolio-item-sz {
+        // display: flex;
+        // justify-content: center;
+        // align-items: center;
+    }
+
+
+   
+}

@@ -1,13 +1,11 @@
 name: '19'
-timestamp: 1528235340
+timestamp: 1530365306
 version: 7
 preset:
   image: 'gantry-admin://images/layouts/default.png'
   name: default
   timestamp: 1490038588
-positions:
-  breadcrumbs: breadcrumbs
-  sidebar: sidebar
+positions: {  }
 sections:
   zenith: Zenith
   navtop: Navtop
@@ -34,23 +32,16 @@ particles:
     logo-9938: 'Logo / Image'
   menu:
     menu-9682: Menu
-  bloglayoutSZ:
-    bloglayoutSZ-9204: 'Blog layout - list'
-    bloglayoutSZ-9166: 'Blog layout - default'
+  portfolioSZ:
+    portfolioSZ-6254: Portfolio
   spacer:
     spacer-4815: Spacer
     spacer-5006: Spacer
-  module:
-    position-module-9437: 'newsflash vertical'
-    position-module-5305: 'newsflash default'
-    position-module-9421: articles-category
-    position-module-6937: 'newsflash horizontal'
-    position-module-3469: 'latest articles'
   messages:
     system-messages-9625: 'System Messages'
-  position:
-    position-position-1064: breadcrumbs
-    position-position-5140: sidebar
+  module:
+    position-module-1104: 'articles category grouped'
+    position-module-1008: latest-articles
   content:
     system-content-8244: 'Page Content'
   copyright:
@@ -70,16 +61,21 @@ inherit:
     navigation: navigation
     logo-4206: logo-9501
     menu-9682: menu-6609
+    intro: intro
     features: features
     utility: utility
     above: above
     testimonials: testimonials
     expanded: expanded
+    aside: aside
     spacer-4815: spacer-2395
+    mainbar: mainbar
     system-messages-9625: system-messages-2617
+    position-module-1104: position-module-9693
     system-content-8244: system-content-1966
+    sidebar: sidebar
     spacer-5006: spacer-4623
-    position-position-5140: position-position-3512
+    position-module-1008: position-module-8967
     mainbottom: mainbottom
     footertop: footertop
     footer: footer

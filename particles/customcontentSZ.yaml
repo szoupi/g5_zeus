@@ -28,7 +28,7 @@ form:
       default: "20rem"
       pattern: '\d+(\.\d+){0,1}(rem|em|px|vh)'
       
-    title:
+    maintitle:
       type: input.text
       label: Title
       description: Customize the title text.

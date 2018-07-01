@@ -1,0 +1,64 @@
+{% extends '@nucleus/partials/particle.html.twig' %} 
+
+{% block particle %}
+    <div class="portfolio-sz">
+        <div class="g-grid ">
+            <div class="g-block">
+                <div class="g-content">
+                    <div>
+                        {#HEADLINE#}
+                        {% if particle.headline %}
+                            <div class="sz-customcontent-title ">{{ particle.headline|raw }}</div>
+                        {% endif %}
+                        
+                        {#DESCRIPTION#}
+                        {% if particle.description %}
+                            <div class="customcontent-description ">{{ particle.description|raw }}</div>
+                        {% endif %}
+
+                    </div>
+                </div>
+            </div>
+        </div>
+
+        {# PORTFOLIOS #}
+        <div class="portfolio-sz-wrapper">
+            {% for portfolio in particle.portfolios %}
+                <div class="g-grid ">
+                    <div class="g-block portfolio-sz-item">
+
+                    
+                        {% if portfolio.image %}
+                            <div class="portfolio-sz-image">
+                                <img src="{{portfolio.image}}" alt="{{portfolio.maintitle|default('')}}"> 
+                            </div>
+                        {% endif %}
+
+                            <div class="portfolio-sz-content">
+                                {% if portfolio.maintitle %}
+
+                                {% endif %}
+                            </div>
+{{portfolio.maintitle}}
+
+
+                        {# tags #}
+                        {% if portfolio.tags %}
+                            <div class="portfolio-sz-tags">
+                                {% for tag in portfolio.tags %}
+                                    <span class="tag">
+                                            {{ tag.text|raw }}
+                                    </span>
+                                {% endfor %}
+                            </div>
+                        {% endif %}
+
+                        
+
+
+                    </div>
+                </div>
+            {% endfor %}
+        </div>
+    </div>
+{% endblock %}
