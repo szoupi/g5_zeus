@@ -32,6 +32,16 @@ form:
       label: Primary Link Text
       description: Customize the link text.
 
+    linkstyle:
+      type: select.select
+      label: Primary Link style
+      description: 'Select a button style. These are button classes'
+      default: primary
+      options:
+        '' : primary
+        button-2: secondary
+        button-outline: outline
+
     link2:
       type: input.text
       label: Secondary Link
@@ -41,3 +51,33 @@ form:
       type: input.text
       label: Secondary Link Text
       description: Customize the link text.
+
+    linkstyle2:
+      type: select.select
+      label: Secondary link style
+      description: 'Select a button style. These are button classes'
+      default: secondary
+      options:
+        '' : primary
+        button-2: secondary
+        button-outline: outline
+
+    link3:
+      type: input.text
+      label: Third Link
+      description: Specify the link address.
+
+    linktext3:
+      type: input.text
+      label: Third Link Text
+      description: Customize the link text.
+
+    linkstyle3:
+      type: select.select
+      label: Third link style
+      description: 'Select a button style. These are button classes'
+      default: outline
+      options:
+        '' : primary
+        button-2: secondary
+        button-outline: outline        

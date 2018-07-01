@@ -11,3 +11,7 @@ utility:
   section-preset: accent2
 above:
   section-preset: accent3
+testimonials:
+  text-color: '#84ff00'
+  link-color: '#fa7100'
+  background: '#ffd6b5'

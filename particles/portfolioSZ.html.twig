@@ -67,12 +67,12 @@
                                 {% endif %}
                                 {% if portfolio.linktext2 %}
                                     <a href="{{ portfolio.link2|e }}" 
-                                        class="button {{ portfolio.linkstyle2|default('') }}" 
+                                        class="button {{ portfolio.linkstyle2|default('button-2') }}" 
                                         role="button">{{ portfolio.linktext2|e }}</a>
                                 {% endif %}
                                 {% if portfolio.linktext3 %}
                                     <a href="{{ portfolio.link3|e }}" 
-                                        class="button {{ portfolio.linkstyle3|default('') }}" 
+                                        class="button {{ portfolio.linkstyle3|default('button-outline') }}" 
                                         role="button">{{ portfolio.linktext3|e }}</a>
                                 {% endif %}                                 
                             </div>

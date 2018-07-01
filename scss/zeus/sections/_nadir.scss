@@ -268,8 +268,8 @@
                 &:hover,
                 &:active,
                 &:focus {
-                    background: lighten($base-dominant-color, 30%);
-                    color: $black;
+                    background: $accent-color-3;
+                    color: $white;
                 }
                 &.button-2 {
                     background: $accent-color-1;
@@ -277,18 +277,18 @@
                     &:hover,
                     &:active,
                     &:focus {
-                        background: darken($accent-color-1, 10%);
+                        background: $accent-color-3;
                         color: $white;
                     }
                 } // used as secondary button
                 &.button-outline {
-                    color: $white;
+                    color: $base-dominant-color;
                     border-color: $base-dominant-color;
                     &:hover,
                     &:active,
                     &:focus {
                         background: $base-dominant-color; // border-color: transparent;
-                        // color: $white;
+                        color: $white;
                     }
                 }
             }
