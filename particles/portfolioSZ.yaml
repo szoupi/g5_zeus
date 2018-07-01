@@ -69,31 +69,84 @@ form:
 
         .link1:
           type: input.text
-          label: Link
+          label: Link 1
           description: Specify the link address.
 
         .linktext1:
           type: input.text
-          label: Link Text
+          label: Link 1 Text
           description: Customize the link text.
+
+        .linkstyle1:
+          type: select.select
+          label: Link 1 style
+          description: 'Select a button style. These are button classes'
+          default: ''
+          options:
+            '' : primary
+            button-2: secondary
+            button-outline: outline
+            button-block: block
+            button-xlarge: xlarge
+            button-large: large
+            button-small: small
+            button-xsmall: xsmall
+            button-gradient: gradient
+            button-bevel: bevel
+            button-square: square            
 
         .link2:
           type: input.text
-          label: Link
+          label: Link 2
           description: Specify the link address.
 
         .linktext2:
           type: input.text
-          label: Link Text
+          label: Link 2 Text
           description: Customize the link text.
 
+        .linkstyle2:
+          type: select.select
+          label: Link 2 style
+          description: 'Select a button style. These are button classes'
+          default: ''
+          options:
+            '' : primary
+            button-2: secondary
+            button-outline: outline
+            button-block: block
+            button-xlarge: xlarge
+            button-large: large
+            button-small: small
+            button-xsmall: xsmall
+            button-gradient: gradient
+            button-bevel: bevel
+            button-square: square 
 
         .link3:
           type: input.text
-          label: Link
+          label: Link 3
           description: Specify the link address.
 
         .linktext3:
           type: input.text
-          label: Link Text
-          description: Customize the link text.          
+          label: Link 3 Text
+          description: Customize the link text.         
+        
+        .linkstyle3:
+          type: select.select
+          label: Link 3 style
+          description: 'Select a button style. These are button classes'
+          default: ''
+          options:
+            '' : primary
+            button-2: secondary
+            button-outline: outline
+            button-block: block
+            button-xlarge: xlarge
+            button-large: large
+            button-small: small
+            button-xsmall: xsmall
+            button-gradient: gradient
+            button-bevel: bevel
+            button-square: square            

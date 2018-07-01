@@ -35,25 +35,51 @@
                         {% endif %}
 
                             <div class="portfolio-sz-content">
+                                {# TITLE #}
                                 {% if portfolio.maintitle %}
-
+                                    <div>{{ portfolio.maintitle|raw }}</div>
                                 {% endif %}
+
+                                {# DESCRIPTION #}
+                                {% if portfolio.description %}
+                                    <div>{{ portfolio.description|raw }}</div>
+                                {% endif %}                                
+
+                                {# TAGS #}
+                                {% if portfolio.tags %}
+                                    <div class="portfolio-sz-tags">
+                                        {% for tag in portfolio.tags %}
+                                            <span class="tag">
+                                                    {{ tag.text|raw }}
+                                            </span>
+                                        {% endfor %}
+                                    </div>
+                                {% endif %}
+
                             </div>
-{{portfolio.maintitle}}
 
-
-                        {# tags #}
-                        {% if portfolio.tags %}
-                            <div class="portfolio-sz-tags">
-                                {% for tag in portfolio.tags %}
-                                    <span class="tag">
-                                            {{ tag.text|raw }}
-                                    </span>
-                                {% endfor %}
+                            <div class="portfolio-sz-links">
+                                {#BUTTONS-LINKS#}
+                                {% if portfolio.linktext1 %}
+                                    <a href="{{ portfolio.link1|e }}" 
+                                        class="button {{ portfolio.linkstyle1|default('') }}" 
+                                        role="button">{{ portfolio.linktext1|e }}</a>
+                                {% endif %}
+                                {% if portfolio.linktext2 %}
+                                    <a href="{{ portfolio.link2|e }}" 
+                                        class="button {{ portfolio.linkstyle2|default('') }}" 
+                                        role="button">{{ portfolio.linktext2|e }}</a>
+                                {% endif %}
+                                {% if portfolio.linktext3 %}
+                                    <a href="{{ portfolio.link3|e }}" 
+                                        class="button {{ portfolio.linkstyle3|default('') }}" 
+                                        role="button">{{ portfolio.linktext3|e }}</a>
+                                {% endif %}                                 
                             </div>
-                        {% endif %}
 
-                        
+
+
+                         
 
 
                     </div>
