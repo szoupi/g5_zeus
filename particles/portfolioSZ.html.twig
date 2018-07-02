@@ -23,6 +23,18 @@
     <button class="btn" onclick="filterSelection('people')"> People</button>
 </div>
 
+
+{% for portfolio in particle.portfolios %}
+
+    <div class="portfolio-sz-tags">
+        {% for tag in portfolio.tags %}
+        <span class="tag">
+            {{ tag.text|raw }}
+        </span>
+        {% endfor %}
+    </div>
+ {% endfor %}
+ {# https://stackoverflow.com/questions/17788424/how-to-remove-duplicated-items-in-array-on-twig #}
                         
                     </div>
                 </div>
