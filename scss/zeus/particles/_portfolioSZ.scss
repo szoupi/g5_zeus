@@ -1,15 +1,20 @@
 .portfolio-sz {
+    text-align: center;
+    
     .g-content{
         padding-left: 0;
         padding-right: 0;
         margin-left: 0;
         margin-right: 0;
+        margin-bottom: 2rem;
 
     }
     .portfolio-sz-title {
         font-size: 3rem;
         line-height: 120%;
         font-weight: 800;
+        margin-bottom: 2rem;
+
     }
 
 
@@ -35,49 +40,75 @@
         grid-gap: 1rem;
     }
 
-    // position: relative;
-    .portfolio-item-sz {
-        // display: flex;
-        // justify-content: center;
-        // align-items: center;
+    .portfolio-sz-content{
+        margin-bottom: 2rem;
+
+        .portfolio-sz-item-title {
+            font-size: 2rem;
+            line-height: 120%;
+            font-weight: 800;
+            margin: 1rem 0;
+        }
     }
     
-    .portfolio-sz-item-title {
-        font-size: 2rem;
-        line-height: 120%;
-        font-weight: 800;
-        margin: 1rem 0;
-    }
     
     /*###### HOVER EFFECT ###############################*/
     .above {
-        position: relative;
-        overflow: hidden;
         text-align: center;
-        box-shadow: 1px 1px 2px #e6e6e6;
         cursor: default;
+        box-shadow: 1px 1px 2px #e6e6e6;
 
-        img {
-            display: block;
+        .portfolio-sz-image-container {
             position: relative;
+            overflow: hidden;
+
+            img {
+                display: block;
+                position: relative;
+            }
+    
+            .portfolio-sz-container {
+                position: absolute;
+                overflow: hidden;
+                top: 0;
+                right:0; 
+                bottom: 0;
+                left: 0;    
+                display: flex;
+                justify-content: center;
+                align-items: center;
+            }
         }
 
-        .porfolio-sz-container{
-            position: absolute;
-            overflow: hidden;
-            top: 0;
-            right:0; 
-            bottom: 0;
-            left: 0;    
-            // TODO: make it flex and position vertical
-        }
-        
+        // position: relative;
+
         .button {
             display: block;
-            margin: 1rem 20%;
+            margin: 1rem 0;
         }
 
 
+    }
+
+    .slide-in {
+        .portfolio-sz-container{
+            opacity: 0;
+            background-color: fadeout($accent-color-2, 10%);
+            transition: all 0.4s ease-in-out;
+            // img {
+            //     transition: all 0.2s linear;
+            // }
+        }
+
+        &:hover {
+            // img {
+            //     transform: scale(1.1);
+            // }
+            .portfolio-sz-container {
+                opacity: 1;
+
+            }
+        }
     }
 
 

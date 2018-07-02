@@ -16,6 +16,14 @@
                             <div class="portfolio-sz-description ">{{ particle.description|raw }}</div>
                         {% endif %}
 
+<div id="myBtnContainer">
+    <button class="btn active" onclick="filterSelection('all')"> Show all</button>
+    <button class="btn" onclick="filterSelection('nature')"> Nature</button>
+    <button class="btn" onclick="filterSelection('cars')"> Cars</button>
+    <button class="btn" onclick="filterSelection('people')"> People</button>
+</div>
+
+                        
                     </div>
                 </div>
             </div>
@@ -25,62 +33,62 @@
         <div class="portfolio-sz-wrapper">
             {% for portfolio in particle.portfolios %}
                 <div class="g-grid ">
-                    <div class="g-block portfolio-sz-item above">
+                    <div class="g-block portfolio-sz-item above slide-in">
 
-                        {% if portfolio.image %}
-                            <div class="portfolio-sz-image">
-                                <img src="{{portfolio.image}}" alt="{{portfolio.maintitle|default('')}}"> 
-                            </div>
-                        {% endif %}
+                        <div class="portfolio-sz-image-container">
+                            {% if portfolio.image %}
+                                <div class="portfolio-sz-image">
+                                    <img src="{{portfolio.image}}" alt="{{portfolio.maintitle|default('')}}"> 
+                                </div>
+                            {% endif %}
 
-                        <div class="porfolio-sz-container">
-                            
-                            <div class="portfolio-sz-content">
-                                {# TITLE #}
-                                {% if portfolio.maintitle %}
-                                    <div class="portfolio-sz-item-title">{{ portfolio.maintitle|raw }}</div>
-                                {% endif %}
-    
-                                {# DESCRIPTION #}
-                                {% if portfolio.description %}
-                                    <div>{{ portfolio.description|raw }}</div>
-                                {% endif %}                                
-    
-                                {# TAGS #}
-                                {% if portfolio.tags %}
-                                    <div class="portfolio-sz-tags">
-                                        {% for tag in portfolio.tags %}
-                                            <span class="tag">
-                                                    {{ tag.text|raw }}
-                                            </span>
-                                        {% endfor %}
-                                    </div>
-                                {% endif %}
-    
-                            </div>
-    
-                            <div class="portfolio-sz-links">
-                                {#BUTTONS-LINKS#}
-                                {% if portfolio.linktext1 %}
-                                    <a href="{{ portfolio.link1|e }}" 
-                                        class="button {{ portfolio.linkstyle1|default('') }}" 
-                                        role="button">{{ portfolio.linktext1|e }}</a>
-                                {% endif %}
-                                {% if portfolio.linktext2 %}
-                                    <a href="{{ portfolio.link2|e }}" 
-                                        class="button {{ portfolio.linkstyle2|default('button-2') }}" 
-                                        role="button">{{ portfolio.linktext2|e }}</a>
-                                {% endif %}
-                                {% if portfolio.linktext3 %}
-                                    <a href="{{ portfolio.link3|e }}" 
-                                        class="button {{ portfolio.linkstyle3|default('button-outline') }}" 
-                                        role="button">{{ portfolio.linktext3|e }}</a>
-                                {% endif %}                                 
+                            <div class="portfolio-sz-container">
+                                  <div class="portfolio-sz-links">
+                                    {#BUTTONS-LINKS#}
+                                    {% if portfolio.linktext1 %}
+                                        <a href="{{ portfolio.link1|e }}" 
+                                            class="button {{ portfolio.linkstyle1|default('') }}" 
+                                            role="button">{{ portfolio.linktext1|e }}</a>
+                                    {% endif %}
+                                    {% if portfolio.linktext2 %}
+                                        <a href="{{ portfolio.link2|e }}" 
+                                            class="button {{ portfolio.linkstyle2|default('button-2') }}" 
+                                            role="button">{{ portfolio.linktext2|e }}</a>
+                                    {% endif %}
+                                    {% if portfolio.linktext3 %}
+                                        <a href="{{ portfolio.link3|e }}" 
+                                            class="button {{ portfolio.linkstyle3|default('button-outline') }}" 
+                                            role="button">{{ portfolio.linktext3|e }}</a>
+                                    {% endif %}                                 
+                                </div>
                             </div>
                             
                         </div>
+                        
 
+                        <div class="portfolio-sz-content">
+                            {# TITLE #}
+                            {% if portfolio.maintitle %}
+                                <div class="portfolio-sz-item-title">{{ portfolio.maintitle|raw }}</div>
+                            {% endif %}
 
+                            {# DESCRIPTION #}
+                            {% if portfolio.description %}
+                                <div>{{ portfolio.description|raw }}</div>
+                            {% endif %}                                
+
+                            {# TAGS #}
+                            {% if portfolio.tags %}
+                                <div class="portfolio-sz-tags">
+                                    {% for tag in portfolio.tags %}
+                                        <span class="tag">
+                                                {{ tag.text|raw }}
+                                        </span>
+                                    {% endfor %}
+                                </div>
+                            {% endif %}
+
+                        </div>
 
                          
 
@@ -90,4 +98,55 @@
             {% endfor %}
         </div>
     </div>
+
+<script>
+    filterSelection("all")
+
+    function filterSelection(c) {
+        var x, i;
+        x = document.getElementsByClassName("column");
+        if (c == "all") c = "";
+        for (i = 0; i < x.length; i++) {
+            w3RemoveClass(x[i], "show");
+            if (x[i].className.indexOf(c) > -1) w3AddClass(x[i], "show");
+        }
+    }
+
+    function w3AddClass(element, name) {
+        var i, arr1, arr2;
+        arr1 = element.className.split(" ");
+        arr2 = name.split(" ");
+        for (i = 0; i < arr2.length; i++) {
+            if (arr1.indexOf(arr2[i]) == -1) {
+                element.className += " " + arr2[i];
+            }
+        }
+    }
+
+    function w3RemoveClass(element, name) {
+        var i, arr1, arr2;
+        arr1 = element.className.split(" ");
+        arr2 = name.split(" ");
+        for (i = 0; i < arr2.length; i++) {
+            while (arr1.indexOf(arr2[i]) > -1) {
+                arr1.splice(arr1.indexOf(arr2[i]), 1);
+            }
+        }
+        element.className = arr1.join(" ");
+    }
+
+
+    // Add active class to the current button (highlight it)
+    var btnContainer = document.getElementById("myBtnContainer");
+    var btns = btnContainer.getElementsByClassName("btn");
+    for (var i = 0; i < btns.length; i++) {
+        btns[i].addEventListener("click", function () {
+            var current = document.getElementsByClassName("active");
+            current[0].className = current[0].className.replace(" active", "");
+            this.className += " active";
+        });
+    }
+</script>
+
+
 {% endblock %}
