@@ -6,7 +6,7 @@
         margin-right: 0;
 
     }
-    .sz-customcontent-title {
+    .portfolio-sz-title {
         font-size: 3rem;
         line-height: 120%;
         font-weight: 800;
@@ -40,6 +40,44 @@
         // display: flex;
         // justify-content: center;
         // align-items: center;
+    }
+    
+    .portfolio-sz-item-title {
+        font-size: 2rem;
+        line-height: 120%;
+        font-weight: 800;
+        margin: 1rem 0;
+    }
+    
+    /*###### HOVER EFFECT ###############################*/
+    .above {
+        position: relative;
+        overflow: hidden;
+        text-align: center;
+        box-shadow: 1px 1px 2px #e6e6e6;
+        cursor: default;
+
+        img {
+            display: block;
+            position: relative;
+        }
+
+        .porfolio-sz-container{
+            position: absolute;
+            overflow: hidden;
+            top: 0;
+            right:0; 
+            bottom: 0;
+            left: 0;    
+            // TODO: make it flex and position vertical
+        }
+        
+        .button {
+            display: block;
+            margin: 1rem 20%;
+        }
+
+
     }
 
 

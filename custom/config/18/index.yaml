@@ -1,5 +1,5 @@
 name: '18'
-timestamp: 1529364608
+timestamp: 1530544463
 version: 7
 preset:
   image: 'gantry-admin://images/layouts/default.png'
@@ -27,46 +27,64 @@ sections:
   footer: Footer
   offcanvas: Offcanvas
 particles:
-  calltoactionSZ:
-    calltoactionSZ-9676: 'Call to action'
-    calltoactionSZ-5285: 'Call to action'
-    calltoactionSZ-8266: 'Call to action'
-    calltoactionSZ-2363: 'Call to action'
-    calltoactionSZ-9958: 'Call to action'
-    calltoactionSZ-6371: 'Call to action'
-    calltoactionSZ-5747: 'Call to action'
-    calltoactionSZ-5315: 'Call to action'
-    calltoactionSZ-7644: 'Call to action'
-    calltoactionSZ-7298: 'Call to action'
-    calltoactionSZ-6589: 'Call to action'
-    calltoactionSZ-5752: 'Call to action'
-    calltoactionSZ-5990: 'Call to action'
-    calltoactionSZ-5585: 'Call to action'
-    calltoactionSZ-8705: 'Call to action'
-    calltoactionSZ-4495: 'Call to action'
-    calltoactionSZ-3465: 'Call to action'
   logo:
-    logo-9501: 'Logo / Image'
-    logo-9571: 'Logo / Image'
+    logo-3208: 'Logo / Image'
+    logo-2093: 'Logo / Image'
   menu:
-    menu-6609: Menu
+    menu-4714: Menu
+  portfolioSZ:
+    portfolioSZ-3657: Portfolio
   spacer:
-    spacer-2395: Spacer
-    spacer-4623: Spacer
+    spacer-7698: Spacer
+    spacer-5924: Spacer
   messages:
-    system-messages-2617: 'System Messages'
-  custom:
-    custom-9493: 'Custom HTML'
+    system-messages-7494: 'System Messages'
+  module:
+    position-module-3184: 'articles category grouped'
+    position-module-1765: latest-articles
   content:
-    system-content-1966: 'Page Content'
+    system-content-2151: 'Page Content'
   copyright:
-    copyright-1736: Copyright
+    copyright-5363: Copyright
   horizontalmenu:
-    horizontalmenu-9034: 'Horizontal Menu'
+    horizontalmenu-3230: 'Horizontal Menu'
   totop:
-    totop-8670: 'To Top'
+    totop-5667: 'To Top'
   socialfloatingSZ:
-    socialfloatingSZ-2700: 'Social Floating'
+    socialfloatingSZ-2797: 'Social Floating'
   mobile-menu:
-    mobile-menu-5697: Mobile-menu
-inherit: {  }
+    mobile-menu-1515: Mobile-menu
+inherit:
+  default:
+    zenith: zenith
+    navtop: navtop
+    navigation: navigation
+    logo-3208: logo-9501
+    menu-4714: menu-6609
+    intro: intro
+    features: features
+    utility: utility
+    above: above
+    testimonials: testimonials
+    expanded: expanded
+    aside: aside
+    spacer-7698: spacer-2395
+    mainbar: mainbar
+    system-messages-7494: system-messages-2617
+    position-module-3184: position-module-9693
+    system-content-2151: system-content-1966
+    sidebar: sidebar
+    spacer-5924: spacer-4623
+    position-module-1765: position-module-8967
+    mainbottom: mainbottom
+    footertop: footertop
+    footer: footer
+    logo-2093: logo-9571
+    copyright-5363: copyright-1736
+    horizontalmenu-3230: horizontalmenu-9034
+    totop-5667: totop-8670
+    socialfloatingSZ-2797: socialfloatingSZ-2700
+    footerbottom: footerbottom
+    nadir: nadir
+    offcanvas: offcanvas
+    mobile-menu-1515: mobile-menu-5697

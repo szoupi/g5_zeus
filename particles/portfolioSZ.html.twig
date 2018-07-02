@@ -8,12 +8,12 @@
                     <div>
                         {#HEADLINE#}
                         {% if particle.headline %}
-                            <div class="sz-customcontent-title ">{{ particle.headline|raw }}</div>
+                            <div class="portfolio-sz-title ">{{ particle.headline|raw }}</div>
                         {% endif %}
                         
                         {#DESCRIPTION#}
                         {% if particle.description %}
-                            <div class="customcontent-description ">{{ particle.description|raw }}</div>
+                            <div class="portfolio-sz-description ">{{ particle.description|raw }}</div>
                         {% endif %}
 
                     </div>
@@ -25,26 +25,27 @@
         <div class="portfolio-sz-wrapper">
             {% for portfolio in particle.portfolios %}
                 <div class="g-grid ">
-                    <div class="g-block portfolio-sz-item">
+                    <div class="g-block portfolio-sz-item above">
 
-                    
                         {% if portfolio.image %}
                             <div class="portfolio-sz-image">
                                 <img src="{{portfolio.image}}" alt="{{portfolio.maintitle|default('')}}"> 
                             </div>
                         {% endif %}
 
+                        <div class="porfolio-sz-container">
+                            
                             <div class="portfolio-sz-content">
                                 {# TITLE #}
                                 {% if portfolio.maintitle %}
-                                    <div>{{ portfolio.maintitle|raw }}</div>
+                                    <div class="portfolio-sz-item-title">{{ portfolio.maintitle|raw }}</div>
                                 {% endif %}
-
+    
                                 {# DESCRIPTION #}
                                 {% if portfolio.description %}
                                     <div>{{ portfolio.description|raw }}</div>
                                 {% endif %}                                
-
+    
                                 {# TAGS #}
                                 {% if portfolio.tags %}
                                     <div class="portfolio-sz-tags">
@@ -55,9 +56,9 @@
                                         {% endfor %}
                                     </div>
                                 {% endif %}
-
+    
                             </div>
-
+    
                             <div class="portfolio-sz-links">
                                 {#BUTTONS-LINKS#}
                                 {% if portfolio.linktext1 %}
@@ -76,6 +77,8 @@
                                         role="button">{{ portfolio.linktext3|e }}</a>
                                 {% endif %}                                 
                             </div>
+                            
+                        </div>
 
 
 
