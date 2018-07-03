@@ -8,8 +8,8 @@ atoms:
     attributes:
       enabled: '1'
       jquery:
-        enabled: '1'
-        ui_core: '1'
+        enabled: '0'
+        ui_core: '0'
         ui_sortable: '0'
       bootstrap:
         enabled: '0'
@@ -25,4 +25,4 @@ atoms:
         anonym: false
         ssl: false
         debug: false
-    id: analytics-8651
+    id: analytics-4933
