@@ -1,5 +1,5 @@
 meta: {  }
-head_bottom: ''
+head_bottom: "\n"
 atoms:
   -
     id: frameworks-7641
@@ -17,8 +17,12 @@ atoms:
         enabled: '0'
         more: '0'
   -
-    id: semanticUIvisibility-5791
-    type: semanticUIvisibility
-    title: 'Semantic UI visibility'
+    title: 'Google Analytics'
+    type: analytics
     attributes:
-      enabled: '1'
+      enabled: true
+      ua:
+        anonym: false
+        ssl: false
+        debug: false
+    id: analytics-8651
