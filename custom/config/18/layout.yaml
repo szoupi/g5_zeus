@@ -197,3 +197,4 @@ content:
     attributes:
       headline: 'PORTFOLIO PARTICLE'
       description: 'a short description for the portfolio'
+      gutter: 'No'

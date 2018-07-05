@@ -39,7 +39,9 @@
     .portfolio-sz-gutter {
         grid-gap: 1rem;
     }
-
+    .portfolio-sz-no-gutter {
+        grid-gap: 0;
+    }
     .portfolio-sz-content{
         margin-bottom: 2rem;
 

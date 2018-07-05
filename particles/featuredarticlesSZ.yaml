@@ -14,7 +14,7 @@ form:
     layout:
       type: select.selectize
       label: Layout
-      description: Select a layout for the portfolio 
+      description: Select a layout 
       placeholder: 'Select...'
       default:  3-column
       options:

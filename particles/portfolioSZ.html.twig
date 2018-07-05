@@ -92,7 +92,14 @@
         </div>
 
         {# PORTFOLIOS #}
-        <div class="portfolio-sz-wrapper">
+        {#TODO: fix if #}
+        <div class="portfolio-sz-wrapper 
+            {% if portfolio.gutter == Yes %} 
+                portfolio-sz-gutter
+            {% else %} 
+                    portfolio-sz-no-gutter
+            {% endif %}
+        ">
             {% for portfolio in particle.portfolios %}
                 <div class="g-grid portfolio-sz-item scale-effect all above slide-in 
                                 {% if portfolio.tags %}

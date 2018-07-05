@@ -28,10 +28,20 @@ form:
       label: Style
       description: Select a style for the porfolio
       placeholder: 'Select...'
-      default: Default
+      default: grid3
       options:
         grid4: Grid - 4 equal columns
+        grid3: Grid - 3 equal columns
         mansonry: masonry
+        
+    gutter:
+      type: select.selectize
+      label: 'Use Gutter?'
+      description: Apply gutter between portfolios
+      default: No
+      options:
+        Yes: Yes
+        No: No
 
     portfolios:
       type: collection.list
@@ -42,117 +52,137 @@ form:
       ajax: true
 
       fields:
-        .image:
-          type: input.imagepicker
-          label: Image
-          description: Select the main image.
-
-        .maintitle:
-          type: input.text
-          label: Title
-          description: Customize the headline text.
-          placeholder: Enter title
-
-        .description:
-          type: textarea.textarea
-          label: Description
-          description: Customize the description.
-          placeholder: Enter short description
-
-        .tags:
-          type: collection.list
-          array: true
-          label: Tags
-          description: Create each tag to display.
-          value: text
-          ajax: true
-
+        _tabs:
+          type: container.tabs
           fields:
-            .text:
-              type: input.text
-              label: Tag Text
-              description: Input the text to be used as tag.        
-
-        .link1:
-          type: input.text
-          label: Link 1
-          description: Specify the link address.
-
-        .linktext1:
-          type: input.text
-          label: Link 1 Text
-          description: Customize the link text.
-
-        .linkstyle1:
-          type: select.select
-          label: Link 1 style
-          description: 'Select a button style. These are button classes'
-          default: ''
-          options:
-            '' : primary
-            button-2: secondary
-            button-outline: outline
-            button-block: block
-            button-xlarge: xlarge
-            button-large: large
-            button-small: small
-            button-xsmall: xsmall
-            button-gradient: gradient
-            button-bevel: bevel
-            button-square: square            
-
-        .link2:
-          type: input.text
-          label: Link 2
-          description: Specify the link address.
-
-        .linktext2:
-          type: input.text
-          label: Link 2 Text
-          description: Customize the link text.
-
-        .linkstyle2:
-          type: select.select
-          label: Link 2 style
-          description: 'Select a button style. These are button classes'
-          default: secondary
-          options:
-            '' : primary
-            button-2: secondary
-            button-outline: outline
-            button-block: block
-            button-xlarge: xlarge
-            button-large: large
-            button-small: small
-            button-xsmall: xsmall
-            button-gradient: gradient
-            button-bevel: bevel
-            button-square: square 
-
-        .link3:
-          type: input.text
-          label: Link 3
-          description: Specify the link address.
-
-        .linktext3:
-          type: input.text
-          label: Link 3 Text
-          description: Customize the link text.         
+          
+            _tab_main:
+              label: Main
+              overridable: false
+              fields:
+                .image:
+                  type: input.imagepicker
+                  label: Image
+                  description: Select the main image.
         
-        .linkstyle3:
-          type: select.select
-          label: Link 3 style
-          description: 'Select a button style. These are button classes'
-          default: outline
-          options:
-            '' : primary
-            button-2: secondary
-            button-outline: outline
-            button-block: block
-            button-xlarge: xlarge
-            button-large: large
-            button-small: small
-            button-xsmall: xsmall
-            button-gradient: gradient
-            button-bevel: bevel
-            button-square: square            
+                .maintitle:
+                  type: input.text
+                  label: Title
+                  description: Customize the headline text.
+                  placeholder: Enter title
+        
+                .description:
+                  type: textarea.textarea
+                  label: Description
+                  description: Customize the description.
+                  placeholder: Enter short description
+        
+                .tags:
+                  type: collection.list
+                  array: true
+                  label: Tags
+                  description: Assign tags to portfolios. Tags are used for filtering portfolios
+                  value: text
+                  ajax: true
+        
+                  fields:
+                    .text:
+                      type: input.text
+                      label: Tag Text
+                      description: Input the text to be used as tag.        
+            
+            _tab_link1:
+              label: Link 1
+              overridable: false
+              fields:        
+                .link1:
+                  type: input.text
+                  label: Link 1
+                  description: Specify the link address.
+        
+                .linktext1:
+                  type: input.text
+                  label: Link 1 Text
+                  description: Customize the link text.
+        
+                .linkstyle1:
+                  type: select.select
+                  label: Link 1 style
+                  description: 'Select a button style. These are button classes'
+                  default: ''
+                  options:
+                    '' : primary
+                    button-2: secondary
+                    button-outline: outline
+                    button-block: block
+                    button-xlarge: xlarge
+                    button-large: large
+                    button-small: small
+                    button-xsmall: xsmall
+                    button-gradient: gradient
+                    button-bevel: bevel
+                    button-square: square            
+            
+            _tab_link2:
+              label: Link 2
+              overridable: false
+              fields:          
+                .link2:
+                  type: input.text
+                  label: Link 2
+                  description: Specify the link address.
+        
+                .linktext2:
+                  type: input.text
+                  label: Link 2 Text
+                  description: Customize the link text.
+        
+                .linkstyle2:
+                  type: select.select
+                  label: Link 2 style
+                  description: 'Select a button style. These are button classes'
+                  default: secondary
+                  options:
+                    '' : primary
+                    button-2: secondary
+                    button-outline: outline
+                    button-block: block
+                    button-xlarge: xlarge
+                    button-large: large
+                    button-small: small
+                    button-xsmall: xsmall
+                    button-gradient: gradient
+                    button-bevel: bevel
+                    button-square: square 
+            
+            _tab_link3:
+              label: Link 3
+              overridable: false
+              fields:          
+                .link3:
+                  type: input.text
+                  label: Link 3
+                  description: Specify the link address.
+        
+                .linktext3:
+                  type: input.text
+                  label: Link 3 Text
+                  description: Customize the link text.         
+                
+                .linkstyle3:
+                  type: select.select
+                  label: Link 3 style
+                  description: 'Select a button style. These are button classes'
+                  default: outline
+                  options:
+                    '' : primary
+                    button-2: secondary
+                    button-outline: outline
+                    button-block: block
+                    button-xlarge: xlarge
+                    button-large: large
+                    button-small: small
+                    button-xsmall: xsmall
+                    button-gradient: gradient
+                    button-bevel: bevel
+                    button-square: square            
