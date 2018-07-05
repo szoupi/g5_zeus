@@ -1,5 +1,53 @@
 {% extends '@nucleus/partials/particle.html.twig' %} 
 
+{% block stylesheets %}
+    {{ parent() }}
+    {#<link rel="stylesheet" href="{{ url('gantry-theme://xxx.min.css') }}" type="text/css"/>#}
+{% endblock %}
+
+
+
+
+
+{#http://docs.gantry.org/gantry5/tutorials/particle-blocks#}
+
+
+
+
+{% block javascript_footer %}
+	{% if particle.enabled %}
+		{{ parent() }}
+		{#<script src="{{ url('gantry-theme://xxx.min.js') }}" type="text/javascript"></script>#}
+        {# any javascript you would like to render before </body> #}
+        <script src="https://code.jquery.com/jquery-3.3.1.min.js" 
+            integrity="sha256-FgpCb/KJQlLNfOu91ta32o/NMZxltwRo8QtmkMRdAu8=" 
+            crossorigin="anonymous">
+        </script>
+        {#{{ joomla.html('jquery.framework') }}#}
+        {#{% do gantry.document.addFramework('jquery.framework') %}#}
+        
+        <script>
+            $(function () {
+                var selectedClass = "";
+                var portfolio_wrapper = document.getElementsByClassName("portfolio-sz-wrapper");
+                $(".sz-filter-tags").click(function () {
+                    selectedClass = $(this).attr("data-rel");
+                    $(".portfolio-sz-wrapper").fadeTo(100, 0.1);
+                    $(".portfolio-sz-item").not("." + selectedClass).fadeOut().removeClass('scale-effect');
+                    setTimeout(function () {
+                        $("." + selectedClass).fadeIn().addClass('scale-effect');
+                        $(".portfolio-sz-wrapper").fadeTo(300, 1);
+                    }, 300);
+        
+                });
+            });
+        </script>
+
+	{% endif %}
+{% endblock %}
+
+
+
 {% block particle %}
     <div class="portfolio-sz">
         <div class="g-grid ">
@@ -17,17 +65,26 @@
                         {% endif %}
 
 
-{% for portfolio in particle.portfolios %}
-
-    <div class="portfolio-sz-tags">
-        {% for tag in portfolio.tags %}
-        <span class="tag">
-            {{ tag.text|raw }}
-        </span>
-        {% endfor %}
-    </div>
- {% endfor %}
- {# https://stackoverflow.com/questions/17788424/how-to-remove-duplicated-items-in-array-on-twig #}
+                        {# FILTER TAGS BUTTONS #}
+                        {# https://stackoverflow.com/questions/17788424/how-to-remove-duplicated-items-in-array-on-twig #}
+                        <div class="sz-filter-tags-wrapper">
+                        <button class="button sz-filter-tags" href="" data-rel="all">All</button>
+                        
+                        {% set tagsUniqueArray = [] %}
+                        {% for portfolio in particle.portfolios %}
+                            {% for tag in portfolio.tags %}
+                            
+                                   {% if tag not in tagsUniqueArray %}
+                                        <button data-rel="{{ tag.text|raw }}"
+                                                class="button sz-filter-tags {{ tag.text|raw }}">
+                                            {{ tag.text|raw }}
+                                        </button>
+                                        {% set tagsUniqueArray = tagsUniqueArray|merge([tag]) %}
+                                   {% endif %}
+                                   
+                            {% endfor %}
+                         {% endfor %}
+ 
                         
                     </div>
                 </div>
@@ -37,8 +94,14 @@
         {# PORTFOLIOS #}
         <div class="portfolio-sz-wrapper">
             {% for portfolio in particle.portfolios %}
-                <div class="g-grid ">
-                    <div class="g-block portfolio-sz-item scale-anm all web above slide-in">
+                <div class="g-grid portfolio-sz-item scale-effect all above slide-in 
+                                {% if portfolio.tags %}
+                                        {% for tag in portfolio.tags %}
+                                           {{ tag.text|raw }} 
+                                        {% endfor %}
+                                {% endif %}
+                ">
+                    <div class="g-block">
 
                         <div class="portfolio-sz-image-container">
                             {% if portfolio.image %}
@@ -86,17 +149,11 @@
                             {% if portfolio.tags %}
                                 <div class="portfolio-sz-tags">
                                     {% for tag in portfolio.tags %}
-                                        <span class="tag">
-                                                {{ tag.text|raw }}
-                                        </span>
+                                        <span class="tag">{{ tag.text|raw }} </span>
                                     {% endfor %}
                                 </div>
                             {% endif %}
-
                         </div>
-
-                         
-
 
                     </div>
                 </div>
@@ -104,34 +161,6 @@
         </div>
     </div>
 
-<div class="toolbar mb2 mt2">
-    <button class="button fil-cat" href="" data-rel="all">All</button>
-    <button class="button fil-cat" data-rel="web">Websites</button>
-    <button class="button fil-cat" data-rel="flyers">Flyers</button>
-    <button class="button fil-cat" data-rel="bcards">Business Cards</button>
-</div>
 
-
-{# TODO: CONVERT JQUERY TO VANILLA JS #}
-<script src="https://code.jquery.com/jquery-3.3.1.min.js" integrity="sha256-FgpCb/KJQlLNfOu91ta32o/NMZxltwRo8QtmkMRdAu8="
-    crossorigin="anonymous">
-</script>
-
-<script>
-    $(function () {
-        var selectedClass = "";
-        var portfolio_wrapper = document.getElementsByClassName("portfolio-sz-wrapper");
-        $(".fil-cat").click(function () {
-            selectedClass = $(this).attr("data-rel");
-            $(".portfolio-sz-wrapper").fadeTo(100, 0.1);
-            $(".portfolio-sz-item").not("." + selectedClass).fadeOut().removeClass('scale-anm');
-            setTimeout(function () {
-                $("." + selectedClass).fadeIn().addClass('scale-anm');
-                $(".portfolio-sz-wrapper").fadeTo(300, 1);
-            }, 300);
-
-        });
-    });
-</script>
 
 {% endblock %}

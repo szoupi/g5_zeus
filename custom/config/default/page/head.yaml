@@ -1,5 +1,5 @@
 meta: {  }
-head_bottom: "\n"
+head_bottom: ''
 atoms:
   -
     id: frameworks-7641

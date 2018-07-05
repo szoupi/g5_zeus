@@ -65,7 +65,13 @@ form:
           label: Tags
           description: Create each tag to display.
           value: text
-          ajax: true          
+          ajax: true
+
+          fields:
+            .text:
+              type: input.text
+              label: Tag Text
+              description: Input the text to be used as tag.        
 
         .link1:
           type: input.text
