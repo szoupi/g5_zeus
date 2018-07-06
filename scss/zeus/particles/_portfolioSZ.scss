@@ -17,31 +17,41 @@
 
     }
 
-
-
     // css grid
-    .portfolio-sz-wrapper {
+        .portfolio-sz-wrapper {
         display: grid;
         height: 100%;
-        grid-template-rows: repeat(2, 1fr);
+        grid-template-rows: auto;
 
         // typically min 48rem
         @include breakpoint(no-mobile){
             grid-template-columns: repeat(2, 1fr);
         }
 
-        // typically min 60rem
-        @include breakpoint(desktop-only) {
-            grid-template-columns: repeat(4, 1fr);
-        }
-    }
+        // // typically min 60rem
+        // @include breakpoint(desktop-only) {
+        //     grid-template-columns: repeat(4, 1fr);
+        // }
         
+    }
+
+    .portfolio-sz-2-column {
+        grid-template-columns: repeat(2, 1fr)
+    }
+    
+    .portfolio-sz-3-column {
+        grid-template-columns: repeat(3, 1fr)
+    }
+
+    .portfolio-sz-4-column {
+        grid-template-columns: repeat(4, 1fr)
+    }
+    
     .portfolio-sz-gutter {
-        grid-gap: 1rem;
+        grid-gap: 1.5rem;
     }
-    .portfolio-sz-no-gutter {
-        grid-gap: 0;
-    }
+
+
     .portfolio-sz-content{
         margin-bottom: 2rem;
 

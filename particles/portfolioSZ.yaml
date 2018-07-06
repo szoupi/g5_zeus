@@ -14,35 +14,53 @@ form:
     headline:
       type: input.text
       label: Headline
-      description: Customize the headline text.
-      placeholder: Enter headline
+      description: Give a general title for the portfolio
+      placeholder: eg My awesome Pictures!
 
     description:
       type: textarea.textarea
       label: Description
-      description: Customize the description.
-      placeholder: Enter short description
+      description: Describe what this portfolio is about.
+      placeholder: Enter short description for the portfolio
 
-    style:
+    colums:
       type: select.selectize
-      label: Style
-      description: Select a style for the porfolio
+      label: Columns
+      description: Select how many columns the portfolio should have
       placeholder: 'Select...'
       default: grid3
       options:
-        grid4: Grid - 4 equal columns
-        grid3: Grid - 3 equal columns
-        mansonry: masonry
-        
+        grid4: '4 equal columns'
+        grid3: '3 equal columns'
+        grid2: '2 equal columns'
+
     gutter:
-      type: select.selectize
-      label: 'Use Gutter?'
+      type: input.radios
+      label: 'Use Gutter between items?'
       description: Apply gutter between portfolios
       default: No
       options:
         Yes: Yes
         No: No
 
+    filterPortfolios:
+      type: input.radios
+      label: 'Allow Filter by Tag?'
+      description: Displays buttons to filter portfolios based on their tags. Loads JQuery CDN on footer
+      default: No
+      options:
+        Yes: Yes
+        No: No
+
+    displayTags:
+      type: input.radios
+      label: 'Display tags on each item?'
+      description: Select whether tags should display on each item. It does not affect filtering
+      default: No
+      options:
+        Yes: Yes
+        No: No        
+        
     portfolios:
       type: collection.list
       array: true

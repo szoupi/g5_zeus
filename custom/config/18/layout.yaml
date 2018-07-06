@@ -197,4 +197,102 @@ content:
     attributes:
       headline: 'PORTFOLIO PARTICLE'
       description: 'a short description for the portfolio'
+      colums: grid3
       gutter: 'No'
+      filterPortfolios: 'Yes'
+      displayTags: 'Yes'
+      portfolios:
+        -
+          image: 'gantry-media://default.jpg'
+          maintitle: 'A catchy title'
+          description: ' a catchy portfolio description etc etc'
+          tags:
+            -
+              text: tag1
+            -
+              text: tag2
+          link1: '#'
+          linktext1: ''
+          linkstyle1: ''
+          link2: ''
+          linktext2: ''
+          linkstyle2: ''
+          link3: ''
+          linktext3: ''
+          linkstyle3: ''
+          title: 'New item'
+        -
+          image: 'gantry-media://default.jpg'
+          maintitle: ''
+          description: ''
+          link1: '#'
+          linktext1: demo
+          linkstyle1: ''
+          link2: '#'
+          linktext2: documentation
+          linkstyle2: ''
+          link3: '#'
+          linktext3: download
+          linkstyle3: ''
+          title: 'New item'
+        -
+          image: 'gantry-media://default.jpg'
+          maintitle: 'A catchy title'
+          description: ' a catchy portfolio description'
+          link1: '#'
+          linktext1: demo
+          linkstyle1: ''
+          link2: '#'
+          linktext2: documentation
+          linkstyle2: ''
+          link3: '#'
+          linktext3: download
+          linkstyle3: ''
+          title: 'New item'
+        -
+          image: 'gantry-media://default.jpg'
+          maintitle: ''
+          description: ''
+          tags:
+            -
+              text: tag1
+            -
+              text: tag3
+          link1: '#'
+          linktext1: demo
+          linkstyle1: ''
+          link2: '#'
+          linktext2: documentation
+          linkstyle2: ''
+          link3: '#'
+          linktext3: download
+          linkstyle3: ''
+          title: 'New item'
+        -
+          image: 'gantry-media://default.jpg'
+          maintitle: 'A catchy title'
+          description: ' a catchy portfolio description'
+          link1: '#'
+          linktext1: demo
+          linkstyle1: ''
+          link2: '#'
+          linktext2: documentation
+          linkstyle2: ''
+          link3: '#'
+          linktext3: download
+          linkstyle3: ''
+          title: 'New item'
+        -
+          image: 'gantry-media://default.jpg'
+          maintitle: 'A catchy title'
+          description: ' a catchy portfolio description'
+          link1: '#'
+          linktext1: demo
+          linkstyle1: ''
+          link2: '#'
+          linktext2: documentation
+          linkstyle2: ''
+          link3: '#'
+          linktext3: download
+          linkstyle3: ''
+          title: 'New item'
