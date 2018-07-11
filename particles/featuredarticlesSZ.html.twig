@@ -83,38 +83,19 @@
 
                                         {#META INFO#}
                                         {% if display.date.enabled or display.author.enabled or display.category.enabled or display.hits.enabled %}
-                                            <div class="g-array-item-details">
-                                                    {#DATE ############################}
-                                                {% if display.date.enabled %}
-                                                    <span class="g-array-item-date">
-                                                        {% if display.date.enabled == 'published' %}
-                                                            <i class="fa fa-clock-o" aria-hidden="true"></i>{{ article.publish_up|date(display.date.format) }}
-                                                        {% elseif display.date.enabled == 'modified' %}
-                                                                <i class="fa fa-clock-o" aria-hidden="true"></i>{{ article.modified|date(display.date.format) }}
-                                                            {% else %}
-                                                                <i class="fa fa-clock-o" aria-hidden="true"></i>{{ article.created|date(display.date.format) }}
-                                                            {% endif %}
-                                                        </span>
-                                                    {% endif %}
-                                                    
-                                                    {#AUTHOR ############################}
-                                                {% if display.author.enabled %}
-                                                    <span class="g-array-item-author">
-                                                        <i class="fa fa-user" aria-hidden="true"></i>{{ article.author.name }}
-                                                    </span>
-                                                {% endif %}
-                
-                                                    {#CATEGORY ############################}
+                                            <div class="g-array-item-category">
+                                                
+                                                {#CATEGORY ############################}
                                                 {% if display.category.enabled %}
                                                     {% set category_link = display.category.enabled == 'link' %}
-                                                    <span class="g-array-item-category">
+                                                    <span class="g-array-item-category label">
                                                         {% set cat = article.categories|last %}
                                                         {% if category_link %}
                                                             <a href="{{ cat.route }}">
-                                                                <i class="fa fa-folder-open" aria-hidden="true"></i>{{ cat.title }}
+                                                                <i class="fa fa-folder-open" aria-hidden="true"></i> {{ cat.title }}
                                                             </a>
                                                         {% else %}
-                                                            <i class="fa fa-folder-open" aria-hidden="true"></i>{{ cat.title }}
+                                                            <i class="fa fa-folder-open" aria-hidden="true"></i> {{ cat.title }}
                                                         {% endif %}
                                                     </span>
                                                 {% endif %}
@@ -127,7 +108,30 @@
                                             <div class="g-item-title">
                                                 <a href="{{ article.route }}">{{ display.title.limit ? article.title|truncate_text(display.title.limit) : article.title }}</a>
                                             </div>
-                                        </div>   
+                                        </div>
+                                            
+                                        {#REST METADATA#}
+                                        <div class="g-array-item-category">
+                                            {#DATE ############################}
+                                            {% if display.date.enabled %}
+                                                <span class="g-array-item-date">
+                                                    {% if display.date.enabled == 'published' %}
+                                                        <i class="fa fa-clock-o" aria-hidden="true"></i> {{ article.publish_up|date(display.date.format) }}
+                                                    {% elseif display.date.enabled == 'modified' %}
+                                                            <i class="fa fa-clock-o" aria-hidden="true"></i> {{ article.modified|date(display.date.format) }}
+                                                        {% else %}
+                                                            <i class="fa fa-clock-o" aria-hidden="true"></i> {{ article.created|date(display.date.format) }}
+                                                        {% endif %}
+                                                    </span>
+                                                {% endif %}
+                                                
+                                                {#AUTHOR ############################}
+                                            {% if display.author.enabled %}
+                                                <span class="g-array-item-author">
+                                                    <i class="fa fa-user" aria-hidden="true"></i> {{ article.author.name }}
+                                                </span>
+                                            {% endif %}
+                                        </div>
 
                                      </div>
                                         

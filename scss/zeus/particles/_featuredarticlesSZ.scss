@@ -30,6 +30,13 @@
                 padding: 1.5rem;
                 position: absolute;
                 bottom: 0;
+                color: $white;
+                
+                .g-array-item-category {
+                    a {
+                        color: $white;
+                    }
+                }
 
                 .g-item-title {
                     font-size: 1.1rem;
@@ -45,7 +52,21 @@
         @include breakpoint(mobile-only){
             .g-block {
                 min-height: 15vh;
-            }
+            } 
+           
+            // &:first-of-type {
+            //     .g-block {
+            //         height: 30vh;
+            //     }
+            // }
+
+            // &:nth-of-type(2),
+            // &:nth-of-type(3),
+            // &:nth-of-type(4),
+            // &:nth-of-type(5) {
+                   
+            // }
+            
         }
 
 
@@ -55,7 +76,8 @@
             so as not to be overiden
             the first element 
             */
-
+            
+            // FIRST ITEM
             &:first-of-type {
                 grid-column-start: 1;
                 grid-row-start: 1;
@@ -69,6 +91,7 @@
                 .g-item-title {
                     font-size: 1.5rem !important;
                 }
+                
             }
 
             &:nth-of-type(2),
