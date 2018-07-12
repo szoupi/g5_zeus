@@ -1,5 +1,6 @@
 .g-featuredarticles-sz.sz-wrapper {
     
+
     // LAYOUT FEATURED ========================
     display: grid;
     grid-gap: 0;
@@ -10,6 +11,19 @@
     @include breakpoint(no-mobile) {
         grid-template-columns: 2fr 1fr 1fr;
     }
+
+    .darken-pseudo:after {
+        content: '';
+        position: absolute;
+        top: 0;
+        bottom: 0;
+        left: 0;
+        right: 0;
+        display: block;
+        background-color: rgba(0, 0, 0, 0.1);
+    }
+    
+    
 
     div.g-grid.sz-featured-box {
         
@@ -22,7 +36,8 @@
                 position: absolute;
                 top: 50%;
                 left: 50%;
-                transform: translateX(-50%) translateY(-50%);               
+                transform: translateX(-50%) translateY(-50%);
+                
             }
             
             .sz-content {
@@ -31,15 +46,22 @@
                 position: absolute;
                 bottom: 0;
                 color: $white;
+                font-size: 0.9rem; // title overides this
+                
+                
+                // overlay background
+                // width: 100%;
+                // background-color: rgba(0, 0, 0, 0.5);
                 
                 .g-array-item-category {
                     a {
-                        color: $white;
+                        color: $white !important;
                     }
                 }
 
                 .g-item-title {
-                    font-size: 1.1rem;
+                    font-size: 1.2rem;
+                    margin: 0.4rem 0;
                     a {
                         color: white !important;
                         text-shadow: 1px 1px 3px rgba(0, 0, 0, 1);
@@ -77,8 +99,8 @@
             the first element 
             */
             
-            // FIRST ITEM
-            &:first-of-type {
+            // 5 ARTICLES  ///////////////////////
+            &:first-of-type.five {
                 grid-column-start: 1;
                 grid-row-start: 1;
                 grid-row-end: 3; // 2 rows
@@ -89,19 +111,85 @@
                 }
                 
                 .g-item-title {
-                    font-size: 1.5rem !important;
+                    font-size: 1.6rem;
                 }
                 
             }
 
-            &:nth-of-type(2),
-            &:nth-of-type(3),
-            &:nth-of-type(4),
-            &:nth-of-type(5) {
+            &:nth-of-type(2).five,
+            &:nth-of-type(3).five,
+            &:nth-of-type(4).five,
+            &:nth-of-type(5).five {
                 div a img {
                     min-width: 26rem;
                 }
             }
+            
+            // 4 ARTICLES ///////////////////////
+            &:first-of-type.four {
+                grid-column-start: 1;
+                grid-row-start: 1;
+                grid-row-end: 3; // 2 rows
+                
+
+                div a img {
+                    min-width: 52rem;
+                }
+                
+                .g-item-title {
+                    font-size: 1.6rem;
+                }
+                
+            }
+
+            &:nth-of-type(2).four {
+                grid-column-start: 2;
+                grid-column-end: 4;
+              
+            }
+            
+            &:nth-of-type(3).four,
+            &:nth-of-type(4).four {
+                div a img {
+                    min-width: 26rem;
+                }
+            }
+            
+            // 3 ARTICLES ///////////////////////
+            &:first-of-type.three {
+                grid-column-start: 1;
+                grid-row-start: 1;
+                grid-row-end: 3; // 2 rows
+                
+
+                div a img {
+                    min-width: 52rem;
+                }
+                
+                .g-item-title {
+                    font-size: 1.6rem;
+                }
+                
+            }
+
+            &:nth-of-type(2).three,
+            &:nth-of-type(3).three{
+                grid-column-start: 2;
+                grid-column-end: 4;
+            }
+            
+            &:nth-of-type(3).three {
+                grid-row-start: 2;
+                
+                
+                div a img {
+                    min-width: 26rem;
+                }
+            }            
+            
+            
+            
+            
         }
     }
 }

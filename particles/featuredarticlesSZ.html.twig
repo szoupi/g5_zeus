@@ -33,25 +33,25 @@
 
 {% block particle %}
 
+    {# LAYOUTS  DEFAULT ############################}
+    {% if particle.layout == 'top5' %}
+        top5
+        
+    {# LAYOYT LIST ################################}
+    {% elseif particle.layout == 'list' %}
+    
+    {# LAYOUT FEATURED ################################}
+    {% elseif particle.layout == '3-column' %}
 
-    {# All Articles  ############################}
-    {# CONTAINER #}
-<div class="g-featuredarticles-sz sz-wrapper {% if particle.css.class %} {{ particle.css.class }}{% endif %}" {{-
-    attr_extra|raw }}>
+        {# All Articles  ############################}
+        {# CONTAINER #}
+        <div class="g-featuredarticles-sz sz-wrapper {% if particle.css.class %} {{ particle.css.class }}{% endif %}" {{-
+        attr_extra|raw }}>
 
                 
-        {# LAYOUTS  DEFAULT ############################}
-        {% if particle.layout == 'top5' %}
-            top5
-            
-        {# LAYOYT LIST ################################}
-        {% elseif particle.layout == 'list' %}
-        
-        {# LAYOUT FEATURED ################################}
-        {% elseif particle.layout == '3-column' %}
     
             {% for article in articles  %}
-                <div class="g-grid sz-featured-box">
+                <div class="g-grid sz-featured-box three">
                     
                             
                             
@@ -61,12 +61,16 @@
                             {% if article.images.image_intro and display.image.enabled == 'intro' or display.image.enabled == 'show' %}
                                 <div class="g-block">
                                     <a href="{{ article.route }}">
-                                        <img src="{{ url(article.images.image_intro) }}" alt="{{ article.title }}"> 
+                                        <div class="darken-pseudo">
+                                            <img src="{{ url(article.images.image_intro) }}" alt="{{ article.title }}"> 
+                                        </div>
                                     </a>
                             {% elseif article.images.image_fulltext and display.image.enabled == 'full' %}
                                 <div class="g-block">
                                     <a href="{{ article.route }}">
-                                        <img src="{{ url(article.images.image_fulltext) }}" alt="{{ article.title }}"> 
+                                        <div class="darken-pseudo">
+                                            <img src="{{ url(article.images.image_fulltext) }}" alt="{{ article.title }}"> 
+                                        </div>
                                     </a>
                             {% endif %}
                             
@@ -75,7 +79,9 @@
                                                   
                         <div class="g-block">
                                 <a href="{{ article.route }}">
-                                    <img src="templates/g5_zeus/images/default.jpg" alt="{{ article.title }}">
+                                    <div class="darken-pseudo">
+                                        <img src="templates/g5_zeus/images/default.jpg" alt="{{ article.title }}">
+                                    </div>
                                 </a>
                         {% endif %}
 
@@ -92,10 +98,10 @@
                                                         {% set cat = article.categories|last %}
                                                         {% if category_link %}
                                                             <a href="{{ cat.route }}">
-                                                                <i class="fa fa-folder-open" aria-hidden="true"></i> {{ cat.title }}
+                                                                {{ cat.title }}
                                                             </a>
                                                         {% else %}
-                                                            <i class="fa fa-folder-open" aria-hidden="true"></i> {{ cat.title }}
+                                                            {{ cat.title }}
                                                         {% endif %}
                                                     </span>
                                                 {% endif %}
@@ -116,11 +122,11 @@
                                             {% if display.date.enabled %}
                                                 <span class="g-array-item-date">
                                                     {% if display.date.enabled == 'published' %}
-                                                        <i class="fa fa-clock-o" aria-hidden="true"></i> {{ article.publish_up|date(display.date.format) }}
+                                                       {{ article.publish_up|date(display.date.format) }}
                                                     {% elseif display.date.enabled == 'modified' %}
-                                                            <i class="fa fa-clock-o" aria-hidden="true"></i> {{ article.modified|date(display.date.format) }}
+                                                           {{ article.modified|date(display.date.format) }}
                                                         {% else %}
-                                                            <i class="fa fa-clock-o" aria-hidden="true"></i> {{ article.created|date(display.date.format) }}
+                                                           {{ article.created|date(display.date.format) }}
                                                         {% endif %}
                                                     </span>
                                                 {% endif %}
@@ -146,10 +152,11 @@
                 {# END GRID #}
             {% endfor %}
             {# END ARTICLe #}
+                
+        </div>
             
-        {% endif %}
-        {# END LAYOUT STYLE #}
+    {% endif %}
+    {# END LAYOUT STYLE #}
  
-    </div>
 {% endblock %}
 
