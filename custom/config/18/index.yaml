@@ -1,5 +1,5 @@
-name: '18'
-timestamp: 1530893006
+name: 18
+timestamp: 1530965245
 version: 7
 preset:
   image: 'gantry-admin://images/layouts/default.png'
@@ -27,13 +27,13 @@ sections:
   footer: Footer
   offcanvas: Offcanvas
 particles:
+  portfolioSZ:
+    portfolioSZ-3657: Portfolio
   logo:
     logo-3208: 'Logo / Image'
     logo-2093: 'Logo / Image'
   menu:
     menu-4714: Menu
-  portfolioSZ:
-    portfolioSZ-3657: Portfolio
   spacer:
     spacer-7698: Spacer
     spacer-5924: Spacer
@@ -59,8 +59,6 @@ inherit:
     zenith: zenith
     navtop: navtop
     navigation: navigation
-    logo-3208: logo-9501
-    menu-4714: menu-6609
     intro: intro
     features: features
     utility: utility
@@ -68,23 +66,25 @@ inherit:
     testimonials: testimonials
     expanded: expanded
     aside: aside
-    spacer-7698: spacer-2395
     mainbar: mainbar
-    system-messages-7494: system-messages-2617
-    position-module-3184: position-module-9693
-    system-content-2151: system-content-1966
     sidebar: sidebar
-    spacer-5924: spacer-4623
-    position-module-1765: position-module-8967
     mainbottom: mainbottom
     footertop: footertop
     footer: footer
+    footerbottom: footerbottom
+    nadir: nadir
+    offcanvas: offcanvas
+    logo-3208: logo-9501
+    menu-4714: menu-6609
+    spacer-7698: spacer-2395
+    system-messages-7494: system-messages-2617
+    position-module-3184: position-module-9693
+    system-content-2151: system-content-1966
+    spacer-5924: spacer-4623
+    position-module-1765: position-module-8967
     logo-2093: logo-9571
     copyright-5363: copyright-1736
     horizontalmenu-3230: horizontalmenu-9034
     totop-5667: totop-8670
     socialfloatingSZ-2797: socialfloatingSZ-2700
-    footerbottom: footerbottom
-    nadir: nadir
-    offcanvas: offcanvas
     mobile-menu-1515: mobile-menu-5697

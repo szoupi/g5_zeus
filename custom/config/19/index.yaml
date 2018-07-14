@@ -1,5 +1,5 @@
 name: '19'
-timestamp: 1530365306
+timestamp: 1530965550
 version: 7
 preset:
   image: 'gantry-admin://images/layouts/default.png'
@@ -34,6 +34,8 @@ particles:
     menu-9682: Menu
   portfolioSZ:
     portfolioSZ-6254: Portfolio
+  skillsbarSZ:
+    skillsbarSZ-3582: 'Skills bar'
   spacer:
     spacer-4815: Spacer
     spacer-5006: Spacer
