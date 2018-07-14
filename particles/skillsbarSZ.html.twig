@@ -81,6 +81,8 @@
             lazyLoad()
 
             function lazyLoad() {
+                /* Animate the skill bar */
+                
                 console.log('starting lazy load');
 
                 var lazyItems = [].slice.call(document.querySelectorAll('div.sz-skill-bar'))
@@ -98,17 +100,17 @@
                                 lzItem.classList.add('skills');
 
                                 lazyObserver.unobserve(lzItem);
-                                console.log('IntersectionObserver  map unobserved');
+                                console.log('lzItem unobserved');
                             }
                         })
                     })
-                    lazyItems.forEach(map => {
-                        lazyObserver.observe(map)
+                    lazyItems.forEach(item => {
+                        lazyObserver.observe(item)
                     })
 
                 } else {
                     // Possibly fall back to a more compatible method here
-                    console.log('lazy load map did not succeed');
+                    console.log('lazy load script did not succeed');
                 }
             } 
         </script>

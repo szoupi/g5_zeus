@@ -194,3 +194,114 @@ structure:
 content:
   portfolioSZ-6254:
     title: Portfolio
+    attributes:
+      filterPortfolios: 'Yes'
+      portfolios:
+        -
+          image: 'gantry-media://demoimages/img01.jpg'
+          maintitle: 'A Catchy title'
+          description: ' a catch description for the portfolio item!'
+          tags:
+            -
+              text: tag1
+            -
+              text: tag2
+          link1: '#'
+          linktext1: Demo
+          linkstyle1: ''
+          link2: '#'
+          linktext2: Documentation
+          linkstyle2: button-2
+          link3: '#'
+          linktext3: Download
+          linkstyle3: button-outline
+          title: 'New item'
+        -
+          image: 'gantry-media://demoimages/img06.jpg'
+          maintitle: 'A Catchy title'
+          description: ' a catch description for the portfolio item!'
+          link1: '#'
+          linktext1: Demo
+          linkstyle1: ''
+          link2: '#'
+          linktext2: Documentation
+          linkstyle2: ''
+          link3: '#'
+          linktext3: Download
+          linkstyle3: ''
+          title: 'New item'
+        -
+          image: 'gantry-media://demoimages/img13.jpg'
+          maintitle: 'A Catchy title'
+          description: ' a catch description for the portfolio item!'
+          link1: '#'
+          linktext1: Demo
+          linkstyle1: ''
+          link2: '#'
+          linktext2: Documentation
+          linkstyle2: ''
+          link3: '#'
+          linktext3: Download
+          linkstyle3: ''
+          title: 'New item'
+        -
+          image: 'gantry-media://demoimages/img15.jpg'
+          maintitle: 'A Catchy title'
+          description: ' a catch description for the portfolio item!'
+          link1: '#'
+          linktext1: Demo
+          linkstyle1: ''
+          link2: '#'
+          linktext2: Documentation
+          linkstyle2: ''
+          link3: '#'
+          linktext3: Download
+          linkstyle3: ''
+          title: 'New item'
+        -
+          image: 'gantry-media://demoimages/img02.jpg'
+          maintitle: 'A Catchy title'
+          description: ' a catch description for the portfolio item!'
+          tags:
+            -
+              text: tag1
+            -
+              text: tag3
+          link1: '#'
+          linktext1: Demo
+          linkstyle1: button-outline
+          link2: '#'
+          linktext2: Documentation
+          linkstyle2: button-2
+          link3: '#'
+          linktext3: Download
+          linkstyle3: button-outline
+          title: 'New item'
+        -
+          image: 'gantry-media://demoimages/img04.jpg'
+          maintitle: 'A Catchy title'
+          description: ' a catch description for the portfolio item!'
+          link1: '#'
+          linktext1: Demo
+          linkstyle1: ''
+          link2: '#'
+          linktext2: Documentation
+          linkstyle2: ''
+          link3: '#'
+          linktext3: Download
+          linkstyle3: ''
+          title: 'New item'
+        -
+          image: 'gantry-media://demoimages/img10.jpg'
+          maintitle: 'A Catchy title'
+          description: ' a catch description for the portfolio item!'
+          link1: '#'
+          linktext1: Demo
+          linkstyle1: ''
+          link2: '#'
+          linktext2: Documentation
+          linkstyle2: ''
+          link3: '#'
+          linktext3: Download
+          linkstyle3: ''
+          title: 'New item'

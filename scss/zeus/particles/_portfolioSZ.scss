@@ -1,6 +1,17 @@
 .portfolio-sz {
     text-align: center;
     
+    // smoothly display lazy load images
+    img.sz-lazy {
+        opacity: 1;
+        transition: opacity 0.3s;
+
+        &[data-src] {
+            opacity: 1; // change it to 0
+        }
+    }
+
+
     .g-content{
         padding-left: 0;
         padding-right: 0;

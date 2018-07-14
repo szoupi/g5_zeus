@@ -1,5 +1,5 @@
-name: 19
-timestamp: 1531578806
+name: '19'
+timestamp: 1531604673
 version: 7
 preset:
   image: 'gantry-admin://images/layouts/default.png'
@@ -27,13 +27,13 @@ sections:
   footer: Footer
   offcanvas: Offcanvas
 particles:
-  portfolioSZ:
-    portfolioSZ-6254: Portfolio
   logo:
     logo-4206: 'Logo / Image'
     logo-9938: 'Logo / Image'
   menu:
     menu-9682: Menu
+  portfolioSZ:
+    portfolioSZ-6254: Portfolio
   spacer:
     spacer-4815: Spacer
     spacer-5006: Spacer
@@ -59,6 +59,8 @@ inherit:
     zenith: zenith
     navtop: navtop
     navigation: navigation
+    logo-4206: logo-9501
+    menu-9682: menu-6609
     intro: intro
     features: features
     utility: utility
@@ -66,25 +68,23 @@ inherit:
     testimonials: testimonials
     expanded: expanded
     aside: aside
-    mainbar: mainbar
-    sidebar: sidebar
-    mainbottom: mainbottom
-    footertop: footertop
-    footer: footer
-    footerbottom: footerbottom
-    nadir: nadir
-    offcanvas: offcanvas
-    logo-4206: logo-9501
-    menu-9682: menu-6609
     spacer-4815: spacer-2395
+    mainbar: mainbar
     system-messages-9625: system-messages-2617
     position-module-1104: position-module-9693
     system-content-8244: system-content-1966
+    sidebar: sidebar
     spacer-5006: spacer-4623
     position-module-1008: position-module-8967
+    mainbottom: mainbottom
+    footertop: footertop
+    footer: footer
     logo-9938: logo-9571
     copyright-4883: copyright-1736
     horizontalmenu-5587: horizontalmenu-9034
     totop-7381: totop-8670
     socialfloatingSZ-8414: socialfloatingSZ-2700
+    footerbottom: footerbottom
+    nadir: nadir
+    offcanvas: offcanvas
     mobile-menu-1882: mobile-menu-5697
