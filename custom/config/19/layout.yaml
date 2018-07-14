@@ -10,8 +10,6 @@ layout:
   /header/:
     -
       - portfolioSZ-6254
-    -
-      - skillsbarSZ-3582
   intro: {  }
   features: {  }
   utility: {  }
@@ -196,5 +194,3 @@ structure:
 content:
   portfolioSZ-6254:
     title: Portfolio
-  skillsbarSZ-3582:
-    title: 'Skills bar'

@@ -12,14 +12,14 @@
         <script src="{{ url('gantry-theme://particles/semanticui/visibility.min.js') }}"
             type="text/javascript"></script>
         #}
+
+        
             
 	{% endif %}
 {% endblock %}
 
 
 {% block particle %}
-
-
 
     <div class="content-particle  skillbarSZ" >
         <div class="g-grid">
@@ -42,32 +42,76 @@
             </div>
         </div>
 
-            <style>
-                    @keyframes expanddiv { 
-                    0%  { width:0px; } 
-                    100%{ width:{{ bar.percentance }}% ;}  
-                }
-            </style>
 
 
-            <div class="g-block">
-                <div class="g-content">
-                    <div class="sz-skillbars  {{ particle.style }}">
-                        {% for bar in particle.bars %}
-                            <span class="sz-skillsbar-title">{{ bar.skillTitle|raw }}</span>
-                            <span class="sz-skillsbar-percentance"> {{ bar.percentance }}%</span>
-                                <div class="container">
-                                <div class="skills" 
-                                     style="width:{{ bar.percentance }}%;
-                                            background-color:{{ bar.color }};
-                                            transition: width 2s linear 1s;">
-                                
-                                </div>
+
+
+        {# it is activated by the class .skills #}
+        <style>
+            @keyframes expanddiv { 
+                0%  { width:0px; } 
+                100%{ width:{{ bar.percentance }}% ;}  
+            }
+        </style>
+
+
+        <div class="g-block">
+            <div class="g-content">
+                <div class="sz-skillbars  {{ particle.style }}">
+                    {% for bar in particle.bars %}
+                        <span class="sz-skillsbar-title">{{ bar.skillTitle|raw }}</span>
+                        <span class="sz-skillsbar-percentance"> {{ bar.percentance }}%</span>
+                        <div class="container">
+                            <div class="sz-skill-bar" 
+                                    style="width:{{ bar.percentance }}%;
+                                        background-color:{{ bar.color }};
+                                        transition: width 2s linear 1s;">
+                            
                             </div>
-                        {% endfor %}
-                    </div>
+                        </div>
+                    {% endfor %}
                 </div>
-            </div>        
+            </div>
+        </div>        
         
     </div>
+
+
+        <script>
+            lazyLoad()
+
+            function lazyLoad() {
+                console.log('starting lazy load');
+
+                var lazyItems = [].slice.call(document.querySelectorAll('div.sz-skill-bar'))
+
+                if ('IntersectionObserver' in window) {
+                    console.log('IntersectionObserver activated for lazy items (skillbar)');
+
+                    let lazyObserver = new IntersectionObserver(function (entries, observer) {
+                        entries.forEach((entry) => {
+
+                            if (entry.isIntersecting) {
+                                let lzItem = entry.target;
+
+                                // lzItem.classList.remove('mapHidden');
+                                lzItem.classList.add('skills');
+
+                                lazyObserver.unobserve(lzItem);
+                                console.log('IntersectionObserver  map unobserved');
+                            }
+                        })
+                    })
+                    lazyItems.forEach(map => {
+                        lazyObserver.observe(map)
+                    })
+
+                } else {
+                    // Possibly fall back to a more compatible method here
+                    console.log('lazy load map did not succeed');
+                }
+            } 
+        </script>
+
+
 {% endblock %}

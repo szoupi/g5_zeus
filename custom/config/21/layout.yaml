@@ -4,24 +4,22 @@ preset:
   name: default
   timestamp: 1490038588
 layout:
-  /zenith/: {  }
-  /navtop/: {  }
+  zenith: {  }
+  navtop: {  }
   navigation: {  }
   /header/:
     -
-      - customcontentSZ-5107
+      - skillsbarSZ-1000
   /intro/:
     -
-      - 'custom-3604 50'
-      - 'custom-4561 50'
+      - skillsbarSZ-9183
   /features/:
     -
-      - 'custom-9202 50'
-      - 'custom-9118 50'
-  /utility/: {  }
-  /above/: {  }
-  /testimonials/: {  }
-  /expanded/: {  }
+      - skillsbarSZ-9795
+  utility: {  }
+  above: {  }
+  testimonials: {  }
+  expanded: {  }
   /container-main/:
     -
       -
@@ -30,33 +28,42 @@ layout:
         'mainbar 50': {  }
       -
         'sidebar 25': {  }
-  /mainbottom/: {  }
-  /footertop/: {  }
+  mainbottom: {  }
+  footertop: {  }
   footer: {  }
-  /footerbottom/: {  }
-  /nadir/: {  }
+  footerbottom: {  }
+  nadir: {  }
   offcanvas: {  }
 structure:
   zenith:
     type: section
-    attributes:
-      boxed: ''
+    inherit:
+      outline: default
+      include:
+        - attributes
+        - block
+        - children
   navtop:
     type: section
-    attributes:
-      boxed: ''
+    inherit:
+      outline: default
+      include:
+        - attributes
+        - block
+        - children
   navigation:
     type: section
     inherit:
       outline: default
       include:
         - attributes
+        - block
         - children
   header:
     attributes:
       boxed: ''
       class: ''
-      background: 'gantry-media://demos/gabriele-motter.jpg'
+      background: ''
       backgroundOverlay: ''
       backgroundAttachment: fixed
       backgroundRepeat: ''
@@ -78,55 +85,71 @@ structure:
     attributes:
       boxed: '0'
       class: ''
-      background: ''
-      backgroundOverlay: 'rgba(0, 0, 0, 0)'
-      backgroundAttachment: ''
-      backgroundRepeat: ''
-      backgroundPosition: ''
-      backgroundSize: ''
-  utility:
-    type: section
-    attributes:
-      boxed: '0'
-      class: ''
-      background: ''
-      backgroundOverlay: 'rgba(0, 0, 0, 0)'
-      backgroundAttachment: ''
-      backgroundRepeat: ''
-      backgroundPosition: ''
-      backgroundSize: ''
-  above:
-    type: section
-    attributes:
-      boxed: ''
-  testimonials:
-    type: section
-    attributes:
-      boxed: ''
-      class: ''
       background: 'gantry-media://demos/background_blue_lines.png'
       backgroundOverlay: 'rgba(0, 0, 0, 0)'
       backgroundAttachment: ''
       backgroundRepeat: ''
       backgroundPosition: ''
       backgroundSize: cover
+  utility:
+    type: section
+    inherit:
+      outline: default
+      include:
+        - attributes
+        - block
+        - children
+  above:
+    type: section
+    inherit:
+      outline: default
+      include:
+        - attributes
+        - block
+        - children
+  testimonials:
+    type: section
+    inherit:
+      outline: default
+      include:
+        - attributes
+        - block
+        - children
   expanded:
     type: section
-    attributes:
-      boxed: ''
+    inherit:
+      outline: default
+      include:
+        - attributes
+        - block
+        - children
   aside:
-    attributes:
-      class: ''
+    inherit:
+      outline: default
+      include:
+        - attributes
+        - block
+        - children
     block:
       fixed: '1'
   mainbar:
     type: section
     subtype: main
+    inherit:
+      outline: default
+      include:
+        - attributes
+        - block
+        - children
   sidebar:
     type: section
     subtype: aside
-    attributes:
-      class: ''
+    inherit:
+      outline: default
+      include:
+        - attributes
+        - block
+        - children
     block:
       fixed: '1'
   container-main:
@@ -134,66 +157,60 @@ structure:
       boxed: ''
   mainbottom:
     type: section
-    attributes:
-      boxed: ''
+    inherit:
+      outline: default
+      include:
+        - attributes
+        - block
+        - children
   footertop:
     type: section
-    attributes:
-      boxed: ''
+    inherit:
+      outline: default
+      include:
+        - attributes
+        - block
+        - children
   footer:
     inherit:
       outline: default
       include:
         - attributes
+        - block
         - children
   footerbottom:
     type: section
-    attributes:
-      boxed: ''
+    inherit:
+      outline: default
+      include:
+        - attributes
+        - block
+        - children
   nadir:
     type: section
-    attributes:
-      boxed: ''
+    inherit:
+      outline: default
+      include:
+        - attributes
+        - block
+        - children
   offcanvas:
     inherit:
       outline: default
       include:
         - attributes
+        - block
         - children
 content:
-  customcontentSZ-5107:
-    title: HEADER
+  skillsbarSZ-1000:
+    title: 'Skills bar'
+  skillsbarSZ-9183:
+    title: 'Skills bar'
     attributes:
-      height: 30vh
-      headline: 'BLOCK VARIATIONS'
-      description: 'Block variations are easy-to-use preset styles that can be applied to any content block. <br />You can do this through the admin by navigating to the particle and/or block''s settings in the Layout Manager, selecting the Block tab, and selecting them within the Variations field.'
-      link: ''
-      linktext: ''
-      link2: ''
-      linktext2: ''
-    block:
-      variations: center
-  custom-3604:
-    title: box2
+      enabled: 0
+      style: style2
+      headline: 'My awesome skills 2!'
+  skillsbarSZ-9795:
+    title: 'Skills bar'
     attributes:
-      html: " <h1>BOX 1</h1>\n<h1>Heading H1</h1>\n<h2>Heading H2</h2>\n<h3>Heading H3</h3>\n<h4>Heading H4</h4>\n<h5>Heading H5</h5>\n<h6>Heading H6</h6>\n<p>this is a paragraph and <a href=\"/joomla-templates/aylo2/\">this is a link</a> inside a paragraph</p>\n<p>this is a paragraph and <a class=\"button\" href=\"/joomla-templates/aylo2/\">button </a> inside a paragraph</p>\n<pre>this is preformatted text</pre>\n<p> \n\n<button type=\"button\" class=\"button\">button</button>\n\n</p>"
-    block:
-      variations: box1
-  custom-4561:
-    title: box2
-    attributes:
-      html: " <h1>BOX 2</h1>\n<h1>Heading H1</h1>\n<h2>Heading H2</h2>\n<h3>Heading H3</h3>\n<h4>Heading H4</h4>\n<h5>Heading H5</h5>\n<h6>Heading H6</h6>\n<p>this is a paragraph and <a href=\"/joomla-templates/aylo2/\">this is a link</a> inside a paragraph</p>\n<p>this is a paragraph and <a class=\"button\" href=\"/joomla-templates/aylo2/\">button </a> inside a paragraph</p>\n<pre>this is preformatted text</pre>\n<p> \n\n<button type=\"button\" class=\"button\">button</button>\n\n</p>"
-    block:
-      variations: box2
-  custom-9202:
-    title: 'box outline'
-    attributes:
-      html: " <h1>BOX OUTLINE</h1>\n<h1>Heading H1</h1>\n<h2>Heading H2</h2>\n<h3>Heading H3</h3>\n<h4>Heading H4</h4>\n<h5>Heading H5</h5>\n<h6>Heading H6</h6>\n<p>this is a paragraph and <a href=\"/joomla-templates/aylo2/\">this is a link</a> inside a paragraph</p>\n<p>this is a paragraph and <a class=\"button\" href=\"/joomla-templates/aylo2/\">button </a> inside a paragraph</p>\n<pre>this is preformatted text</pre>\n<p> \n\n<button type=\"button\" class=\"button\">button</button>\n\n</p>"
-    block:
-      variations: box-outline
-  custom-9118:
-    title: 'box gradient'
-    attributes:
-      html: " <h1>BOX GRADIENT</h1>\n<h1>Heading H1</h1>\n<h2>Heading H2</h2>\n<h3>Heading H3</h3>\n<h4>Heading H4</h4>\n<h5>Heading H5</h5>\n<h6>Heading H6</h6>\n<p>this is a paragraph and <a href=\"/joomla-templates/aylo2/\">this is a link</a> inside a paragraph</p>\n<p>this is a paragraph and <a class=\"button\" href=\"/joomla-templates/aylo2/\">button </a> inside a paragraph</p>\n<pre>this is preformatted text</pre>\n<p> \n\n<button type=\"button\" class=\"button\">button</button>\n\n</p>"
-    block:
-      variations: box-gradient
+      enabled: 0
