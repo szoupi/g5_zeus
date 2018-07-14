@@ -29,6 +29,16 @@ form:
         # Tables: Tables
         # Quotes: Quotes
         
+    gutter:
+      type: select.select
+      label: Use gutter?
+      description: Display gutter between grid items?
+      default: No
+      options:
+        No: No
+        Yes: Yes
+      overridable: false        
+        
     _tabs:
       type: container.tabs
       fields:
@@ -116,32 +126,6 @@ form:
               options:
                 intro: Intro
                 full: Full
-                '': None
-            article.display.text.type:
-              type: select.select
-              label: Article Text
-              description: Select if and how the article text should be shown.
-              default: intro
-              options:
-                intro: Introduction
-                full: Full Article
-                '': Hide
-
-            article.display.text.limit:
-              type: input.text
-              label: Text Limit
-              description: Type in the number of characters the article text should be limited to.
-              default: ''
-              pattern: '\d+'
-
-            article.display.text.formatting:
-              type: select.select
-              label: Text Formatting
-              description: Select the formatting you want to use to display the article text.
-              default: text
-              options:
-                text: Plain Text
-                html: HTML
 
             article.display.title.limit:
               type: input.text
@@ -201,15 +185,6 @@ form:
               options:
                 show: Show
                 link: Show with Link
-                '': Hide
-
-            article.display.hits.enabled:
-              type: select.select
-              label: Hits
-              description: Select if the article hits should be shown.
-              default: show
-              options:
-                show: Show
                 '': Hide
 
     css.class:

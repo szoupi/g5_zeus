@@ -45,16 +45,16 @@
 
         {# All Articles  ############################}
         {# CONTAINER #}
-        <div class="g-featuredarticles-sz sz-wrapper {% if particle.css.class %} {{ particle.css.class }}{% endif %}" {{-
-        attr_extra|raw }}>
+        <div class="g-featuredarticles-sz sz-wrapper 
+            {% if particle.gutter == 'Yes' %} gutter {% endif %}
+            {% if particle.css.class %} {{ particle.css.class }}{% endif %}" {{- attr_extra|raw }}>
 
-                
-    
             {% for article in articles  %}
-                <div class="g-grid sz-featured-box three">
-                    
-                            
-                            
+                <div class="g-grid sz-featured-box 
+                    {%  if limit.total == 5 %} five {% endif %}
+                    {%  if limit.total == 4 %} four {% endif %}
+                    {%  if limit.total == 3 %} three {% endif %}
+                ">
                         {#IMAGE ############################}
                         {% if display.image.enabled and article.images.image_intro or article.images.image_fulltext %}
                             

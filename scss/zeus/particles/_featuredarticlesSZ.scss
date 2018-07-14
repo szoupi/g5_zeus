@@ -3,8 +3,7 @@
 
     // LAYOUT FEATURED ========================
     display: grid;
-    grid-gap: 0;
-    grid-auto-rows: 1fr; // set equal height for each row
+    // grid-auto: 1fr; // set equal height for each row
     min-height: 48vh;
     
     // typically min 48rem
@@ -23,6 +22,9 @@
         background-color: rgba(0, 0, 0, 0.1);
     }
     
+    &.gutter {
+        grid-gap: 0.5rem;
+    }
     
 
     div.g-grid.sz-featured-box {
