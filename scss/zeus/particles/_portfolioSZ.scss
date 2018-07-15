@@ -17,7 +17,7 @@
         padding-right: 0;
         margin-left: 0;
         margin-right: 0;
-        margin-bottom: 2rem;
+        margin-bottom: 1rem;
 
     }
     .portfolio-sz-title {
@@ -26,6 +26,11 @@
         font-weight: 800;
         margin-bottom: 2rem;
 
+    }
+
+    .portfolio-sz-description, 
+    {
+        margin: 2rem 0;
     }
 
     // css grid
@@ -64,14 +69,23 @@
 
 
     .portfolio-sz-content{
-        margin-bottom: 2rem;
+        margin-bottom: 1rem;
 
         .portfolio-sz-item-title {
             font-size: 2rem;
             line-height: 120%;
             font-weight: 800;
-            margin: 1rem 0;
+            margin: 2rem 0;
         }
+
+        .portfolio-sz-item-description {
+            margin: 0.5rem 0;
+        }
+
+        .portfolio-sz-tags {
+            margin: 0.5rem 0;
+        }
+
     }
     
     

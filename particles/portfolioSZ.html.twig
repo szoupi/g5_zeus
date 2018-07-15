@@ -120,7 +120,7 @@
 
                             {# DESCRIPTION #}
                             {% if portfolio.description %}
-                                <div>{{ portfolio.description|raw }}</div>
+                                <div class="portfolio-sz-item-description">{{ portfolio.description|raw }}</div>
                             {% endif %}                                
 
                             {# TAGS #}
@@ -128,7 +128,7 @@
                                 {% if portfolio.tags %}
                                     <div class="portfolio-sz-tags">
                                         {% for tag in portfolio.tags %}
-                                            <span class="tag">{{ tag.text|raw }} </span>
+                                            <span class="label">{{ tag.text|raw }} </span>
                                         {% endfor %}
                                     </div>
                                 {% endif %}

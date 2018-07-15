@@ -141,6 +141,16 @@ table.table-bordered {
 }
 
 // Labels and Badges
+.label {
+    display: inline-block;
+    color: #fff;
+    padding: 0.35em 0.85em;
+    margin-bottom: 0.5rem;
+    line-height: 1.1538;
+    border-radius: 2.5rem;
+    text-align: center;
+}
+
 .label,
 .badge {
     vertical-align: middle;
