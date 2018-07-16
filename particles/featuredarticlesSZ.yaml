@@ -16,19 +16,12 @@ form:
       label: Layout
       description: Select a layout 
       placeholder: 'Select...'
-      default:  3-column
+      default:  Hierarchical horizontal
       options:
-        3-column: 3-column
-        equal: equal
-        # Headlines: Headlines
-        # Mosaic: Mosaic
-        # Strips: Strips
-        # Tabs: Tabs
-        # Grids: Grids
-        # Sliders: Sliders
-        # Tables: Tables
-        # Quotes: Quotes
-        
+        hierarchical_horizontal: Hierarchical horizontal
+        hierarchical_vertical: Hierarchical vertical
+        symmetrical: symmetrical
+
     gutter:
       type: select.select
       label: Use gutter?
@@ -37,7 +30,17 @@ form:
       options:
         No: No
         Yes: Yes
-      overridable: false        
+      overridable: false
+      
+    overlay:
+      type: select.select
+      label: Content background
+      description: Display dark background for content (title, date etc)?
+      default: No background
+      overridable: false
+      options:
+        No: No background
+        Yes: Dark transparent
         
     _tabs:
       type: container.tabs

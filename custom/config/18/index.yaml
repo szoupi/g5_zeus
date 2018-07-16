@@ -1,5 +1,10 @@
+<<<<<<< HEAD
 name: '18'
 timestamp: 1531696784
+=======
+name: 18
+timestamp: 1530893006
+>>>>>>> c1fae3c3573605b3da4a5bbb978ed58bb8b86da5
 version: 7
 preset:
   image: 'gantry-admin://images/layouts/default.png'
