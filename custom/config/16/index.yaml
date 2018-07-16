@@ -1,5 +1,5 @@
-name: 16
-timestamp: 1529357001
+name: '16'
+timestamp: 1531695625
 version: 7
 preset:
   image: 'gantry-admin://images/layouts/default.png'
@@ -32,8 +32,6 @@ particles:
     logo-9571: 'Logo / Image'
   menu:
     menu-6609: Menu
-  timelineSZ:
-    timelineSZ-8086: Timeline
   spacer:
     spacer-2395: Spacer
     spacer-4623: Spacer

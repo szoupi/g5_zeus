@@ -10,8 +10,12 @@ layout:
   /header/:
     -
       - portfolioSZ-6254
-  intro: {  }
-  features: {  }
+  /intro/:
+    -
+      - portfolioSZ-4992
+  /features/:
+    -
+      - portfolioSZ-1117
   utility: {  }
   above: {  }
   testimonials: {  }
@@ -67,20 +71,26 @@ structure:
       backgroundSize: cover
   intro:
     type: section
-    inherit:
-      outline: default
-      include:
-        - attributes
-        - block
-        - children
+    attributes:
+      boxed: '0'
+      class: ''
+      background: ''
+      backgroundOverlay: 'rgba(0, 0, 0, 0)'
+      backgroundAttachment: ''
+      backgroundRepeat: ''
+      backgroundPosition: ''
+      backgroundSize: ''
   features:
     type: section
-    inherit:
-      outline: default
-      include:
-        - attributes
-        - block
-        - children
+    attributes:
+      boxed: '0'
+      class: ''
+      background: 'gantry-media://demos/background_blue_lines.png'
+      backgroundOverlay: 'rgba(0, 0, 0, 0)'
+      backgroundAttachment: ''
+      backgroundRepeat: ''
+      backgroundPosition: ''
+      backgroundSize: cover
   utility:
     type: section
     inherit:
@@ -195,113 +205,16 @@ content:
   portfolioSZ-6254:
     title: Portfolio
     attributes:
+      headline: 'My awesome portfolio - 4 equal columns'
+      description: 'Create awesome responsive portfolios using the portfolio particle'
+      colums: grid4
       filterPortfolios: 'Yes'
-      portfolios:
-        -
-          image: 'gantry-media://demoimages/img01.jpg'
-          maintitle: 'A Catchy title'
-          description: ' a catch description for the portfolio item!'
-          tags:
-            -
-              text: tag1
-            -
-              text: tag2
-          link1: '#'
-          linktext1: Demo
-          linkstyle1: ''
-          link2: '#'
-          linktext2: Documentation
-          linkstyle2: button-2
-          link3: '#'
-          linktext3: Download
-          linkstyle3: button-outline
-          title: 'New item'
-        -
-          image: 'gantry-media://demoimages/img06.jpg'
-          maintitle: 'A Catchy title'
-          description: ' a catch description for the portfolio item!'
-          link1: '#'
-          linktext1: Demo
-          linkstyle1: ''
-          link2: '#'
-          linktext2: Documentation
-          linkstyle2: ''
-          link3: '#'
-          linktext3: Download
-          linkstyle3: ''
-          title: 'New item'
-        -
-          image: 'gantry-media://demoimages/img13.jpg'
-          maintitle: 'A Catchy title'
-          description: ' a catch description for the portfolio item!'
-          link1: '#'
-          linktext1: Demo
-          linkstyle1: ''
-          link2: '#'
-          linktext2: Documentation
-          linkstyle2: ''
-          link3: '#'
-          linktext3: Download
-          linkstyle3: ''
-          title: 'New item'
-        -
-          image: 'gantry-media://demoimages/img15.jpg'
-          maintitle: 'A Catchy title'
-          description: ' a catch description for the portfolio item!'
-          link1: '#'
-          linktext1: Demo
-          linkstyle1: ''
-          link2: '#'
-          linktext2: Documentation
-          linkstyle2: ''
-          link3: '#'
-          linktext3: Download
-          linkstyle3: ''
-          title: 'New item'
-        -
-          image: 'gantry-media://demoimages/img02.jpg'
-          maintitle: 'A Catchy title'
-          description: ' a catch description for the portfolio item!'
-          tags:
-            -
-              text: tag1
-            -
-              text: tag3
-          link1: '#'
-          linktext1: Demo
-          linkstyle1: button-outline
-          link2: '#'
-          linktext2: Documentation
-          linkstyle2: button-2
-          link3: '#'
-          linktext3: Download
-          linkstyle3: button-outline
-          title: 'New item'
-        -
-          image: 'gantry-media://demoimages/img04.jpg'
-          maintitle: 'A Catchy title'
-          description: ' a catch description for the portfolio item!'
-          link1: '#'
-          linktext1: Demo
-          linkstyle1: ''
-          link2: '#'
-          linktext2: Documentation
-          linkstyle2: ''
-          link3: '#'
-          linktext3: Download
-          linkstyle3: ''
-          title: 'New item'
-        -
-          image: 'gantry-media://demoimages/img10.jpg'
-          maintitle: 'A Catchy title'
-          description: ' a catch description for the portfolio item!'
-          link1: '#'
-          linktext1: Demo
-          linkstyle1: ''
-          link2: '#'
-          linktext2: Documentation
-          linkstyle2: ''
-          link3: '#'
-          linktext3: Download
-          linkstyle3: ''
-          title: 'New item'
+  portfolioSZ-4992:
+    title: 'Portfolio 3 equal columns'
+    attributes:
+      headline: 'My awesome portfolio- 3 equal columns'
+  portfolioSZ-1117:
+    title: 'Portfolio 2 equal columns'
+    attributes:
+      headline: 'My awesome portfolio - 2 equal columns'
+      colums: grid2

@@ -4,57 +4,76 @@ preset:
   name: default
   timestamp: 1490038588
 layout:
-  zenith: {  }
-  navtop: {  }
-  navigation: {  }
-  /header/:
+  /zenith/:
     -
-      - portfolioSZ-3657
-  intro: {  }
-  features: {  }
-  utility: {  }
-  above: {  }
-  testimonials: {  }
-  expanded: {  }
+      - customcontentSZ-4429
+  /navtop/: {  }
+  /navigation/:
+    -
+      - 'logo-9501 25'
+      - 'menu-6609 75'
+  /header/: {  }
+  /intro/: {  }
+  /features/: {  }
+  /utility/: {  }
+  /above/: {  }
+  /testimonials/: {  }
+  /expanded/: {  }
   /container-main/:
     -
       -
-        'aside 25': {  }
+        'aside 25':
+          -
+            - spacer-2395
       -
-        'mainbar 50': {  }
+        'mainbar 50':
+          -
+            - system-messages-2617
+          -
+            - position-module-9693
+          -
+            - system-content-1966
       -
-        'sidebar 25': {  }
-  mainbottom: {  }
-  footertop: {  }
-  footer: {  }
-  footerbottom: {  }
-  nadir: {  }
-  offcanvas: {  }
+        'sidebar 25':
+          -
+            - spacer-4623
+          -
+            - position-module-8967
+  /mainbottom/: {  }
+  /footertop/: {  }
+  /footer/:
+    -
+      - 'logo-9571 21'
+      - 'copyright-1736 26'
+      - 'horizontalmenu-9034 24'
+      - 'totop-8670 29'
+    -
+      - socialfloatingSZ-2700
+  /footerbottom/: {  }
+  /nadir/: {  }
+  offcanvas:
+    -
+      - mobile-menu-5697
 structure:
   zenith:
     type: section
-    inherit:
-      outline: default
-      include:
-        - attributes
-        - block
-        - children
+    attributes:
+      boxed: ''
   navtop:
     type: section
-    inherit:
-      outline: default
-      include:
-        - attributes
-        - block
-        - children
+    attributes:
+      boxed: ''
   navigation:
     type: section
-    inherit:
-      outline: default
-      include:
-        - attributes
-        - block
-        - children
+    attributes:
+      boxed: '0'
+      class: ''
+      background: ''
+      backgroundOverlay: 'rgba(0, 0, 0, 0)'
+      backgroundAttachment: ''
+      backgroundRepeat: ''
+      backgroundPosition: ''
+      backgroundSize: ''
   header:
     attributes:
       boxed: ''
@@ -67,79 +86,69 @@ structure:
       backgroundSize: cover
   intro:
     type: section
-    inherit:
-      outline: default
-      include:
-        - attributes
-        - block
-        - children
+    attributes:
+      boxed: '0'
+      class: ''
+      background: ''
+      backgroundOverlay: 'rgba(0, 0, 0, 0)'
+      backgroundAttachment: ''
+      backgroundRepeat: ''
+      backgroundPosition: ''
+      backgroundSize: ''
   features:
     type: section
-    inherit:
-      outline: default
-      include:
-        - attributes
-        - block
-        - children
+    attributes:
+      boxed: '0'
+      class: ''
+      background: 'gantry-media://demos/background_blue_lines.png'
+      backgroundOverlay: 'rgba(0, 0, 0, 0)'
+      backgroundAttachment: ''
+      backgroundRepeat: ''
+      backgroundPosition: ''
+      backgroundSize: cover
   utility:
     type: section
-    inherit:
-      outline: default
-      include:
-        - attributes
-        - block
-        - children
+    attributes:
+      boxed: '0'
+      class: ''
+      background: ''
+      backgroundOverlay: 'rgba(0, 0, 0, 0)'
+      backgroundAttachment: ''
+      backgroundRepeat: ''
+      backgroundPosition: ''
+      backgroundSize: ''
   above:
     type: section
-    inherit:
-      outline: default
-      include:
-        - attributes
-        - block
-        - children
+    attributes:
+      boxed: ''
   testimonials:
     type: section
-    inherit:
-      outline: default
-      include:
-        - attributes
-        - block
-        - children
+    attributes:
+      boxed: ''
+      class: ''
+      background: 'gantry-media://demos/background_blue_lines.png'
+      backgroundOverlay: 'rgba(0, 0, 0, 0)'
+      backgroundAttachment: ''
+      backgroundRepeat: ''
+      backgroundPosition: ''
+      backgroundSize: cover
   expanded:
     type: section
-    inherit:
-      outline: default
-      include:
-        - attributes
-        - block
-        - children
+    attributes:
+      boxed: ''
   aside:
-    inherit:
-      outline: default
-      include:
-        - attributes
-        - block
-        - children
+    attributes:
+      class: ''
     block:
       fixed: '1'
   mainbar:
     type: section
     subtype: main
-    inherit:
-      outline: default
-      include:
-        - attributes
-        - block
-        - children
   sidebar:
     type: section
     subtype: aside
-    inherit:
-      outline: default
-      include:
-        - attributes
-        - block
-        - children
+    attributes:
+      class: ''
     block:
       fixed: '1'
   container-main:
@@ -147,152 +156,55 @@ structure:
       boxed: ''
   mainbottom:
     type: section
-    inherit:
-      outline: default
-      include:
-        - attributes
-        - block
-        - children
+    attributes:
+      boxed: ''
   footertop:
     type: section
-    inherit:
-      outline: default
-      include:
-        - attributes
-        - block
-        - children
+    attributes:
+      boxed: ''
   footer:
-    inherit:
-      outline: default
-      include:
-        - attributes
-        - block
-        - children
+    attributes:
+      boxed: ''
   footerbottom:
     type: section
-    inherit:
-      outline: default
-      include:
-        - attributes
-        - block
-        - children
+    attributes:
+      boxed: ''
   nadir:
     type: section
-    inherit:
-      outline: default
-      include:
-        - attributes
-        - block
-        - children
-  offcanvas:
-    inherit:
-      outline: default
-      include:
-        - attributes
-        - block
-        - children
-content:
-  portfolioSZ-3657:
-    title: Portfolio
     attributes:
-      headline: 'PORTFOLIO PARTICLE'
-      description: 'a short description for the portfolio'
-      colums: grid3
-      gutter: 'No'
-      filterPortfolios: 'Yes'
-      displayTags: 'Yes'
-      portfolios:
-        -
-          image: 'gantry-media://default.jpg'
-          maintitle: 'A catchy title'
-          description: ' a catchy portfolio description etc etc'
-          tags:
-            -
-              text: tag1
-            -
-              text: tag2
-          link1: '#'
-          linktext1: ''
-          linkstyle1: ''
-          link2: ''
-          linktext2: ''
-          linkstyle2: ''
-          link3: ''
-          linktext3: ''
-          linkstyle3: ''
-          title: 'New item'
-        -
-          image: 'gantry-media://default.jpg'
-          maintitle: ''
-          description: ''
-          link1: '#'
-          linktext1: demo
-          linkstyle1: ''
-          link2: '#'
-          linktext2: documentation
-          linkstyle2: ''
-          link3: '#'
-          linktext3: download
-          linkstyle3: ''
-          title: 'New item'
-        -
-          image: 'gantry-media://default.jpg'
-          maintitle: 'A catchy title'
-          description: ' a catchy portfolio description'
-          link1: '#'
-          linktext1: demo
-          linkstyle1: ''
-          link2: '#'
-          linktext2: documentation
-          linkstyle2: ''
-          link3: '#'
-          linktext3: download
-          linkstyle3: ''
-          title: 'New item'
-        -
-          image: 'gantry-media://default.jpg'
-          maintitle: ''
-          description: ''
-          tags:
-            -
-              text: tag1
-            -
-              text: tag3
-          link1: '#'
-          linktext1: demo
-          linkstyle1: ''
-          link2: '#'
-          linktext2: documentation
-          linkstyle2: ''
-          link3: '#'
-          linktext3: download
-          linkstyle3: ''
-          title: 'New item'
-        -
-          image: 'gantry-media://default.jpg'
-          maintitle: 'A catchy title'
-          description: ' a catchy portfolio description'
-          link1: '#'
-          linktext1: demo
-          linkstyle1: ''
-          link2: '#'
-          linktext2: documentation
-          linkstyle2: ''
-          link3: '#'
-          linktext3: download
-          linkstyle3: ''
-          title: 'New item'
-        -
-          image: 'gantry-media://default.jpg'
-          maintitle: 'A catchy title'
-          description: ' a catchy portfolio description'
-          link1: '#'
-          linktext1: demo
-          linkstyle1: ''
-          link2: '#'
-          linktext2: documentation
-          linkstyle2: ''
-          link3: '#'
-          linktext3: download
-          linkstyle3: ''
-          title: 'New item'
+      boxed: ''
+  offcanvas:
+    attributes:
+      position: g-offcanvas-left
+      class: ''
+      extra: {  }
+      swipe: '1'
+      css3animation: '1'
+content:
+  customcontentSZ-4429:
+    title: 'Custom Content'
+  logo-9501:
+    title: 'Logo / Image'
+  position-module-9693:
+    title: 'articles category grouped'
+    attributes:
+      enabled: 0
+      module_id: '97'
+      key: articles-category-grouped
+  system-content-1966:
+    attributes:
+      enabled: 0
+  position-module-8967:
+    title: latest-articles
+    attributes:
+      enabled: 0
+      module_id: '90'
+      key: latest-articles
+  logo-9571:
+    title: 'Logo / Image'
+  horizontalmenu-9034:
+    title: 'Horizontal Menu'
+  totop-8670:
+    title: 'To Top'
+  socialfloatingSZ-2700:
+    title: 'Social Floating'

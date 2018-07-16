@@ -1,13 +1,10 @@
 enabled: '1'
 layout: 3-column
+gutter: 'No'
 article:
   display:
     image:
       enabled: intro
-    text:
-      type: intro
-      limit: ''
-      formatting: text
     title:
       limit: ''
     date:
@@ -17,8 +14,6 @@ article:
       enabled: show
     category:
       enabled: link
-    hits:
-      enabled: show
 css:
   class: ''
 extra: {  }

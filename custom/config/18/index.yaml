@@ -1,5 +1,5 @@
-name: 18
-timestamp: 1531578806
+name: '18'
+timestamp: 1531696784
 version: 7
 preset:
   image: 'gantry-admin://images/layouts/default.png'
@@ -27,64 +27,31 @@ sections:
   footer: Footer
   offcanvas: Offcanvas
 particles:
-  portfolioSZ:
-    portfolioSZ-3657: Portfolio
+  customcontentSZ:
+    customcontentSZ-4429: 'Custom Content'
   logo:
-    logo-3208: 'Logo / Image'
-    logo-2093: 'Logo / Image'
+    logo-9501: 'Logo / Image'
+    logo-9571: 'Logo / Image'
   menu:
-    menu-4714: Menu
+    menu-6609: Menu
   spacer:
-    spacer-7698: Spacer
-    spacer-5924: Spacer
+    spacer-2395: Spacer
+    spacer-4623: Spacer
   messages:
-    system-messages-7494: 'System Messages'
+    system-messages-2617: 'System Messages'
   module:
-    position-module-3184: 'articles category grouped'
-    position-module-1765: latest-articles
+    position-module-9693: 'articles category grouped'
+    position-module-8967: latest-articles
   content:
-    system-content-2151: 'Page Content'
+    system-content-1966: 'Page Content'
   copyright:
-    copyright-5363: Copyright
+    copyright-1736: Copyright
   horizontalmenu:
-    horizontalmenu-3230: 'Horizontal Menu'
+    horizontalmenu-9034: 'Horizontal Menu'
   totop:
-    totop-5667: 'To Top'
+    totop-8670: 'To Top'
   socialfloatingSZ:
-    socialfloatingSZ-2797: 'Social Floating'
+    socialfloatingSZ-2700: 'Social Floating'
   mobile-menu:
-    mobile-menu-1515: Mobile-menu
-inherit:
-  default:
-    zenith: zenith
-    navtop: navtop
-    navigation: navigation
-    intro: intro
-    features: features
-    utility: utility
-    above: above
-    testimonials: testimonials
-    expanded: expanded
-    aside: aside
-    mainbar: mainbar
-    sidebar: sidebar
-    mainbottom: mainbottom
-    footertop: footertop
-    footer: footer
-    footerbottom: footerbottom
-    nadir: nadir
-    offcanvas: offcanvas
-    logo-3208: logo-9501
-    menu-4714: menu-6609
-    spacer-7698: spacer-2395
-    system-messages-7494: system-messages-2617
-    position-module-3184: position-module-9693
-    system-content-2151: system-content-1966
-    spacer-5924: spacer-4623
-    position-module-1765: position-module-8967
-    logo-2093: logo-9571
-    copyright-5363: copyright-1736
-    horizontalmenu-3230: horizontalmenu-9034
-    totop-5667: totop-8670
-    socialfloatingSZ-2797: socialfloatingSZ-2700
-    mobile-menu-1515: mobile-menu-5697
+    mobile-menu-5697: Mobile-menu
+inherit: {  }

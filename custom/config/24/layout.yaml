@@ -2,138 +2,147 @@ version: 2
 preset:
   image: 'gantry-admin://images/layouts/default.png'
   name: default
-  timestamp: 1490038588
+  timestamp: 1529047451
 layout:
-  zenith: {  }
-  navtop: {  }
-  navigation: {  }
-  header: {  }
-  intro: {  }
-  features: {  }
-  utility: {  }
-  above: {  }
-  testimonials: {  }
-  expanded: {  }
+  /zenith/: {  }
+  /navtop/: {  }
+  /navigation/:
+    -
+      - 'logo-9501 25'
+      - 'menu-6609 75'
+  /header/:
+    -
+      - customcontentSZ-8913
+  /intro/: {  }
+  /features/: {  }
+  /utility/: {  }
+  /above/: {  }
+  /testimonials/: {  }
+  /expanded/: {  }
   /container-main/:
     -
       -
-        'aside 25': {  }
+        'aside 25':
+          -
+            - spacer-2395
       -
-        'mainbar 50': {  }
+        'mainbar 50':
+          -
+            - system-messages-2617
       -
-        'sidebar 25': {  }
-  mainbottom: {  }
-  footertop: {  }
-  footer: {  }
-  footerbottom: {  }
-  nadir: {  }
-  offcanvas: {  }
+        'sidebar 25':
+          -
+            - spacer-4623
+  /mainbottom/: {  }
+  /footertop/: {  }
+  /footer/:
+    -
+      - 'logo-9571 21'
+      - 'copyright-1736 26'
+      - 'horizontalmenu-9034 24'
+      - 'totop-8670 29'
+    -
+      - socialfloatingSZ-2700
+  /footerbottom/: {  }
+  /nadir/: {  }
+  offcanvas:
+    -
+      - mobile-menu-5697
 structure:
   zenith:
     type: section
-    inherit:
-      outline: '10'
-      include:
-        - attributes
-        - block
-        - children
+    attributes:
+      boxed: ''
   navtop:
     type: section
-    inherit:
-      outline: '10'
-      include:
-        - attributes
-        - block
-        - children
+    attributes:
+      boxed: ''
   navigation:
     type: section
-    inherit:
-      outline: default
-      include:
-        - attributes
-        - children
+    attributes:
+      boxed: '0'
+      class: ''
+      background: ''
+      backgroundOverlay: 'rgba(0, 0, 0, 0)'
+      backgroundAttachment: ''
+      backgroundRepeat: ''
+      backgroundPosition: ''
+      backgroundSize: ''
   header:
-    inherit:
-      outline: '10'
-      include:
-        - attributes
-        - block
-        - children
+    attributes:
+      boxed: ''
+      class: ''
+      background: 'gantry-media://demos/gabriele-motter.jpg'
+      backgroundOverlay: ''
+      backgroundAttachment: fixed
+      backgroundRepeat: ''
+      backgroundPosition: 'center center'
+      backgroundSize: cover
   intro:
     type: section
-    inherit:
-      outline: '10'
-      include:
-        - attributes
-        - block
-        - children
+    attributes:
+      boxed: '0'
+      class: ''
+      background: ''
+      backgroundOverlay: 'rgba(0, 0, 0, 0)'
+      backgroundAttachment: ''
+      backgroundRepeat: ''
+      backgroundPosition: ''
+      backgroundSize: ''
   features:
     type: section
-    inherit:
-      outline: '10'
-      include:
-        - attributes
-        - block
-        - children
+    attributes:
+      boxed: '2'
+      class: ''
+      background: 'gantry-media://demos/background_blue_lines.png'
+      backgroundOverlay: 'rgba(0, 0, 0, 0)'
+      backgroundAttachment: ''
+      backgroundRepeat: ''
+      backgroundPosition: ''
+      backgroundSize: cover
   utility:
     type: section
-    inherit:
-      outline: '10'
-      include:
-        - attributes
-        - block
-        - children
+    attributes:
+      boxed: '0'
+      class: ''
+      background: ''
+      backgroundOverlay: 'rgba(0, 0, 0, 0)'
+      backgroundAttachment: ''
+      backgroundRepeat: ''
+      backgroundPosition: ''
+      backgroundSize: ''
   above:
     type: section
-    inherit:
-      outline: '10'
-      include:
-        - attributes
-        - block
-        - children
+    attributes:
+      boxed: ''
   testimonials:
     type: section
-    inherit:
-      outline: '10'
-      include:
-        - attributes
-        - block
-        - children
+    attributes:
+      boxed: ''
+      class: ''
+      background: 'gantry-media://demos/background_blue_lines.png'
+      backgroundOverlay: 'rgba(0, 0, 0, 0)'
+      backgroundAttachment: ''
+      backgroundRepeat: ''
+      backgroundPosition: ''
+      backgroundSize: cover
   expanded:
     type: section
-    inherit:
-      outline: '10'
-      include:
-        - attributes
-        - block
-        - children
+    attributes:
+      boxed: ''
   aside:
-    inherit:
-      outline: '10'
-      include:
-        - attributes
-        - block
-        - children
+    attributes:
+      class: ''
     block:
       fixed: '1'
   mainbar:
     type: section
     subtype: main
-    inherit:
-      outline: '10'
-      include:
-        - attributes
-        - block
-        - children
   sidebar:
     type: section
     subtype: aside
-    inherit:
-      outline: '10'
-      include:
-        - attributes
-        - block
-        - children
+    attributes:
+      class: ''
     block:
       fixed: '1'
   container-main:
@@ -141,47 +150,40 @@ structure:
       boxed: ''
   mainbottom:
     type: section
-    inherit:
-      outline: '10'
-      include:
-        - attributes
-        - block
-        - children
+    attributes:
+      boxed: ''
   footertop:
     type: section
-    inherit:
-      outline: '10'
-      include:
-        - attributes
-        - block
-        - children
+    attributes:
+      boxed: ''
   footer:
-    inherit:
-      outline: '10'
-      include:
-        - attributes
-        - block
-        - children
+    attributes:
+      boxed: ''
   footerbottom:
     type: section
-    inherit:
-      outline: '10'
-      include:
-        - attributes
-        - block
-        - children
+    attributes:
+      boxed: ''
   nadir:
     type: section
-    inherit:
-      outline: '10'
-      include:
-        - attributes
-        - block
-        - children
+    attributes:
+      boxed: ''
   offcanvas:
-    inherit:
-      outline: '10'
-      include:
-        - attributes
-        - block
-        - children
+    attributes:
+      position: g-offcanvas-left
+      class: ''
+      extra: {  }
+      swipe: '1'
+      css3animation: '1'
+content:
+  logo-9501:
+    title: 'Logo / Image'
+  customcontentSZ-8913:
+    title: 'Custom Content'
+  logo-9571:
+    title: 'Logo / Image'
+  horizontalmenu-9034:
+    title: 'Horizontal Menu'
+  totop-8670:
+    title: 'To Top'
+  socialfloatingSZ-2700:
+    title: 'Social Floating'

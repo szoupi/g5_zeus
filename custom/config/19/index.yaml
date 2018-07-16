@@ -1,5 +1,5 @@
 name: '19'
-timestamp: 1531604673
+timestamp: 1531696577
 version: 7
 preset:
   image: 'gantry-admin://images/layouts/default.png'
@@ -34,6 +34,8 @@ particles:
     menu-9682: Menu
   portfolioSZ:
     portfolioSZ-6254: Portfolio
+    portfolioSZ-4992: 'Portfolio 3 equal columns'
+    portfolioSZ-1117: 'Portfolio 2 equal columns'
   spacer:
     spacer-4815: Spacer
     spacer-5006: Spacer
@@ -61,8 +63,6 @@ inherit:
     navigation: navigation
     logo-4206: logo-9501
     menu-9682: menu-6609
-    intro: intro
-    features: features
     utility: utility
     above: above
     testimonials: testimonials

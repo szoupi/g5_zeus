@@ -10,9 +10,7 @@ layout:
     -
       - 'logo-9501 25'
       - 'menu-6609 75'
-  /header/:
-    -
-      - timelineSZ-8086
+  /header/: {  }
   /intro/: {  }
   /features/: {  }
   /utility/: {  }
@@ -177,8 +175,6 @@ structure:
 content:
   logo-9501:
     title: 'Logo / Image'
-  timelineSZ-8086:
-    title: Timeline
   logo-9571:
     title: 'Logo / Image'
   horizontalmenu-9034:

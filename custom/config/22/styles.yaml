@@ -1,53 +1,8 @@
-preset: preset2
+preset: preset1
 base:
-  dominant-color: '#4caf50'
   content-margin: 0.5rem
   content-padding: 0.5rem
-accent:
-  color-1: '#448aff'
-  color-2: '#c8e6c9'
-  color-3: '#388e3c'
 zenith:
   section-preset: disabled
-  link-color: '#4caf50'
-navtop:
-  section-preset: accent2
-  link-color: '#4caf50'
-navigation:
-  background: '#4caf50'
 header:
   text-color: '#212121'
-  link-color: '#4caf50'
-intro:
-  section-preset: accent2
-  link-color: '#4caf50'
-features:
-  section-preset: accent2
-  text-color: '#ffffff'
-  link-color: '#4caf50'
-utility:
-  link-color: '#4caf50'
-above:
-  link-color: '#4caf50'
-testimonials:
-  link-color: '#4caf50'
-expanded:
-  section-preset: accent2
-  text-color: '#ffffff'
-  link-color: '#4caf50'
-mainbottom:
-  section-preset: accent2
-  link-color: '#4caf50'
-footertop:
-  section-preset: accent2
-  link-color: '#4caf50'
-footer:
-  link-color: '#c8e6c9'
-footerbottom:
-  section-preset: accent2
-  link-color: '#4caf50'
-nadir:
-  link-color: '#4caf50'
-offcanvas:
-  background: '#4caf50'
-  toggle-color: '#ffffff'

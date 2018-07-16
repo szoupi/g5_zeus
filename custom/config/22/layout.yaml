@@ -7,7 +7,9 @@ layout:
   zenith: {  }
   navtop: {  }
   navigation: {  }
-  header: {  }
+  /header/:
+    -
+      - timelineSZ-9781
   intro: {  }
   features: {  }
   utility: {  }
@@ -32,7 +34,7 @@ structure:
   zenith:
     type: section
     inherit:
-      outline: '10'
+      outline: default
       include:
         - attributes
         - block
@@ -40,7 +42,7 @@ structure:
   navtop:
     type: section
     inherit:
-      outline: '10'
+      outline: default
       include:
         - attributes
         - block
@@ -51,18 +53,22 @@ structure:
       outline: default
       include:
         - attributes
-        - children
-  header:
-    inherit:
-      outline: '10'
-      include:
-        - attributes
         - block
         - children
+  header:
+    attributes:
+      boxed: ''
+      class: ''
+      background: ''
+      backgroundOverlay: ''
+      backgroundAttachment: fixed
+      backgroundRepeat: ''
+      backgroundPosition: 'center center'
+      backgroundSize: cover
   intro:
     type: section
     inherit:
-      outline: '10'
+      outline: default
       include:
         - attributes
         - block
@@ -70,7 +76,7 @@ structure:
   features:
     type: section
     inherit:
-      outline: '10'
+      outline: default
       include:
         - attributes
         - block
@@ -78,7 +84,7 @@ structure:
   utility:
     type: section
     inherit:
-      outline: '10'
+      outline: default
       include:
         - attributes
         - block
@@ -86,7 +92,7 @@ structure:
   above:
     type: section
     inherit:
-      outline: '10'
+      outline: default
       include:
         - attributes
         - block
@@ -94,7 +100,7 @@ structure:
   testimonials:
     type: section
     inherit:
-      outline: '10'
+      outline: default
       include:
         - attributes
         - block
@@ -102,14 +108,14 @@ structure:
   expanded:
     type: section
     inherit:
-      outline: '10'
+      outline: default
       include:
         - attributes
         - block
         - children
   aside:
     inherit:
-      outline: '10'
+      outline: default
       include:
         - attributes
         - block
@@ -120,7 +126,7 @@ structure:
     type: section
     subtype: main
     inherit:
-      outline: '10'
+      outline: default
       include:
         - attributes
         - block
@@ -129,7 +135,7 @@ structure:
     type: section
     subtype: aside
     inherit:
-      outline: '10'
+      outline: default
       include:
         - attributes
         - block
@@ -142,7 +148,7 @@ structure:
   mainbottom:
     type: section
     inherit:
-      outline: '10'
+      outline: default
       include:
         - attributes
         - block
@@ -150,14 +156,14 @@ structure:
   footertop:
     type: section
     inherit:
-      outline: '10'
+      outline: default
       include:
         - attributes
         - block
         - children
   footer:
     inherit:
-      outline: '10'
+      outline: default
       include:
         - attributes
         - block
@@ -165,7 +171,7 @@ structure:
   footerbottom:
     type: section
     inherit:
-      outline: '10'
+      outline: default
       include:
         - attributes
         - block
@@ -173,15 +179,18 @@ structure:
   nadir:
     type: section
     inherit:
-      outline: '10'
+      outline: default
       include:
         - attributes
         - block
         - children
   offcanvas:
     inherit:
-      outline: '10'
+      outline: default
       include:
         - attributes
         - block
         - children
+content:
+  timelineSZ-9781:
+    title: Timeline

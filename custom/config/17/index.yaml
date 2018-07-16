@@ -1,5 +1,5 @@
 name: 17
-timestamp: 1531578806
+timestamp: 1531696037
 version: 7
 preset:
   image: 'gantry-admin://images/layouts/default.png'
@@ -27,8 +27,6 @@ sections:
   footer: Footer
   offcanvas: Offcanvas
 particles:
-  customcontentSZ:
-    customcontentSZ-7379: 'Custom Content'
   logo:
     logo-9700: 'Logo / Image'
     logo-1745: 'Logo / Image'

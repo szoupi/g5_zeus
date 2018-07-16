@@ -7,9 +7,7 @@ layout:
   zenith: {  }
   navtop: {  }
   navigation: {  }
-  /header/:
-    -
-      - customcontentSZ-7379
+  /header/: {  }
   intro: {  }
   features: {  }
   utility: {  }
@@ -191,13 +189,3 @@ structure:
         - attributes
         - block
         - children
-content:
-  customcontentSZ-7379:
-    title: 'Custom Content'
-    attributes:
-      height: 50px
-      linkstyle: ''
-      linkstyle2: button-2
-      link3: '#'
-      linktext3: Prices
-      linkstyle3: button-outline

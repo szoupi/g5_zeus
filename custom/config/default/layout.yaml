@@ -96,7 +96,7 @@ structure:
   features:
     type: section
     attributes:
-      boxed: '2'
+      boxed: '0'
       class: ''
       background: 'gantry-media://demos/background_blue_lines.png'
       backgroundOverlay: 'rgba(0, 0, 0, 0)'
@@ -186,6 +186,7 @@ content:
     attributes:
       enabled: 0
       module_id: '97'
+      key: articles-category-grouped
   system-content-1966:
     attributes:
       enabled: 0
@@ -194,6 +195,7 @@ content:
     attributes:
       enabled: 0
       module_id: '90'
+      key: latest-articles
   logo-9571:
     title: 'Logo / Image'
   horizontalmenu-9034:
