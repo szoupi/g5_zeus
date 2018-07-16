@@ -1,8 +1,0 @@
-preset: preset1
-base:
-  content-margin: 0.5rem
-  content-padding: 0.5rem
-zenith:
-  section-preset: disabled
-header:
-  text-color: '#212121'
