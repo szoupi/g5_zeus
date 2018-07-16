@@ -1,9 +1,5 @@
 name: 17
-<<<<<<< HEAD
-timestamp: 1531696037
-=======
 timestamp: 1530288704
->>>>>>> c1fae3c3573605b3da4a5bbb978ed58bb8b86da5
 version: 7
 preset:
   image: 'gantry-admin://images/layouts/default.png'
