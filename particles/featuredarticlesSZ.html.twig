@@ -33,129 +33,131 @@
 
 {% block particle %}
 
-    {# LAYOUTS  DEFAULT ############################}
-    {% if particle.layout == 'top5' %}
-        top5
+
+    {# All Articles  ############################}
+    {# CONTAINER #}
+    <div class="g-featuredarticles-sz sz-wrapper 
+        {% if particle.gutter == 'Yes' %} gutter {% endif %}
         
-    {# LAYOYT LIST ################################}
-    {% elseif particle.layout == 'list' %}
-    
-    {# LAYOUT FEATURED ################################}
-    {% elseif particle.layout == '3-column' %}
+        {# TODO: CONFIGURE LAYOUTS #}
+        {% if particle.layout == 'hierarchical_horizontal' %} hierarchical-horizontal {% endif %}
+        {% if particle.layout == 'hierarchical_vertical' %} {% endif %}
+        {% if particle.layout == 'symmetrical' %} {% endif %}
+        
+        {% if particle.css.class %} {{ particle.css.class }}{% endif %}" {{- attr_extra|raw }}>
+        
 
-        {# All Articles  ############################}
-        {# CONTAINER #}
-        <div class="g-featuredarticles-sz sz-wrapper 
-            {% if particle.gutter == 'Yes' %} gutter {% endif %}
-            {% if particle.css.class %} {{ particle.css.class }}{% endif %}" {{- attr_extra|raw }}>
-
-            {% for article in articles  %}
-                <div class="g-grid sz-featured-box 
-                    {%  if limit.total == 5 %} five {% endif %}
-                    {%  if limit.total == 4 %} four {% endif %}
-                    {%  if limit.total == 3 %} three {% endif %}
-                ">
-                        {#IMAGE ############################}
-                        {% if display.image.enabled and article.images.image_intro or article.images.image_fulltext %}
-                            
-                            {% if article.images.image_intro and display.image.enabled == 'intro' or display.image.enabled == 'show' %}
-                                <div class="g-block">
-                                    <a href="{{ article.route }}">
-                                        <div class="darken-pseudo">
-                                            <img src="{{ url(article.images.image_intro) }}" alt="{{ article.title }}"> 
-                                        </div>
-                                    </a>
-                            {% elseif article.images.image_fulltext and display.image.enabled == 'full' %}
-                                <div class="g-block">
-                                    <a href="{{ article.route }}">
-                                        <div class="darken-pseudo">
-                                            <img src="{{ url(article.images.image_fulltext) }}" alt="{{ article.title }}"> 
-                                        </div>
-                                    </a>
-                            {% endif %}
-                            
-                        {#if no image available, show default.jpg image#}
-                        {% else %}
-                                                  
-                        <div class="g-block">
+        {% for article in articles  %}
+            <div class="g-grid sz-featured-box 
+                
+                {# classes for number of articles #}
+                {%  if limit.total == 5 %} five {% endif %}
+                {%  if limit.total == 4 %} four {% endif %}
+                {%  if limit.total == 3 %} three {% endif %}
+            ">
+                    {#IMAGE ############################}
+                    {% if display.image.enabled and article.images.image_intro or article.images.image_fulltext %}
+                        
+                        {% if article.images.image_intro and display.image.enabled == 'intro' or display.image.enabled == 'show' %}
+                            <div class="g-block">
                                 <a href="{{ article.route }}">
                                     <div class="darken-pseudo">
-                                        <img src="templates/g5_zeus/images/default.jpg" alt="{{ article.title }}">
+                                        <img src="{{ url(article.images.image_intro) }}" alt="{{ article.title }}"> 
+                                    </div>
+                                </a>
+                        {% elseif article.images.image_fulltext and display.image.enabled == 'full' %}
+                            <div class="g-block">
+                                <a href="{{ article.route }}">
+                                    <div class="darken-pseudo">
+                                        <img src="{{ url(article.images.image_fulltext) }}" alt="{{ article.title }}"> 
                                     </div>
                                 </a>
                         {% endif %}
+                        
+                    {#if no image available, show default.jpg image#}
+                    {% else %}
+                                              
+                    <div class="g-block">
+                            <a href="{{ article.route }}">
+                                <div class="darken-pseudo">
+                                    <img src="templates/g5_zeus/images/default.jpg" alt="{{ article.title }}">
+                                </div>
+                            </a>
+                    {% endif %}
 
-                                    <div class="sz-content">
+                                <div class="sz-content 
+                                    {% if particle.overlay == 'Yes' %}
+                                        overlay
+                                    {% endif %}
+                                ">
 
-                                        {#META INFO#}
-                                        {% if display.date.enabled or display.author.enabled or display.category.enabled or display.hits.enabled %}
-                                            <div class="g-array-item-category">
-                                                
-                                                {#CATEGORY ############################}
-                                                {% if display.category.enabled %}
-                                                    {% set category_link = display.category.enabled == 'link' %}
-                                                    <span class="g-array-item-category label">
-                                                        {% set cat = article.categories|last %}
-                                                        {% if category_link %}
-                                                            <a href="{{ cat.route }}">
-                                                                {{ cat.title }}
-                                                            </a>
-                                                        {% else %}
-                                                            {{ cat.title }}
-                                                        {% endif %}
-                                                    </span>
-                                                {% endif %}
-                                                    
-                                            </div>
-                                        {% endif %}
-
-                                        {#TITLE ############################}
-                                        <div class="g-array-item-title">
-                                            <div class="g-item-title">
-                                                <a href="{{ article.route }}">{{ display.title.limit ? article.title|truncate_text(display.title.limit) : article.title }}</a>
-                                            </div>
-                                        </div>
-                                            
-                                        {#REST METADATA#}
+                                    {#META INFO#}
+                                    {% if display.date.enabled or display.author.enabled or display.category.enabled or display.hits.enabled %}
                                         <div class="g-array-item-category">
-                                            {#DATE ############################}
-                                            {% if display.date.enabled %}
-                                                <span class="g-array-item-date">
-                                                    {% if display.date.enabled == 'published' %}
-                                                       {{ article.publish_up|date(display.date.format) }}
-                                                    {% elseif display.date.enabled == 'modified' %}
-                                                           {{ article.modified|date(display.date.format) }}
-                                                        {% else %}
-                                                           {{ article.created|date(display.date.format) }}
-                                                        {% endif %}
-                                                    </span>
-                                                {% endif %}
-                                                
-                                                {#AUTHOR ############################}
-                                            {% if display.author.enabled %}
-                                                <span class="g-array-item-author">
-                                                    <i class="fa fa-user" aria-hidden="true"></i> {{ article.author.name }}
+                                            
+                                            {#CATEGORY ############################}
+                                            {% if display.category.enabled %}
+                                                {% set category_link = display.category.enabled == 'link' %}
+                                                <span class="g-array-item-category label">
+                                                    {% set cat = article.categories|last %}
+                                                    {% if category_link %}
+                                                        <a href="{{ cat.route }}">
+                                                            {{ cat.title }}
+                                                        </a>
+                                                    {% else %}
+                                                        {{ cat.title }}
+                                                    {% endif %}
                                                 </span>
                                             {% endif %}
+                                                
                                         </div>
+                                    {% endif %}
 
-                                     </div>
+                                    {#TITLE ############################}
+                                    <div class="g-array-item-title">
+                                        <div class="g-item-title">
+                                            <a href="{{ article.route }}">{{ display.title.limit ? article.title|truncate_text(display.title.limit) : article.title }}</a>
+                                        </div>
+                                    </div>
                                         
-                                </div>    {# END g-block sz-featured #}
-                            
-                    
-            
+                                    {#REST METADATA#}
+                                    <div class="g-array-item-category">
+                                        {#DATE ############################}
+                                        {% if display.date.enabled %}
+                                            <span class="g-array-item-date">
+                                                {% if display.date.enabled == 'published' %}
+                                                   {{ article.publish_up|date(display.date.format) }}
+                                                {% elseif display.date.enabled == 'modified' %}
+                                                       {{ article.modified|date(display.date.format) }}
+                                                    {% else %}
+                                                       {{ article.created|date(display.date.format) }}
+                                                    {% endif %}
+                                                </span>
+                                            {% endif %}
+                                            
+                                            {#AUTHOR ############################}
+                                        {% if display.author.enabled %}
+                                            <span class="g-array-item-author">
+                                                <i class="fa fa-user" aria-hidden="true"></i> {{ article.author.name }}
+                                            </span>
+                                        {% endif %}
+                                    </div>
+
+                                 </div>
+                                    
+                            </div>    {# END g-block sz-featured #}
                         
-                    
-                    
-                </div>
-                {# END GRID #}
-            {% endfor %}
-            {# END ARTICLe #}
                 
-        </div>
+        
+                    
+                
+                
+            </div>
+            {# END GRID #}
+        {% endfor %}
+        {# END ARTICLe #}
             
-    {% endif %}
+    </div>
     {# END LAYOUT STYLE #}
  
 {% endblock %}
