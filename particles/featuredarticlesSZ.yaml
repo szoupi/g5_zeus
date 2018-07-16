@@ -30,14 +30,12 @@ form:
       options:
         No: No
         Yes: Yes
-      overridable: false
       
     overlay:
       type: select.select
       label: Content background
       description: Display dark background for content (title, date etc)?
       default: No background
-      overridable: false
       options:
         No: No background
         Yes: Dark transparent
@@ -47,20 +45,17 @@ form:
       fields:
         _tab_articles:
           label: Articles
-          overridable: false
           fields:
           
             article.filter.categories:
               type: joomla.categories
               label: Categories
               description: Select the categories the articles should be taken from.
-              overridable: false
 
             article.filter.articles:
               type: input.text
               label: Articles
               description: Enter the Joomla articles that should be shown. It should be a list of article IDs separated with a comma (i.e. 1,2,3,4,5).
-              overridable: false
 
             article.filter.featured:
               type: select.select
@@ -71,7 +66,6 @@ form:
                 include: Include Featured
                 exclude: Exclude Featured
                 only: Only Featured
-              overridable: false
 
             article.limit.total:
               type: select.select
@@ -82,7 +76,6 @@ form:
                 3: 3
                 4: 4
                 5: 5
-              overridable: false
 
             article.limit.start:
               type: input.text
@@ -90,7 +83,6 @@ form:
               description: Enter offset specifying the first article to return. The default is '0' (the first article).
               default: 0
               pattern: '\d{1,2}'
-              overridable: false
 
             article.sort.orderby:
               type: select.select
@@ -106,7 +98,6 @@ form:
                 hits: Hits
                 id: ID
                 alias: Alias
-              overridable: false
 
             article.sort.ordering:
               type: select.select
@@ -116,7 +107,6 @@ form:
               options:
                 ASC: Ascending
                 DESC: Descending
-              overridable: false
 
         _tab_display:
           label: Display
