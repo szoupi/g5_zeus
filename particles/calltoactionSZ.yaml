@@ -1,6 +1,7 @@
 name: Call to action
 description: Displays Call to action buttons  
 type: particle
+icon: fa-long-arrow-right
 
 form:
   fields:
