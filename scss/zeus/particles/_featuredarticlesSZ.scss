@@ -1,28 +1,16 @@
 .g-featuredarticles-sz.sz-wrapper {
     min-height: 50vh;
     
-    /* GRID: 12 COLUMNS 
-    * LINES: 1-13 
-    */
     display: grid;
     // grid-auto: 1fr; // set equal height for each row
     
     // typically min 48rem
     @include breakpoint(no-mobile) {
         
+        /* GRID: 12 COLUMNS 
+        * LINES: 1-13 
+        */
         grid-template-columns: repeat(12, 1fr);
-        
-        // GRID: 12 COLUMNS
-        &.hierarchical-horizontal {
-        }
-
-        &.hierarchical-vertical {
-            grid-template-columns: 1fr * 3;
-        }
-
-        // &.symmetrical {
-        //     grid-template-columns: 1fr 1fr 1fr 1fr 1fr;
-        // }        
         
     }
 
@@ -237,17 +225,17 @@
         
         div.g-grid.sz-featured-box {
             @include breakpoint(no-mobile) {
+                grid-row: 1;
+                
+                div a img {
+                    min-width: 75vh;
+                }
                 
                 // 5 ARTICLES  ///////////////////////
-                &:first-of-type.five {
+                &:nth-of-type(1).five {
                     grid-column-start: 5;
                     grid-column-end: 9;
 
-    
-                    div a img {
-                        min-width: 52rem;
-                    }
-                    
                     .g-item-title {
                         font-size: 1.6rem;
                     }
@@ -274,15 +262,53 @@
                     grid-column-end: 13;                    
                 }                
 
-                &:nth-of-type(2).five,
-                &:nth-of-type(3).five,
-                &:nth-of-type(4).five,
-                &:nth-of-type(5).five {
-                    div a img {
-                        min-width: 26rem;
+
+                // 4 ARTICLES  ///////////////////////
+                &:nth-of-type(1).four {
+                    grid-column-start: 1;
+                    grid-column-end: 6;
+
+                    .g-item-title {
+                        font-size: 1.6rem;
                     }
                 }
-            
+                
+                &:nth-of-type(2).four {
+                    grid-column-start: 6;
+                    grid-column-end: 9;                    
+                }
+                
+                &:nth-of-type(3).four {
+                    grid-column-start: 9;
+                    grid-column-end: 11;                    
+                }
+                
+                &:nth-of-type(4).four {
+                    grid-column-start: 11;
+                    grid-column-end: 13;                    
+                }
+                
+                // 3 ARTICLES  ///////////////////////
+                &:nth-of-type(1).three {
+                    grid-column-start: 4;
+                    grid-column-end: 10;
+
+                    .g-item-title {
+                        font-size: 1.6rem;
+                    }
+                }
+                
+                &:nth-of-type(2).three {
+                    grid-column-start: 1;
+                    grid-column-end: 4;                    
+                }
+                
+                &:nth-of-type(3).three {
+                    grid-column-start: 10;
+                    grid-column-end: 13;                    
+                }
+
+                
             }
         }
     }
