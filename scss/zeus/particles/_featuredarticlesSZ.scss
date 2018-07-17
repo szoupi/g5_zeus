@@ -1,21 +1,24 @@
 .g-featuredarticles-sz.sz-wrapper {
     min-height: 60vh;
     
-
-    // LAYOUTs  ========================
+    /* GRID: 12 COLUMNS 
+    * LINES: 1-13 
+    */
     display: grid;
     // grid-auto: 1fr; // set equal height for each row
     
     // typically min 48rem
     @include breakpoint(no-mobile) {
         
+        grid-template-columns: repeat(12, 1fr);
+        
+        // GRID: 12 COLUMNS
         &.hierarchical-horizontal {
-            grid-template-columns: 2fr 1fr 1fr;
         }
 
-        // &.hierarchical_vertical {
-        //     grid-template-columns: 2fr 1fr 1fr;
-        // }
+        &.hierarchical-vertical {
+            grid-template-columns: 1fr * 3;
+        }
 
         // &.symmetrical {
         //     grid-template-columns: 1fr 1fr 1fr 1fr 1fr;
@@ -38,7 +41,7 @@
         grid-gap: 0.5rem;
     }
     
-
+    //common setting for all layouts:
     div.g-grid.sz-featured-box {
         
         .g-block {
@@ -92,127 +95,202 @@
                 min-height: 25vh;
             } 
            
-            // &:first-of-type {
-            //     .g-block {
-            //         height: 30vh;
-            //     }
-            // }
-
-            // &:nth-of-type(2),
-            // &:nth-of-type(3),
-            // &:nth-of-type(4),
-            // &:nth-of-type(5) {
-                   
-            // }
-            
         }
 
+        
+    }
+    
+    
+    /* LAYOUYTS: put them at the end
+    * so as not the first element
+    * to be overiden
+    */
+    ////////////// HIERARCHICAL HORIZONTAL //////////////////
+    &.hierarchical-horizontal {
+        
+        div.g-grid.sz-featured-box {
+            @include breakpoint(no-mobile) {
+                
+                
+                // 5 ARTICLES  ///////////////////////
+                &:first-of-type.five {
+                    grid-column-start: 1;
+                    grid-column-end: 7;
+                    grid-row-start: 1;
+                    grid-row-end: 3; // 2 rows
+                    
+    
+                    div a img {
+                        min-width: 52rem;
+                    }
+                    
+                    .g-item-title {
+                        font-size: 1.6rem;
+                    }
+                    
+                }
+                
+                &:nth-of-type(2).five,
+                &:nth-of-type(4).five {
+                    grid-column-start: 7;
+                    grid-column-end: 10;                    
+                }
+                
+                &:nth-of-type(3).five,
+                &:nth-of-type(5).five {
+                    grid-column-start: 10;
+                    grid-column-end: 13;                    
+                }                
 
+                &:nth-of-type(2).five,
+                &:nth-of-type(3).five,
+                &:nth-of-type(4).five,
+                &:nth-of-type(5).five {
+                    div a img {
+                        min-width: 26rem;
+                    }
+                }
+                
+                // 4 ARTICLES ///////////////////////
+                &:first-of-type.four {
+                    grid-column-start: 1;
+                    grid-column-end: 7;
+                    grid-row-start: 1;
+                    grid-row-end: 3; // 2 rows
+                    
+    
+                    div a img {
+                        min-width: 52rem;
+                    }
+                    
+                    .g-item-title {
+                        font-size: 1.6rem;
+                    }
+                    
+                }
+                
+                &:nth-of-type(2).four {
+                    grid-column-start: 7;
+                    grid-column-end: 13;                    
+                }
+                
+                &:nth-of-type(3).four {
+                    grid-column-start: 7;
+                    grid-column-end: 10;                         
+                }
+                &:nth-of-type(4).four {
+                    grid-column-start: 10;
+                    grid-column-end: 13;                    
+                }                   
+    
+                
+                &:nth-of-type(3).four,
+                &:nth-of-type(4).four {
+                    div a img {
+                        min-width: 26rem;
+                    }
+                }
+                
+                // 3 ARTICLES ///////////////////////
+                &:first-of-type.three {
+                    grid-column-start: 1;
+                    grid-column-end: 7;
+                    grid-row-start: 1;
+                    grid-row-end: 3; // 2 rows
+                    
+    
+                    div a img {
+                        min-width: 52rem;
+                    }
+                    
+                    .g-item-title {
+                        font-size: 1.6rem;
+                    }
+                    
+                }
+    
+                &:nth-of-type(2).three,
+                &:nth-of-type(3).three{
+                    grid-column-start: 7;
+                    grid-column-end: 13;
+                }
+                
+                &:nth-of-type(3).three {
+                    grid-row-start: 2;
+                    
+                    
+                    div a img {
+                        min-width: 26rem;
+                    }
+                }
+                
+                
+                
+                
+            } // END BREAKPOIND MOBILE
+            
+        }
+    }
+    
+    ////////////// HIERARCHICAL VERTICAL //////////////////
+    &.hierarchical-vertical {
+        
+        div.g-grid.sz-featured-box {
+            @include breakpoint(no-mobile) {
+                
+                // 5 ARTICLES  ///////////////////////
+                &:first-of-type.five {
+                    grid-column-start: 5;
+                    grid-column-end: 9;
 
-        @include breakpoint(no-mobile) {
-            /* put them at the end
-            so as not to be overiden
-            the first element 
-            */
-            
-////////////// HIERARCHICAL HORIZONTAL //////////////////
-            
-            
-            // 5 ARTICLES  ///////////////////////
-            &:first-of-type.five {
-                grid-column-start: 1;
-                grid-row-start: 1;
-                grid-row-end: 3; // 2 rows
+    
+                    div a img {
+                        min-width: 52rem;
+                    }
+                    
+                    .g-item-title {
+                        font-size: 1.6rem;
+                    }
+                    
+                }
                 
+                &:nth-of-type(2).five {
+                    grid-column-start: 1;
+                    grid-column-end: 3;                    
+                }
+                
+                &:nth-of-type(3).five {
+                    grid-column-start: 3;
+                    grid-column-end: 5;                    
+                }
+                
+                &:nth-of-type(4).five {
+                    grid-column-start: 9;
+                    grid-column-end: 11;                    
+                }
+                
+                &:nth-of-type(5).five {
+                    grid-column-start: 11;
+                    grid-column-end: 13;                    
+                }                
 
-                div a img {
-                    min-width: 52rem;
+                &:nth-of-type(2).five,
+                &:nth-of-type(3).five,
+                &:nth-of-type(4).five,
+                &:nth-of-type(5).five {
+                    div a img {
+                        min-width: 26rem;
+                    }
                 }
-                
-                .g-item-title {
-                    font-size: 1.6rem;
-                }
-                
+            
             }
+        }
+    }
+    
+}
 
-            &:nth-of-type(2).five,
-            &:nth-of-type(3).five,
-            &:nth-of-type(4).five,
-            &:nth-of-type(5).five {
-                div a img {
-                    min-width: 26rem;
-                }
-            }
-            
-            // 4 ARTICLES ///////////////////////
-            &:first-of-type.four {
-                grid-column-start: 1;
-                grid-row-start: 1;
-                grid-row-end: 3; // 2 rows
-                
-
-                div a img {
-                    min-width: 52rem;
-                }
-                
-                .g-item-title {
-                    font-size: 1.6rem;
-                }
-                
-            }
-
-            &:nth-of-type(2).four {
-                grid-column-start: 2;
-                grid-column-end: 4;
-              
-            }
-            
-            &:nth-of-type(3).four,
-            &:nth-of-type(4).four {
-                div a img {
-                    min-width: 26rem;
-                }
-            }
-            
-            // 3 ARTICLES ///////////////////////
-            &:first-of-type.three {
-                grid-column-start: 1;
-                grid-row-start: 1;
-                grid-row-end: 3; // 2 rows
-                
-
-                div a img {
-                    min-width: 52rem;
-                }
-                
-                .g-item-title {
-                    font-size: 1.6rem;
-                }
-                
-            }
-
-            &:nth-of-type(2).three,
-            &:nth-of-type(3).three{
-                grid-column-start: 2;
-                grid-column-end: 4;
-            }
-            
-            &:nth-of-type(3).three {
-                grid-row-start: 2;
-                
-                
-                div a img {
-                    min-width: 26rem;
-                }
-            }
-            
-            
-////////////// HIERARCHICAL VERTICAL //////////////////
             
 
 ////////////// SYMMETRICAL ////////////////////////////
-            
-            
-        } // END BREAKPOIND MOBILE
-    }
-}
+
+

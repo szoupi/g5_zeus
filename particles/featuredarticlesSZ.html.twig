@@ -40,9 +40,9 @@
         {% if particle.gutter == 'Yes' %} gutter {% endif %}
         
         {# TODO: CONFIGURE LAYOUTS #}
-        {% if particle.layout == 'hierarchical_horizontal' %} hierarchical-horizontal {% endif %}
-        {% if particle.layout == 'hierarchical_vertical' %} {% endif %}
-        {% if particle.layout == 'symmetrical' %} {% endif %}
+        {% if particle.layout == 'hierarchical_horizontal' %} hierarchical-horizontal 
+        {% elseif particle.layout == 'hierarchical_vertical' %} hierarchical-vertical 
+        {% elseif particle.layout == 'symmetrical' %} symmetrical {% endif %}
         
         {% if particle.css.class %} {{ particle.css.class }}{% endif %}" {{- attr_extra|raw }}>
         
@@ -80,7 +80,8 @@
                     <div class="g-block">
                             <a href="{{ article.route }}">
                                 <div class="darken-pseudo">
-                                    <img src="templates/g5_zeus/images/default.jpg" alt="{{ article.title }}">
+                                    <img src="{{ url('gantry-theme://images/default.jpg') }}"
+                                        alt="{{ article.title }}">
                                 </div>
                             </a>
                     {% endif %}
