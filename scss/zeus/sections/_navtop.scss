@@ -143,6 +143,10 @@
         }
     }
 
+    .g-dropdown {
+        z-index: 99; // overlap nav section
+    }
+
     // Menu Styling
     .g-main-nav {
         font-family: get-font-family($font-family-title);
