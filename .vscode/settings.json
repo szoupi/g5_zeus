@@ -1,0 +1,13 @@
+{
+    "favorites.resources": [
+        "scss/zeus/particles/_skillsbarSZ.scss",
+        "particles/skillsbarSZ.html.twig",
+        "particles/skillsbarSZ.yaml",
+        "scss/zeus/particles/_portfolioSZ.scss",
+        "particles/portfolioSZ.html.twig",
+        "particles/portfolioSZ.yaml",
+        "particles/featuredarticlesSZ.html.twig",
+        "particles/featuredarticlesSZ.yaml",
+        "scss/zeus/particles/_featuredarticlesSZ.scss"
+    ]
+}
