@@ -44,19 +44,19 @@
         @include breakpoint(no-mobile){
             grid-template-columns: repeat(2, 1fr);
             
-            .portfolio-sz-2-column {
+            &.portfolio-sz-2-column {
                 grid-template-columns: repeat(2, 1fr)
             }
             
-            .portfolio-sz-3-column {
+            &.portfolio-sz-3-column {
                 grid-template-columns: repeat(3, 1fr)
             }
         
-            .portfolio-sz-4-column {
+            &.portfolio-sz-4-column {
                 grid-template-columns: repeat(4, 1fr)
             }
             
-            .portfolio-sz-gutter {
+            &.portfolio-sz-gutter {
                 grid-gap: 1.5rem;
             }
         }

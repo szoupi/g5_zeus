@@ -23,7 +23,7 @@ form:
       description: Describe what this portfolio is about.
       placeholder: Enter short description for the portfolio
 
-    colums:
+    columns:
       type: select.selectize
       label: Columns
       description: Select how many columns the portfolio should have
