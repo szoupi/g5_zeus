@@ -310,16 +310,124 @@
                     grid-column-start: 10;
                     grid-column-end: 13;                    
                 }
-
-                
             }
         }
     }
     
-}
-
+    
+    
             
 
 ////////////// SYMMETRICAL ////////////////////////////
+    
+    &.symmetrical {
+        
+        // @include breakpoint(no-mobile) {
+        //     grid-template-columns: repeat(5, 1fr);
+        // }
+        
+        div.g-grid.sz-featured-box {
+            @include breakpoint(no-mobile) {
+                grid-row: 1;
+                
+                div a img {
+                    min-width: 75vh;
+                }
+                
+                // 5 ARTICLES  ///////////////////////
+                // 12 column grid cannot be divided to 5 
+                // first and last columns are bigger.
+                
+                &:nth-of-type(1).five {
+                    grid-column-start: 1;
+                    grid-column-end: 4; 
+                }
+                
+                &:nth-of-type(2).five {
+                    grid-column-start: 4;
+                    grid-column-end: 6; 
+                }
+                
+                &:nth-of-type(3).five {
+                    grid-column-start: 6;
+                    grid-column-end: 8; 
+                }
+                
+                &:nth-of-type(4).five {
+                    grid-column-start: 8;
+                    grid-column-end: 10; 
+                }
+                
+                &:nth-of-type(5).five {
+                    grid-column-start: 10;
+                    grid-column-end: 13; 
+                }                
+            }
+        }
+        
+        // // 4 ARTICLES  ///////////////////////
+        // @include breakpoint(no-mobile) {
+        //     grid-template-columns: repeat(4, 1fr);
+        // }
+        
+        div.g-grid.sz-featured-box {
+            @include breakpoint(no-mobile) {
+                grid-row: 1;        
 
+                &:nth-of-type(1).four {
+                    grid-column-start: 1;
+                    grid-column-end: 4; 
+                }
+                
+                &:nth-of-type(2).four {
+                    grid-column-start: 4;
+                    grid-column-end: 7; 
+                }
+                
+                &:nth-of-type(3).four {
+                    grid-column-start: 7;
+                    grid-column-end: 10; 
+                }
+                
+                &:nth-of-type(4).four {
+                    grid-column-start: 10;
+                    grid-column-end: 13; 
+                }
+            }
+        }
+        
+        
+                
+                
+        // // 3 ARTICLES  ///////////////////////
+        // @include breakpoint(no-mobile) {
+        //     grid-template-columns: repeat(3, 1fr);
+        // }
+        
+        div.g-grid.sz-featured-box {
+            @include breakpoint(no-mobile) {
+                grid-row: 1;        
+
+                &:nth-of-type(1).three {
+                    grid-column-start: 1;
+                    grid-column-end: 5; 
+                }
+                
+                &:nth-of-type(2).three {
+                    grid-column-start: 5;
+                    grid-column-end: 9; 
+                }
+                
+                &:nth-of-type(3).three {
+                    grid-column-start: 9;
+                    grid-column-end: 13; 
+                }
+
+            }
+        }
+        
+    }
+
+
+}
 
