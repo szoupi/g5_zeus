@@ -1,6 +1,7 @@
 .portfolio-sz {
     text-align: center;
     
+    // TODO: do i need lazy load css?
     // smoothly display lazy load images
     img.sz-lazy {
         opacity: 1;
@@ -42,6 +43,22 @@
         // typically min 48rem
         @include breakpoint(no-mobile){
             grid-template-columns: repeat(2, 1fr);
+            
+            .portfolio-sz-2-column {
+                grid-template-columns: repeat(2, 1fr)
+            }
+            
+            .portfolio-sz-3-column {
+                grid-template-columns: repeat(3, 1fr)
+            }
+        
+            .portfolio-sz-4-column {
+                grid-template-columns: repeat(4, 1fr)
+            }
+            
+            .portfolio-sz-gutter {
+                grid-gap: 1.5rem;
+            }
         }
 
         // // typically min 60rem
@@ -51,21 +68,6 @@
         
     }
 
-    .portfolio-sz-2-column {
-        grid-template-columns: repeat(2, 1fr)
-    }
-    
-    .portfolio-sz-3-column {
-        grid-template-columns: repeat(3, 1fr)
-    }
-
-    .portfolio-sz-4-column {
-        grid-template-columns: repeat(4, 1fr)
-    }
-    
-    .portfolio-sz-gutter {
-        grid-gap: 1.5rem;
-    }
 
 
     .portfolio-sz-content{
@@ -75,11 +77,11 @@
             font-size: 2rem;
             line-height: 120%;
             font-weight: 800;
-            margin: 2rem 0;
+            margin: 2rem 0 1rem 0;
         }
 
         .portfolio-sz-item-description {
-            margin: 0.5rem 0;
+            margin-bottom: 2rem;
         }
 
         .portfolio-sz-tags {
