@@ -14,22 +14,24 @@
                         {% endif %}
                         {#IMAGE#}
                         {% if particle.image %}
-                            <img src="{{ url(particle.image) }}" class="logo-large" alt="{{ particle.titl|e }}" />
+                            <img src="{{ url(particle.image) }}" alt="{{ particle.maintitle|e }}" />
                         {% endif %}
                         
                         {#ICON#}
                         {% if particle.mainicon %}  
-                            <i class="{{ particle.mainicon }} sz-customcontent-icons" style="display:block;"></i>
+                            <div><i class="{{ particle.mainicon }} sz-customcontent-icons" style="display:block;"></i></div>
                         {% endif %}
                         
                         {#TITLE#}
                         {% if particle.maintitle %}
-                            <div class="sz-customcontent-title">{{ particle.maintitle|raw }}</div>
+                            <div class="sz-customcontent-title">
+                                <h1>{{ particle.maintitle|raw }}</h1>
+                            </div>
                         {% endif %}
                         
                         {#DESCRIPTION#}
                         {% if particle.description %}
-                            <div class="customcontent-description">{{ particle.description|raw }}</div>
+                            <div class="SZ-customcontent-description">{{ particle.description|raw }}</div>
                         {% endif %}
                         
                         {#BUTTONS-LINKS#}
@@ -46,15 +48,15 @@
                 </div>
             </div>
         </div>
-        <div class="g-grid">
+        <div class="g-grid sz-customcontent-subitem">
             {% for subitem in particle.subitems %}
                 <div class="g-block {{ subitem.class }}">
                     <div class="g-content">
                         <i class="{{ subitem.icon }} subitem-icons"></i>
-                        <h1>{{ subitem.title|raw }}</h1>
-                        {{ subitem.subtitle|raw }}
-                        </br>
-                        {{ subitem.description|raw }}
+                        <h2 class="sz-subitem-title">{{ subitem.title|raw }}</h2>
+                        <h3 class="sz-subitem-subtitle">{{ subitem.subtitle|raw }}</h3>
+                        <p>{{ subitem.description|raw }}</p>
+                        
                     </div>
                 </div>
             {% endfor %}

@@ -1,12 +1,24 @@
 .sz-customcontentSZ {
     
-    .sz-customcontent-title {
+    @include breakpoint(mobile-only){
+        text-align: center;
+    }   
+        
+    
+    img,
+    button,
+    .sz-customcontent-icons {
+        margin-bottom: 1rem;
+        
+    } 
+    .sz-customcontent-title h1 {
         font-size: 3rem;
         line-height: 120%;
         font-weight: 800;
+        margin-bottom: 1rem;
     }
 
-    .customcontent-description {
+    .SZ-customcontent-description {
         padding: 1.5rem 0;
         
         @include breakpoint(mobile-only) {
@@ -18,22 +30,30 @@
         }
     }
     
-    .button {
+    .sz-subitem-title h2 {
+        font-size: 2rem;
+        font-weight: 800;
 
-        @include breakpoint(desktop-range) {
-            // margin-top: 2rem;    
-        }
-        
-        @include breakpoint(tablet-range) {
-            // margin-top: 1rem;    
-        }
-        
-        @include breakpoint(mobile-only) {
-            // margin: 0.5;    
-        }
-        
-        @include breakpoint(small-mobile-range) {
-            // margin: 0.5;    
-        }
     }
+    
+    .sz-subitem-subtitle h3 {
+        font-size: 1.4;
+        font-weight: 400;
+    }
+
+    .sz-customcontent-subitem {
+        margin-top: 2rem;
+    }
+
 }
+    //     @include breakpoint(desktop-range) {
+    //     }
+        
+    //     @include breakpoint(tablet-range) {
+    //     }
+        
+    //     @include breakpoint(mobile-only) {
+    //     }
+        
+    //     @include breakpoint(small-mobile-range) {
+    //     }
