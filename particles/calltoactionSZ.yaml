@@ -11,18 +11,6 @@ form:
       description: Globally enable the particle.
       default: true
 
-    # headline:
-    #   type: input.text
-    #   label: Headline
-    #   description: Customize the headline text.
-    #   placeholder: Enter headline
-
-    # description:
-    #   type: textarea.textarea
-    #   label: Description
-    #   description: Customize the description.
-    #   placeholder: Enter short description
-
     _tabs:
       type: container.tabs
       fields:
