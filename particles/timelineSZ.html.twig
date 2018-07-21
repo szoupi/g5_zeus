@@ -9,12 +9,12 @@
                     <div>
                         {#HEADLINE#}
                         {% if particle.headline %}
-                            <h1>{{ particle.headline|raw }}</h1>
+                            <h2 class="sz-particles-title">{{ particle.headline|raw }}</h2>
                         {% endif %}
                         
                         {#DESCRIPTION#}
                         {% if particle.description %}
-                            <div class="sz-timeline-description">{{ particle.description|raw }}</div>
+                            <h3 class="sz-particles-description">{{ particle.description|raw }}</h3>
                         {% endif %}
                         
                     </div>

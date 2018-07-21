@@ -15,11 +15,6 @@ form:
       description: Globally enable the particle.
       default: true
 
-    css.class:
-      type: input.text
-      label: CSS Classes
-      description: CSS class name for the particle.
-
     title:
       type: input.text
       label: Title
@@ -33,87 +28,111 @@ form:
       description: Create each item to display.
       value: name
       ajax: true
-
       fields:
         .name:
           type: input.text
-        .image:
-          type: input.imagepicker
-          label: Image
-          description: Select desired image.
-        .imageposition:
-          type: select.select
-          label: Image Position
-          description: Should the image appear on the left or right of the content.
-          default: left
-          options:
-            left: Left
-            right: Right
-        .label:
-          type: input.text
-          label: Label
-          description: Enter the label that appears on top of the title
-        .title:
-          type: input.text
-          label: Title
-          description: Enter the title
-        .content:
-          type: textarea.textarea
-          label: Content
-          description: Customize the content.
-          placeholder: Enter free text. HTML allowed.
-        .tags:
-          type: collection.list
-          array: true
-          label: Tags
-          description: Create each tag to display.
-          value: text
-          ajax: true
 
+        _tabs:
+          type: container.tabs
           fields:
-            .text:
-              type: input.text
-              label: Tag Text
-              description: Input the text to be used as tag.
-            .icon:
-              type: input.icon
-              label: Tag Icon
-              description: Input the icon.
-              default: 'fa fa-tag'
-            .link:
-              type: input.text
-              label: Tag Link
-              description: Specify the tag link.
-            .target:
-              type: select.selectize
-              label: Target
-              description: Target browser window when item is clicked.
-              placeholder: 'Select...'
-              default: _self
-              options:
-                  _self: Self
-                  _blank: New Window
+          
+            _tab_main:
+              label: Main
+              overridable: false
+              fields:
 
-        .link:
-          type: input.text
-          label: Link
-          description: Input the item link.
-        .linktext:
-          type: input.text
-          label: Link Text
-          description: Input the text for the item link.
-          default: '&rarr;'
-        .buttonclass:
-          type: input.text
-          label: Button Class
-          description: Input the button class.
-          default: ''
-        .buttontarget:
-          type: select.selectize
-          label: Button Target
-          description: Target browser window when item is clicked.
-          placeholder: 'Select...'
-          default: _self
-          options:
-              _self: Self
-              _blank: New Window
+                .label:
+                  type: input.text
+                  label: Label
+                  description: Enter the label that appears on top of the title
+                .title:
+                  type: input.text
+                  label: Title
+                  description: Enter the title
+                .content:
+                  type: textarea.textarea
+                  label: Content
+                  description: Customize the content.
+                  placeholder: Enter free text. HTML allowed.
+                .tags:
+                  type: collection.list
+                  array: true
+                  label: Tags
+                  description: Create each tag to display.
+                  value: text
+                  ajax: true
+                  fields:
+                    .text:
+                      type: input.text
+                      label: Tag Text
+                      description: Input the text to be used as tag.
+                    .icon:
+                      type: input.icon
+                      label: Tag Icon
+                      description: Input the icon.
+                      default: 'fa fa-tag'
+                    .link:
+                      type: input.text
+                      label: Tag Link
+                      description: Specify the tag link.
+                    .target:
+                      type: select.selectize
+                      label: Target
+                      description: Target browser window when item is clicked.
+                      placeholder: 'Select...'
+                      default: _self
+                      options:
+                          _self: Self
+                          _blank: New Window
+
+            _tab_image:
+              label: Image
+              overridable: false
+              fields:
+
+                .image:
+                  type: input.imagepicker
+                  label: Image
+                  description: Select desired image.
+                .imageposition:
+                  type: select.select
+                  label: Image Position
+                  description: Should the image appear on the left or right of the content.
+                  default: left
+                  options:
+                    left: Left
+                    right: Right
+
+            _tab_link:
+              label: Title Link
+              overridable: false
+              fields:
+
+                .link:
+                  type: input.text
+                  label: Link
+                  description: Input the item link.
+                .linktext:
+                  type: input.text
+                  label: Link Text
+                  description: Input the text for the item link.
+                  default: '&rarr;'
+                .buttonclass:
+                  type: input.text
+                  label: Button Class
+                  description: Input the button class.
+                  default: ''
+                .buttontarget:
+                  type: select.selectize
+                  label: Button Target
+                  description: Target browser window when item is clicked.
+                  placeholder: 'Select...'
+                  default: _self
+                  options:
+                      _self: Self
+                      _blank: New Window
+    
+    css.class:
+      type: input.text
+      label: CSS Classes
+      description: CSS class name for the particle.

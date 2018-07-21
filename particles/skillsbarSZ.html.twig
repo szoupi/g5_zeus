@@ -29,12 +29,12 @@
                     <div>
                         {#HEADLINE#}
                         {% if particle.headline %}
-                            <h1 >{{ particle.headline|raw }}</h1>
+                            <h2 class="sz-particles-title">{{ particle.headline|raw }}</h2>
                         {% endif %}
                         
                         {#DESCRIPTION#}
                         {% if particle.description %}
-                            <h4>{{ particle.description|raw }}</h4>
+                            <h3 class="sz-particles-description">{{ particle.description|raw }}</h3>
                         {% endif %}
                         
                     </div>
@@ -55,8 +55,8 @@
         </style>
 
 
-        <div class="g-block">
-            <div class="g-content">
+        {# <div class="g-block">
+            <div class="g-content"> #}
                 <div class="sz-skillbars  {{ particle.style }}">
                     {% for bar in particle.bars %}
                         <span class="sz-skillsbar-title">{{ bar.skillTitle|raw }}</span>
@@ -71,8 +71,8 @@
                         </div>
                     {% endfor %}
                 </div>
-            </div>
-        </div>        
+            {# </div>
+        </div>         #}
         
     </div>
 

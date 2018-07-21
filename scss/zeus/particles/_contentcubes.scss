@@ -1,8 +1,7 @@
 .g-contentcubes {
+    
  
     .cube-items-wrapper {
-        // background: $base-background; //TODO: CHANGE THIS to the section(?) value
-        // color: $white;
 
         // Images Position
         .cube-row {
@@ -87,7 +86,7 @@
 
             // Title
             .item-title {
-                font-size: $core-font-size + 0.125;
+                font-size: $core-font-size + 1.5;
                 font-weight: $font-weight-semibold;
                 line-height: $core-line-height - 0.22;
                 margin-bottom: 1rem;
