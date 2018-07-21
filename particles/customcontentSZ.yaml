@@ -10,145 +10,175 @@ form:
       description: Globally enable the particle.
       default: true
 
-    image:
-      type: input.imagepicker
-      label: Image
-      description: Select the main image.
-      placeholder: Select an image
-
-    mainicon:
-      type: input.icon
-      label: Icon
-      description: Select the main icon
-
-    height:
-      type: input.text
-      label: Block min height
-      description: Specify the height of the block in rem, em or px units.      
-      default: "20rem"
-      pattern: '\d+(\.\d+){0,1}(rem|em|px|vh)'
-      
-    maintitle:
-      type: input.text
-      label: Title
-      description: Customize the title text.
-      placeholder: Enter title
-
-    description:
-      type: textarea.textarea
-      label: Description
-      description: Customize the description.
-      placeholder: Enter short description
-
-    link:
-      type: input.text
-      label: Primary Link
-      description: Specify the link address.
-
-    linktext:
-      type: input.text
-      label: Primary Link Text
-      description: Customize the link text.
-    
-    linkstyle:
-      type: select.select
-      label: Primary link style
-      description: 'Select a button style. These are button classes'
-      default: primary
-      options:
-        '' : primary
-        button-2: secondary
-        button-outline: outline
-        button-block: block
-        button-xlarge: xlarge
-        button-large: large
-        button-small: small
-        button-xsmall: xsmall
-        button-gradient: gradient
-        button-bevel: bevel
-        button-square: square
-
-    link2:
-      type: input.text
-      label: Secondary Link
-      description: Specify the link address.
-
-    linktext2:
-      type: input.text
-      label: Secondary Link Text
-      description: Customize the link text.
-
-    linkstyle2:
-      type: select.select
-      label: Primary link style
-      description: 'Select a button style. These are button classes'
-      default: outline
-      options:
-        '' : primary
-        button-2: secondary
-        button-outline: outline
-        button-block: block
-        button-xlarge: xlarge
-        button-large: large
-        button-small: small
-        button-xsmall: xsmall
-        button-gradient: gradient
-        button-bevel: bevel
-        button-square: square      
-
-    link3:
-      type: input.text
-      label: Third Link
-      description: Specify the link address.
-
-    linktext3:
-      type: input.text
-      label: Third Link Text
-      description: Customize the link text.
-
-    linkstyle3:
-      type: select.select
-      label: Third link style
-      description: 'Select a button style. These are button classes'
-      default: ''
-      options:
-        '' : primary
-        button-2: secondary
-        button-outline: outline
-        button-block: block
-        button-xlarge: xlarge
-        button-large: large
-        button-small: small
-        button-xsmall: xsmall
-        button-gradient: gradient
-        button-bevel: bevel
-        button-square: square  
-      
-    subitems:
-      type: collection.list
-      array: true
-      label: Child Items
-      description: Create each item to appear in the content row.
-      value: title
-      ajax: true
-
+    _tabs:
+      type: container.tabs
       fields:
-        .icon:
-          type: input.icon
-          label: Icon
+      
+        _tab_main:
+          label: Main
+          fields:
 
-        .title:
-          type: input.text
-          label: Title
+            .height:
+              type: input.text
+              label: Block min height
+              description: Optional - Specify the height of the block in vh, rem, em or px units.      
+              placeholder: eg 40vh, 20rem etc
+              pattern: '\d+(\.\d+){0,1}(rem|em|px|vh)'
 
-        .subtitle:
-          type: input.text
-          label: Sub Title
+            .image:
+              type: input.imagepicker
+              label: Image
+              description: Select the main image.
+              placeholder: Select an image
 
-        .description:
-          type: textarea.textarea
-          label: Description
+            .mainicon:
+              type: input.icon
+              label: Icon
+              description: Select the main icon
+              
+            .maintitle:
+              type: input.text
+              label: Title
+              description: Customize the title text.
+              placeholder: Enter title
 
-        .class:
-          type: input.block-variations
-          label: Variations
+            .subtitle:
+              type: input.text
+              label: Subtitle
+              description: Customize the subtitle text.
+              placeholder: Enter subtitle
+
+            .description:
+              type: textarea.textarea
+              label: Description
+              description: Customize the description.
+              placeholder: Enter short description
+
+        _tab_link1:
+          label: Link 1
+          fields:        
+
+            .link:
+              type: input.text
+              label: Link
+              description: Specify the link address.
+
+            .linktext:
+              type: input.text
+              label: Text
+              description: Customize the link text.
+            
+            .linkstyle:
+              type: select.select
+              label: Style
+              description: 'Select a button style for the link'
+              default: primary
+              options:
+                '' : primary
+                button-2: secondary
+                button-outline: outline
+                button-block: block
+                button-xlarge: xlarge
+                button-large: large
+                button-small: small
+                button-xsmall: xsmall
+                button-gradient: gradient
+                button-bevel: bevel
+                button-square: square
+
+        _tab_link2:
+          label: Link 2
+          fields:          
+
+            .link2:
+              type: input.text
+              label: Link
+              description: Specify the link address.
+
+            .linktext2:
+              type: input.text
+              label: Text
+              description: Customize the link text.
+
+            .linkstyle2:
+              type: select.select
+              label: Style
+              description: 'Select a button style for the link'
+              default: secondary
+              options:
+                '' : primary
+                button-2: secondary
+                button-outline: outline
+                button-block: block
+                button-xlarge: xlarge
+                button-large: large
+                button-small: small
+                button-xsmall: xsmall
+                button-gradient: gradient
+                button-bevel: bevel
+                button-square: square      
+
+        _tab_link3:
+          label: Link 3
+          fields:          
+
+            .link3:
+              type: input.text
+              label: Link
+              description: Specify the link address.
+
+            .linktext3:
+              type: input.text
+              label: Text
+              description: Customize the link text.
+
+            .linkstyle3:
+              type: select.select
+              label: Style
+              description: 'Select a button style for the link'
+              default: outline
+              options:
+                '' : primary
+                button-2: secondary
+                button-outline: outline
+                button-block: block
+                button-xlarge: xlarge
+                button-large: large
+                button-small: small
+                button-xsmall: xsmall
+                button-gradient: gradient
+                button-bevel: bevel
+                button-square: square  
+        
+        _tab_subitems:
+          label: Child items
+          fields:          
+
+            .subitems:
+              type: collection.list
+              array: true
+              label: Child Items
+              description: Create each item to appear in the content row.
+              value: title
+              ajax: true
+
+              fields:
+                .icon:
+                  type: input.icon
+                  label: Icon
+
+                .title:
+                  type: input.text
+                  label: Title
+
+                .subtitle:
+                  type: input.text
+                  label: Sub Title
+
+                .description:
+                  type: textarea.textarea
+                  label: Description
+
+                .class:
+                  type: input.block-variations
+                  label: Variations

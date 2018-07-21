@@ -76,7 +76,6 @@ form:
           
             _tab_main:
               label: Main
-              overridable: false
               fields:
                 .image:
                   type: input.imagepicker
@@ -111,7 +110,6 @@ form:
             
             _tab_link1:
               label: Link 1
-              overridable: false
               fields:        
                 .link1:
                   type: input.text
@@ -143,7 +141,6 @@ form:
             
             _tab_link2:
               label: Link 2
-              overridable: false
               fields:          
                 .link2:
                   type: input.text
@@ -175,7 +172,6 @@ form:
             
             _tab_link3:
               label: Link 3
-              overridable: false
               fields:          
                 .link3:
                   type: input.text

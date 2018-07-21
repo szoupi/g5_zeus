@@ -24,14 +24,21 @@
                         
                         {#TITLE#}
                         {% if particle.maintitle %}
-                            <div class="sz-customcontent-title">
-                                <h1>{{ particle.maintitle|raw }}</h1>
+                            <div>
+                                <h2 class="sz-particles-title">{{ particle.maintitle|raw }}</h2>
                             </div>
                         {% endif %}
+
+                        {#SUBTITLE#}
+                        {% if particle.subtitle %}
+                            <div>
+                                <h3 class="sz-particles-subtitle">{{ particle.subtitle|raw }}</h3>
+                            </div>
+                        {% endif %}                        
                         
                         {#DESCRIPTION#}
                         {% if particle.description %}
-                            <div class="SZ-customcontent-description">{{ particle.description|raw }}</div>
+                            <div class="sz-particles-description">{{ particle.description|raw }}</div>
                         {% endif %}
                         
                         {#BUTTONS-LINKS#}

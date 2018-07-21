@@ -17,7 +17,6 @@ form:
 
         _tab_link1:
           label: Link 1
-          overridable: false
           fields:    
             .link:
               type: input.text
@@ -41,7 +40,6 @@ form:
 
         _tab_link2:
           label: Link 2
-          overridable: false
           fields:          
 
             link2:
@@ -66,7 +64,6 @@ form:
 
         _tab_link3:
           label: Link 3
-          overridable: false
           fields:          
 
             link3:
