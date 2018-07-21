@@ -11,74 +11,92 @@ form:
       description: Globally enable the particle.
       default: true
 
-    headline:
-      type: input.text
-      label: Headline
-      description: Customize the headline text.
-      placeholder: Enter headline
+    # headline:
+    #   type: input.text
+    #   label: Headline
+    #   description: Customize the headline text.
+    #   placeholder: Enter headline
 
-    description:
-      type: textarea.textarea
-      label: Description
-      description: Customize the description.
-      placeholder: Enter short description
+    # description:
+    #   type: textarea.textarea
+    #   label: Description
+    #   description: Customize the description.
+    #   placeholder: Enter short description
 
-    link:
-      type: input.text
-      label: Primary Link
-      description: Specify the link address.
+    _tabs:
+      type: container.tabs
+      fields:
 
-    linktext:
-      type: input.text
-      label: Primary Link Text
-      description: Customize the link text.
+        _tab_link1:
+          label: Link 1
+          overridable: false
+          fields:    
+            .link:
+              type: input.text
+              label: Primary Link
+              description: Specify the link address.
 
-    linkstyle:
-      type: select.select
-      label: Primary Link style
-      description: 'Select a button style. These are button classes'
-      default: primary
-      options:
-        '' : primary
-        button-2: secondary
-        button-outline: outline
+            .linktext:
+              type: input.text
+              label: Primary Link Text
+              description: Customize the link text.
 
-    link2:
-      type: input.text
-      label: Secondary Link
-      description: Specify the link address.
+            .linkstyle:
+              type: select.select
+              label: Primary Link style
+              description: 'Select a button style. These are button classes'
+              default: primary
+              options:
+                '' : primary
+                button-2: secondary
+                button-outline: outline
 
-    linktext2:
-      type: input.text
-      label: Secondary Link Text
-      description: Customize the link text.
+        _tab_link2:
+          label: Link 2
+          overridable: false
+          fields:          
 
-    linkstyle2:
-      type: select.select
-      label: Secondary link style
-      description: 'Select a button style. These are button classes'
-      default: secondary
-      options:
-        '' : primary
-        button-2: secondary
-        button-outline: outline
+            link2:
+              type: input.text
+              label: Secondary Link
+              description: Specify the link address.
 
-    link3:
-      type: input.text
-      label: Third Link
-      description: Specify the link address.
+            linktext2:
+              type: input.text
+              label: Secondary Link Text
+              description: Customize the link text.
 
-    linktext3:
-      type: input.text
-      label: Third Link Text
-      description: Customize the link text.
+            linkstyle2:
+              type: select.select
+              label: Secondary link style
+              description: 'Select a button style. These are button classes'
+              default: secondary
+              options:
+                '' : primary
+                button-2: secondary
+                button-outline: outline
 
-    linkstyle3:
-      type: select.select
-      label: Third link style
-      description: 'Select a button style. These are button classes'
-      default: outline
-      options:
-        '' : primary
-        button-2: secondary
-        button-outline: outline        
+        _tab_link3:
+          label: Link 3
+          overridable: false
+          fields:          
+
+            link3:
+              type: input.text
+              label: Third Link
+              description: Specify the link address.
+
+            linktext3:
+              type: input.text
+              label: Third Link Text
+              description: Customize the link text.
+
+            linkstyle3:
+              type: select.select
+              label: Third link style
+              description: 'Select a button style. These are button classes'
+              default: outline
+              options:
+                '' : primary
+                button-2: secondary
+                button-outline: outline        
