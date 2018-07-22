@@ -40,13 +40,13 @@ form:
               type: input.text
               label: Title
               description: Customize the title text.
-              placeholder: Enter title
+              placeholder: Enter free text
 
             .subtitle:
               type: input.text
               label: Subtitle
               description: Customize the subtitle text.
-              placeholder: Enter subtitle
+              placeholder: Enter free text
 
             .description:
               type: textarea.textarea

@@ -8,13 +8,20 @@
                 <div class="g-content">
                     <div>
                         {#HEADLINE#}
-                        {% if particle.headline %}
-                            <h2 class="sz-particles-title">{{ particle.headline|raw }}</h2>
+                        {% if particle.maintitle %}
+                            <h2 class="sz-particles-title">{{ particle.maintitle|raw }}</h2>
                         {% endif %}
+
+                        {#SUBTITLE#}
+                        {% if particle.subtitle %}
+                            <div>
+                                <h3 class="sz-particles-subtitle">{{ particle.subtitle|raw }}</h3>
+                            </div>
+                        {% endif %}                          
                         
                         {#DESCRIPTION#}
                         {% if particle.description %}
-                            <h3 class="sz-particles-description">{{ particle.description|raw }}</h3>
+                            <p class="sz-particles-description">{{ particle.description|raw }}</p>
                         {% endif %}
                         
                     </div>
@@ -26,10 +33,10 @@
             {% for event in particle.events %}
                 <div class="container {{ event.position }} {{ event.class }}">
                     <div class="content">
-                        <h2>{{ event.date }}</h2>
-                        <h3>{{ event.eventTitle|raw }}</h3>
-                        
-                        <p>{{ event.description|raw }}</p>
+                        <div class="sz-timeline-eventDate">{{ event.date }}</div>
+                        <div class="sz-timeline-eventTitle">{{ event.eventTitle|raw }}</div>
+                        <div class="sz-timeline-eventSubtitle">{{ event.eventSubtitle|raw }}</div>                        
+                        <p class="sz-timeline-eventDescription">{{ event.description|raw }}</p>
                     </div>
                 </div>
             {% endfor %}

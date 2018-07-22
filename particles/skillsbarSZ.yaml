@@ -20,11 +20,17 @@ form:
           style1: style 1 
           style2: style 2
 
-    headline:
+    maintitle:
       type: input.text
       label: Headline
       description: Title for the Skills bar
-      placeholder: Enter free text 
+      placeholder: Enter free text
+
+    subtitle:
+      type: input.text
+      label: Subtitle
+      description: Customize the subtitle text.
+      placeholder: Enter free text       
 
     description:
       type: textarea.textarea

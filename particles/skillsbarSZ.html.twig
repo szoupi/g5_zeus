@@ -28,13 +28,20 @@
                 <div class="g-content">
                     <div>
                         {#HEADLINE#}
-                        {% if particle.headline %}
-                            <h2 class="sz-particles-title">{{ particle.headline|raw }}</h2>
+                        {% if particle.maintitle %}
+                            <h2 class="sz-particles-title">{{ particle.maintitle|raw }}</h2>
                         {% endif %}
+
+                        {#SUBTITLE#}
+                        {% if particle.subtitle %}
+                            <div>
+                                <h3 class="sz-particles-subtitle">{{ particle.subtitle|raw }}</h3>
+                            </div>
+                        {% endif %}                          
                         
                         {#DESCRIPTION#}
                         {% if particle.description %}
-                            <h3 class="sz-particles-description">{{ particle.description|raw }}</h3>
+                            <p class="sz-particles-description">{{ particle.description|raw }}</p>
                         {% endif %}
                         
                     </div>

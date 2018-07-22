@@ -12,11 +12,17 @@ form:
       default: true
 
 
-    headline:
+    maintitle:
       type: input.text
       label: Headline
       description: Title for the timeline
-      placeholder: Enter free text 
+      placeholder: Enter free text
+
+    subtitle:
+      type: input.text
+      label: Subtitle
+      description: Customize the subtitle text.
+      placeholder: Enter free text          
 
     description:
       type: textarea.textarea
@@ -43,6 +49,14 @@ form:
         .eventTitle:
           type: input.text
           label: Event Title
+          description: Customize the title of the event
+          placeholder: Enter free text          
+
+        .eventSubtitle:
+          type: input.text
+          label: Event Subtitle
+          description: Customize the subtitle of the event
+          placeholder: Enter free text  
 
         .description:
           type: textarea.textarea
