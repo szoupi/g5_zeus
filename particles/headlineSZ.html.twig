@@ -1,7 +1,8 @@
 {% extends '@nucleus/partials/particle.html.twig' %}
 
 {% block particle %}
-    <div class="timelineSZ" >
+
+    <div class="headlineSZ" >
         <div class="g-grid">
             
             <div class="g-block">
@@ -28,20 +29,7 @@
                 </div>
             </div>
         </div>
-        
-        <div class="sz-timeline">
-            {% for event in particle.events %}
-                <div class="container {{ event.position }} {{ event.class }}">
-                    <div class="content">
-                        <div class="sz-timeline-eventDate">{{ event.date }}</div>
-                        <div class="sz-timeline-eventTitle">{{ event.eventTitle|raw }}</div>
-                        <div class="sz-timeline-eventSubtitle">{{ event.eventSubtitle|raw }}</div>                        
-                        <p class="sz-timeline-eventDescription">{{ event.description|raw }}</p>
-                    </div>
-                </div>
-            {% endfor %}
-        </div>
-        
-        
     </div>
+
+
 {% endblock %}

@@ -8,6 +8,9 @@
         "particles/portfolioSZ.yaml",
         "particles/featuredarticlesSZ.html.twig",
         "particles/featuredarticlesSZ.yaml",
-        "scss/zeus/particles/_featuredarticlesSZ.scss"
+        "scss/zeus/particles/_featuredarticlesSZ.scss",
+        "scss/zeus/particles/_headlineSZ.scss",
+        "particles/headlineSZ.html.twig",
+        "particles/headlineSZ.yaml"
     ]
 }

@@ -1,0 +1,31 @@
+name: Headline
+description: Create Custom headline  
+type: particle
+icon: fa-header
+
+form:
+  fields:
+    enabled:
+      type: input.checkbox
+      label: Enabled
+      description: Globally enable the particle.
+      default: true
+
+    maintitle:
+      type: input.text
+      label: Headline
+      description: The main headline
+      placeholder: Enter free text
+
+    subtitle:
+      type: input.text
+      label: Subtitle
+      description: Customize the subtitle text.
+      placeholder: Enter free text       
+
+    description:
+      type: textarea.textarea
+      label: Description
+      description: Short description.
+      placeholder: Enter short description
+      
