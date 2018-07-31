@@ -11,11 +11,17 @@ form:
       description: Globally enable the particle.
       default: true
 
-    headline:
+    maintitle:
       type: input.text
-      label: Headline
+      label: Main title
       description: Give a general title for the portfolio
-      placeholder: eg My awesome Pictures!
+      placeholder: Enter free text
+
+    subtitle:
+      type: input.text
+      label: Subtitle
+      description: Customize the subtitle text.
+      placeholder: Enter free text
 
     description:
       type: textarea.textarea

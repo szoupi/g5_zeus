@@ -14,13 +14,20 @@
 
                     <div>
                         {#HEADLINE#}
-                        {% if particle.headline %}
-                            <div class="portfolio-sz-title ">{{ particle.headline|raw }}</div>
+                        {% if particle.maintitle %}
+                            <h2 class="sz-particles-title">{{ particle.maintitle|raw }}</h2>
                         {% endif %}
+
+                        {#SUBTITLE#}
+                        {% if particle.subtitle %}
+                            <div>
+                                <h3 class="sz-particles-subtitle">{{ particle.subtitle|raw }}</h3>
+                            </div>
+                        {% endif %}                          
                         
                         {#DESCRIPTION#}
                         {% if particle.description %}
-                            <div class="portfolio-sz-description ">{{ particle.description|raw }}</div>
+                            <p class="sz-particles-description">{{ particle.description|raw }}</p>
                         {% endif %}
 
 
@@ -52,7 +59,6 @@
         </div>
 
         {# PORTFOLIOS #}
-        {#TODO: fix if #}
         <div class="portfolio-sz-wrapper
             {% if particle.gutter == 'Yes' %} 
                  portfolio-sz-gutter 
