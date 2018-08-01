@@ -11,25 +11,7 @@
         margin-bottom: 1rem;
         
     } 
-    .sz-customcontent-title h1 {
-        font-size: 3rem;
-        line-height: 120%;
-        font-weight: 800;
-        margin-bottom: 1rem;
-    }
 
-    .SZ-customcontent-description {
-        padding: 1.5rem 0;
-        
-        @include breakpoint(mobile-only) {
-            padding: 0.5rem 0;    
-        }
-        
-        @include breakpoint(small-mobile-range) {
-            padding: 0.5rem 0;    
-        }
-    }
-    
     .sz-subitem-title h2 {
         font-size: 2rem;
         font-weight: 800;
