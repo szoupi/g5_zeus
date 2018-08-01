@@ -4,6 +4,7 @@
     <div class="sz-calltoactionSZ" >
         <div class="g-grid">
             <div class="g-block">
+                <div class="g-content">
                     <div class="calltoactionSZ-buttons">
                         {#BUTTONS-LINKS#}
                         {% if particle.linktext %}
@@ -21,6 +22,7 @@
                                 class="button {{ particle.linkstyle3|default('button-outline') }}" 
                                 role="button">{{ particle.linktext3|e }}</a>
                         {% endif %} 
+                    </div>
                 </div>
             </div>
             
