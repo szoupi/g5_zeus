@@ -56,7 +56,7 @@ form:
             .backgroundOverlay:
               type: input.colorpicker
               label: Background Overlay
-              description: Set the color of the Background overlay in order to darken/lighten the image. Do not leave it empty. Use rgba(0, 0, 0, 0) to display the image unmodified.
+              description: Set the color of the Background overlay in order to darken/lighten the image. Use rgba(0, 0, 0, 0) to display the image unmodified.
               default: "rgba(0, 0, 0, 0)"
 
             .backgroundAttachment:

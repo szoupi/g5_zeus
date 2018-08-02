@@ -8,19 +8,48 @@
                     <div>
                         {#HEADLINE#}
                         {% if particle.maintitle %}
-                            <h2 class="sz-particles-title">{{ particle.maintitle|raw }}</h2>
+                            <h2 class="sz-particles-title"
+                                style="
+                                {% if particle.maintitlesize %} 
+                                    font-size: {{ particle.maintitlesize }};
+                                {% endif %}
+                                {% if particle.maintitlecolor %} 
+                                    color: {{ particle.maintitlecolor }};
+                                {% endif %}                                
+                            ">
+                            {{ particle.maintitle|raw }}</h2>
                         {% endif %}
 
                         {#SUBTITLE#}
                         {% if particle.subtitle %}
                             <div>
-                                <h3 class="sz-particles-subtitle">{{ particle.subtitle|raw }}</h3>
+                                <h3 class="sz-particles-subtitle"
+                                    style="
+                                    {% if particle.subtitlesize %} 
+                                        font-size: {{ particle.subtitlesize }};
+                                    {% endif %}
+                                    {% if particle.subtitlecolor %} 
+                                        color: {{ particle.subtitlecolor }};
+                                    {% endif %}                                
+                                ">
+                                    {{ particle.subtitle|raw }}
+                                </h3>
                             </div>
                         {% endif %}                          
                         
                         {#DESCRIPTION#}
                         {% if particle.description %}
-                            <p class="sz-particles-description">{{ particle.description|raw }}</p>
+                            <p class="sz-particles-description" 
+                                style="
+                                    {% if particle.descriptionsize %} 
+                                        font-size: {{ particle.descriptionsize }};
+                                    {% endif %}
+                                    {% if particle.descriptioncolor %} 
+                                        color: {{ particle.descriptioncolor }};
+                                    {% endif %}                                
+                                ">
+                                {{ particle.description|raw }}
+                            </p>
                         {% endif %}
                         
                     </div>

@@ -11,21 +11,77 @@ form:
       description: Globally enable the particle.
       default: true
 
-    maintitle:
-      type: input.text
-      label: Headline
-      description: The main headline
-      placeholder: Enter free text
+    _tabs:
+      type: container.tabs
+      fields:
 
-    subtitle:
-      type: input.text
-      label: Subtitle
-      description: Customize the subtitle text.
-      placeholder: Enter free text       
+        _tab_maintitle:
+          label: Title
+          fields:  
 
-    description:
-      type: textarea.textarea
-      label: Description
-      description: Short description.
-      placeholder: Enter short description
+            .maintitle:
+              type: input.text
+              label: Title
+              description: The main headline
+              placeholder: Enter free text
+
+
+            .maintitlesize:
+              type: input.text
+              label: Size
+              description: Optional - Specify the font size of the title in rem, em or px units.      
+              placeholder: eg 2.5rem
+              pattern: '\d+(\.\d+){0,1}(rem|em|px)'
+
+            .maintitlecolor:
+              type: input.colorpicker
+              label: Color
+              description: Optional - Set the color of the title.
+              default: "rgba(0, 0, 0, 0)"      
+
+        _tab_mainsubtitle:
+          label: Subtitle
+          fields:  
+
+            .subtitle:
+              type: input.text
+              label: Subtitle
+              description: Customize the subtitle text.
+              placeholder: Enter free text
+
+            .subtitlesize:
+              type: input.text
+              label: Size
+              description: Optional - Specify the font size of the title in rem, em or px units.      
+              placeholder: eg 2.5rem
+              pattern: '\d+(\.\d+){0,1}(rem|em|px)'
+
+            .subtitlecolor:
+              type: input.colorpicker
+              label: Color
+              description: Optional - Set the color of the title.
+              default: "rgba(0, 0, 0, 0)"                 
+
+        _tab_description:
+          label: Description
+          fields:
+
+            .description:
+              type: textarea.textarea
+              label: Description
+              description: Short description.
+              placeholder: Enter short description
+
+            .descriptionsize:
+              type: input.text
+              label: Size
+              description: Optional - Specify the font size of the title in rem, em or px units.      
+              placeholder: eg 2.5rem
+              pattern: '\d+(\.\d+){0,1}(rem|em|px)'          
+
+            .descriptioncolor:
+              type: input.colorpicker
+              label: Color
+              description: Optional - Set the color of the title.
+              default: "rgba(0, 0, 0, 0)"                        
       
