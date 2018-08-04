@@ -50,7 +50,7 @@ $intro-background-predefined-color:   custom !default;
 
 // Features
 $features-background:           #ffffff !default;
-$features-text-color:           #ffffff !default;
+$features-text-color:           #212121 !default;
 $features-link-color:			#0071bc !default;
 $features-background-predefined-color:   custom !default;
 
@@ -74,7 +74,7 @@ $testimonials-background-predefined-color:   custom !default;
 
 // Expanded
 $expanded-background:           #ffffff !default;
-$expanded-text-color:           #ffffff !default;
+$expanded-text-color:           #212121 !default;
 $expanded-link-color:			#0071bc !default;
 $expanded-background-predefined-color:   accent3 !default;
 
@@ -111,8 +111,8 @@ $nadir-background-predefined-color:   custom !default;
 
 // Off Canvas
 $offcanvas-background:          #0071bc !default;
-$offcanvas-text-color:          #eceeef !default;
-$offcanvas-toggle-color:        #eceeef !default;
+$offcanvas-text-color:          $accent-color-1 !default;
+$offcanvas-toggle-color :       $accent-color-1 !default;
 
 // Block Variations
 $box1-background:               $base-dominant-color !default;
