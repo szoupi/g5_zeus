@@ -26,7 +26,11 @@
 {% set attr_paddingLeft = segment.attributes.paddingLeft %}
 {% set attr_paddingRight = segment.attributes.paddingRight %}
 
-
+{# margin #}
+{% set attr_marginTop = segment.attributes.marginTop %}
+{% set attr_marginBottom = segment.attributes.marginBottom %}
+{% set attr_marginLeft = segment.attributes.marginLeft %}
+{% set attr_marginRight = segment.attributes.marginRight %}
 
 
 {% if segment.attributes.extra %}
@@ -64,38 +68,20 @@
                 ), 
                 url({{ url(attr_background) }}); 
 
-            {% if attr_backgroundAttachment %}    
-                background-attachment: {{ attr_backgroundAttachment }}; 
-            {% endif %}
-            
-            {% if attr_backgroundRepeat %}                    
-                background-repeat: {{ attr_backgroundRepeat }}; 
-            {% endif %}
-
-            {% if attr_backgroundPosition %}
-                background-position: {{ attr_backgroundPosition }}; 
-            {% endif %}
-            
-            {% if attr_backgroundSize %}
-                background-size: {{ attr_backgroundSize }};
-            {% endif %}
-
-            {% if attr_paddingTop %}
-                padding-top: {{ attr_paddingTop }};
-            {% endif %}
-
-            {% if attr_paddingBottom %}
-                padding-bottom: {{ attr_paddingBottom }};
-            {% endif %}
-
-            {% if attr_paddingLeft %}
-                padding-left: {{ attr_paddingLeft }};
-            {% endif %}
-
-            {% if attr_paddingRight %}
-                padding-right: {{ attr_paddingRight }};
-            {% endif %}
-
+            {% if attr_backgroundAttachment %} background-attachment: {{ attr_backgroundAttachment }};  {% endif %}            
+            {% if attr_backgroundRepeat %} background-repeat: {{ attr_backgroundRepeat }};  {% endif %}
+            {% if attr_backgroundPosition %} background-position: {{ attr_backgroundPosition }};  {% endif %}            
+            {% if attr_backgroundSize %} background-size: {{ attr_backgroundSize }}; {% endif %}
+            {# padding #}
+            {% if attr_paddingTop %} padding-top: {{ attr_paddingTop }}; {% endif %}
+            {% if attr_paddingBottom %} padding-bottom: {{ attr_paddingBottom }}; {% endif %}
+            {% if attr_paddingLeft %} padding-left: {{ attr_paddingLeft }}; {% endif %}
+            {% if attr_paddingRight %} padding-right: {{ attr_paddingRight }}; {% endif %}
+            {# margin #}
+            {% if attr_marginTop %} padding-top: {{ attr_marginTop }}; {% endif %}
+            {% if attr_marginBottom %} padding-bottom: {{ attr_marginBottom }}; {% endif %}
+            {% if attr_marginLeft %} margin-left: {{ attr_marginLeft }}; {% endif %}
+            {% if attr_marginRight %} margin-right: {{ attr_marginRight }}; {% endif %}
             ">
         {% endif %}   
         {{ html|raw }}

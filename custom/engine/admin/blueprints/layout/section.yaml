@@ -49,19 +49,19 @@ form:
 
             .background:
               type: input.imagepicker
-              label: Background
+              label: Image
               description: Set the background image. If left empty, it will take the color from the Styles-tab related section.
               default: ''
 
             .backgroundOverlay:
               type: input.colorpicker
-              label: Background Overlay
+              label: Overlay
               description: Set the color of the Background overlay in order to darken/lighten the image. Use rgba(0, 0, 0, 0) to display the image unmodified.
               default: "rgba(0, 0, 0, 0)"
 
             .backgroundAttachment:
               type: select.selectize
-              label: Background attachment
+              label: Attachment
               description: Set whether a background image is fixed or scrolls with the rest of the page.
               default: ''
               options:
@@ -74,7 +74,7 @@ form:
 
             .backgroundRepeat:
               type: select.selectize
-              label: Background repeat
+              label: Repeat
               description: Set if/how a background image will be repeated. By default, a background-image is repeated both vertically and horizontally. If no background-position is specified, the image is always placed at the element's top left corner.
               default: ''
               options:
@@ -88,7 +88,7 @@ form:
 
             .backgroundPosition:
               type: select.selectize
-              label: Background position
+              label: Position
               description: Set the starting position of a background image. By default, a background-image is placed at the top-left corner of an element.
               default: ''
               options:
@@ -107,7 +107,7 @@ form:
 
             .backgroundSize:
               type: select.selectize
-              label: Background size
+              label: Size
               description: Specify the size of a background image.
               default: ''
               options:
@@ -152,5 +152,48 @@ form:
               description: Optional - Specify the Right padding of the block in rem, em or px units.      
               placeholder: eg 2rem 
               pattern: '\d+(\.\d+){0,1}(rem|em|px)'
+
+        _tab_margin:
+          label: Margin
+          fields: 
+
+            _info:
+              type: separator.note
+              class: alert alert-info
+              content: Negative values are allowed, eg -50px
+
+
+            .marginTop:
+              type: input.text
+              label: Top
+              description: Optional - Specify the top margin of the block in rem, em or px units.      
+              placeholder: eg 2rem 
+              pattern: '-?\d+(\.\d+){0,1}(rem|em|px)'
+
+
+            .marginBottom:
+              type: input.text
+              label: Bottom
+              description: Optional - Specify the Bottom margin of the block in rem, em or px units.      
+              placeholder: eg 2rem 
+              pattern: '-?\d+(\.\d+){0,1}(rem|em|px)'
+
+
+            .marginLeft:
+              type: input.text
+              label: Left
+              description: Optional - Specify the Left margin of the block in rem, em or px units.      
+              placeholder: eg 2rem 
+              pattern: '-?\d+(\.\d+){0,1}(rem|em|px)'
+
+
+            .marginRight:
+              type: input.text
+              label: Right
+              description: Optional - Specify the Right margin of the block in rem, em or px units.      
+              placeholder: eg 2rem 
+              pattern: '-?\d+(\.\d+){0,1}(rem|em|px)'
+
+
     _inherit:
       type: gantry.inherit

@@ -1,0 +1,39 @@
+{% extends '@nucleus/partials/particle.html.twig' %}
+
+{% block particle %}
+    {% set url = url(particle.url)|default(gantry.siteUrl()) %}
+    {% set image = url(particle.image) %}
+    
+    {% if particle.link == true %}
+        <a href="{{ url }}" target="{{ particle.target|default('_self') }}" 
+                    title="{{ particle.text }}" {{ rel|default('')|raw }} >
+    {% else %}
+        <div>
+    {% endif %}
+        {% if particle.svg is not empty %}
+            {{ particle.svg|raw }}
+        {% elseif image %}
+            <img src="{{ url(particle.image) }}" 
+                alt="{{ particle.text }}" 
+                style="
+                    {# padding #}
+                    {% if particle.paddingTop %} padding-top: {{ particle.paddingTop }}; {% endif %}
+                    {% if particle.paddingBottom %} padding-bottom: {{ particle.paddingBottom }}; {% endif %}
+                    {% if particle.paddingLeft %} padding-left: {{ particle.paddingLeft }}; {% endif %}
+                    {% if particle.paddingRight %} padding-right: {{ particle.paddingRight }}; {% endif %}
+                    {# margin #}
+                    {% if particle.marginTop %} margin-top: {{ particle.marginTop }}; {% endif %}
+                    {% if particle.marginBottom %} margin-bottom: {{ particle.marginBottom }}; {% endif %}
+                    {% if particle.marginLeft %} margin-left: {{ particle.marginLeft }}; {% endif %}
+                    {% if particle.marginRight %} margin-right: {{ particle.marginRight }}; {% endif %}
+                "
+            />
+        {% else %}
+            {{ particle.text|default('') }}
+        {% endif %}
+    {% if particle.link == true %}
+        </a>
+    {% else %}
+        </div>
+    {% endif %}
+{% endblock %}
