@@ -1,7 +1,7 @@
 %item-container {
     font-size: $core-font-size;
     font-weight: bold;
-    // padding: $sectionsdim-navigation-padding/2 0;
+    padding: $base-content-padding/2 0;
     white-space: normal;
     @include word-wrap(break-word);
     @include transition(0.35s ease);
@@ -73,8 +73,8 @@
     }
     .g-sublevel {
         > li {
-            // margin: $sectionsdim-navigation-margin/2 $sectionsdim-navigation-margin*1.5;
-            // padding: 0 0 $sectionsdim-navigation-padding/4 0;
+            margin: $base-content-margin/2 $base-content-margin*1.5;
+            padding: 0 0 $base-content-padding/2 0;
             > .g-menu-item-container {
                 line-height: normal;
                 @extend %item-container;
