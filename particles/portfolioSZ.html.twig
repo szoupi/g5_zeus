@@ -178,6 +178,14 @@
             } else {
                 // Possibly fall back to a more compatible method here
                 console.log('lazy load for images did not succeed');
+                var images = document.getElementsByTagName('img');
+                for(var i = 0; i < images.length ; i++) {
+                    images[i].src = images[i].dataset.src;
+                    console.log(' images src fell back to original: ' + images[i].dataset.src);
+                };
+                
+
+
             }
         }
 
