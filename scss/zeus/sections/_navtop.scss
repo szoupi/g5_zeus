@@ -1,7 +1,4 @@
 #g-navtop {
-	margin: $sectionsdim-navtop-margin 0;
-    padding: $sectionsdim-navtop-padding 0;
-    position: relative;
     
     //SECTION PRESETS    
 	@if $navtop-section-preset {

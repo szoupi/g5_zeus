@@ -1,7 +1,4 @@
 #g-footerbottom {
-	margin: $sectionsdim-footerbottom-margin 0;
-    padding: $sectionsdim-footerbottom-padding 0;
-    position: relative;
     
     //SECTION PRESETS    
 	@if $footerbottom-section-preset {

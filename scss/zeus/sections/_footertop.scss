@@ -1,7 +1,4 @@
 #g-footertop {
-	margin: $sectionsdim-footertop-margin 0;
-    padding: $sectionsdim-footertop-padding 0;
-    position: relative;
     
     //SECTION PRESETS    
 	@if $footertop-section-preset {
