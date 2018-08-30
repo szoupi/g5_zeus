@@ -6,8 +6,8 @@ preset1:
     - '#e31c3d' #accent 1 contrast dominant
     - '#9bdaf1' #accent 2 Light
     - '#112e51' #accent 3 Dark Dominant
-    - '#f5f5f5' #body (base) background
     - '#212121' #body (base) text 
+    - '#f5f5f5' #body (base) background
 
   styles:
     base:
@@ -104,318 +104,215 @@ preset1:
       text-color: '#eceeef'
       toggle-color: '#f5f5f5'
 
-# preset2:
-#   image: 'gantry-admin://images/preset2.jpg'
-#   description: GANTRY5_PLATFORM_PRESET2
-#   colors:
-#     - '#4caf50' #dominant
-#     - '#448aff' #accent 1 contrast dominant
-#     - '#c8e6c9' #accent 2 Light
-#     - '#388e3c' #accent 3 Dark Dominant
-#     - '#f5f5f5' #body (base) background
-#     - '#212121' #body (base) text 
+preset2:
+  image: 'gantry-admin://images/preset1.jpg'
+  description: GANTRY5_PLATFORM_PRESET2
+  colors:
+    - '#e3bf23' #dominant
+    - '#2326e3' #accent 1 contrast dominant
+    - '#eeefa8' #accent 2 Light
+    - '#ad8329' #accent 3 Dark Dominant
+    - '#2d2a32' #body (base) text 
+    - '#fafdf6' #body (base) background
 
-#   styles:
-#     base:
-#       dominant-color: '#4caf50'
-#       text-color: '#212121'
-#       background: '#f5f5f5'
-#       background-image: ''
-#       content-margin: 0.5rem
-#       content-padding: 0.5rem
-#     accent:
-#       color-1: '#448aff'
-#       color-2: '#c8e6c9'
-#       color-3: '#388e3c'
-#     font:
-#       family-default: 'Lato, Helvetica, Tahoma, Geneva, Arial, sans-serif'
-#       family-title: 'Lato, Helvetica, Tahoma, Geneva, Arial, sans-serif'
-#       family-quote: 'Lato, Helvetica, Tahoma, Geneva, Arial, sans-serif'
-#     zenith:
-#       section-preset: disabled
-#       text-color: '#f5f5f5'
-#       link-color: '#4caf50'
-#       background: '#000000'
-#     navtop:
-#       section-preset: accent2
-#       text-color: '#212121'
-#       link-color: '#4caf50'
-#       background: '#f5f5f5'
-#     navigation:
-#       text-color: '#f5f5f5'
-#       link-color: '#f5f5f5'
-#       background: '#4caf50'
-#     header:
-#       section-preset: accent3
-#       text-color: '#212121'
-#       link-color: '#4caf50'
-#       background: '#f5f5f5'
-#     intro:
-#       section-preset: accent2
-#       text-color: '#212121'
-#       link-color: '#4caf50'
-#       background: '#f5f5f5'
-#     features:
-#       section-preset: accent2
-#       text-color: '#f5f5f5'
-#       link-color: '#4caf50'
-#       background: '#f5f5f5'
-#     utility:
-#       section-preset: accent3
-#       text-color: '#212121'
-#       link-color: '#4caf50'
-#       background: '#f5f5f5'
-#     above:
-#       section-preset: accent2
-#       text-color: '#212121'
-#       link-color: '#4caf50'
-#       background: '#f5f5f5'
-#     testimonials:
-#       section-preset: accent3
-#       text-color: '#212121'
-#       link-color: '#4caf50'
-#       background: '#f5f5f5'
-#     expanded:
-#       section-preset: base
-#       text-color: '#f5f5f5'
-#       link-color: '#4caf50'
-#       background: '#f5f5f5'
-#     mainbottom:
-#       section-preset: accent2
-#       text-color: '#212121'
-#       link-color: '#4caf50'
-#       background: '#f5f5f5'
-#     footertop:
-#       section-preset: accent2
-#       text-color: '#212121'
-#       link-color: '#4caf50'
-#       background: '#f5f5f5'
-#     footer:
-#       section-preset: accent3
-#       text-color: '#f5f5f5'
-#       link-color: '#c8e6c9'
-#       background: '#f5f5f5'
-#     footerbottom:
-#       section-preset: accent2
-#       text-color: '#212121'
-#       link-color: '#4caf50'
-#       background: '#f5f5f5'
-#     nadir:
-#       section-preset: disabled
-#       text-color: '#f5f5f5'
-#       link-color: '#4caf50'
-#       background: '#000000'
-#     offcanvas:
-#       background: '#4caf50'
-#       text-color: '#eceeef'
-#       toggle-color: '#f5f5f5'
-# preset3:
-#   image: 'gantry-admin://images/preset3.jpg'
-#   description: GANTRY5_PLATFORM_PRESET3
-#   colors:
-#     - '#8f734a' #dominant
-#     - '#893040' #accent 1 contrast dominant
-#     - '#d1b379' #accent 2 Light
-#     - '#314159' #accent 3 Dark Dominant
-#     - '#f5f5f5' #body (base) background
-#     - '#212121' #body (base) text 
+  styles:
+    base:
+      dominant-color: '#e3bf23'
+      text-color: '#2d2a32'
+      background: '#fafdf6'
+      background-image: ''
+      content-margin: 0.5rem
+      content-padding: 0.5rem
+    accent:
+      color-1: '#2326e3'
+      color-2: '#eeefa8'
+      color-3: '#ad8329'
+    font:
+      family-default: 'Lato, Helvetica, Tahoma, Geneva, Arial, sans-serif'
+      family-title: 'Lato, Helvetica, Tahoma, Geneva, Arial, sans-serif'
+      family-quote: 'Lato, Helvetica, Tahoma, Geneva, Arial, sans-serif'
+    zenith:
+      section-preset: disabled
+      text-color: '#fafdf6'
+      link-color: '#e3bf23'
+      background: '#000000'
+    navtop:
+      section-preset: disabled
+      text-color: '#2d2a32'
+      link-color: '#e3bf23'
+      background: '#fafdf6'
+    navigation:
+      text-color: '#fafdf6'
+      link-color: '#fafdf6'
+      background: '#e3bf23'
+    header:
+      section-preset: disabled
+      text-color: '#2d2a32'
+      link-color: '#e3bf23'
+      background: '#fafdf6'
+    intro:
+      section-preset: disabled
+      text-color: '#2d2a32'
+      link-color: '#e3bf23'
+      background: '#fafdf6'
+    features:
+      section-preset: disabled
+      text-color: '#2d2a32'
+      link-color: '#e3bf23'
+      background: '#fafdf6'
+    utility:
+      section-preset: disabled
+      text-color: '#2d2a32'
+      link-color: '#e3bf23'
+      background: '#fafdf6'
+    above:
+      section-preset: disabled
+      text-color: '#2d2a32'
+      link-color: '#e3bf23'
+      background: '#fafdf6'
+    testimonials:
+      section-preset: disabled
+      text-color: '#2d2a32'
+      link-color: '#e3bf23'
+      background: '#fafdf6'
+    expanded:
+      section-preset: disabled
+      text-color: '#2d2a32'
+      link-color: '#e3bf23'
+      background: '#fafdf6'
+    mainbottom:
+      section-preset: disabled
+      text-color: '#2d2a32'
+      link-color: '#e3bf23'
+      background: '#fafdf6'
+    footertop:
+      section-preset: disabled
+      text-color: '#2d2a32'
+      link-color: '#e3bf23'
+      background: '#fafdf6'
+    footer:
+      section-preset: disabled
+      text-color: '#2d2a32'
+      link-color: '#e3bf23'
+      background: '#fafdf6'
+    footerbottom:
+      section-preset: disabled
+      text-color: '#2d2a32'
+      link-color: '#e3bf23'
+      background: '#fafdf6'
+    nadir:
+      section-preset: disabled
+      text-color: '#fafdf6'
+      link-color: '#e3bf23'
+      background: '#000000'
+    offcanvas:
+      background: '#e3bf23'
+      text-color: '#eceeef'
+      toggle-color: '#fafdf6'
 
-#   styles:
-#     base:
-#       dominant-color: '#8f734a'
-#       text-color: '#212121'
-#       background: '#f5f5f5'
-#       background-image: ''
-#       content-margin: 0.5rem
-#       content-padding: 0.5rem
-#     accent:
-#       color-1: '#893040'
-#       color-2: '#d1b379'
-#       color-3: '#314159'
-#     font:
-#       family-default: 'Lato, Helvetica, Tahoma, Geneva, Arial, sans-serif'
-#       family-title: 'Lato, Helvetica, Tahoma, Geneva, Arial, sans-serif'
-#       family-quote: 'Lato, Helvetica, Tahoma, Geneva, Arial, sans-serif'
-#     zenith:
-#       section-preset: disabled
-#       text-color: '#f5f5f5'
-#       link-color: '#8f734a'
-#       background: '#000000'
-#     navtop:
-#       section-preset: accent2
-#       text-color: '#212121'
-#       link-color: '#8f734a'
-#       background: '#f5f5f5'
-#     navigation:
-#       text-color: '#f5f5f5'
-#       link-color: '#f5f5f5'
-#       background: '#8f734a'
-#     header:
-#       section-preset: accent3
-#       text-color: '#212121'
-#       link-color: '#8f734a'
-#       background: '#f5f5f5'
-#     intro:
-#       section-preset: accent2
-#       text-color: '#212121'
-#       link-color: '#8f734a'
-#       background: '#f5f5f5'
-#     features:
-#       section-preset: accent2
-#       text-color: '#f5f5f5'
-#       link-color: '#8f734a'
-#       background: '#f5f5f5'
-#     utility:
-#       section-preset: accent3
-#       text-color: '#212121'
-#       link-color: '#8f734a'
-#       background: '#f5f5f5'
-#     above:
-#       section-preset: accent2
-#       text-color: '#212121'
-#       link-color: '#8f734a'
-#       background: '#f5f5f5'
-#     testimonials:
-#       section-preset: accent3
-#       text-color: '#212121'
-#       link-color: '#8f734a'
-#       background: '#f5f5f5'
-#     expanded:
-#       section-preset: base
-#       text-color: '#f5f5f5'
-#       link-color: '#8f734a'
-#       background: '#f5f5f5'
-#     mainbottom:
-#       section-preset: accent2
-#       text-color: '#212121'
-#       link-color: '#8f734a'
-#       background: '#f5f5f5'
-#     footertop:
-#       section-preset: accent2
-#       text-color: '#212121'
-#       link-color: '#8f734a'
-#       background: '#f5f5f5'
-#     footer:
-#       section-preset: accent3
-#       text-color: '#f5f5f5'
-#       link-color: '#d1b379'
-#       background: '#f5f5f5'
-#     footerbottom:
-#       section-preset: accent2
-#       text-color: '#212121'
-#       link-color: '#8f734a'
-#       background: '#f5f5f5'
-#     nadir:
-#       section-preset: disabled
-#       text-color: '#f5f5f5'
-#       link-color: '#8f734a'
-#       background: '#000000'
-#     offcanvas:
-#       background: '#8f734a'
-#       text-color: '#eceeef'
-#       toggle-color: '#f5f5f5'
-# preset4:
-#   image: 'gantry-admin://images/preset4.jpg'
-#   description: GANTRY5_PLATFORM_PRESET4
-#   colors:
-#     - '#ebb800' #dominant
-#     - '#000000' #accent 1 contrast dominant
-#     - '#787878' #accent 2 Light
-#     - '#000000' #accent 3 Dark Dominant
-#     - '#333333' #body (base) background
-#     - '#dedede' #body (base) text 
+preset3:
+  image: 'gantry-admin://images/preset3.jpg'
+  description: GANTRY5_PLATFORM_PRESET3
+  colors:
+    - '#037971' #dominant
+    - '#ea1c37' #accent 1 contrast dominant
+    - '#03cea4' #accent 2 Light
+    - '#023436' #accent 3 Dark Dominant
+    - '#2d2a32' #body (base) text 
+    - '#fafdf6' #body (base) background
 
-#   styles:
-#     base:
-#       dominant-color: '#ebb800'
-#       text-color: '#dedede'
-#       background: '#333333'
-#       background-image: ''
-#       content-margin: 0.5rem
-#       content-padding: 0.5rem
-#     accent:
-#       color-1: '#000000'
-#       color-2: '#787878'
-#       color-3: '#000000'
-#     font:
-#       family-default: 'Lato, Helvetica, Tahoma, Geneva, Arial, sans-serif'
-#       family-title: 'Lato, Helvetica, Tahoma, Geneva, Arial, sans-serif'
-#       family-quote: 'Lato, Helvetica, Tahoma, Geneva, Arial, sans-serif'
-#     zenith:
-#       section-preset: disabled
-#       text-color: '#f5f5f5'
-#       link-color: '#ebb800'
-#       background: '#000000'
-#     navtop:
-#       section-preset: accent2
-#       text-color: '#dedede'
-#       link-color: '#ebb800'
-#       background: '#333333'
-#     navigation:
-#       text-color: '#333333'
-#       link-color: '#333333'
-#       background: '#ebb800'
-#     header:
-#       section-preset: accent3
-#       text-color: '#dedede'
-#       link-color: '#ebb800'
-#       background: '#333333'
-#     intro:
-#       section-preset: accent2
-#       text-color: '#dedede'
-#       link-color: '#ebb800'
-#       background: '#333333'
-#     features:
-#       section-preset: accent2
-#       text-color: '#dedede'
-#       link-color: '#ebb800'
-#       background: '#333333'
-#     utility:
-#       section-preset: accent3
-#       text-color: '#dedede'
-#       link-color: '#ebb800'
-#       background: '#333333'
-#     above:
-#       section-preset: accent2
-#       text-color: '#dedede'
-#       link-color: '#ebb800'
-#       background: '#333333'
-#     testimonials:
-#       section-preset: accent3
-#       text-color: '#dedede'
-#       link-color: '#ebb800'
-#       background: '#333333'
-#     expanded:
-#       section-preset: base
-#       text-color: '#dedede'
-#       link-color: '#ebb800'
-#       background: '#333333'
-#     mainbottom:
-#       section-preset: accent2
-#       text-color: '#dedede'
-#       link-color: '#ebb800'
-#       background: '#333333'
-#     footertop:
-#       section-preset: accent2
-#       text-color: '#dedede'
-#       link-color: '#ebb800'
-#       background: '#333333'
-#     footer:
-#       section-preset: accent3
-#       text-color: '#dedede'
-#       link-color: '#ebb800'
-#       background: '#333333'
-#     footerbottom:
-#       section-preset: accent2
-#       text-color: '#dedede'
-#       link-color: '#ebb800'
-#       background: '#333333'
-#     nadir:
-#       section-preset: disabled
-#       text-color: '#f5f5f5'
-#       link-color: '#ebb800'
-#       background: '#000000'
-#     offcanvas:
-#       background: '#ebb800'
-#       text-color: '#eceeef'
-#       toggle-color: '#f5f5f5'
+  styles:
+    base:
+      dominant-color: '#037971'
+      text-color: '#2d2a32'
+      background: '#fafdf6'
+      background-image: ''
+      content-margin: 0.5rem
+      content-padding: 0.5rem
+    accent:
+      color-1: '#ea1c37'
+      color-2: '#03cea4'
+      color-3: '#023436'
+    font:
+      family-default: 'Lato, Helvetica, Tahoma, Geneva, Arial, sans-serif'
+      family-title: 'Lato, Helvetica, Tahoma, Geneva, Arial, sans-serif'
+      family-quote: 'Lato, Helvetica, Tahoma, Geneva, Arial, sans-serif'
+    zenith:
+      section-preset: disabled
+      text-color: '#fafdf6'
+      link-color: '#037971'
+      background: '#000000'
+    navtop:
+      section-preset: disabled
+      text-color: '#2d2a32'
+      link-color: '#037971'
+      background: '#fafdf6'
+    navigation:
+      text-color: '#fafdf6'
+      link-color: '#fafdf6'
+      background: '#037971'
+    header:
+      section-preset: disabled
+      text-color: '#2d2a32'
+      link-color: '#037971'
+      background: '#fafdf6'
+    intro:
+      section-preset: disabled
+      text-color: '#2d2a32'
+      link-color: '#037971'
+      background: '#fafdf6'
+    features:
+      section-preset: disabled
+      text-color: '#2d2a32'
+      link-color: '#037971'
+      background: '#fafdf6'
+    utility:
+      section-preset: disabled
+      text-color: '#2d2a32'
+      link-color: '#037971'
+      background: '#fafdf6'
+    above:
+      section-preset: disabled
+      text-color: '#2d2a32'
+      link-color: '#037971'
+      background: '#fafdf6'
+    testimonials:
+      section-preset: disabled
+      text-color: '#2d2a32'
+      link-color: '#037971'
+      background: '#fafdf6'
+    expanded:
+      section-preset: disabled
+      text-color: '#2d2a32'
+      link-color: '#037971'
+      background: '#fafdf6'
+    mainbottom:
+      section-preset: disabled
+      text-color: '#2d2a32'
+      link-color: '#037971'
+      background: '#fafdf6'
+    footertop:
+      section-preset: disabled
+      text-color: '#2d2a32'
+      link-color: '#037971'
+      background: '#fafdf6'
+    footer:
+      section-preset: disabled
+      text-color: '#2d2a32'
+      link-color: '#037971'
+      background: '#fafdf6'
+    footerbottom:
+      section-preset: disabled
+      text-color: '#2d2a32'
+      link-color: '#037971'
+      background: '#fafdf6'
+    nadir:
+      section-preset: disabled
+      text-color: '#fafdf6'
+      link-color: '#037971'
+      background: '#000000'
+    offcanvas:
+      background: '#037971'
+      text-color: '#eceeef'
+      toggle-color: '#fafdf6'
+
