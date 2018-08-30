@@ -54,42 +54,42 @@
    }
 
 
-    .sz-skillbars {
-        .container {
-            width: 100%;
-            background-color: #ddd;
-        }
-        .sz-skillsbar-percentance {
-            float: right;
-        }
-        .skills {
-            animation: expanddiv 2s ease-out;
-        }
+    // .sz-skillbars {
+    //     .container {
+    //         width: 100%;
+    //         // background-color: #ddd;
+    //     }
+    //     .sz-skillsbar-percentance {
+    //         float: right;
+    //     }
+    //     .skills {
+    //         animation: expanddiv 2s ease-out;
+    //     }
 
-        span {
-            font-size: 1.3rem;
-        }
+    //     span {
+    //         font-size: 1.3rem;
+    //     }
 
-        &.style1 {
-            span {
-                position: relative;
-                padding: 0 1rem;
-                top: 2.5rem;
-                &.sz-skillsbar-title {
-                    color: $white;
-                }
-            }
-            .skills {
-                height: 3rem;
-            }
-        }
-        &.style2 {
-            .skills {
-                height: 2px;
-            }
-            .container {
-                margin-bottom: 1rem;
-            }
-        }
-    }
+    //     &.style1 {
+    //         span {
+    //             position: relative;
+    //             padding: 0 1rem;
+    //             top: 2.5rem;
+    //             &.sz-skillsbar-title {
+    //                 // color: $white;
+    //             }
+    //         }
+    //         .skills {
+    //             height: 3rem;
+    //         }
+    //     }
+    //     &.style2 {
+    //         .skills {
+    //             height: 2px;
+    //         }
+    //         .container {
+    //             margin-bottom: 1rem;
+    //         }
+    //     }
+    // }
 }
