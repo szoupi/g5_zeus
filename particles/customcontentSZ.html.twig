@@ -29,7 +29,20 @@
                         {#TITLE#}
                         {% if particle.maintitle %}
                             <div>
-                                <div class="sz-particles-title">{{ particle.maintitle|raw }}</div>
+                                <div class="sz-particles-title"
+                                    style="
+                                    {# {% if particle.maintitlefont %} 
+                                        font-family:  {{ particle.maintitlefont }} ;
+                                    {% endif %} #}
+                                    {% if particle.maintitlesize %} 
+                                        font-size: {{ particle.maintitlesize }};
+                                    {% endif %}
+                                    {% if particle.maintitlecolor %} 
+                                        color: {{ particle.maintitlecolor }};
+                                    {% endif %}                           
+                                ">
+                                    {{ particle.maintitle|raw }}
+                                </div>
                             </div>
                         {% endif %}
 

@@ -1,16 +1,10 @@
 {
     "favorites.resources": [
-        "scss/zeus/particles/_skillsbarSZ.scss",
-        "particles/skillsbarSZ.html.twig",
-        "particles/skillsbarSZ.yaml",
-        "scss/zeus/particles/_portfolioSZ.scss",
-        "particles/portfolioSZ.html.twig",
-        "particles/portfolioSZ.yaml",
-        "particles/featuredarticlesSZ.html.twig",
-        "particles/featuredarticlesSZ.yaml",
-        "scss/zeus/particles/_featuredarticlesSZ.scss",
-        "scss/zeus/particles/_headlineSZ.scss",
-        "particles/headlineSZ.html.twig",
-        "particles/headlineSZ.yaml"
+        "particles/customcontentSZ.html.twig",
+        "particles/customcontentSZ.yaml",
+        "scss/zeus/particles/_customcontentSZ.scss",
+        "particles/contentcubes.yaml",
+        "particles/contenttabs.html.twig",
+        "scss/zeus/particles/_contentcubes.scss"
     ]
 }

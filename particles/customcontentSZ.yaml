@@ -54,6 +54,29 @@ form:
               description: Customize the description.
               placeholder: Enter short description
 
+        # _tab_title:
+        #   label: Title
+        #   fields:
+
+
+            # .maintitlefont:
+            #   type: input.fonts
+            #   label: Font
+            #   description: Optional - Select the font you for the title.
+            
+            # .maintitlesize:
+            #   type: input.text
+            #   label: Size
+            #   description: Optional - Specify the font size of the title in rem, em or px units.      
+            #   placeholder: eg 2.5rem
+            #   pattern: '\d+(\.\d+){0,1}(rem|em|px)'
+
+            # .maintitlecolor:
+            #   type: input.colorpicker
+            #   label: Color
+            #   description: Optional - Set the color of the title.
+            #   default: "rgba(0, 0, 0, 0)"            
+
         _tab_link1:
           label: Link 1
           fields:        
@@ -149,7 +172,16 @@ form:
                 button-gradient: gradient
                 button-bevel: bevel
                 button-square: square  
-        
+
+        _tab_colors:
+          label: Colors
+          fields:                   
+            
+            _note:
+              type: separator.note
+              class: alert alert-info
+              content: 'You can change the colors using the STYLE SECTION of the current Outline'
+
         _tab_subitems:
           label: Child items
           fields:          

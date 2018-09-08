@@ -15,11 +15,23 @@ form:
       description: Globally enable the particle.
       default: true
 
-    title:
-      type: input.text
-      label: Title
-      description: Customize the title text.
-      placeholder: Enter title
+      maintitle:
+        type: input.text
+        label: Title
+        description: Customize the title text.
+        placeholder: Enter free text
+
+      subtitle:
+        type: input.text
+        label: Subtitle
+        description: Customize the subtitle text.
+        placeholder: Enter free text
+
+      description:
+        type: textarea.textarea
+        label: Description
+        description: Customize the description.
+        placeholder: Enter short description
 
     items:
       type: collection.list

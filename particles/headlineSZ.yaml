@@ -25,7 +25,6 @@ form:
               description: The main headline
               placeholder: Enter free text
 
-
             .maintitlesize:
               type: input.text
               label: Size

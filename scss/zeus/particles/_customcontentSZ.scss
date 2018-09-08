@@ -1,10 +1,19 @@
 .sz-customcontentSZ {
-    
+
     @include breakpoint(mobile-only){
         text-align: center;
     }   
-        
     
+
+    .sz-particles-title {
+        font-weight: 800;
+
+    }
+
+    .sz-particles-subtitle {
+        font-weight: 700;
+    }
+
     img,
     button,
     .sz-customcontent-icons {
