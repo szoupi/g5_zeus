@@ -3,10 +3,25 @@
 {% block particle %}
 
 <div class="g-contentcubes {{ particle.css.class }}">
-    {% if particle.title %}
-        <div class="sz-particles-title-wrapper">
-            <h2 class="sz-particles-title">{{ particle.title|raw }}</h2>
+    {#TITLE#}
+    {% if particle.maintitle %}
+        <div>
+            <div class="sz-particles-title">
+                {{ particle.maintitle|raw }}
+            </div>
         </div>
+    {% endif %}
+
+    {#SUBTITLE#}
+    {% if particle.subtitle %}
+        <div>
+            <div class="sz-particles-subtitle">{{ particle.subtitle|raw }}</div>
+        </div>
+    {% endif %}                        
+    
+    {#DESCRIPTION#}
+    {% if particle.description %}
+        <p class="sz-particles-description">{{ particle.description|raw }}</p>
     {% endif %}
 
     {% if particle.items %}

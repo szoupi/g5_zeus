@@ -4,7 +4,7 @@
         "particles/customcontentSZ.yaml",
         "scss/zeus/particles/_customcontentSZ.scss",
         "particles/contentcubes.yaml",
-        "particles/contenttabs.html.twig",
-        "scss/zeus/particles/_contentcubes.scss"
+        "scss/zeus/particles/_contentcubes.scss",
+        "particles/contentcubes.html.twig"
     ]
 }
