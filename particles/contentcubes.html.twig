@@ -62,6 +62,17 @@
                                 {% endif %}
                             </div>
 
+                            {#BUTTONS-LINKS#}
+                            {% if item.linktext %}
+                                <a href="{{ item.link|e }}" class="button {{ item.linkstyle|default('') }}" role="button">{{ item.linktext|e }}</a>
+                            {% endif %}
+                            {% if item.linktext2 %}
+                                <a href="{{ item.link2|e }}" class="button {{ item.linkstyle2|default('') }}" role="button">{{ item.linktext2|e }}</a>
+                            {% endif %}
+                            {% if item.linktext3 %}
+                                <a href="{{ item.link3|e }}" class="button {{ item.linkstyle3|default('') }}" role="button">{{ item.linktext3|e }}</a>
+                            {% endif %}                        
+
 
                             {% if item.tags %}
                                 <div class="item-tags">

@@ -108,26 +108,8 @@ form:
                                   _self: Self
                                   _blank: New Window
 
-                    _tab_image:
-                      label: Image
-                      overridable: false
-                      fields:
-
-                        .image:
-                          type: input.imagepicker
-                          label: Image
-                          description: Select desired image.
-                        .imageposition:
-                          type: select.select
-                          label: Image Position
-                          description: Should the image appear on the left or right of the content.
-                          default: left
-                          options:
-                            left: Left
-                            right: Right
-
                     _tab_link:
-                      label: Title Link
+                      label: Title as Link
                       overridable: false
                       fields:
 
@@ -154,7 +136,124 @@ form:
                           options:
                               _self: Self
                               _blank: New Window
-            
+                              
+                    _tab_image:
+                      label: Image
+                      overridable: false
+                      fields:
+
+                        .image:
+                          type: input.imagepicker
+                          label: Image
+                          description: Select desired image.
+                        .imageposition:
+                          type: select.select
+                          label: Image Position
+                          description: Should the image appear on the left or right of the content.
+                          default: left
+                          options:
+                            left: Left
+                            right: Right
+
+
+                    _tab_link1:
+                      label: Link 1
+                      fields:        
+
+                        .link:
+                          type: input.text
+                          label: Link
+                          description: Specify the link address.
+
+                        .linktext:
+                          type: input.text
+                          label: Text
+                          description: Customize the link text.
+                        
+                        .linkstyle:
+                          type: select.select
+                          label: Style
+                          description: 'Select a button style for the link'
+                          default: primary
+                          options:
+                            '' : primary
+                            button-2: secondary
+                            button-outline: outline
+                            button-block: block
+                            button-xlarge: xlarge
+                            button-large: large
+                            button-small: small
+                            button-xsmall: xsmall
+                            button-gradient: gradient
+                            button-bevel: bevel
+                            button-square: square
+
+                    _tab_link2:
+                      label: Link 2
+                      fields:          
+
+                        .link2:
+                          type: input.text
+                          label: Link
+                          description: Specify the link address.
+
+                        .linktext2:
+                          type: input.text
+                          label: Text
+                          description: Customize the link text.
+
+                        .linkstyle2:
+                          type: select.select
+                          label: Style
+                          description: 'Select a button style for the link'
+                          default: secondary
+                          options:
+                            '' : primary
+                            button-2: secondary
+                            button-outline: outline
+                            button-block: block
+                            button-xlarge: xlarge
+                            button-large: large
+                            button-small: small
+                            button-xsmall: xsmall
+                            button-gradient: gradient
+                            button-bevel: bevel
+                            button-square: square      
+
+                    _tab_link3:
+                      label: Link 3
+                      fields:          
+
+                        .link3:
+                          type: input.text
+                          label: Link
+                          description: Specify the link address.
+
+                        .linktext3:
+                          type: input.text
+                          label: Text
+                          description: Customize the link text.
+
+                        .linkstyle3:
+                          type: select.select
+                          label: Style
+                          description: 'Select a button style for the link'
+                          default: outline
+                          options:
+                            '' : primary
+                            button-2: secondary
+                            button-outline: outline
+                            button-block: block
+                            button-xlarge: xlarge
+                            button-large: large
+                            button-small: small
+                            button-xsmall: xsmall
+                            button-gradient: gradient
+                            button-bevel: bevel
+                            button-square: square  
+
+
+
     css.class:
       type: input.text
       label: CSS Classes
