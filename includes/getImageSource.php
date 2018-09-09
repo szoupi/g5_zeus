@@ -1,8 +1,8 @@
 <?php
 /**
  * @package   Gantry5
- * @author    szoupi http://szoupi.com
- * @copyright Copyright (C) 2017 szoupi
+ * @author    threethemes http://threethemes.com
+ * @copyright Copyright (C) 2017 threethemes
  * @license   GNU/GPLv2 and later
  *
  * http://www.gnu.org/licenses/gpl-2.0.html

@@ -79,7 +79,7 @@ $images = json_decode($item->images);
 			
 			
 			<!-- INTROTEXT -->
-			<!-- szoupi 2016-06-18 - remove img and other tags-->
+			<!-- threethemes 2016-06-18 - remove img and other tags-->
 			<?php echo JHtml::_('string.truncate', strip_tags($item->introtext),100);?>
 
 			<!-- READ MORE -->

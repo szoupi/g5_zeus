@@ -3,10 +3,10 @@
     <name>g5_zeus</name>
     <version>5.4.2300</version>
     <creationDate>May 05, 2018</creationDate>
-    <author>szoupi</author>
-    <authorEmail>szoupi@gmail.com</authorEmail>
-    <authorUrl>http://szoupi.com</authorUrl>
-    <copyright>(C)2018 szoupi. All rights reserved.</copyright>
+    <author>threethemes</author>
+    <authorEmail>threethemes@gmail.com</authorEmail>
+    <authorUrl>http://threethemes.com</authorUrl>
+    <copyright>(C)2018 threethemes. All rights reserved.</copyright>
     <license>http://www.gnu.org/licenses/gpl-2.0.html GNU/GPLv2</license>
     <description>TPL_G5_ZEUS_DESC</description>
 
@@ -50,6 +50,6 @@
     </config>
 
     <updateservers>
-        <server type="extension" priority="1" name="Zeus Template">http://updates.szoupi.com/joomla/zeus/g5_zeus.xml</server>
+        <server type="extension" priority="1" name="Zeus Template">http://updates.threethemes.com/joomla/zeus/g5_zeus.xml</server>
     </updateservers>
 </extension>

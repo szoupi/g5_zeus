@@ -4,9 +4,9 @@ details:
   icon: linux
   date: 'February 20, 2018'
   author:
-    name: szoupi
-    email: szoupi@gmail.com
-    link: http://szoupi.com
+    name: threethemes
+    email: threethemes@gmail.com
+    link: http://threethemes.com
 
   documentation:
     link: http://docs.gantry.org/gantry5
@@ -17,7 +17,7 @@ details:
   # updates:
   #   link: http://updates.rockettheme.com/themes/zeus.yaml
 
-  copyright: (C) 2017-2018 szoupi. All rights reserved.
+  copyright: (C) 2017-2018 threethemes. All rights reserved.
   license: GPLv2
   description: Zeus Theme
   images:
