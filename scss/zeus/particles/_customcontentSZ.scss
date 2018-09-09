@@ -1,5 +1,7 @@
 .sz-customcontentSZ {
 
+    // $customcontentSZ-maintitlefont: 'family=Anton';
+
     @include breakpoint(mobile-only){
         text-align: center;
     }   
@@ -7,6 +9,7 @@
 
     .sz-particles-title {
         font-weight: 800;
+        // font-family: get-font-family($customcontentSZ-maintitlefont);
 
     }
 

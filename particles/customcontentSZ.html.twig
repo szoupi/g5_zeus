@@ -2,10 +2,10 @@
 
 {% block particle %}
     <div class="sz-customcontentSZ" >
-        <div class="g-grid " >
+        <div class="g-grid" >
             <div class="g-block">
                 <div class="g-content">
-                    <div "
+                    <div 
                         {#HEIGHT#}
                         {% if particle.height %}     
                             style='min-height: {{ particle.height }};'>
@@ -33,11 +33,11 @@
                                     style="
                                     {# {% if particle.maintitlefont %} 
                                         font-family:  {{ particle.maintitlefont }} ;
-                                    {% endif %} #}
-                                    {# {% if particle.maintitlesize %} 
-                                        font-size: {{ particle.maintitlesize }};
                                     {% endif %}
-                                    {% if particle.maintitlecolor %} 
+                                    {% if particle.maintitlesize %} 
+                                        font-size: {{ particle.maintitlesize }};
+                                    {% endif %} #}
+                                    {# {% if particle.maintitlecolor %} 
                                         color: {{ particle.maintitlecolor }};
                                     {% endif %}                            #}
                                 ">

@@ -42,6 +42,11 @@ form:
               description: Customize the title text.
               placeholder: Enter free text
 
+            # .maintitlefont:
+            #   type: input.fonts
+            #   label: Font
+            #   description: Optional - Select the font you for the title.
+
             .subtitle:
               type: input.text
               label: Subtitle
@@ -59,17 +64,13 @@ form:
         #   fields:
 
 
-            # .maintitlefont:
-            #   type: input.fonts
-            #   label: Font
-            #   description: Optional - Select the font you for the title.
             
-            # .maintitlesize:
-            #   type: input.text
-            #   label: Size
-            #   description: Optional - Specify the font size of the title in rem, em or px units.      
-            #   placeholder: eg 2.5rem
-            #   pattern: '\d+(\.\d+){0,1}(rem|em|px)'
+        #     .maintitlesize:
+        #       type: input.text
+        #       label: Size
+        #       description: Optional - Specify the font size of the title in rem, em or px units.      
+        #       placeholder: eg 2.5rem
+        #       pattern: '\d+(\.\d+){0,1}(rem|em|px)'
 
             # .maintitlecolor:
             #   type: input.colorpicker
