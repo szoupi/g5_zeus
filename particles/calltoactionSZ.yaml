@@ -85,3 +85,8 @@ form:
                 '' : primary
                 button-2: secondary
                 button-outline: outline        
+
+    _info:
+      type: separator.note
+      class: alert alert-info
+      content: Colors are configured according to Section Preset Styles in Style tab and the corresponding section .scss file
