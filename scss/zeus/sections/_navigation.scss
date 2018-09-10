@@ -3,25 +3,28 @@
 	color: $navigation-text-color;
     position: relative;
     z-index: 11;
-
+    
     // Container
     .g-container {
         position: relative;
     }
+    
+
 
     // Logo
     .g-logo {
         color: $navigation-text-color;
         line-height: $navigation-line-height;
-        padding: 0 $base-content-padding;
-
+        // padding: 0 $base-content-padding;
+        
         &.g-logo-zeus {
             svg {
                 fill: $navigation-text-color;
             }
         }
-    }
 
+    }
+    
     // Social Particle
     .g-social-header {
         @include breakpoint(mobile-only) {
@@ -33,12 +36,12 @@
             }
             
             .g-content {
-		margin-top: 0;
+                margin-top: 0;
                 padding: 0 $base-content-padding;
             }
         }
     }
-
+    
     .g-social {
         a {
             color:$navigation-link-color;
@@ -49,44 +52,44 @@
         text-align: right;
         line-height: $navigation-line-height;
         
-
+        
         @include breakpoint(mobile-only) {
             text-align: center;
         }
-
+        
         .rtl & {
             text-align: left;
         }
     }
-
+    
     // Menu Styling
     .g-main-nav {
         font-family: get-font-family($font-family-title);
         font-weight: $font-weight-bold;
         line-height: $core-line-height;
         text-transform: uppercase; 
-
+        
         .g-toplevel {
-             line-height: $core-line-height;
-
+            line-height: $core-line-height;
+            
             > li {
                 margin: 0 0.5rem;
-
+                
                 @include breakpoint(tablet-range) {
                     margin: 0 0.2rem;
                 }
-
+                
                 > .g-menu-item-container {
                     color: $navigation-link-color;
                     padding: $base-content-padding/4 0;
-
+                    
                     > .g-menu-item-content {
                         padding: 0 0 $base-content-padding/4;
                     }
-
+                    
                     .g-menu-parent-indicator {
                         vertical-align: top;
-
+                        
                         &:after {
                             content: "\f107";
                             opacity: 0.75;
@@ -94,28 +97,28 @@
                             font-weight: $font-weight-regular;
                         }
                     }
-
+                    
                     i {
                         opacity: 1;
                     }
                 }
-
+                
                 &:hover {
                     > .g-menu-item-container {
                         color: lighten($navigation-background,30%);
-
+                        
                         > .g-selected {
                             color: lighten($navigation-background,30%);
                         }
                     }
                 }
-
+                
                 &.active {
                     > .g-menu-item-container {
                         > .g-menu-item-content {
                             box-shadow: 0 2px 0 fadeout($navigation-link-color, 80%);
                         }
-
+                        
                         > .g-selected {
                             box-shadow: 0 2px 0 fadeout($navigation-link-color, 80%);
                         }
@@ -123,76 +126,76 @@
                 }
             }
         }
-
+        
         .g-dropdown {
             background: lighten($navigation-background, 4%);
             border: 1px solid fadeout($navigation-text-color, 80%);
             border-radius: $border-radius;
-
+            
             > .g-dropdown-column {
                 border: 1px solid transparent;
             }
-
+            
             a {
                 color: $navigation-link-color;
-
+                
                 &:hover {
                     color: lighten($navigation-background,30%);
                 }
             }
-
+            
             .g-dropdown-column {
                 position: relative;
             }
-
+            
             .g-dropdown {
                 margin-left: 20px;
             }
         }
-
+        
         .g-sublevel {
             > li {
-
+                
                 > .g-menu-item-container {
                     color: $navigation-link-color;
-
+                    
                     > .g-selected {
                         color: $navigation-link-color;
                     }
                 }
-
+                
                 &:not(:last-child) {
                     > .g-menu-item-container {
                         border-bottom: 1px solid fadeout($navigation-link-color, 80%);
-
+                        
                         > .g-selected {
                             border-bottom: 1px solid fadeout($navigation-link-color, 80%);
                         }
                     }
                 }
-
+                
                 &:hover, &.active {
                     > .g-menu-item-container {
                         color: lighten($navigation-background,30%);
-
+                        
                         > .g-selected {
                             color: lighten($navigation-background,30%);
                         }
                     }
                 }
-
+                
                 &.g-menu-item-type-particle {
                     > .g-menu-item-container {
                         border: 0;
                     }
-
+                    
                     &:hover, &.active {
                         > .g-menu-item-container {
                             border: 0;
                         }
                     }
                 }
-
+                
                 &.g-menu-item-type-particle {
                     &:hover {
                         > .g-menu-item-container {
@@ -203,25 +206,25 @@
             }
         }
     }
-
+    
     .g-menu-block {
         @include breakpoint(mobile-only) {
             display: none;
         }
     }
-
+    
     .g-menu-item-subtitle {
         text-transform: lowercase;
         font-size: 0.8rem;
         opacity: 0.8;
         padding-top: 0;
     }
-
+    
     // BUTTONS
     // see also zeus/styles/_buttons.scss
     // no selections here
     .button {
-
+        
         color: $white;
         background: $accent-color-1;
         &:hover,
@@ -254,8 +257,8 @@
             }
         }
     }
-
-
+    
+    
 }
 
 @media print {

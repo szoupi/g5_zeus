@@ -1,8 +1,8 @@
 <?xml version="1.0" encoding="UTF-8" standalone="no"?>
 <extension version="3.4" type="template" client="site" method="upgrade">
     <name>g5_zeus</name>
-    <version>5.4.2300</version>
-    <creationDate>May 05, 2018</creationDate>
+    <version>5.4.2301</version>
+    <creationDate>September 9, 2018</creationDate>
     <author>threethemes</author>
     <authorEmail>threethemes@gmail.com</authorEmail>
     <authorUrl>http://threethemes.com</authorUrl>
@@ -16,7 +16,7 @@
         <folder>admin</folder>
         <folder>blueprints</folder>
         <folder>config</folder>
-        <folder>custom</folder>
+        <!-- <folder>custom</folder> -->
         <folder>fields</folder>
         <folder>fonts</folder>
         <folder>gantry</folder>
@@ -50,6 +50,6 @@
     </config>
 
     <updateservers>
-        <server type="extension" priority="1" name="Zeus Template">http://updates.threethemes.com/joomla/zeus/g5_zeus.xml</server>
+        <server type="extension" priority="1" name="Zeus Template">http://update.threethemes.com/joomla/zeus/g5_zeus.xml</server>
     </updateservers>
 </extension>

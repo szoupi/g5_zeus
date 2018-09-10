@@ -1,0 +1,75 @@
+// Gantry 5 custom CSS file
+
+// import breakpoints
+@import "dependencies";
+
+// Typical values are the default breakpoints set in Gantry 5
+// but these values are user definable in style settings
+// so that is why the code below uses mixins to get the actual
+// values from Gantry 5 template.
+
+// commonly used media queries
+
+// typically min 75rem
+@include breakpoint(large-desktop-range) {
+
+}
+// typically range 60rem to 74.938rem
+@include breakpoint(desktop-range) {
+
+}
+
+// typically 48rem to 59.938rem
+@include breakpoint(tablet-range) {
+
+}
+// typically 30rem to 47.938rem
+@include breakpoint(large-mobile-range) {
+
+}
+// typically max 30rem
+@include breakpoint(small-mobile-range) {
+
+}
+
+// Less commonly used media queries
+
+// typically min 60rem
+@include breakpoint(desktop-only) {
+
+}
+// typically min 48rem
+@include breakpoint(no-mobile) {
+
+}
+// typically max 47.938 rem
+@include breakpoint(mobile-only) {
+
+}
+// typically max 59.938rem
+@include breakpoint(no-desktop) {
+
+}
+
+// Mobile Menu Breakpoint
+@media only all and (max-width: $breakpoints-mobile-menu-breakpoint) { ... your css in here ... }
+
+@import "nucleus/mixins/breakpoints";
+
+
+@import "dependencies";
+// For small phones
+@media all and (max-width: $breakpoints-large-mobile-container) {
+}
+// For big phones
+@media all and (max-width: $breakpoints-tablet-container) and (min-width: $breakpoints-large-mobile-container) {
+}
+// For tablets
+@media all and (max-width: $breakpoints-desktop-container) and (min-width: $breakpoints-tablet-container) {
+}
+// For medium size computer screens
+@media all and (max-width: $breakpoints-large-desktop-container) and (min-width: $breakpoints-desktop-container) {
+}
+// For large computer screens
+@media all and (min-width: $breakpoints-large-desktop-container) {
+}

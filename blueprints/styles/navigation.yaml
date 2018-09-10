@@ -16,5 +16,5 @@ form:
     background:
       type: input.colorpicker
       label: Custom Background
-      description: 'Choose a custom background color'
+      description: 'Choose a custom background color. Select Transparent to hide background when used with full screen images'
       default: "#0071bc"
