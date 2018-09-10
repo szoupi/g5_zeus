@@ -7,8 +7,10 @@
     {% set image = url(particle.image) %}
     
     {% if particle.link == true %}
-        <a href="{{ url }}" target="{{ particle.target|default('_self') }}" title="{{ particle.text }}" {{ rel|default('')|raw }} {{ class|default('')|raw }}>
-    {% else %}<div {{ class|default('')|raw }}>{% endif %}
+        <a href="{{ url }}" target="{{ particle.target|default('_self') }}" 
+                title="{{ particle.text }}" {{ rel|default('')|raw }} {{ class|default('')|raw }}>
+    {% else %}
+        <div {{ class|default('')|raw }}>{% endif %}
         {% if particle.svg is not empty %}
             {{ particle.svg|raw }}
         {% elseif image %}

@@ -422,109 +422,109 @@ preset4:
       text-color: '#eceeef'
       toggle-color: '#f5f5f5'
 
-preset5:
-  image: 'gantry-admin://images/preset5.jpg'
-  description: GANTRY5_PLATFORM_PRESET5
-  colors:
-    - '#ef7d14' #dominant
-    - '#ef7d14' #accent 1 contrast dominant
-    - '#76767e' #accent 2 Light
-    - '#22222a' #accent 3 Dark Dominant
-    - '#212121' #body (base) text 
-    - '#f5f5f8' #body (base) background
+# preset5:
+#   image: 'gantry-admin://images/preset5.jpg'
+#   description: GANTRY5_PLATFORM_PRESET5
+#   colors:
+#     - '#ef7d14' #dominant
+#     - '#ef7d14' #accent 1 contrast dominant
+#     - '#76767e' #accent 2 Light
+#     - '#22222a' #accent 3 Dark Dominant
+#     - '#212121' #body (base) text 
+#     - '#f5f5f8' #body (base) background
 
-  styles:
-    base:
-      dominant-color: '#ef7d14'
-      text-color: '#212121'
-      background: '#f5f5f8'
-      background-image: ''
-      content-margin: 0.5rem
-      content-padding: 0.5rem
-    accent:
-      color-1: '#ef7d14'
-      color-2: '#76767e'
-      color-3: '#22222a'
-    font:
-      family-default: 'Lato, Helvetica, Tahoma, Geneva, Arial, sans-serif'
-      family-title: 'Lato, Helvetica, Tahoma, Geneva, Arial, sans-serif'
-      family-quote: 'Lato, Helvetica, Tahoma, Geneva, Arial, sans-serif'
-    zenith:
-      section-preset: disabled
-      text-color: '#f5f5f8'
-      link-color: '#ef7d14'
-      background: '#000000'
-    navtop:
-      section-preset: disabled
-      text-color: '#212121'
-      link-color: '#ef7d14'
-      background: '#f5f5f8'
-    navigation:
-      text-color: '#f5f5f8'
-      link-color: '#f5f5f8'
-      background: '#ef7d14'
-    header:
-      section-preset: disabled
-      text-color: '#212121'
-      link-color: '#ef7d14'
-      background: '#f5f5f8'
-    intro:
-      section-preset: disabled
-      text-color: '#212121'
-      link-color: '#ef7d14'
-      background: '#f5f5f8'
-    features:
-      section-preset: disabled
-      text-color: '#212121'
-      link-color: '#ef7d14'
-      background: '#f5f5f8'
-    utility:
-      section-preset: disabled
-      text-color: '#212121'
-      link-color: '#ef7d14'
-      background: '#f5f5f8'
-    above:
-      section-preset: disabled
-      text-color: '#212121'
-      link-color: '#ef7d14'
-      background: '#f5f5f8'
-    testimonials:
-      section-preset: disabled
-      text-color: '#212121'
-      link-color: '#ef7d14'
-      background: '#f5f5f8'
-    expanded:
-      section-preset: disabled
-      text-color: '#212121'
-      link-color: '#ef7d14'
-      background: '#f5f5f8'
-    mainbottom:
-      section-preset: disabled
-      text-color: '#212121'
-      link-color: '#ef7d14'
-      background: '#f5f5f8'
-    footertop:
-      section-preset: disabled
-      text-color: '#212121'
-      link-color: '#ef7d14'
-      background: '#f5f5f8'
-    footer:
-      section-preset: disabled
-      text-color: '#212121'
-      link-color: '#ef7d14'
-      background: '#f5f5f8'
-    footerbottom:
-      section-preset: disabled
-      text-color: '#212121'
-      link-color: '#ef7d14'
-      background: '#f5f5f8'
-    nadir:
-      section-preset: disabled
-      text-color: '#f5f5f8'
-      link-color: '#ef7d14'
-      background: '#000000'
-    offcanvas:
-      background: '#ef7d14'
-      text-color: '#eceeef'
-      toggle-color: '#f5f5f8'
+#   styles:
+#     base:
+#       dominant-color: '#ef7d14'
+#       text-color: '#212121'
+#       background: '#f5f5f8'
+#       background-image: ''
+#       content-margin: 0.5rem
+#       content-padding: 0.5rem
+#     accent:
+#       color-1: '#ef7d14'
+#       color-2: '#76767e'
+#       color-3: '#22222a'
+#     font:
+#       family-default: 'Lato, Helvetica, Tahoma, Geneva, Arial, sans-serif'
+#       family-title: 'Lato, Helvetica, Tahoma, Geneva, Arial, sans-serif'
+#       family-quote: 'Lato, Helvetica, Tahoma, Geneva, Arial, sans-serif'
+#     zenith:
+#       section-preset: disabled
+#       text-color: '#f5f5f8'
+#       link-color: '#ef7d14'
+#       background: '#000000'
+#     navtop:
+#       section-preset: disabled
+#       text-color: '#212121'
+#       link-color: '#ef7d14'
+#       background: '#f5f5f8'
+#     navigation:
+#       text-color: '#f5f5f8'
+#       link-color: '#f5f5f8'
+#       background: '#ef7d14'
+#     header:
+#       section-preset: disabled
+#       text-color: '#212121'
+#       link-color: '#ef7d14'
+#       background: '#f5f5f8'
+#     intro:
+#       section-preset: disabled
+#       text-color: '#212121'
+#       link-color: '#ef7d14'
+#       background: '#f5f5f8'
+#     features:
+#       section-preset: disabled
+#       text-color: '#212121'
+#       link-color: '#ef7d14'
+#       background: '#f5f5f8'
+#     utility:
+#       section-preset: disabled
+#       text-color: '#212121'
+#       link-color: '#ef7d14'
+#       background: '#f5f5f8'
+#     above:
+#       section-preset: disabled
+#       text-color: '#212121'
+#       link-color: '#ef7d14'
+#       background: '#f5f5f8'
+#     testimonials:
+#       section-preset: disabled
+#       text-color: '#212121'
+#       link-color: '#ef7d14'
+#       background: '#f5f5f8'
+#     expanded:
+#       section-preset: disabled
+#       text-color: '#212121'
+#       link-color: '#ef7d14'
+#       background: '#f5f5f8'
+#     mainbottom:
+#       section-preset: disabled
+#       text-color: '#212121'
+#       link-color: '#ef7d14'
+#       background: '#f5f5f8'
+#     footertop:
+#       section-preset: disabled
+#       text-color: '#212121'
+#       link-color: '#ef7d14'
+#       background: '#f5f5f8'
+#     footer:
+#       section-preset: disabled
+#       text-color: '#212121'
+#       link-color: '#ef7d14'
+#       background: '#f5f5f8'
+#     footerbottom:
+#       section-preset: disabled
+#       text-color: '#212121'
+#       link-color: '#ef7d14'
+#       background: '#f5f5f8'
+#     nadir:
+#       section-preset: disabled
+#       text-color: '#f5f5f8'
+#       link-color: '#ef7d14'
+#       background: '#000000'
+#     offcanvas:
+#       background: '#ef7d14'
+#       text-color: '#eceeef'
+#       toggle-color: '#f5f5f8'
 
