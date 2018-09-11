@@ -1,7 +1,7 @@
 <?xml version="1.0" encoding="UTF-8" standalone="no"?>
 <extension version="3.4" type="template" client="site" method="upgrade">
     <name>g5_zeus</name>
-    <version>5.4.2301</version>
+    <version>5.4.2302</version>
     <creationDate>September 9, 2018</creationDate>
     <author>threethemes</author>
     <authorEmail>threethemes@gmail.com</authorEmail>

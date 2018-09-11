@@ -6,5 +6,6 @@
         "particles/contentcubes.yaml",
         "scss/zeus/particles/_contentcubes.scss",
         "particles/contentcubes.html.twig"
-    ]
+    ],
+    "search.useIgnoreFiles": false
 }

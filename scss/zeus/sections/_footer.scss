@@ -1,5 +1,12 @@
 #g-footer {
     
+    .g-copyright {
+        @include breakpoint(no-desktop) {
+            text-align: center;
+        }
+
+    }
+
     //SECTION PRESETS    
 	@if $footer-section-preset {
         //PRIMARY
@@ -95,10 +102,10 @@
         padding: 0.5rem 0;
 
         a {
-            color: $footer-text-color;
+            color: $footer-link-color;
 
             &:hover {
-                color: fadeout($footer-text-color, 40%);
+                color: fadeout($footer-link-color, 40%);
             }
         }
     }
@@ -112,31 +119,6 @@
         }
     }
 
-    // // HEADING2
-    // h2 {
-    //     font-weight: 300;
-    //     line-height: $core-line-height;
-
-    //     @include breakpoint(large-mobile-range) {
-    //         font-size: 1.35rem;
-    //     }
-
-    //     em {
-    //         font-weight: $font-weight-medium;
-    //     }
-
-    //     &.large-heading {
-    //         font-size: $h2-font-size * 2;
-
-    //         @include breakpoint(tablet-range) {
-    //             font-size: $h2-font-size * 1.25;
-    //         }
-
-    //         @include breakpoint(mobile-only) {
-    //             font-size: $h2-font-size;
-    //         }
-    //     }
-    // }
 
     // BUTTONS
     // see also zeus/styles/_buttons.scss
