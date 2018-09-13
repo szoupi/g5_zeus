@@ -12,11 +12,17 @@ form:
       default: true
 
 
-    headline:
+    maintitle:
       type: input.text
       label: Headline
       description: Customize the headline text.
       placeholder: Enter headline
+
+    subtitle:
+      type: input.text
+      label: Subtitle
+      description: Customize the subtitle text.
+      placeholder: Enter free text
 
     description:
       type: textarea.textarea

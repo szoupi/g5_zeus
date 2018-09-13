@@ -5,19 +5,30 @@
 <div class="sz-testimonial {{ particle.css.class }}">
     <div class="g-grid">
         <div class="g-block">
+            <div class="g-content">
 
-            {#HEADLINE#}
-            {% if particle.headline %}
-                <h2>{{ particle.headline|raw }}</h2>
-            {% endif %}
+                {#MAINTITLE#}
+                {% if particle.maintitle %}
+                    <h2 class="sz-particles-title">{{ particle.maintitle|raw }}</h2>
+                {% endif %}
 
-            {#HEADLINE DESCRIPTION#}
-            {% if particle.description %}
-                <div class="sz-testimonial-descr">{{ particle.description|raw }}</div>
-            {% endif %}
+                {#SUBTITLE#}
+                {% if particle.subtitle %}
+                    <div>
+                        <h3 class="sz-particles-subtitle">{{ particle.subtitle|raw }}</h3>
+                    </div>
+                {% endif %}                          
+                
+                {#DESCRIPTION#}
+                {% if particle.description %}
+                    <p class="sz-particles-description">{{ particle.description|raw }}</p>
+                {% endif %}
+
+            </div>
         </div>
     </div>
 
+    {# ITEMS #}
     <div class="g-grid">
         {% for item in particle.testimonials %}
             <div class="g-block {{ field.class }} ">
