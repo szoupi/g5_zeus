@@ -1,0 +1,503 @@
+version: 2
+preset:
+  image: 'gantry-admin://images/layouts/default.png'
+  name: default
+  timestamp: 1490038588
+layout:
+  /zenith/:
+    -
+      - social-6691
+  /navtop/:
+    -
+      - 'spacer-3541 55'
+      - 'calltoactionSZ-8386 45'
+  /navigation/:
+    -
+      - 'logo-9501 25'
+      - 'spacer-5535 25'
+      - 'menu-6609 50'
+  /header/:
+    -
+      - 'customcontentSZ-4724 50'
+      - 'imageSZ-2779 50'
+  /intro/:
+    -
+      - skillsbarSZ-2274
+  /features/:
+    -
+      - timelineSZ-7015
+  /utility/:
+    -
+      - 'headlineSZ-9131 75'
+      - 'calltoactionSZ-2587 25'
+  /above/:
+    -
+      - portfolioSZ-9515
+  /testimonials/:
+    -
+      - testimonialSZ-3083
+  /expanded/: {  }
+  /container-main/:
+    -
+      -
+        'aside 25':
+          -
+            - spacer-2395
+      -
+        'mainbar 50':
+          -
+            - system-messages-2617
+          -
+            - position-module-9693
+          -
+            - system-content-1966
+      -
+        'sidebar 25':
+          -
+            - spacer-4623
+          -
+            - position-module-8967
+  /mainbottom/: {  }
+  /footertop/: {  }
+  footer: {  }
+  footerbottom: {  }
+  nadir: {  }
+  offcanvas:
+    -
+      - mobile-menu-5697
+structure:
+  zenith:
+    type: section
+    attributes:
+      boxed: ''
+  navtop:
+    type: section
+    attributes:
+      boxed: ''
+  navigation:
+    type: section
+    attributes:
+      boxed: '0'
+      class: ''
+      background: ''
+      backgroundOverlay: ''
+      backgroundAttachment: ''
+      backgroundRepeat: ''
+      backgroundPosition: ''
+      backgroundSize: ''
+      paddingTop: ''
+      paddingBottom: ''
+      paddingLeft: ''
+      paddingRight: ''
+  header:
+    attributes:
+      boxed: ''
+      class: ''
+      background: ''
+      backgroundOverlay: ''
+      backgroundAttachment: fixed
+      backgroundRepeat: repeat
+      backgroundPosition: 'center center'
+      backgroundSize: auto
+      paddingTop: ''
+      paddingBottom: ''
+      paddingLeft: ''
+      paddingRight: ''
+      marginTop: ''
+      marginBottom: ''
+      marginLeft: ''
+      marginRight: ''
+  intro:
+    type: section
+    attributes:
+      boxed: '0'
+      class: ''
+      background: ''
+      backgroundOverlay: 'rgba(0, 0, 0, 0)'
+      backgroundAttachment: ''
+      backgroundRepeat: ''
+      backgroundPosition: ''
+      backgroundSize: ''
+  features:
+    type: section
+    attributes:
+      boxed: '0'
+      class: ''
+      background: ''
+      backgroundOverlay: 'rgba(0, 0, 0, 0)'
+      backgroundAttachment: ''
+      backgroundRepeat: ''
+      backgroundPosition: ''
+      backgroundSize: cover
+  utility:
+    type: section
+    attributes:
+      boxed: '0'
+      class: ''
+      background: 'gantry-media://default.jpg'
+      backgroundOverlay: 'rgba(3, 3, 3, 0.52)'
+      backgroundAttachment: ''
+      backgroundRepeat: ''
+      backgroundPosition: ''
+      backgroundSize: cover
+      paddingTop: ''
+      paddingBottom: ''
+      paddingLeft: ''
+      paddingRight: ''
+      marginTop: ''
+      marginBottom: ''
+      marginLeft: ''
+      marginRight: ''
+  above:
+    type: section
+    attributes:
+      boxed: '0'
+      class: ''
+      background: ''
+      backgroundOverlay: 'rgba(0, 0, 0, 0.67)'
+      backgroundAttachment: ''
+      backgroundRepeat: ''
+      backgroundPosition: ''
+      backgroundSize: cover
+      paddingTop: ''
+      paddingBottom: ''
+      paddingLeft: ''
+      paddingRight: ''
+      marginTop: ''
+      marginBottom: ''
+      marginLeft: ''
+      marginRight: ''
+  testimonials:
+    type: section
+    attributes:
+      boxed: '0'
+      class: ''
+      background: ''
+      backgroundOverlay: 'rgba(0, 0, 0, 0)'
+      backgroundAttachment: ''
+      backgroundRepeat: ''
+      backgroundPosition: ''
+      backgroundSize: cover
+      paddingTop: 4rem
+      paddingBottom: 3rem
+      paddingLeft: ''
+      paddingRight: ''
+      marginTop: ''
+      marginBottom: ''
+      marginLeft: ''
+      marginRight: ''
+  expanded:
+    type: section
+    attributes:
+      boxed: ''
+  aside:
+    attributes:
+      class: ''
+    block:
+      fixed: '1'
+  mainbar:
+    type: section
+    subtype: main
+  sidebar:
+    type: section
+    subtype: aside
+    attributes:
+      class: ''
+    block:
+      fixed: '1'
+  container-main:
+    attributes:
+      boxed: ''
+  mainbottom:
+    type: section
+    attributes:
+      boxed: ''
+  footertop:
+    type: section
+    attributes:
+      boxed: ''
+  footer:
+    inherit:
+      outline: default
+      include:
+        - attributes
+        - children
+  footerbottom:
+    type: section
+    inherit:
+      outline: default
+      include:
+        - attributes
+        - children
+  nadir:
+    type: section
+    inherit:
+      outline: default
+      include:
+        - attributes
+        - children
+  offcanvas:
+    attributes:
+      position: g-offcanvas-left
+      class: ''
+      extra: {  }
+      swipe: '1'
+      css3animation: '1'
+content:
+  social-6691:
+    block:
+      variations: 'align-right nopaddingall nomarginall'
+  calltoactionSZ-8386:
+    title: 'Call to action'
+    attributes:
+      link: '#'
+      linktext: 'Download CV'
+      link2: 'tel:+10000000000'
+      linktext2: 'Call me'
+      linkstyle2: button-outline
+      link3: ''
+      linktext3: ''
+      linkstyle3: button-outline
+    block:
+      variations: 'align-right nopaddingall'
+  logo-9501:
+    title: 'Logo / Image'
+    attributes:
+      text: ZEUS
+  menu-6609:
+    attributes:
+      menu: mainmenu
+  customcontentSZ-4724:
+    title: 'I AM JOHN DOE'
+    attributes:
+      image: ''
+      mainicon: ''
+      maintitle: 'I AM JOHN DOE'
+      subtitle: ''
+      description: '<p>obsessed with perfection and in love with photography, diving and discovering new worlds and cultures<p>'
+      link: '#'
+      linktext: 'Hire me!'
+    block:
+      variations: center
+  imageSZ-2779:
+    title: Image
+    attributes:
+      image: 'gantry-media://default.jpg'
+      text: 'Image particle in action!'
+      url: 'https://www.google.com/'
+      paddingTop: ''
+      paddingBottom: ''
+      paddingLeft: ''
+      paddingRight: ''
+      marginTop: ''
+      marginBottom: '-25px'
+      marginLeft: ''
+  skillsbarSZ-2274:
+    title: 'Skills bar'
+  timelineSZ-7015:
+    title: Experience
+  headlineSZ-9131:
+    title: Headline
+    attributes:
+      maintitle: 'Hire John Doe!'
+      maintitlecolor: '#f7f7f7'
+      subtitle: ''
+      subtitlesize: ''
+      subtitlecolor: ''
+      description: ''
+      descriptioncolor: ''
+  calltoactionSZ-2587:
+    title: 'Call to action'
+    attributes:
+      link: '#'
+      linktext: 'Download CV'
+      linkstyle: button-outline
+      link2: ''
+      linktext2: ''
+      linkstyle2: ''
+      link3: ''
+      linktext3: ''
+  portfolioSZ-9515:
+    title: Portfolio
+    attributes:
+      maintitle: 'My Portfolio'
+      subtitle: 'Awesome responsive portfolios with portfolio particle'
+      description: 'At his best, man is the noblest of all animals. Separated from law and justice he is the worst, Aristotle. Something inspirational instead of lorem ipsum'
+      gutter: 'No'
+      displayImageOnly: 'Yes'
+      portfolios:
+        -
+          image: 'gantry-media://default.jpg'
+          maintitle: ''
+          description: ''
+          link1: '#'
+          linktext1: Demo
+          linkstyle1: ''
+          link2: '#'
+          linktext2: Documentation
+          linkstyle2: button-2
+          link3: '#'
+          linktext3: Download
+          linkstyle3: button-outline
+          title: 'item 1'
+        -
+          image: 'gantry-media://default.jpg'
+          maintitle: ''
+          description: ''
+          link1: '#'
+          linktext1: Demo
+          linkstyle1: ''
+          link2: '#'
+          linktext2: Documentation
+          linkstyle2: ''
+          link3: '#'
+          linktext3: Download
+          linkstyle3: ''
+          title: 'item 2'
+        -
+          image: 'gantry-media://default.jpg'
+          maintitle: ''
+          description: ''
+          link1: '#'
+          linktext1: Demo
+          linkstyle1: ''
+          link2: '#'
+          linktext2: Documentation
+          linkstyle2: ''
+          link3: '#'
+          linktext3: Download
+          linkstyle3: ''
+          title: 'item 3'
+        -
+          image: 'gantry-media://default.jpg'
+          maintitle: ''
+          description: ''
+          link1: '#'
+          linktext1: Demo
+          linkstyle1: ''
+          link2: '#'
+          linktext2: Documentation
+          linkstyle2: ''
+          link3: '#'
+          linktext3: Download
+          linkstyle3: ''
+          title: 'item 4'
+        -
+          image: 'gantry-media://default.jpg'
+          maintitle: ''
+          description: ''
+          link1: '#'
+          linktext1: Demo
+          linkstyle1: ''
+          link2: '#'
+          linktext2: Documentation
+          linkstyle2: ''
+          link3: '#'
+          linktext3: Download
+          linkstyle3: ''
+          title: 'item 5'
+        -
+          image: 'gantry-media://default.jpg'
+          maintitle: ''
+          description: ''
+          link1: '#'
+          linktext1: Demo
+          linkstyle1: ''
+          link2: '#'
+          linktext2: Documentation
+          linkstyle2: ''
+          link3: '#'
+          linktext3: Download
+          linkstyle3: ''
+          title: 'item 6'
+        -
+          image: 'gantry-media://default.jpg'
+          maintitle: ''
+          description: ''
+          link1: '#'
+          linktext1: Demo
+          linkstyle1: ''
+          link2: '#'
+          linktext2: Documentation
+          linkstyle2: ''
+          link3: '#'
+          linktext3: Download
+          linkstyle3: ''
+          title: 'item 7'
+        -
+          image: 'gantry-media://default.jpg'
+          maintitle: ''
+          description: ''
+          link1: '#'
+          linktext1: Demo
+          linkstyle1: ''
+          link2: '#'
+          linktext2: Documentation
+          linkstyle2: ''
+          link3: '#'
+          linktext3: Download
+          linkstyle3: ''
+          title: 'item 8'
+        -
+          image: 'gantry-media://default.jpg'
+          maintitle: ''
+          description: ''
+          link1: '#'
+          linktext1: Demo
+          linkstyle1: ''
+          link2: '#'
+          linktext2: Documentation
+          linkstyle2: ''
+          link3: '#'
+          linktext3: Download
+          linkstyle3: ''
+          title: 'item 9'
+  testimonialSZ-3083:
+    title: references
+    attributes:
+      maintitle: 'They have said about us'
+      subtitle: 'Testimonial Particle in action'
+      description: 'Demonstrate stylish quotes quickly with the Testimonial Particle'
+      testimonials:
+        -
+          icon: 'fa fa-quote-left fa-3x'
+          quote: 'If you tell the truth, you don''t have to remember anything'
+          author: 'My mom'
+          authorattribute: CEO
+          image: 'gantry-media://default.jpg'
+          effect: arrow
+          class: ''
+          title: quote1
+        -
+          icon: 'fa fa-quote-left fa-3x'
+          quote: 'I have not failed. I''ve just found 10,000 ways that won''t work'
+          author: 'Thomas A. Edison'
+          authorattribute: Scientist
+          image: 'gantry-media://default.jpg'
+          effect: arrow
+          class: ''
+          title: quote2
+        -
+          icon: 'fa fa-quote-left fa-3x'
+          quote: 'The only true wisdom is in knowing you know nothing'
+          author: Socrates
+          authorattribute: Designer
+          image: 'gantry-media://default.jpg'
+          effect: arrow
+          class: ''
+          title: quote3
+  position-module-9693:
+    title: 'articles category grouped'
+    attributes:
+      enabled: 0
+      module_id: '97'
+      key: articles-category-grouped
+  system-content-1966:
+    attributes:
+      enabled: 0
+  position-module-8967:
+    title: latest-articles
+    attributes:
+      enabled: 0
+      module_id: '90'
+      key: latest-articles
