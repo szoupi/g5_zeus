@@ -66,7 +66,16 @@ form:
       options:
         Yes: Yes
         No: No        
-        
+
+    displayImageOnly:
+      type: input.radios
+      label: 'Display image only?'
+      description: Display only image, hide the text content
+      default: No
+      options:
+        Yes: Yes
+        No: No 
+
     portfolios:
       type: collection.list
       array: true

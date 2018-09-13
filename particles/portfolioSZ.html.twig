@@ -117,31 +117,31 @@
                             </div>
                             
                         </div>
-                        
-
-                        <div class="portfolio-sz-content">
-                            {# TITLE #}
-                            {% if portfolio.maintitle %}
-                                <div class="portfolio-sz-item-title">{{ portfolio.maintitle|raw }}</div>
-                            {% endif %}
-
-                            {# DESCRIPTION #}
-                            {% if portfolio.description %}
-                                <div class="portfolio-sz-item-description">{{ portfolio.description|raw }}</div>
-                            {% endif %}                                
-
-                            {# TAGS #}
-                            {% if particle.displayTags == 'Yes' %}
-                                {% if portfolio.tags %}
-                                    <div class="portfolio-sz-tags">
-                                        {% for tag in portfolio.tags %}
-                                            <span class="label">{{ tag.text|raw }} </span>
-                                        {% endfor %}
-                                    </div>
+                         
+                        {% if particle.displayImageOnly == 'No' %}
+                            <div class="portfolio-sz-content">
+                                {# TITLE #}
+                                {% if portfolio.maintitle %}
+                                    <div class="portfolio-sz-item-title">{{ portfolio.maintitle|raw }}</div>
                                 {% endif %}
-                            {% endif %}
-                        </div>
 
+                                {# DESCRIPTION #}
+                                {% if portfolio.description %}
+                                    <div class="portfolio-sz-item-description">{{ portfolio.description|raw }}</div>
+                                {% endif %}                                
+
+                                {# TAGS #}
+                                {% if particle.displayTags == 'Yes' %}
+                                    {% if portfolio.tags %}
+                                        <div class="portfolio-sz-tags">
+                                            {% for tag in portfolio.tags %}
+                                                <span class="label">{{ tag.text|raw }} </span>
+                                            {% endfor %}
+                                        </div>
+                                    {% endif %}
+                                {% endif %}
+                            </div>
+                        {% endif %}
                     </div>
                 </div>
             {% endfor %}
