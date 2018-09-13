@@ -11,66 +11,78 @@ form:
       description: Globally enable the particle.
       default: true
 
-
-    maintitle:
-      type: input.text
-      label: Headline
-      description: Customize the headline text.
-      placeholder: Enter headline
-
-    subtitle:
-      type: input.text
-      label: Subtitle
-      description: Customize the subtitle text.
-      placeholder: Enter free text
-
-    description:
-      type: textarea.textarea
-      label: Description
-      description: Customize the description.
-      placeholder: Enter short description
-
-    testimonials:
-      type: collection.list
-      array: true
-      label: Testimonial Items
-      description: Create each item to appear in the content row.
-      value: title
-      ajax: true
-
+    _tabs:
+      type: container.tabs
       fields:
-        .icon:
-          type: input.icon
-          label: Quote Icon
+      
+        _tab_maintitle:
+          label: Main
+          fields:
 
-        .quote:
-          type: textarea.textarea
-          label: Quote
 
-        .author:
-          type: input.text
-          label: Author
+            .maintitle:
+              type: input.text
+              label: Headline
+              description: Customize the headline text.
+              placeholder: Enter headline
 
-        .authorattribute:
-          type: input.text
-          label: Person Attribute
+            .subtitle:
+              type: input.text
+              label: Subtitle
+              description: Customize the subtitle text.
+              placeholder: Enter free text
 
-        .image:
-          type: input.imagepicker
-          label: Image
-          description: Select the person's image.
-          placeholder: Select an image
+            .description:
+              type: textarea.textarea
+              label: Description
+              description: Customize the description.
+              placeholder: Enter short description
 
-        .effect:
-          type: select.selectize
-          label: Effect
-          description: Select an effect for the Testimonial
-          placeholder: 'Select...'
-          default: card
-          options:
-              card: Card  
-              arrow: Arrow
+        _tab_testimonials:
+          label: Testimonial Items
+          fields:     
+            
+            .testimonials:
+              type: collection.list
+              array: true
+              label: Testimonial Items
+              description: Create each item to appear in the content row.
+              value: title
+              ajax: true
 
-        .class:
-          type: input.block-variations
-          label: Variations
+              fields:
+                .icon:
+                  type: input.icon
+                  label: Quote Icon
+
+                .quote:
+                  type: textarea.textarea
+                  label: Quote
+
+                .author:
+                  type: input.text
+                  label: Author
+
+                .authorattribute:
+                  type: input.text
+                  label: Person Attribute
+
+                .image:
+                  type: input.imagepicker
+                  label: Image
+                  description: Select the person's image.
+                  placeholder: Select an image
+
+                .effect:
+                  type: select.selectize
+                  label: Effect
+                  description: Select an effect for the Testimonial
+                  placeholder: 'Select...'
+                  default: card
+                  options:
+                      card: Card  
+                      arrow: Arrow
+
+                .class:
+                  type: input.block-variations
+                  label: Variations
