@@ -1,8 +1,8 @@
 version: 2
 preset:
   image: 'gantry-admin://images/layouts/default.png'
-  name: default
-  timestamp: 1490038588
+  name: personal_-_1
+  timestamp: 1536865425
 layout:
   /zenith/:
     -
@@ -123,12 +123,20 @@ structure:
     attributes:
       boxed: '0'
       class: ''
-      background: ''
+      background: 'gantry-media://default.jpg'
       backgroundOverlay: 'rgba(0, 0, 0, 0)'
       backgroundAttachment: ''
       backgroundRepeat: ''
       backgroundPosition: ''
       backgroundSize: cover
+      paddingTop: ''
+      paddingBottom: ''
+      paddingLeft: ''
+      paddingRight: ''
+      marginTop: ''
+      marginBottom: ''
+      marginLeft: ''
+      marginRight: ''
   utility:
     type: section
     attributes:

@@ -27,11 +27,11 @@
 
         // QUOTE CONTAINER
         div.sz-quote-container {
-            font-family: get-font-family($font-family-quote);
             padding: 2rem 2rem 4rem;
-
+            
             .sz-quote {
                 margin-left: 4rem;
+                font-family: get-font-family($font-family-quote);
                 
                 @include breakpoint(mobile-only) {
                     margin-left: 0;
