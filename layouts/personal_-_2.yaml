@@ -1,0 +1,519 @@
+version: 2
+preset:
+  image: 'gantry-admin://images/layouts/default.png'
+  name: 2_column_-_equal
+  timestamp: 1537043325
+layout:
+  /zenith/: {  }
+  /navtop/:
+    -
+      - spacer-3541
+  /navigation/:
+    -
+      - 'logo-9501 50'
+      - 'menu-6609 50'
+  /container-main/:
+    -
+      -
+        'mainbar 50':
+          -
+            - system-messages-2617
+          -
+            - customcontentSZ-5538
+          -
+            - social-1004
+      -
+        'aside 50':
+          -
+            - spacer-4141
+  /header/:
+    -
+      - skillsbarSZ-2274
+  /intro/:
+    -
+      - portfolioSZ-9515
+  /features/:
+    -
+      - timelineSZ-7015
+  /utility/:
+    -
+      - 'headlineSZ-9131 75'
+      - 'calltoactionSZ-2587 25'
+  /above/:
+    -
+      - testimonialSZ-3083
+  /testimonials/: {  }
+  /expanded/: {  }
+  /mainbottom/: {  }
+  /footertop/: {  }
+  footer: {  }
+  footerbottom: {  }
+  nadir: {  }
+  offcanvas:
+    -
+      - mobile-menu-5697
+structure:
+  zenith:
+    type: section
+    attributes:
+      boxed: ''
+  navtop:
+    type: section
+    attributes:
+      boxed: ''
+  navigation:
+    type: section
+    attributes:
+      boxed: '3'
+      class: sz-transparent-bg-desktop
+      background: ''
+      backgroundOverlay: 'rgba(0, 0, 0, 0)'
+      backgroundAttachment: ''
+      backgroundRepeat: ''
+      backgroundPosition: ''
+      backgroundSize: ''
+      paddingTop: ''
+      paddingBottom: ''
+      paddingLeft: ''
+      paddingRight: ''
+      marginTop: ''
+      marginBottom: ''
+      marginLeft: ''
+      marginRight: ''
+  mainbar:
+    type: section
+    subtype: main
+  aside:
+    attributes:
+      class: sz-negative-margin
+      background: 'gantry-media://default.jpg'
+      backgroundOverlay: 'rgba(0, 0, 0, 0)'
+      backgroundAttachment: ''
+      backgroundRepeat: ''
+      backgroundPosition: ''
+      backgroundSize: cover
+      paddingTop: ''
+      paddingBottom: ''
+      paddingLeft: ''
+      paddingRight: ''
+      marginTop: ''
+      marginBottom: ''
+      marginLeft: ''
+      marginRight: ''
+    block:
+      fixed: '1'
+  container-main:
+    attributes:
+      boxed: '2'
+      class: ''
+      extra: {  }
+  header:
+    attributes:
+      boxed: ''
+      class: ''
+      background: 'gantry-media://demos/gabriele-motter.jpg'
+      backgroundOverlay: ''
+      backgroundAttachment: fixed
+      backgroundRepeat: ''
+      backgroundPosition: 'center center'
+      backgroundSize: cover
+  intro:
+    type: section
+    attributes:
+      boxed: '0'
+      class: ''
+      background: ''
+      backgroundOverlay: 'rgba(0, 0, 0, 0)'
+      backgroundAttachment: ''
+      backgroundRepeat: ''
+      backgroundPosition: ''
+      backgroundSize: ''
+  features:
+    type: section
+    attributes:
+      boxed: '2'
+      class: ''
+      background: 'gantry-media://demos/background_blue_lines.png'
+      backgroundOverlay: 'rgba(0, 0, 0, 0)'
+      backgroundAttachment: ''
+      backgroundRepeat: ''
+      backgroundPosition: ''
+      backgroundSize: cover
+  utility:
+    type: section
+    attributes:
+      boxed: '0'
+      class: ''
+      background: 'gantry-media://default.jpg'
+      backgroundOverlay: 'rgba(0, 0, 0, 0.64)'
+      backgroundAttachment: fixed
+      backgroundRepeat: ''
+      backgroundPosition: ''
+      backgroundSize: cover
+      paddingTop: ''
+      paddingBottom: ''
+      paddingLeft: ''
+      paddingRight: ''
+      marginTop: ''
+      marginBottom: ''
+      marginLeft: ''
+      marginRight: ''
+  above:
+    type: section
+    attributes:
+      boxed: ''
+  testimonials:
+    type: section
+    attributes:
+      boxed: ''
+      class: ''
+      background: 'gantry-media://demos/background_blue_lines.png'
+      backgroundOverlay: 'rgba(0, 0, 0, 0)'
+      backgroundAttachment: ''
+      backgroundRepeat: ''
+      backgroundPosition: ''
+      backgroundSize: cover
+  expanded:
+    type: section
+    attributes:
+      boxed: ''
+  mainbottom:
+    type: section
+    attributes:
+      boxed: ''
+  footertop:
+    type: section
+    attributes:
+      boxed: ''
+  footer:
+    inherit:
+      outline: default
+      include:
+        - attributes
+        - children
+  footerbottom:
+    type: section
+    inherit:
+      outline: default
+      include:
+        - attributes
+        - children
+  nadir:
+    type: section
+    inherit:
+      outline: default
+      include:
+        - attributes
+        - children
+  offcanvas:
+    attributes:
+      position: g-offcanvas-left
+      class: ''
+      extra: {  }
+      swipe: '1'
+      css3animation: '1'
+content:
+  logo-9501:
+    title: 'Logo / Image'
+    attributes:
+      text: ZEUS
+  menu-6609:
+    attributes:
+      menu: mainmenu
+    block:
+      variations: align-right
+  customcontentSZ-5538:
+    title: 'I am Ryan'
+    attributes:
+      height: ''
+      maintitle: 'Hello, I am Ryan!'
+      subtitle: 'I am a UX & UI designer from Spain'
+      description: "<strong>How to change the image on the right:</strong>\n<br />In layout manager:<br />\n1. Select Section Settings (the cog wheel) of aside section<br />\n2. Select background tab\n"
+      link: '#'
+      linktext: 'Hire me!'
+      linkstyle: button-2
+    block:
+      variations: center
+  social-1004:
+    attributes:
+      items:
+        -
+          icon: 'fa fa-facebook-square fa-3x'
+          text: ''
+          link: '#'
+          name: facebook
+        -
+          icon: 'fa fa-twitter fa-3x'
+          text: ''
+          link: '#'
+          name: twitter
+        -
+          icon: 'fa fa-google-plus-official fa-3x'
+          text: ''
+          link: '#'
+          name: google+
+        -
+          icon: 'fa fa-linkedin-square fa-3x'
+          text: ''
+          link: '#'
+          name: linkendin
+        -
+          icon: 'fa fa-envelope fa-3x'
+          text: ''
+          link: 'mailto:szoupi@gmail.com'
+          name: email
+    block:
+      variations: center
+  spacer-4141:
+    block:
+      extra:
+        -
+          style: 'min-height:100vh;'
+  skillsbarSZ-2274:
+    title: 'Skills bar'
+    attributes:
+      style: style2
+  portfolioSZ-9515:
+    title: Portfolio
+    attributes:
+      maintitle: 'My Portfolio'
+      subtitle: 'Awesome responsive portfolios with portfolio particle'
+      description: 'At his best, man is the noblest of all animals. Separated from law and justice he is the worst, Aristotle. Something inspirational instead of lorem ipsum'
+      gutter: 'No'
+      displayImageOnly: 'Yes'
+      portfolios:
+        -
+          image: 'gantry-media://default.jpg'
+          maintitle: ''
+          description: ''
+          link1: '#'
+          linktext1: Demo
+          linkstyle1: ''
+          link2: '#'
+          linktext2: Documentation
+          linkstyle2: button-2
+          link3: '#'
+          linktext3: Download
+          linkstyle3: button-outline
+          title: 'item 1'
+        -
+          image: 'gantry-media://default.jpg'
+          maintitle: ''
+          description: ''
+          link1: '#'
+          linktext1: Demo
+          linkstyle1: ''
+          link2: '#'
+          linktext2: Documentation
+          linkstyle2: ''
+          link3: '#'
+          linktext3: Download
+          linkstyle3: ''
+          title: 'item 2'
+        -
+          image: 'gantry-media://default.jpg'
+          maintitle: ''
+          description: ''
+          link1: '#'
+          linktext1: Demo
+          linkstyle1: ''
+          link2: '#'
+          linktext2: Documentation
+          linkstyle2: ''
+          link3: '#'
+          linktext3: Download
+          linkstyle3: ''
+          title: 'item 3'
+        -
+          image: 'gantry-media://default.jpg'
+          maintitle: ''
+          description: ''
+          link1: '#'
+          linktext1: Demo
+          linkstyle1: ''
+          link2: '#'
+          linktext2: Documentation
+          linkstyle2: ''
+          link3: '#'
+          linktext3: Download
+          linkstyle3: ''
+          title: 'item 4'
+        -
+          image: 'gantry-media://default.jpg'
+          maintitle: ''
+          description: ''
+          link1: '#'
+          linktext1: Demo
+          linkstyle1: ''
+          link2: '#'
+          linktext2: Documentation
+          linkstyle2: ''
+          link3: '#'
+          linktext3: Download
+          linkstyle3: ''
+          title: 'item 5'
+        -
+          image: 'gantry-media://default.jpg'
+          maintitle: ''
+          description: ''
+          link1: '#'
+          linktext1: Demo
+          linkstyle1: ''
+          link2: '#'
+          linktext2: Documentation
+          linkstyle2: ''
+          link3: '#'
+          linktext3: Download
+          linkstyle3: ''
+          title: 'item 6'
+        -
+          image: 'gantry-media://default.jpg'
+          maintitle: ''
+          description: ''
+          link1: '#'
+          linktext1: Demo
+          linkstyle1: ''
+          link2: '#'
+          linktext2: Documentation
+          linkstyle2: ''
+          link3: '#'
+          linktext3: Download
+          linkstyle3: ''
+          title: 'item 7'
+        -
+          image: 'gantry-media://default.jpg'
+          maintitle: ''
+          description: ''
+          link1: '#'
+          linktext1: Demo
+          linkstyle1: ''
+          link2: '#'
+          linktext2: Documentation
+          linkstyle2: ''
+          link3: '#'
+          linktext3: Download
+          linkstyle3: ''
+          title: 'item 8'
+        -
+          image: 'gantry-media://default.jpg'
+          maintitle: ''
+          description: ''
+          link1: '#'
+          linktext1: Demo
+          linkstyle1: ''
+          link2: '#'
+          linktext2: Documentation
+          linkstyle2: ''
+          link3: '#'
+          linktext3: Download
+          linkstyle3: ''
+          title: 'item 9'
+  timelineSZ-7015:
+    title: Experience
+  headlineSZ-9131:
+    title: 'Hire Ryan'
+    attributes:
+      maintitle: 'Hire Ryan!'
+      maintitlecolor: '#f7f7f7'
+      subtitle: ''
+      subtitlesize: ''
+      subtitlecolor: ''
+      description: ''
+      descriptioncolor: ''
+  calltoactionSZ-2587:
+    title: 'Call to action'
+    attributes:
+      link: '#'
+      linktext: 'Download CV'
+      linkstyle: button-outline
+      link2: ''
+      linktext2: ''
+      linkstyle2: ''
+      link3: ''
+      linktext3: ''
+  customcontentSZ-2900:
+    title: 'My Services'
+    attributes:
+      maintitle: 'My Services'
+      subtitle: 'Custom Content Particle'
+      description: 'Aim straight to the point with Custom Content Particle to create attractive and well-balanced blocks of content'
+      subitems:
+        -
+          icon: 'fa fa-sitemap fa-5x'
+          subtitle: ''
+          description: 'fusce quis volutpat porta, ut tincidunt eros est nec diam erat quis volutpat porta, neque massa, ut tincidunt eros est nec diam'
+          class: ''
+          title: Development
+        -
+          icon: 'fa fa-tag fa-5x'
+          subtitle: ''
+          description: 'Use <strong>variations</strong> to attract user''s attention.'
+          class: box1
+          title: Variations
+        -
+          icon: 'fa fa-desktop fa-5x'
+          subtitle: ''
+          description: 'fusce quis volutpat porta, ut tincidunt eros est nec diam erat quis volutpat porta, neque massa, ut tincidunt eros est nec diam'
+          class: ''
+          title: UI/UX
+    block:
+      variations: center
+  customcontentSZ-9511:
+    title: 'web design'
+    attributes:
+      subitems:
+        -
+          icon: 'fa fa-mobile-phone fa-5x'
+          subtitle: ''
+          description: 'I have not failed. I''ve just found 10,000 ways that won''t work'
+          class: ''
+          title: 'Web Design'
+        -
+          icon: 'fa fa-user fa-5x'
+          subtitle: ''
+          description: 'I have not failed. I''ve just found 10,000 ways that won''t work'
+          class: ''
+          title: 'Custom Support'
+        -
+          icon: 'fa fa-bug fa-5x'
+          subtitle: ''
+          description: 'I have not failed. I''ve just found 10,000 ways that won''t work'
+          class: ''
+          title: Debugging
+    block:
+      variations: center
+
+  testimonialSZ-3083:
+    title: references
+    attributes:
+      maintitle: 'They have said about us'
+      subtitle: 'Testimonial Particle in action'
+      description: ''
+      testimonials:
+        -
+          icon: 'fa fa-quote-left fa-3x'
+          quote: 'If you tell the truth, you don''t have to remember anything'
+          author: 'My mom'
+          authorattribute: CEO
+          image: 'gantry-media://default.jpg'
+          effect: card
+          class: ''
+          title: quote1
+        -
+          icon: 'fa fa-quote-left fa-3x'
+          quote: 'I have not failed. I''ve just found 10,000 ways that won''t work'
+          author: 'Thomas A. Edison'
+          authorattribute: Scientist
+          image: 'gantry-media://default.jpg'
+          effect: card
+          class: ''
+          title: quote2
+        -
+          icon: 'fa fa-quote-left fa-3x'
+          quote: 'The only true wisdom is in knowing you know nothing'
+          author: Socrates
+          authorattribute: Designer
+          image: 'gantry-media://default.jpg'
+          effect: card
+          class: ''
+          title: quote3

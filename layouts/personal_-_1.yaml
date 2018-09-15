@@ -1,21 +1,20 @@
 version: 2
 preset:
   image: 'gantry-admin://images/layouts/default.png'
-  name: personal_-_1
-  timestamp: 1536865425
+  name: default
+  timestamp: 1490038588
 layout:
   /zenith/:
     -
       - social-6691
   /navtop/:
     -
-      - 'spacer-3541 55'
-      - 'calltoactionSZ-8386 45'
+      - spacer-3541
   /navigation/:
     -
       - 'logo-9501 25'
-      - 'spacer-5535 25'
       - 'menu-6609 50'
+      - 'calltoactionSZ-8386 25'
   /header/:
     -
       - 'customcontentSZ-4724 50'
@@ -32,11 +31,15 @@ layout:
       - 'calltoactionSZ-2587 25'
   /above/:
     -
-      - portfolioSZ-9515
+      - customcontentSZ-2900
+    -
+      - customcontentSZ-9511
   /testimonials/:
     -
       - testimonialSZ-3083
-  /expanded/: {  }
+  /expanded/:
+    -
+      - portfolioSZ-9515
   /container-main/:
     -
       -
@@ -77,7 +80,7 @@ structure:
   navigation:
     type: section
     attributes:
-      boxed: '0'
+      boxed: '3'
       class: ''
       background: ''
       backgroundOverlay: ''
@@ -89,6 +92,10 @@ structure:
       paddingBottom: ''
       paddingLeft: ''
       paddingRight: ''
+      marginTop: ''
+      marginBottom: ''
+      marginLeft: ''
+      marginRight: ''
   header:
     attributes:
       boxed: ''
@@ -123,7 +130,7 @@ structure:
     attributes:
       boxed: '0'
       class: ''
-      background: 'gantry-media://default.jpg'
+      background: ''
       backgroundOverlay: 'rgba(0, 0, 0, 0)'
       backgroundAttachment: ''
       backgroundRepeat: ''
@@ -255,6 +262,15 @@ content:
   social-6691:
     block:
       variations: 'align-right nopaddingall nomarginall'
+  logo-9501:
+    title: 'Logo / Image'
+    attributes:
+      text: ZEUS
+  menu-6609:
+    attributes:
+      menu: mainmenu
+    block:
+      variations: center
   calltoactionSZ-8386:
     title: 'Call to action'
     attributes:
@@ -268,13 +284,6 @@ content:
       linkstyle3: button-outline
     block:
       variations: 'align-right nopaddingall'
-  logo-9501:
-    title: 'Logo / Image'
-    attributes:
-      text: ZEUS
-  menu-6609:
-    attributes:
-      menu: mainmenu
   customcontentSZ-4724:
     title: 'I AM JOHN DOE'
     attributes:
@@ -302,6 +311,23 @@ content:
       marginLeft: ''
   skillsbarSZ-2274:
     title: 'Skills bar'
+    attributes:
+      bars:
+        -
+          skillTitle: Strength
+          percentance: '85'
+          color: '#ff174d'
+          title: strength
+        -
+          skillTitle: Courage
+          percentance: '100'
+          color: '#0071bc'
+          title: courage
+        -
+          skillTitle: Patience
+          percentance: '70'
+          color: '#32bd00'
+          title: patience
   timelineSZ-7015:
     title: Experience
   headlineSZ-9131:
@@ -325,6 +351,91 @@ content:
       linkstyle2: ''
       link3: ''
       linktext3: ''
+  customcontentSZ-2900:
+    title: 'My Services'
+    attributes:
+      maintitle: 'My Services'
+      subtitle: 'Custom Content Particle'
+      description: 'Aim straight to the point with Custom Content Particle to create attractive and well-balanced blocks of content'
+      subitems:
+        -
+          icon: 'fa fa-sitemap fa-5x'
+          subtitle: ''
+          description: 'fusce quis volutpat porta, ut tincidunt eros est nec diam erat quis volutpat porta, neque massa, ut tincidunt eros est nec diam'
+          class: ''
+          title: Development
+        -
+          icon: 'fa fa-tag fa-5x'
+          subtitle: ''
+          description: 'Use <strong>variations</strong> to attract user''s attention.'
+          class: box1
+          title: Variations
+        -
+          icon: 'fa fa-desktop fa-5x'
+          subtitle: ''
+          description: 'fusce quis volutpat porta, ut tincidunt eros est nec diam erat quis volutpat porta, neque massa, ut tincidunt eros est nec diam'
+          class: ''
+          title: UI/UX
+    block:
+      variations: center
+  customcontentSZ-9511:
+    title: 'web design'
+    attributes:
+      subitems:
+        -
+          icon: 'fa fa-mobile-phone fa-5x'
+          subtitle: ''
+          description: 'I have not failed. I''ve just found 10,000 ways that won''t work'
+          class: ''
+          title: 'Web Design'
+        -
+          icon: 'fa fa-user fa-5x'
+          subtitle: ''
+          description: 'I have not failed. I''ve just found 10,000 ways that won''t work'
+          class: ''
+          title: 'Custom Support'
+        -
+          icon: 'fa fa-bug fa-5x'
+          subtitle: ''
+          description: 'I have not failed. I''ve just found 10,000 ways that won''t work'
+          class: ''
+          title: Debugging
+    block:
+      variations: center
+  testimonialSZ-3083:
+    title: references
+    attributes:
+      maintitle: 'They have said about us'
+      subtitle: 'Testimonial Particle in action'
+      description: 'Demonstrate stylish quotes quickly with the Testimonial Particle'
+      testimonials:
+        -
+          icon: 'fa fa-quote-left fa-3x'
+          quote: 'If you tell the truth, you don''t have to remember anything'
+          author: 'Mark Twain'
+          authorattribute: CEO
+          image: 'gantry-media://default.jpg'
+          effect: arrow
+          class: ''
+          title: quote1
+        -
+          icon: 'fa fa-quote-left fa-3x'
+          quote: 'I have not failed. I''ve just found 10,000 ways that won''t work'
+          author: 'Thomas A. Edison'
+          authorattribute: Scientist
+          image: 'gantry-media://default.jpg'
+          effect: arrow
+          class: ''
+          title: quote2
+        -
+          icon: 'fa fa-quote-left fa-3x'
+          quote: 'The only true wisdom is in knowing you know nothing'
+          author: Socrates
+          authorattribute: Designer
+          image: 'gantry-media://default.jpg'
+          effect: arrow
+          class: ''
+          title: quote3
   portfolioSZ-9515:
     title: Portfolio
     attributes:
@@ -460,40 +571,6 @@ content:
           linktext3: Download
           linkstyle3: ''
           title: 'item 9'
-  testimonialSZ-3083:
-    title: references
-    attributes:
-      maintitle: 'They have said about us'
-      subtitle: 'Testimonial Particle in action'
-      description: 'Demonstrate stylish quotes quickly with the Testimonial Particle'
-      testimonials:
-        -
-          icon: 'fa fa-quote-left fa-3x'
-          quote: 'If you tell the truth, you don''t have to remember anything'
-          author: 'My mom'
-          authorattribute: CEO
-          image: 'gantry-media://default.jpg'
-          effect: arrow
-          class: ''
-          title: quote1
-        -
-          icon: 'fa fa-quote-left fa-3x'
-          quote: 'I have not failed. I''ve just found 10,000 ways that won''t work'
-          author: 'Thomas A. Edison'
-          authorattribute: Scientist
-          image: 'gantry-media://default.jpg'
-          effect: arrow
-          class: ''
-          title: quote2
-        -
-          icon: 'fa fa-quote-left fa-3x'
-          quote: 'The only true wisdom is in knowing you know nothing'
-          author: Socrates
-          authorattribute: Designer
-          image: 'gantry-media://default.jpg'
-          effect: arrow
-          class: ''
-          title: quote3
   position-module-9693:
     title: 'articles category grouped'
     attributes:

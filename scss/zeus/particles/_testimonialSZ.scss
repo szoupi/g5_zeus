@@ -10,6 +10,8 @@
         border-radius: 5px; 
         background-color: $base-background; 
         color: $base-text-color;
+        border: 1px solid #dedede;
+        box-shadow: inset 0px 0 0px 1px white, 0 0 8px rgba(0, 0, 0, 0.1);
 
         // ICON
         i {
