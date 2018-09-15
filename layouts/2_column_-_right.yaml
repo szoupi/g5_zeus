@@ -22,7 +22,7 @@ layout:
   /container-main/:
     -
       -
-        'mainbar 50':
+        'mainbar 75':
           -
             - system-messages-2617
           -

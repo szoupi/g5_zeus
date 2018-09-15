@@ -14,23 +14,23 @@ layout:
     -
       - customcontentSZ-5107
   /intro/: {  }
+  /container-main/:
+    -
+      -
+        'aside 50':
+          -
+            - spacer-spacer-2395
+      -
+        'mainbar 50':
+          -
+            - system-messages-2617
+          -
+            - system-content-1966
   /features/: {  }
   /utility/: {  }
   /above/: {  }
   /testimonials/: {  }
   /expanded/: {  }
-  /container-main/:
-    -
-      -
-        'aside 25':
-          -
-            - spacer-spacer-2395
-      -
-        'mainbar 75':
-          -
-            - system-messages-2617
-          -
-            - system-content-1966
   /mainbottom/: {  }
   /footertop/: {  }
   /footer/:
