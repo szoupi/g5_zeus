@@ -238,16 +238,26 @@
 }
 
 .sz-particles-description {
-    text-align: center;
-    margin-bottom: 1.5rem;
+    max-width: 450px;
+    text-align: justify;
+    margin: auto;
+    margin-bottom: 1.5rem;  // below margin auto
 }
 
-section.g-flushed {
-    .sz-particles-title-wrapper,
-    .sz-particles-title,
-    .sz-particles-subtitle,
-    .sz-particles-description {
-        margin-left: 2rem;
-        margin-right: 2rem;
-    }
+// // set margins for text
+// // when flushed section is used
+// section.g-flushed {
+//     .sz-particles-title-wrapper,
+//     .sz-particles-title,
+//     .sz-particles-subtitle,
+//     .sz-particles-description {
+//         margin-left: 2rem;
+//         margin-right: 2rem;
+//     }
+// }
+
+.sz-transparent-bg-desktop {
+    @include breakpoint(no-mobile) {  
+        background: transparent !important;
+	}
 }

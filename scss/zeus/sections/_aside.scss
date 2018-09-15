@@ -1,43 +1,53 @@
 #g-aside {
-    background: $base-background;
-    color: $base-text-color;
+	background: $base-background;
+	color: $base-text-color;
 	padding: $section-padding 0;
 	
-    // BUTTONS
-    // see also zeus/styles/_buttons.scss
-    // no style selections here
-    .button {
-    	color: $white;
-    	&:hover,
-    	&:active,
-    	&:focus {
-    		background: $accent-color-3;
-    		color: $white;
-    	}
-    	&.button-2 {
-    		background: $accent-color-1;
-    		@include transition(all 0.2s);
-    		&:hover,
-    		&:active,
-    		&:focus {
-    			background: $accent-color-3;
-    			color: $white;
-    		}
-    	} // used as secondary button
-    	&.button-outline {
-    		color: $base-dominant-color;
-    		border-color: $base-dominant-color;
-    		&:hover,
-    		&:active,
-    		&:focus {
-    			background: $accent-color-3;
-    			border-color: transparent;
-    			color: $white;
-    		}
-    	}
-    }
-
-
+	
+	// specific for cover backgrounds 
+	// (eg outiline personal 2)
+	// see also .sz-transparent-bg-desktop for navigation section
+	&.sz-negative-margin {
+		@include breakpoint(no-mobile) {
+			margin-top: -120px;
+		}
+	}
+	
+	// BUTTONS
+	// see also zeus/styles/_buttons.scss
+	// no style selections here
+	.button {
+		color: $white;
+		&:hover,
+		&:active,
+		&:focus {
+			background: $accent-color-3;
+			color: $white;
+		}
+		&.button-2 {
+			background: $accent-color-1;
+			@include transition(all 0.2s);
+			&:hover,
+			&:active,
+			&:focus {
+				background: $accent-color-3;
+				color: $white;
+			}
+		} // used as secondary button
+		&.button-outline {
+			color: $base-dominant-color;
+			border-color: $base-dominant-color;
+			&:hover,
+			&:active,
+			&:focus {
+				background: $accent-color-3;
+				border-color: transparent;
+				color: $white;
+			}
+		}
+	}
+	
+	
 }
 
 @media print {

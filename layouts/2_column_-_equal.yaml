@@ -10,22 +10,20 @@ layout:
     -
       - 'logo-9501 25'
       - 'menu-6609 75'
-  /header/:
-    -
-      - customcontentSZ-5107
-  /intro/: {  }
   /container-main/:
     -
-      -
-        'aside 50':
-          -
-            - spacer-spacer-2395
       -
         'mainbar 50':
           -
             - system-messages-2617
+      -
+        'aside 50':
           -
-            - system-content-1966
+            - spacer-spacer-2395
+  /header/:
+    -
+      - customcontentSZ-5107
+  /intro/: {  }
   /features/: {  }
   /utility/: {  }
   /above/: {  }
