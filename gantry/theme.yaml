@@ -103,10 +103,12 @@ configuration:
       align-left: Align Left
       nomarginall: No Margin
       nopaddingall: No Padding
-      margin-left: Margin Left
-      margin-right: Margin Right
-      margin-top: Margin Top
-      margin-bottom: Margin Bottom
+    Distance:
+      margin-top-10: margin top 10
+      margin-top-20: margin top 20
+      margin-top-30: margin top 30
+      margin-top-40: margin top 40
+      margin-top-50: margin top 50
 
 
 # Displays in the admin panel 

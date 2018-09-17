@@ -261,3 +261,15 @@
         background: transparent !important;
 	}
 }
+
+.sz-negative-margin {
+    @include breakpoint(no-mobile) {
+        margin-top: -120px;
+    }
+}
+
+.sz-margin-top-20 {
+    @include breakpoint(no-mobile) {
+        margin-top: 20vh;
+    }
+}
