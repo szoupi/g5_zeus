@@ -1,17 +1,11 @@
 {% extends '@nucleus/partials/particle.html.twig' %}
 
 {% block particle %}
-    <div class="sz-customcontentSZ" >
+    <div class="sz-contentframeSZ" >
         <div class="g-grid" >
             <div class="g-block">
                 <div class="g-content">
-                    <div 
-                        {#HEIGHT#}
-                        {% if particle.height %}     
-                            style='min-height: {{ particle.height }};'>
-                        {% else %}
-                            >
-                        {% endif %}
+                    <div>
                         {#IMAGE#}
                         {% if particle.image %}
                             <img src="{{ url('gantry-theme://images/default.jpg') }}"
@@ -23,13 +17,13 @@
                         
                         {#ICON#}
                         {% if particle.mainicon %}  
-                            <div><i class="{{ particle.mainicon }} sz-customcontent-icons" style="display:block;"></i></div>
+                            <div><i class="{{ particle.mainicon }} sz-contentframeSZ-icons" style="display:block;"></i></div>
                         {% endif %}
                         
                         {#TITLE#}
                         {% if particle.maintitle %}
                             <div>
-                                <div class="sz-particles-title"
+                                <div class="sz-contentframeSZ-title">
                                     {{ particle.maintitle|raw }}
                                 </div>
                             </div>
@@ -38,41 +32,21 @@
                         {#SUBTITLE#}
                         {% if particle.subtitle %}
                             <div>
-                                <div class="sz-particles-subtitle">{{ particle.subtitle|raw }}</div>
+                                <div class="sz-contentframeSZ-subtitle">
+                                    {{ particle.subtitle|raw }}
+                                </div>
                             </div>
                         {% endif %}                        
                         
                         {#DESCRIPTION#}
                         {% if particle.description %}
-                            <p class="sz-particles-description">{{ particle.description|raw }}</p>
+                            <p class="sz-contentframeSZ-description">
+                                {{ particle.description|raw }}
+                            </p>
                         {% endif %}
-                        
-                        {#BUTTONS-LINKS#}
-                        {% if particle.linktext %}
-                            <a href="{{ particle.link|e }}" class="button {{ particle.linkstyle|default('') }}" role="button">{{ particle.linktext|e }}</a>
-                        {% endif %}
-                        {% if particle.linktext2 %}
-                            <a href="{{ particle.link2|e }}" class="button {{ particle.linkstyle2|default('') }}" role="button">{{ particle.linktext2|e }}</a>
-                        {% endif %}
-                        {% if particle.linktext3 %}
-                            <a href="{{ particle.link3|e }}" class="button {{ particle.linkstyle3|default('') }}" role="button">{{ particle.linktext3|e }}</a>
-                        {% endif %}                        
                     </div>
                 </div>
             </div>
-        </div>
-        <div class="g-grid sz-customcontent-subitem">
-            {% for subitem in particle.subitems %}
-                <div class="g-block {{ subitem.class }}">
-                    <div class="g-content">
-                        <i class="{{ subitem.icon }} subitem-icons"></i>
-                        <h2 class="sz-subitem-title">{{ subitem.title|raw }}</h2>
-                        <h3 class="sz-subitem-subtitle">{{ subitem.subtitle|raw }}</h3>
-                        <p>{{ subitem.description|raw }}</p>
-                        
-                    </div>
-                </div>
-            {% endfor %}
         </div>
     </div>
 

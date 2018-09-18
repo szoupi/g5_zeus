@@ -1,53 +1,28 @@
-.sz-customcontentSZ {
-
-    // $customcontentSZ-maintitlefont: 'family=Anton';
-
+.sz-contentframeSZ {
+    
     @include breakpoint(mobile-only){
         text-align: center;
     }   
     
-
-    .sz-particles-title {
+    .sz-contentframeSZ-title {
+        font-size: $core-font-size+1.5;
         font-weight: 800;
-        // font-family: get-font-family($customcontentSZ-maintitlefont);
-
-    }
-
-    .sz-particles-subtitle {
-        font-weight: 700;
-    }
-
-    img,
-    button,
-    .sz-customcontent-icons {
-        margin-bottom: 1rem;
         
-    } 
-
-    .sz-subitem-title h2 {
-        font-size: 2rem;
-        font-weight: 800;
-
     }
     
-    .sz-subitem-subtitle h3 {
-        font-size: 1.4;
-        font-weight: 400;
+    .sz-contentframeSZ-subtitle {
+        font-size: $core-font-size+1;
+        font-weight: 700;
+          
     }
 
-    .sz-customcontent-subitem {
-        margin-top: 2rem;
+    .sz-contentframeSZ-description {
+        text-align: justify;
     }
-
+    
+    img,
+    button,
+    .sz-contentframeSZ-icons {
+        margin-bottom: 1rem;
+    }
 }
-    //     @include breakpoint(desktop-range) {
-    //     }
-        
-    //     @include breakpoint(tablet-range) {
-    //     }
-        
-    //     @include breakpoint(mobile-only) {
-    //     }
-        
-    //     @include breakpoint(small-mobile-range) {
-    //     }
