@@ -1,49 +1,48 @@
 version: 2
 preset:
   image: 'gantry-admin://images/layouts/default.png'
-  name: personal_-_2
-  timestamp: 1537226214
+  name: personal_-_1
+  timestamp: 1537052952
 layout:
   /zenith/: {  }
   /navtop/:
     -
-      - spacer-3541
+      - system-messages-2617
   /navigation/:
     -
-      - 'logo-9501 50'
+      - 'logo-9501 25'
       - 'menu-6609 50'
-  /container-main/:
-    -
-      -
-        'mainbar 50':
-          -
-            - system-messages-2617
-          -
-            - customcontentSZ-5538
-          -
-            - social-1004
-      -
-        'aside 50':
-          -
-            - spacer-4141
+      - 'social-1788 25'
   /header/:
     -
-      - skillsbarSZ-2274
+      - customcontentSZ-5538
   /intro/:
     -
-      - portfolioSZ-9515
+      - customcontentSZ-5111
   /features/:
     -
-      - timelineSZ-7015
+      - skillsbarSZ-2274
   /utility/:
     -
       - 'headlineSZ-9131 75'
       - 'calltoactionSZ-2587 25'
   /above/:
     -
+      - portfolioSZ-9515
+  /testimonials/:
+    -
       - testimonialSZ-3083
-  /testimonials/: {  }
-  /expanded/: {  }
+  /expanded/:
+    -
+      - timelineSZ-7015
+  /container-main/:
+    -
+      -
+        'aside 25': {  }
+      -
+        'mainbar 50': {  }
+      -
+        'sidebar 25': {  }
   /mainbottom/: {  }
   /footertop/: {  }
   footer: {  }
@@ -67,7 +66,7 @@ structure:
       boxed: '3'
       class: sz-transparent-bg-desktop
       background: ''
-      backgroundOverlay: 'rgba(0, 0, 0, 0)'
+      backgroundOverlay: ''
       backgroundAttachment: ''
       backgroundRepeat: ''
       backgroundPosition: ''
@@ -80,43 +79,24 @@ structure:
       marginBottom: ''
       marginLeft: ''
       marginRight: ''
-  mainbar:
-    type: section
-    subtype: main
-  aside:
+  header:
     attributes:
+      boxed: ''
       class: sz-negative-margin-top
       background: 'gantry-media://default.jpg'
-      backgroundOverlay: 'rgba(0, 0, 0, 0)'
-      backgroundAttachment: ''
-      backgroundRepeat: ''
+      backgroundOverlay: 'rgba(0, 0, 0, 0.59)'
+      backgroundAttachment: fixed
+      backgroundRepeat: no-repeat
       backgroundPosition: 'center center'
       backgroundSize: cover
       paddingTop: ''
       paddingBottom: ''
       paddingLeft: ''
       paddingRight: ''
-      marginTop: ''
+      marginTop: '-120px'
       marginBottom: ''
       marginLeft: ''
       marginRight: ''
-    block:
-      fixed: '1'
-  container-main:
-    attributes:
-      boxed: '2'
-      class: sz-negative-margin
-      extra: {  }
-  header:
-    attributes:
-      boxed: ''
-      class: ''
-      background: 'gantry-media://demos/gabriele-motter.jpg'
-      backgroundOverlay: ''
-      backgroundAttachment: fixed
-      backgroundRepeat: ''
-      backgroundPosition: 'center center'
-      backgroundSize: cover
   intro:
     type: section
     attributes:
@@ -128,25 +108,41 @@ structure:
       backgroundRepeat: ''
       backgroundPosition: ''
       backgroundSize: ''
+      paddingTop: ''
+      paddingBottom: ''
+      paddingLeft: ''
+      paddingRight: ''
+      marginTop: ''
+      marginBottom: ''
+      marginLeft: ''
+      marginRight: ''
   features:
     type: section
     attributes:
-      boxed: '2'
+      boxed: '0'
       class: ''
-      background: 'gantry-media://demos/background_blue_lines.png'
+      background: ''
       backgroundOverlay: 'rgba(0, 0, 0, 0)'
       backgroundAttachment: ''
       backgroundRepeat: ''
       backgroundPosition: ''
       backgroundSize: cover
+      paddingTop: ''
+      paddingBottom: ''
+      paddingLeft: ''
+      paddingRight: ''
+      marginTop: ''
+      marginBottom: ''
+      marginLeft: ''
+      marginRight: ''
   utility:
     type: section
     attributes:
       boxed: '0'
       class: ''
       background: 'gantry-media://default.jpg'
-      backgroundOverlay: 'rgba(0, 0, 0, 0.64)'
-      backgroundAttachment: fixed
+      backgroundOverlay: 'rgba(3, 3, 3, 0.52)'
+      backgroundAttachment: ''
       backgroundRepeat: ''
       backgroundPosition: ''
       backgroundSize: cover
@@ -161,20 +157,61 @@ structure:
   above:
     type: section
     attributes:
-      boxed: ''
+      boxed: '0'
+      class: ''
+      background: ''
+      backgroundOverlay: 'rgba(0, 0, 0, 0.67)'
+      backgroundAttachment: ''
+      backgroundRepeat: ''
+      backgroundPosition: ''
+      backgroundSize: cover
+      paddingTop: ''
+      paddingBottom: ''
+      paddingLeft: ''
+      paddingRight: ''
+      marginTop: ''
+      marginBottom: ''
+      marginLeft: ''
+      marginRight: ''
   testimonials:
     type: section
     attributes:
-      boxed: ''
+      boxed: '0'
       class: ''
-      background: 'gantry-media://demos/background_blue_lines.png'
+      background: ''
       backgroundOverlay: 'rgba(0, 0, 0, 0)'
       backgroundAttachment: ''
       backgroundRepeat: ''
       backgroundPosition: ''
       backgroundSize: cover
+      paddingTop: 4rem
+      paddingBottom: 3rem
+      paddingLeft: ''
+      paddingRight: ''
+      marginTop: ''
+      marginBottom: ''
+      marginLeft: ''
+      marginRight: ''
   expanded:
     type: section
+    attributes:
+      boxed: ''
+  aside:
+    attributes:
+      class: ''
+    block:
+      fixed: '1'
+  mainbar:
+    type: section
+    subtype: main
+  sidebar:
+    type: section
+    subtype: aside
+    attributes:
+      class: ''
+    block:
+      fixed: '1'
+  container-main:
     attributes:
       boxed: ''
   mainbottom:
@@ -225,50 +262,20 @@ content:
   customcontentSZ-5538:
     title: 'I am Ryan'
     attributes:
-      height: ''
-      maintitle: 'Hello, I am Ryan!'
+      height: 80vh
+      maintitle: 'Hello, I am James!'
       subtitle: 'I am a UX & UI designer from Spain'
-      description: "<strong>How to change the image on the right:</strong>\n<br />In layout manager:<br />\n1. Select Section Settings (the cog wheel) of aside section<br />\n2. Select background tab\n"
+      description: "<strong>How to change the background image:</strong>\n<br />In layout manager:<br />\n1. Select Section Settings (the cog wheel) of aside section<br />\n2. Select background tab\n"
       link: '#'
       linktext: 'Hire me!'
       linkstyle: button-2
+      link2: '#'
+      linktext2: Portfolio
+      linkstyle2: button-outline
     block:
-      variations: center
-  social-1004:
-    attributes:
-      items:
-        -
-          icon: 'fa fa-facebook-square fa-3x'
-          text: ''
-          link: '#'
-          name: facebook
-        -
-          icon: 'fa fa-twitter fa-3x'
-          text: ''
-          link: '#'
-          name: twitter
-        -
-          icon: 'fa fa-google-plus-official fa-3x'
-          text: ''
-          link: '#'
-          name: google+
-        -
-          icon: 'fa fa-linkedin-square fa-3x'
-          text: ''
-          link: '#'
-          name: linkendin
-        -
-          icon: 'fa fa-envelope fa-3x'
-          text: ''
-          link: 'mailto:szoupi@gmail.com'
-          name: email
-    block:
-      variations: center
-  spacer-4141:
-    block:
-      extra:
-        -
-          style: 'min-height:100vh;'
+      variations: 'center margin-top-20'
+  customcontentSZ-5111:
+    title: 'Custom Content'
   skillsbarSZ-2274:
     title: 'Skills bar'
     attributes:
@@ -289,6 +296,27 @@ content:
           percentance: '70'
           color: '#00bd55'
           title: patience
+  headlineSZ-9131:
+    title: 'Hire Ryan'
+    attributes:
+      maintitle: 'Hire Ryan!'
+      maintitlecolor: '#f7f7f7'
+      subtitle: ''
+      subtitlesize: ''
+      subtitlecolor: ''
+      description: ''
+      descriptioncolor: ''
+  calltoactionSZ-2587:
+    title: 'Call to action'
+    attributes:
+      link: '#'
+      linktext: 'Download CV'
+      linkstyle: button-outline
+      link2: ''
+      linktext2: ''
+      linkstyle2: ''
+      link3: ''
+      linktext3: ''
   portfolioSZ-9515:
     title: Portfolio
     attributes:
@@ -424,29 +452,6 @@ content:
           linktext3: Download
           linkstyle3: ''
           title: 'item 9'
-  timelineSZ-7015:
-    title: Experience
-  headlineSZ-9131:
-    title: 'Hire Ryan'
-    attributes:
-      maintitle: 'Hire Ryan!'
-      maintitlecolor: '#f7f7f7'
-      subtitle: ''
-      subtitlesize: ''
-      subtitlecolor: ''
-      description: ''
-      descriptioncolor: ''
-  calltoactionSZ-2587:
-    title: 'Call to action'
-    attributes:
-      link: '#'
-      linktext: 'Download CV'
-      linkstyle: button-outline
-      link2: ''
-      linktext2: ''
-      linkstyle2: ''
-      link3: ''
-      linktext3: ''
   testimonialSZ-3083:
     title: references
     attributes:
@@ -481,3 +486,5 @@ content:
           effect: card
           class: ''
           title: quote3
+  timelineSZ-7015:
+    title: Experience

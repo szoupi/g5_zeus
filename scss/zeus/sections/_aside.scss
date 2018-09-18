@@ -4,14 +4,6 @@
 	padding: $section-padding 0;
 	
 	
-	// specific for cover backgrounds 
-	// (eg outiline personal 2)
-	// see also .sz-transparent-bg-desktop for navigation section
-	&.sz-negative-margin {
-		@include breakpoint(no-mobile) {
-			margin-top: -120px;
-		}
-	}
 	
 	// BUTTONS
 	// see also zeus/styles/_buttons.scss

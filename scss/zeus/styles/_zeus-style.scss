@@ -227,6 +227,10 @@
     font-size: $core-font-size+3;
     margin-bottom: 1.5rem;
     font-weight: 800;
+    
+    @include breakpoint(no-desktop) {
+    font-size: $core-font-size+2.5;
+    }
 }
 
 .sz-particles-subtitle {
@@ -235,6 +239,9 @@
     margin-bottom: 1.5rem;
     font-weight: 700;
     
+    @include breakpoint(no-desktop) {
+        font-size: $core-font-size+1;
+    }    
 }
 
 .sz-particles-description {
@@ -244,32 +251,20 @@
     margin-bottom: 1.5rem;  // below margin auto
 }
 
-// // set margins for text
-// // when flushed section is used
-// section.g-flushed {
-//     .sz-particles-title-wrapper,
-//     .sz-particles-title,
-//     .sz-particles-subtitle,
-//     .sz-particles-description {
-//         margin-left: 2rem;
-//         margin-right: 2rem;
-//     }
-// }
 
+// make block transparent (eg navigation)
 .sz-transparent-bg-desktop {
     @include breakpoint(no-mobile) {  
         background: transparent !important;
 	}
 }
 
-.sz-negative-margin {
+// place cover backgrounds below navigation block
+.sz-negative-margin-top {
     @include breakpoint(no-mobile) {
         margin-top: -120px;
     }
 }
 
-.sz-margin-top-20 {
-    @include breakpoint(no-mobile) {
-        margin-top: 20vh;
-    }
-}
+
+

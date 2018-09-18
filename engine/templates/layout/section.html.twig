@@ -1,3 +1,4 @@
+
 {% set tag_type = segment.subtype|default('section') %}
 {% set attr_id = segment.attributes.id ?: 'g-' ~ segment.id %}
 {% set attr_class = segment.attributes.class %}
@@ -25,6 +26,7 @@
 {% set attr_paddingBottom = segment.attributes.paddingBottom %}
 {% set attr_paddingLeft = segment.attributes.paddingLeft %}
 {% set attr_paddingRight = segment.attributes.paddingRight %}
+
 
 {# margin #}
 {% set attr_marginTop = segment.attributes.marginTop %}
@@ -78,11 +80,28 @@
                 {% if attr_paddingBottom %} padding-bottom: {{ attr_paddingBottom }}; {% endif %}
                 {% if attr_paddingLeft %} padding-left: {{ attr_paddingLeft }}; {% endif %}
                 {% if attr_paddingRight %} padding-right: {{ attr_paddingRight }}; {% endif %}
+                
                 {# margin #}
-                {% if attr_marginTop %} margin-top: {{ attr_marginTop }}; {% endif %}
-                {% if attr_marginBottom %} margin-bottom: {{ attr_marginBottom }}; {% endif %}
-                {% if attr_marginLeft %} margin-left: {{ attr_marginLeft }}; {% endif %}
-                {% if attr_marginRight %} margin-right: {{ attr_marginRight }}; {% endif %}
+                {% if attr_marginTop %} 
+                    @include breakpoint(no-mobile) {
+                        margin-top: {{ attr_marginTop }}; 
+                    }
+                {% endif %}
+                {% if attr_marginBottom %} 
+                    @include breakpoint(no-mobile) {
+                        margin-bottom: {{ attr_marginBottom }}; 
+                    }
+                {% endif %}
+                {% if attr_marginLeft %} 
+                    @include breakpoint(no-mobile) {
+                        margin-left: {{ attr_marginLeft }}; 
+                    }
+                {% endif %}
+                {% if attr_marginRight %} 
+                    @include breakpoint(no-mobile) {
+                        margin-right: {{ attr_marginRight }}; 
+                    }
+                {% endif %}
             ">
         {% endif %}   
         {{ html|raw }}
