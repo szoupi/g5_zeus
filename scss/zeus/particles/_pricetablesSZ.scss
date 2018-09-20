@@ -14,6 +14,11 @@
     -webkit-transition: 0.3s;
     transition: 0.3s;
     
+    cursor: default;
+    border: 1px solid #dedede;
+    box-shadow: inset 0px 0 0px 1px white, 0 0 8px rgba(0, 0, 0, 0.1);
+    
+
     &:hover {
         box-shadow: 0 0.6rem 1rem 0 rgba(0,0,0,0.2)
     }
@@ -24,16 +29,13 @@
         text-align: center;
     }
 
-    .sz-price-image {
-        
-    }
-    
     .sz-icon {
         color: white;
         background-color:$accent-color-3;
         border-bottom: 0px;
     }
     .sz-title {
+        font-size: $core-font-size+1.5;
         color: white;
         font-size:1.5rem;
         font-weight: 800;
@@ -41,18 +43,15 @@
     }
     
     .sz-price{
-        font-size:1.2rem;
+        font-size: $core-font-size+1.5;
         font-weight: 800;  
     }
     
     .sz-light {
-            background-color: $accent-color-2;
+        background-color: $accent-color-2;
+        // color: white;
         }
     .sz-dark {
         background-color:black;
-    }
-    
-    .sz-link {
-        
     }
 }

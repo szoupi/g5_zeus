@@ -1,9 +1,5 @@
 {% extends '@nucleus/partials/particle.html.twig' %}
 
-{#TODO add css from tnds#}
-{#    change variables here#}
-{#    change class here#}
-
 {% block particle %}
 
     <div>
@@ -18,9 +14,7 @@
 
                     {#SUBTITLE#}
                     {% if particle.subtitle %}
-                        <div>
                             <h3 class="sz-particles-subtitle">{{ particle.subtitle|raw }}</h3>
-                        </div>
                     {% endif %}                          
                     
                     {#DESCRIPTION#}
