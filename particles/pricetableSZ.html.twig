@@ -10,24 +10,24 @@
         <div class="g-grid">
             <div class="g-block">
                 <div class="g-content">
-                    {% if particle.image %}
-                        <img src="{{ url(particle.image) }}" style="margin-bottom:1rem;" alt="{{ particle.headline|e }}" />
-                    {% endif %}
-                    {% if particle.mainicon %}  
-                        <div>
-                            <i class="{{ particle.mainicon }} " style="display:block;"></i>
-                        </div>
+
+                    {#MAINTITLE#}
+                    {% if particle.maintitle %}
+                        <h2 class="sz-particles-title">{{ particle.maintitle|raw }}</h2>
                     {% endif %}
 
-                    {% if particle.headline %}
-                        <h1>{{ particle.headline|raw }}</h1>
-                    {% endif %}
+                    {#SUBTITLE#}
+                    {% if particle.subtitle %}
+                        <div>
+                            <h3 class="sz-particles-subtitle">{{ particle.subtitle|raw }}</h3>
+                        </div>
+                    {% endif %}                          
+                    
+                    {#DESCRIPTION#}
                     {% if particle.description %}
-                        <div class="">{{ particle.description|raw }}</div>
+                        <p class="sz-particles-description">{{ particle.description|raw }}</p>
                     {% endif %}
-                    {% if particle.linktext %}
-                        <p><a href="{{ particle.link|e }}" class="button">{{ particle.linktext|e }}</a></p>
-                    {% endif %}
+
                 </div>
             </div>
         </div>

@@ -7,11 +7,18 @@
                 <div class="g-content">
                     <div 
                         {#HEIGHT#}
-                        {% if particle.height %}     
-                            style='min-height: {{ particle.height }};'>
-                        {% else %}
-                            >
+                        {% if (particle.height or particle.textalign) %}     
+                            style='
+                                {% if particle.height %}
+                                    min-height: {{ particle.height }};
+                                {% endif %}
+                                
+                                {% if particle.textalign %}
+                                    text-align: {{ particle.textalign }};
+                                {% endif %}
+                            '
                         {% endif %}
+                            >
                         {#IMAGE#}
                         {% if particle.image %}
                             <img src="{{ url('gantry-theme://images/default.jpg') }}"
@@ -23,13 +30,27 @@
                         
                         {#ICON#}
                         {% if particle.mainicon %}  
-                            <div><i class="{{ particle.mainicon }} sz-customcontent-icons" style="display:block;"></i></div>
+                            <div>
+                                <i class="{{ particle.mainicon }} sz-customcontent-icons" 
+                                    style="display:block; 
+                                    {% if particle.textalign %} 
+                                        text-align: {{ particle.textalign }}
+                                    {% endif %}
+                                ">
+                                </i>
+                            </div>
                         {% endif %}
                         
                         {#TITLE#}
                         {% if particle.maintitle %}
                             <div>
-                                <div class="sz-particles-title">
+                                <div class="sz-particles-title" 
+                                    style="
+                                        {% if particle.textalign %} 
+                                            text-align: {{ particle.textalign }}
+                                        {% endif %}
+                                    "
+                                >
                                     {{ particle.maintitle|raw }}
                                 </div>
                             </div>
@@ -38,13 +59,28 @@
                         {#SUBTITLE#}
                         {% if particle.subtitle %}
                             <div>
-                                <div class="sz-particles-subtitle">{{ particle.subtitle|raw }}</div>
+                                <div class="sz-particles-subtitle"
+                                    style="
+                                        {% if particle.textalign %} 
+                                            text-align: {{ particle.textalign }}
+                                        {% endif %}
+                                    "
+                                >
+                                {{ particle.subtitle|raw }}</div>
                             </div>
                         {% endif %}                        
                         
                         {#DESCRIPTION#}
                         {% if particle.description %}
-                            <p class="sz-particles-description">{{ particle.description|raw }}</p>
+                            <p class="sz-particles-description"
+                                style="
+                                    {% if particle.textalign %} 
+                                        text-align: {{ particle.textalign }}
+                                    {% endif %}
+                                "
+                            >
+                                {{ particle.description|raw }}
+                            </p>
                         {% endif %}
                         
                         {#BUTTONS-LINKS#}

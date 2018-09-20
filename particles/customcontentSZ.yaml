@@ -58,6 +58,17 @@ form:
               label: Description
               description: Customize the description.
               placeholder: Enter short description
+            
+            .textalign:
+              type: select.select
+              label: Text align
+              description: 'Select a button style for the link'
+              default: ''
+              options:
+                '': ''
+                left: Left
+                center: Center
+                right: Right
 
         # _tab_title:
         #   label: Title
