@@ -264,7 +264,11 @@
     @include breakpoint(no-mobile) {
         margin-top: -120px;
     }
+
 }
 
+.button {
+    margin: 1rem;
+}
 
 

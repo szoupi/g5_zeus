@@ -16,9 +16,7 @@ layout:
   /header/:
     -
       - customcontentSZ-5538
-  /intro/:
-    -
-      - customcontentSZ-5111
+  /intro/: {  }
   /features/:
     -
       - skillsbarSZ-2274
@@ -284,8 +282,6 @@ content:
       linkstyle2: button-outline
     block:
       variations: 'center margin-top-20'
-  customcontentSZ-5111:
-    title: 'Custom Content'
   skillsbarSZ-2274:
     title: 'Skills bar'
     attributes:
