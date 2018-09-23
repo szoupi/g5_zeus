@@ -15,6 +15,10 @@
     {% set attr_backgroundOverlay = "rgba(0, 0, 0, 0)" %}
 {% endif %}
 
+{# block height #}
+{% set attr_blockHeight = segment.attributes.blockHeight %}
+
+
 {# background #}
 {% set attr_backgroundAttachment = segment.attributes.backgroundAttachment %}
 {% set attr_backgroundRepeat = segment.attributes.backgroundRepeat %}
@@ -82,26 +86,13 @@
                 {% if attr_paddingRight %} padding-right: {{ attr_paddingRight }}; {% endif %}
                 
                 {# margin #}
-                {% if attr_marginTop %} 
-                    @include breakpoint(no-mobile) {
-                        margin-top: {{ attr_marginTop }}; 
-                    }
-                {% endif %}
-                {% if attr_marginBottom %} 
-                    @include breakpoint(no-mobile) {
-                        margin-bottom: {{ attr_marginBottom }}; 
-                    }
-                {% endif %}
-                {% if attr_marginLeft %} 
-                    @include breakpoint(no-mobile) {
-                        margin-left: {{ attr_marginLeft }}; 
-                    }
-                {% endif %}
-                {% if attr_marginRight %} 
-                    @include breakpoint(no-mobile) {
-                        margin-right: {{ attr_marginRight }}; 
-                    }
-                {% endif %}
+                {% if attr_marginTop %} margin-top: {{ attr_marginTop }}; {% endif %}
+                {% if attr_marginBottom %} margin-bottom: {{ attr_marginBottom }}; {% endif %}
+                {% if attr_marginLeft %} margin-left: {{ attr_marginLeft }}; {% endif %}
+                {% if attr_marginRight %} margin-right: {{ attr_marginRight }}; {% endif %}
+
+                {# height #}
+                {% if attr_blockHeight %} min-height: {{ attr_blockHeight }}; {% endif %}
             ">
         {% endif %}   
         {{ html|raw }}

@@ -194,6 +194,24 @@ form:
               placeholder: eg 2rem 
               pattern: '-?\d+(\.\d+){0,1}(rem|em|px)'
 
+        _tab_height:
+          label: Height
+          fields: 
+
+            _info:
+              type: separator.note
+              class: alert alert-info
+              content: Specify the minimum height of the block <br />Use 100vh to make the background fit the window size, <br /> 50vh for the half window etc 
+
+
+            .blockHeight:
+              type: input.text
+              label: Height
+              description: Optional - Specify the height of the block in vh, vw, rem, em or px units.      
+              placeholder: eg 100vh 
+              pattern: '-?\d+(\.\d+){0,1}(rem|em|px|vh|vw)'
+
+
 
     _inherit:
       type: gantry.inherit
