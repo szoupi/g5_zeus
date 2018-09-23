@@ -7,7 +7,10 @@
         "scss/zeus/particles/_contentcubes.scss",
         "particles/contentcubes.html.twig",
         "scss/zeus/styles/_zeus-style.scss",
-        "00_reference.css"
+        "00_reference.css",
+        "particles/imagegallerySZ.html.twig",
+        "particles/imagegallerySZ.yaml",
+        "scss/zeus/particles/_imagegallerySZ.scss"
     ],
     "search.useIgnoreFiles": false
 }

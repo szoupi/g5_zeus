@@ -39,7 +39,7 @@ browser-sync start --proxy "http://localhost/zeus-news/index.php/layouts-presets
 
 // Less commonly used media queries
 
-// typically min 60rem
+//////////////// typically min 60rem
 @include breakpoint(desktop-only) {
 
 }
@@ -51,8 +51,10 @@ browser-sync start --proxy "http://localhost/zeus-news/index.php/layouts-presets
 @include breakpoint(mobile-only) {
 
 }
-// typically max 59.938rem
+//////////// typically max 59.938rem
+@include breakpoint(no-desktop) {
 
+}
 
 // Mobile Menu Breakpoint
 @media only all and (max-width: $breakpoints-mobile-menu-breakpoint) { ... your css in here ... }

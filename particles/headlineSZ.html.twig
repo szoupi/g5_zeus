@@ -8,7 +8,7 @@
                     <div>
                         {#HEADLINE#}
                         {% if particle.maintitle %}
-                            <h2 class="sz-particles-title"
+                            <h2 class="sz-particles-title sz-headline-main"
                                 style="
                                 {% if particle.maintitlesize %} 
                                     font-size: {{ particle.maintitlesize }};
@@ -23,7 +23,7 @@
                         {#SUBTITLE#}
                         {% if particle.subtitle %}
                             <div>
-                                <h3 class="sz-particles-subtitle"
+                                <h3 class="sz-particles-subtitle sz-headline-sub"
                                     style="
                                     {% if particle.subtitlesize %} 
                                         font-size: {{ particle.subtitlesize }};
@@ -39,7 +39,7 @@
                         
                         {#DESCRIPTION#}
                         {% if particle.description %}
-                            <p class="sz-particles-description" 
+                            <p class="sz-particles-description sz-headline-description" 
                                 style="
                                     {% if particle.descriptionsize %} 
                                         font-size: {{ particle.descriptionsize }};
