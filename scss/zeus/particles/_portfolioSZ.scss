@@ -128,7 +128,7 @@
     .slide-in {
         .portfolio-sz-container{
             opacity: 0;
-            background-color: fadeout($accent-color-2, 10%);
+            background-color: darken($accent-color-3, 10%);
             transition: all 0.4s ease-in-out;
             // img {
             //     transition: all 0.2s linear;

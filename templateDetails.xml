@@ -2,7 +2,7 @@
 <extension version="3.4" type="template" client="site" method="upgrade">
     <name>g5_zeus</name>
     <creationDate>September 24, 2018</creationDate>
-    <version>5.4.2305</version>
+    <version>5.4.2307</version>
     <author>threethemes</author>
     <authorEmail>threethemes@gmail.com</authorEmail>
     <authorUrl>http://threethemes.com</authorUrl>
