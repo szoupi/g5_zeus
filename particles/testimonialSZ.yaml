@@ -19,7 +19,6 @@ form:
           label: Main
           fields:
 
-
             .maintitle:
               type: input.text
               label: Headline

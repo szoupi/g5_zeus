@@ -2,7 +2,7 @@
 <extension version="3.4" type="template" client="site" method="upgrade">
     <name>g5_zeus</name>
     <creationDate>September 24, 2018</creationDate>
-    <version>5.4.2307</version>
+    <version>5.4.2308</version>
     <author>threethemes</author>
     <authorEmail>threethemes@gmail.com</authorEmail>
     <authorUrl>http://threethemes.com</authorUrl>
@@ -17,10 +17,12 @@
         <folder>blueprints</folder>
         <folder>config</folder>
         <!-- <folder>custom</folder> -->
+        <folder>engine</folder>
         <folder>fields</folder>
         <folder>fonts</folder>
         <folder>gantry</folder>
         <folder>html</folder>
+        <folder>images</folder>
         <folder>includes</folder>
         <folder>install</folder>
         <folder>js</folder>
@@ -31,6 +33,7 @@
         <file>component.php</file>
         <file>error.php</file>
         <file>index.php</file>
+        <!-- <file>install.php</file> -->
         <file>offline.php</file>
         <file>template_preview.png</file>
         <file>template_thumbnail.png</file>
