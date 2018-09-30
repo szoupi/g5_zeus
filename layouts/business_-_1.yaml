@@ -89,7 +89,7 @@ structure:
   header:
     attributes:
       boxed: ''
-      class: sz-negative-margin-top
+      class: sz-negative-margin-top-120
       background: 'gantry-media://default.jpg'
       backgroundOverlay: 'rgba(0, 0, 0, 0.54)'
       backgroundAttachment: fixed

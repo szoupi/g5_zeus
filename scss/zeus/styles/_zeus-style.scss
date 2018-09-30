@@ -252,7 +252,9 @@
 }
 
 
-// make block transparent (eg navigation)
+//  make block transparent (eg navigation)
+// section transparent transparent color
+// should not be used because they make menu bg and links transparent
 .sz-transparent-bg-desktop {
     @include breakpoint(no-mobile) {  
         background: transparent !important;
@@ -260,12 +262,27 @@
 }
 
 // place cover backgrounds below navigation block
-.sz-negative-margin-top {
+.sz-negative-margin-top-120 {
     @include breakpoint(no-mobile) {
         margin-top: -120px;
     }
 
 }
+
+.sz-negative-margin-top-140 {
+    @include breakpoint(no-mobile) {
+        margin-top: -140px;
+    }
+
+}
+
+.sz-negative-margin-top-160 {
+    @include breakpoint(no-mobile) {
+        margin-top: -160px;
+    }
+
+}
+
 
 .button {
     margin: 1rem;

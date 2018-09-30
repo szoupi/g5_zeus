@@ -6,7 +6,7 @@ preset:
 layout:
   /zenith/:
     -
-      - social-6691
+      - custom-2801
   /navtop/:
     -
       - spacer-3541
@@ -20,6 +20,8 @@ layout:
       - 'customcontentSZ-4724 50'
       - 'imageSZ-2779 50'
   /intro/:
+    -
+      - social-6691
     -
       - skillsbarSZ-2274
   /features/:
@@ -265,13 +267,18 @@ structure:
       swipe: '1'
       css3animation: '1'
 content:
-  social-6691:
+  custom-2801:
+    title: 'Custom HTML'
+    attributes:
+      html: 'Lorem ipsum dolor sit amet, consectetur adipiscing elit'
     block:
-      variations: 'align-right nopaddingall nomarginall'
+      variations: 'nomarginall nopaddingall center'
   logo-9501:
     title: 'Logo / Image'
     attributes:
       text: ZEUS
+    block:
+      variations: nomarginall
   menu-6609:
     attributes:
       menu: mainmenu
@@ -289,7 +296,7 @@ content:
       linktext3: ''
       linkstyle3: button-outline
     block:
-      variations: 'align-right nopaddingall'
+      variations: 'align-right nopaddingall nomarginall'
   customcontentSZ-4724:
     title: 'I AM JOHN DOE'
     attributes:
@@ -297,7 +304,7 @@ content:
       mainicon: ''
       maintitle: 'I AM JOHN DOE'
       subtitle: ''
-      description: '<p>obsessed with perfection and in love with photography, diving and discovering new worlds and cultures<p>'
+      description: '<p>I am obsessed with perfection and in love with photography, diving and discovering new worlds and cultures<p>'
       link: '#'
       linktext: 'Hire me!'
     block:
@@ -315,6 +322,36 @@ content:
       marginTop: ''
       marginBottom: '-25px'
       marginLeft: ''
+  social-6691:
+    attributes:
+      items:
+        -
+          icon: 'fa fa-facebook fa-2x'
+          text: ''
+          link: '#'
+          name: facebook
+        -
+          icon: 'fa fa-twitter fa-2x'
+          text: ''
+          link: '#'
+          name: twitter
+        -
+          icon: 'fa fa-google-plus fa-2x'
+          text: ''
+          link: '#'
+          name: google+
+        -
+          icon: 'fa fa-linkedin fa-2x'
+          text: ''
+          link: '#'
+          name: linkendin
+        -
+          icon: 'fa fa-envelope-o fa-2x'
+          text: ''
+          link: 'mailto:szoupi@gmail.com'
+          name: email
+    block:
+      variations: center
   skillsbarSZ-2274:
     title: 'Skills bar'
     attributes:

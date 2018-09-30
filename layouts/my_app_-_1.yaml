@@ -90,7 +90,7 @@ structure:
   header:
     attributes:
       boxed: ''
-      class: sz-negative-margin-top
+      class: sz-negative-margin-top-120
       background: ''
       backgroundOverlay: ''
       backgroundAttachment: fixed
@@ -306,7 +306,7 @@ content:
   imageSZ-7359:
     title: Image
     attributes:
-      image: 'gantry-media://demo-products/responsive-zeus-phone.png'
+      image: 'gantry-media://default.jpg'
     block:
       variations: margin-top-10
   social-1788:
@@ -355,7 +355,7 @@ content:
           linktext: '&rarr;'
           buttonclass: ''
           buttontarget: _self
-          image: 'gantry-media://demo-products/fikri-rasyid-689579-unsplash-800w.jpg'
+          image: 'gantry-media://default.jpg'
           imageposition: left
           link1: ''
           linktext1: ''
@@ -383,7 +383,7 @@ content:
           linktext: '&rarr;'
           buttonclass: ''
           buttontarget: _self
-          image: 'gantry-media://demo-products/responsive-zeus-phone.png'
+          image: 'gantry-media://default.jpg'
           imageposition: right
           link1: ''
           linktext1: ''
@@ -404,7 +404,7 @@ content:
           linktext: '&rarr;'
           buttonclass: ''
           buttontarget: _self
-          image: 'gantry-media://demo-products/responsive-zeus-phone.png'
+          image: 'gantry-media://default.jpg'
           imageposition: left
           link1: ''
           linktext1: ''

@@ -1,8 +1,8 @@
 version: 2
 preset:
   image: 'gantry-admin://images/layouts/default.png'
-  name: personal_-_1
-  timestamp: 1537052952
+  name: personal_-_3
+  timestamp: 1537303368
 layout:
   /zenith/: {  }
   /navtop/:
@@ -34,7 +34,7 @@ layout:
     -
       - 'contentframeSZ-2818 33.3'
       - 'contentframeSZ-1724 33.3'
-      - 'contentframeSZ-4287 33.3'    
+      - 'contentframeSZ-4287 33.3'
     -
       - portfolioSZ-9515
   /testimonials/:
@@ -90,7 +90,7 @@ structure:
   header:
     attributes:
       boxed: ''
-      class: sz-negative-margin-top
+      class: ''
       background: 'gantry-media://default.jpg'
       backgroundOverlay: 'rgba(0, 0, 0, 0.59)'
       backgroundAttachment: fixed
@@ -105,6 +105,7 @@ structure:
       marginBottom: ''
       marginLeft: ''
       marginRight: ''
+      blockHeight: ''
   intro:
     type: section
     attributes:
@@ -268,7 +269,7 @@ content:
     block:
       variations: align-right
   customcontentSZ-5538:
-    title: 'I am Ryan'
+    title: 'I am James'
     attributes:
       height: 80vh
       maintitle: 'Hello, I am James!'

@@ -115,7 +115,7 @@ structure:
   container-main:
     attributes:
       boxed: '2'
-      class: sz-negative-margin
+      class: sz-negative-margin-top-120
       extra: {  }
   header:
     attributes:
@@ -243,7 +243,7 @@ content:
       linktext: 'Hire me!'
       linkstyle: button-2
     block:
-      variations: center
+      variations: 'center margin-top-20'
   social-1004:
     attributes:
       items:

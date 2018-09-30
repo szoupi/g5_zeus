@@ -2,15 +2,13 @@
     "favorites.resources": [
         "particles/customcontentSZ.html.twig",
         "particles/customcontentSZ.yaml",
-        "scss/zeus/particles/_customcontentSZ.scss",
         "particles/contentcubes.yaml",
         "scss/zeus/particles/_contentcubes.scss",
         "particles/contentcubes.html.twig",
         "scss/zeus/styles/_zeus-style.scss",
         "00_reference.css",
         "particles/imagegallerySZ.html.twig",
-        "particles/imagegallerySZ.yaml",
-        "scss/zeus/particles/_imagegallerySZ.scss"
+        "particles/imagegallerySZ.yaml"
     ],
     "search.useIgnoreFiles": false
 }
