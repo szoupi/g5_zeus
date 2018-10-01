@@ -105,7 +105,7 @@ preset1:
       toggle-color: '#f5f5f5'
 
 preset2:
-  image: 'gantry-admin://images/preset1.jpg'
+  image: 'gantry-admin://images/preset2.jpg'
   description: GANTRY5_PLATFORM_PRESET2
   colors:
     - '#e3bf23' #dominant
