@@ -1,6 +1,6 @@
 version: 2
 preset:
-  image: 'gantry-admin://images/layouts/default.png'
+  image: 'gantry-admin://layout/homepage1.png'
   name: default
   timestamp: 1490038588
 layout:
