@@ -1,5 +1,5 @@
-name: Featured Articles
-description: Display up to five selected posts/articles in various layouts.
+name: Featured/latest News
+description: Display up to five selected articles in various layouts.
 type: particle
 icon: fa-newspaper-o
 

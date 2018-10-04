@@ -337,3 +337,26 @@ $css_multipliers: 2, 3;
     }
 }
 
+.no-padding-vertical,
+.no-padding-vertical .g-content {
+    padding-top:  0 !important;
+    padding-bottom: 0 !important;
+}
+
+.no-padding-horizontal,
+.no-padding-horizontal .g-content {
+    padding-left:  0 !important;
+    padding-right: 0 !important;
+}
+
+.no-margin-vertical,
+.no-margin-vertical .g-content {
+    margin-top:  0 !important;
+    margin-bottom: 0 !important;
+}
+
+.no-margin-horizontal,
+.no-margin-horizontal .g-content {
+    margin-left:  0 !important;
+    margin-right: 0 !important;
+}

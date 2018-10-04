@@ -5,7 +5,7 @@ details:
   date: 'September 24, 2018'
   author:
     name: threethemes
-    email: threethemes@gmail.com
+    email: threethemes33@gmail.com
     link: http://threethemes.com
 
   documentation:
@@ -90,14 +90,25 @@ configuration:
       align-left: Align Left
       nomarginall: No Margin
       nopaddingall: No Padding
+      nomargintop: No Margin Top
+      nomarginbottom: No Margin Bottom
+      nomarginleft: No Margin Left
+      nomarginright: No Margin Right
+      nopaddingtop: No Padding Top
+      nopaddingbottom: No Padding Bottom
+      nopaddingleft: No Padding Left
+      nopaddingright: No Padding Right
+      no-padding-horizontal: No Padding Horizontal
+      no-padding-vertical: No Padding Vertical
+      no-margin-horizontal: No Margin Horizontal
+      no-margin-vertical: No Margin Vertical      
+      hidden: Hidden 
     Distance:
       margin-top-10: margin top 10
       margin-top-20: margin top 20
       margin-top-30: margin top 30
       margin-top-40: margin top 40
       margin-top-50: margin top 50
-
-
 # Displays in the admin panel 
 #the order of the appearing
 admin:
