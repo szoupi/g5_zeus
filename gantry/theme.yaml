@@ -90,6 +90,10 @@ configuration:
       align-left: Align Left
       nomarginall: No Margin
       nopaddingall: No Padding
+      no-padding-horizontal: No Padding Horizontal
+      no-padding-vertical: No Padding Vertical
+      no-margin-horizontal: No Margin Horizontal
+      no-margin-vertical: No Margin Vertical      
       nomargintop: No Margin Top
       nomarginbottom: No Margin Bottom
       nomarginleft: No Margin Left
@@ -98,10 +102,6 @@ configuration:
       nopaddingbottom: No Padding Bottom
       nopaddingleft: No Padding Left
       nopaddingright: No Padding Right
-      no-padding-horizontal: No Padding Horizontal
-      no-padding-vertical: No Padding Vertical
-      no-margin-horizontal: No Margin Horizontal
-      no-margin-vertical: No Margin Vertical      
       hidden: Hidden 
     Distance:
       margin-top-10: margin top 10
