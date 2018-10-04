@@ -4,10 +4,10 @@ preset1:
   colors:
     - '#0071bc' #dominant
     - '#e31c3d' #accent 1 contrast dominant
-    - '#9bdaf1' #accent 2 Light
-    - '#112e51' #accent 3 Dark Dominant
-    - '#212121' #body (base) text 
-    - '#f5f5f5' #body (base) background
+    # - '#9bdaf1' #accent 2 Light
+    # - '#112e51' #accent 3 Dark Dominant
+    # - '#212121' #body (base) text 
+    # - '#f5f5f5' #body (base) background
 
   styles:
     base:

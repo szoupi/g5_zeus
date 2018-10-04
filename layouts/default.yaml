@@ -2,7 +2,7 @@ version: 2
 preset:
   image: 'gantry-admin://layout/3column-equal.png'
   name: default
-  timestamp: 1490038588
+  timestamp: 1529047451
 layout:
   /zenith/: {  }
   /navtop/: {  }
@@ -30,7 +30,12 @@ layout:
       -
         'sidebar 25': {  }
   /mainbottom/: {  }
-  /footertop/: {  }
+  /footertop/:
+    -
+      - 'custom-9805 25'
+      - 'custom-7729 25'
+      - 'position-module-8441 25'
+      - 'position-module-1221 25'
   /footer/:
     -
       - 'logo-9571 21'
@@ -62,13 +67,11 @@ structure:
     attributes:
       boxed: ''
       class: ''
-
   intro:
     type: section
     attributes:
       boxed: '0'
       class: ''
-
   features:
     type: section
     attributes:
@@ -117,6 +120,22 @@ structure:
     type: section
     attributes:
       boxed: ''
+      class: ''
+      background: ''
+      backgroundOverlay: 'rgba(0, 0, 0, 0)'
+      backgroundAttachment: ''
+      backgroundRepeat: ''
+      backgroundPosition: ''
+      backgroundSize: ''
+      paddingTop: ''
+      paddingBottom: ''
+      paddingLeft: ''
+      paddingRight: ''
+      marginTop: ''
+      marginBottom: ''
+      marginLeft: ''
+      marginRight: ''
+      blockHeight: ''
   footer:
     attributes:
       boxed: ''
@@ -138,6 +157,22 @@ structure:
 content:
   logo-9501:
     title: 'Logo / Image'
+  custom-9805:
+    title: 'Discover Zeus'
+    attributes:
+      html: "<h3>Discover Zeus</h3>\n<p>Exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu </p>"
+  custom-7729:
+    title: 'USEFUL LINKS'
+    attributes:
+      html: "<h3>Useful Links</h3>\n<ul>\n    <li><a href=\"#\">General Information</a></li>\n    <li><a href=\"#\">Discover Zeus Template</a></li>\n    <li><a href=\"#\">Learn from the best</a></li>\n    <li><a href=\"#\">Everyday inspiration</a></li>\n    <li><a href=\"#\">Check the demos</a></li>\n</ul>"
+  position-module-8441:
+    title: 'Module Instance'
+    attributes:
+      key: module-instance
+  position-module-1221:
+    title: 'Module Instance'
+    attributes:
+      key: module-instance
   logo-9571:
     title: 'Logo / Image'
   horizontalmenu-9034:
