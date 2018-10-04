@@ -1,4 +1,4 @@
-name: Featured/latest News
+name: Latest News
 description: Display up to five selected articles in various layouts.
 type: particle
 icon: fa-newspaper-o

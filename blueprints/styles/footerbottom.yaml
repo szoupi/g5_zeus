@@ -25,7 +25,7 @@ form:
     link-color:
       type: input.colorpicker
       label: Link
-      default: "#e31c3d"
+      default: "#9bdaf1"
     background:
       type: input.colorpicker
       label: Custom Background

@@ -87,12 +87,12 @@ preset1:
     footer:
       section-preset: disabled
       text-color: '#f5f5f5'
-      link-color: '#e31c3d'
+      link-color: '#9bdaf1'
       background: '#112e51'
     footerbottom:
       section-preset: disabled
       text-color: '#f5f5f5'
-      link-color: '#e31c3d'
+      link-color: '#9bdaf1'
       background: '#112e51'
     nadir:
       section-preset: disabled
