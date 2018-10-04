@@ -1,5 +1,3 @@
-// TODO ADD COLORS FOR OTHER SECTIONS
-
 // Basics
 $white:                         #ffffff;
 $black:                         #000000;
@@ -21,13 +19,13 @@ $accent-color-3:                #112e51 !default;
 $pagesurround-background:       $base-background !default;
 
 // zenith
-$zenith-background-predefined-color:   custom !default;
+$zenith-background-predefined-color:   disabled !default;
 $zenith-background:             #000000 !default;
 $zenith-text-color:             #ffffff !default;
 $zenith-link-color:				#0071bc !default;
 
 // navtop
-$navtop-background:             #ffffff !default;
+$navtop-background:             #f5f5f5 !default;
 $navtop-text-color:             #212121 !default;
 $navtop-link-color:				#0071bc !default;
 
@@ -37,76 +35,76 @@ $navigation-text-color:         #ffffff !default;
 $navigation-link-color:			#ffffff !default;
 
 // Header
-$header-background:             #ffffff !default;
+$header-background:             #f5f5f5 !default;
 $header-text-color:             #212121 !default;
 $header-link-color:				#0071bc !default;
-$header-background-predefined-color:   custom !default;
+$header-background-predefined-color:   disabled !default;
 
 // Intro
-$intro-background:              #ffffff !default;
+$intro-background:              #f5f5f5 !default;
 $intro-text-color:              #212121 !default;
 $intro-link-color:			    #0071bc !default;
-$intro-background-predefined-color:   custom !default;
+$intro-background-predefined-color:   disabled !default;
 
 // Features
-$features-background:           #ffffff !default;
+$features-background:           #f5f5f5 !default;
 $features-text-color:           #212121 !default;
 $features-link-color:			#0071bc !default;
-$features-background-predefined-color:   custom !default;
+$features-background-predefined-color:   disabled !default;
 
 // Utility
-$utility-background:            #ffffff !default;
+$utility-background:            #f5f5f5 !default;
 $utility-text-color:            #212121 !default;
 $utility-link-color:			#0071bc !default;
-$utility-background-predefined-color:   custom !default;
+$utility-background-predefined-color:   disabled !default;
 
 // Above
-$above-background:              #ffffff !default;
+$above-background:              #f5f5f5 !default;
 $above-text-color:              #212121 !default;
 $above-link-color:			    #0071bc !default;
-$above-background-predefined-color:   accent2 !default;
+$above-background-predefined-color:   disabled !default;
 
 // Testimonials
-$testimonials-background:       #ffffff !default;
+$testimonials-background:       #f5f5f5 !default;
 $testimonials-text-color:       #212121 !default;
 $testimonials-link-color:		#0071bc !default;
-$testimonials-background-predefined-color:   custom !default;
+$testimonials-background-predefined-color:   disabled !default;
 
 // Expanded
-$expanded-background:           #ffffff !default;
+$expanded-background:           #f5f5f5 !default;
 $expanded-text-color:           #212121 !default;
 $expanded-link-color:			#0071bc !default;
-$expanded-background-predefined-color:   accent3 !default;
+$expanded-background-predefined-color:   disabled !default;
 
 // mainbottom
-$mainbottom-background:         #ffffff !default;
+$mainbottom-background:         #f5f5f5 !default;
 $mainbottom-text-color:         #212121 !default;
 $mainbottom-link-color:			#0071bc !default;
-$mainbottom-background-predefined-color:   custom !default;
+$mainbottom-background-predefined-color:   disabled !default;
 
 // footertop
-$footertop-background:          #ffffff !default;
+$footertop-background:          #f5f5f5 !default;
 $footertop-text-color:          #212121 !default;
 $footertop-link-color:			#0071bc !default;
-$footertop-background-predefined-color:   custom !default;
+$footertop-background-predefined-color:   disabled !default;
 
 // Footer
-$footer-background:             #ffffff !default;
-$footer-text-color:             #212121 !default;
-$footer-link-color:				#9bdaf1 !default;
-$footer-background-predefined-color:   accent3 !default;
+$footer-background:             #112e51 !default;
+$footer-text-color:             #f5f5f5 !default;
+$footer-link-color:				#e31c3d !default;
+$footer-background-predefined-color:   disabled !default;
 
 // Footerbottom
-$footerbottom-background:             #ffffff !default;
-$footerbottom-text-color:             #212121 !default;
-$footerbottom-link-color:			  #0071bc !default;
-$footerbottom-background-predefined-color:   custom !default;
+$footerbottom-background:             #112e51 !default;
+$footerbottom-text-color:             #f5f5f5 !default;
+$footerbottom-link-color:			  #e31c3d !default;
+$footerbottom-background-predefined-color:   disabled !default;
 
 // Nadir
 $nadir-background:             #000000 !default;
 $nadir-text-color:             #ffffff !default;
 $nadir-link-color:			   #0071bc !default;
-$nadir-background-predefined-color:   custom !default;
+$nadir-background-predefined-color:   disabled !default;
 
 
 // Off Canvas

@@ -1,4 +1,4 @@
 enabled: '1'
-content: 'Powered by <a href="http://threethemes.com" title="threethemes" class="g-powered-by">threethemes</a>'
+content: 'Powered by <a href="https://threethemes.com" title="threethemes" class="g-powered-by">threethemes</a>'
 css:
   class: g-branding

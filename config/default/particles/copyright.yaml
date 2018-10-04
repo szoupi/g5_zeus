@@ -1,11 +1,11 @@
 enabled: '1'
 date:
-  start: '2016'
+  start: '2018'
   end: now
 owner: 'threethemes'
-link: 'http://threethemes.com'
+link: 'https://threethemes.com'
 target: _blank
 additional:
-  text: 'Developed by threethemes'
+  text: 'Developed by threethemes.com'
 css:
   class: ''
