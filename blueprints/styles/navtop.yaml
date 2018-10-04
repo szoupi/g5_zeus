@@ -10,7 +10,7 @@ form:
       label: Section Preset Colors
       description: 'Choose a preset set of colors for the current block based on the accent colors'
       placeholder: 'Select...'
-      default: base
+      default: disabled
       options:
         base: Base      
         primary: Primary
@@ -30,4 +30,4 @@ form:
       type: input.colorpicker
       label: Custom Background
       description: 'Choose a custom background color.'
-      default: "#ffffff"
+      default: "#f5f5f5"

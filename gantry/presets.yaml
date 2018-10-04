@@ -86,14 +86,14 @@ preset1:
       background: '#f5f5f5'
     footer:
       section-preset: disabled
-      text-color: '#212121'
-      link-color: '#0071bc'
-      background: '#f5f5f5'
+      text-color: '#f5f5f5'
+      link-color: '#e31c3d'
+      background: '#112e51'
     footerbottom:
       section-preset: disabled
-      text-color: '#212121'
-      link-color: '#0071bc'
-      background: '#f5f5f5'
+      text-color: '#f5f5f5'
+      link-color: '#e31c3d'
+      background: '#112e51'
     nadir:
       section-preset: disabled
       text-color: '#f5f5f5'
@@ -101,8 +101,8 @@ preset1:
       background: '#000000'
     offcanvas:
       background: '#0071bc'
-      text-color: '#eceeef'
-      toggle-color: '#f5f5f5'
+      text-color: '#f5f5f5'
+      toggle-color: '#e31c3d'
 
 preset2:
   image: 'gantry-admin://images/preset2.jpg'

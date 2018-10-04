@@ -21,7 +21,7 @@ form:
     text-color:
       type: input.colorpicker
       label: Text
-      default: "#ffffff"
+      default: "#f5f5f5"
     link-color:
       type: input.colorpicker
       label: Link
@@ -31,28 +31,3 @@ form:
       label: Custom Background
       description: 'Choose a custom background color.'
       default: "#000000"
-    # background-image:
-    #   type: input.imagepicker
-    #   label: BG Image
-    #   default: ''
-    # background-overlay:
-    #   type: select.select
-    #   label: BG Overlay
-    #   description: 'Enables the overlay made of accent colors.'
-    #   placeholder: 'Select...'
-    # # default: enabled
-    #   options:
-    #     enabled: Enabled
-    #     disabled: Disabled
-    # background-predefined-color:
-    #   type: select.select
-    #   label: Predefined Background
-    #   description: 'Choose a predifined background color'
-    #   placeholder: 'Select...'
-    #   default: base
-    #   options:
-    #     custom: Custom Background Color
-    #     dominant: Primary Colors
-    #     accent1: Contrast - Accent 1
-    #     accent2: Light Primary - Accent 2
-    #     accent3: Dark Primary - Accent 3

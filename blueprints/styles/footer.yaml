@@ -10,7 +10,7 @@ form:
       label: Section Preset Colors
       description: 'Choose a preset set of colors for the current block based on the accent colors'
       placeholder: 'Select...'
-      default: accent3
+      default: disabled
       options:
         base: Base      
         primary: Primary
@@ -21,7 +21,7 @@ form:
     text-color:
       type: input.colorpicker
       label: Text
-      default: "#ffffff"
+      default: "#f5f5f5"
     link-color:
       type: input.colorpicker
       label: Link
