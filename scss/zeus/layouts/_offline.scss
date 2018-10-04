@@ -1,7 +1,7 @@
 .g-offline {
     #g-header {
         .g-content {
-            padding: 3.5rem $base-content-padding;
+            padding: 3.5rem $content-padding;
             text-align: center;
 
             h2.g-title {
@@ -23,7 +23,7 @@
             }
 
             @include breakpoint(mobile-only) {
-                padding: 1rem $base-content-padding;
+                padding: 1rem $content-padding;
 
                 h2.g-title {
                     font-size: 2rem;

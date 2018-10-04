@@ -53,12 +53,6 @@ structure:
     attributes:
       boxed: ''
       class: ''
-      background: 'gantry-media://demos/gabriele-motter.jpg'
-      backgroundOverlay: 'rgba(0, 0, 0, 0)'
-      backgroundAttachment: ''
-      backgroundRepeat: ''
-      backgroundPosition: ''
-      backgroundSize: cover
   intro:
     type: section
     attributes:

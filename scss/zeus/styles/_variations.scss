@@ -64,17 +64,17 @@ $css_multipliers: 2, 3;
 .platform-content, .moduletable, .widget {
     margin: ($base-content-margin) 0;
     padding: ($base-content-padding) 0;
-
+    
     .moduletable, .widget {
         margin: 0;
         padding: 0
     }
-
+    
     &:first-child {
         margin-top: 0;
         padding-top: 0;
     }
-
+    
     &:last-child {
         margin-bottom: 0;
         padding-bottom: 0;
@@ -86,7 +86,7 @@ $css_multipliers: 2, 3;
         padding: $base-content-padding;
         margin: $base-content-margin;
     }
-
+    
     &[class*="title"] {
         .g-title {
             margin-left: 0;
@@ -112,23 +112,23 @@ $css_multipliers: 2, 3;
     > .g-content  {
         background: darken($box1-background, 8%);
     }
-
+    
     &.moduletable, &.widget,
     > .g-content  {
         color: $white;
     }
-
+    
     .button {
         color: $white;
-
+        
         &:hover {
             background: darken($box1-background, 15%);
         }
     }
-
+    
     a {
         color: lighten($box1-background, 30%);
-
+        
         &:hover {
             color: $white;
         }
@@ -157,24 +157,24 @@ $css_multipliers: 2, 3;
     > .g-content {
         background: $box2-background;
     }
-
+    
     &.moduletable, &.widget,
     > .g-content {
         color: $white;
     }
-
+    
     .button {
         color: $white;
         background: darken($box2-background, 10%);
-
+        
         &:hover {
             background: darken($box2-background, 15%);
         }
     }
-
+    
     a {
         color: darken($box2-background, 30%);
-
+        
         &:hover {
             color: $white;
         }
@@ -203,24 +203,24 @@ $css_multipliers: 2, 3;
     > .g-content  {
         @include linear-gradient(45deg, $base-dominant-color, $accent-color-1);
     }
-
+    
     &.moduletable, &.widget,
     > .g-content  {
         color: $white;
     }
-
+    
     .button {
         color: $white;
         background: darken($base-dominant-color, 5%);
-
+        
         &:hover {
             background: darken($base-dominant-color, 15%);
         }
     }
-
+    
     a {
         color: lighten($base-dominant-color, 30%);
-
+        
         &:hover {
             color: $white;
         }
@@ -294,7 +294,7 @@ $css_multipliers: 2, 3;
     #g-sidebar {
         width: 100%;
     }
-
+    
     .g-content {
         width: auto;
     }
@@ -309,32 +309,22 @@ $css_multipliers: 2, 3;
 
 // distance from top
 .margin-top-10 {
-    @include breakpoint(no-mobile) {
-        margin-top: 10vh;
-    }
+    margin-top: 10vh;
 }
 
 .margin-top-20 {
-    @include breakpoint(no-mobile) {
-        margin-top: 20vh;
-    }
+    margin-top: 20vh;
 }
 .margin-top-30 {
-    @include breakpoint(no-mobile) {
-        margin-top: 30vh;
-    }
+    margin-top: 30vh;
 }
 
 .margin-top-40 {
-    @include breakpoint(no-mobile) {
-        margin-top: 40vh;
-    }
+    margin-top: 40vh;
 }
 
 .margin-top-50 {
-    @include breakpoint(no-mobile) {
-        margin-top: 40vh;
-    }
+    margin-top: 40vh;
 }
 
 .no-padding-vertical,

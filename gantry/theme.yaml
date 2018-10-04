@@ -5,8 +5,8 @@ details:
   date: 'October 4, 2018'
   author:
     name: threethemes
-    email: threethemes33@gmail.com
-    link: http://threethemes.com
+    email: support@threethemes.com
+    link: https://threethemes.com
 
   documentation:
     link: http://docs.gantry.org/gantry5
@@ -17,7 +17,7 @@ details:
   # updates:
   #   link: http://updates.rockettheme.com/themes/zeus.yaml
 
-  copyright: (C) 2018 threethemes. All rights reserved.
+  copyright: (C) 2018 three_themes. All rights reserved.
   license: GPLv2
   description: Zeus Theme
   images:
