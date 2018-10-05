@@ -229,7 +229,7 @@
     font-weight: 800;
     
     @include breakpoint(no-desktop) {
-    font-size: $core-font-size+2.5;
+    font-size: 11vw;
     }
 }
 
