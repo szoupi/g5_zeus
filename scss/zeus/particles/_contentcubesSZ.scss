@@ -1,8 +1,8 @@
 .g-contentcubes {
     
- 
+    
     .cube-items-wrapper {
-
+        
         // Images Position
         .cube-row {
             &.g-grid {
@@ -11,27 +11,27 @@
                 }
             }
         }
-
+        
         // Images
         .cube-image-wrapper {
             position: relative;
             z-index: 1;
             overflow: hidden;
-
+            
             img {
                 display: block;
                 height: auto;
-
+                
                 // @include transform(scale3d(1.8, 1.8, 1));
                 // @include transition(transform 0.5s cubic-bezier(0.7, 0, 0.3, 1));
             }
-
+            
             &:hover {
                 img {
                     @include transform(scale3d(1, 1, 1));
                 }
             }
-
+            
             &:after {
                 position: absolute;
                 top: 0;
@@ -42,7 +42,7 @@
                 content: "";
             }
         }
-
+        
         // Content
         .cube-content-wrapper {
             max-width: 80%;
@@ -52,24 +52,14 @@
             position: relative;
             top: 50%;
             transform: translateY(-50%);
-
-            @include breakpoint(desktop-range) {
-                // padding: 2rem;
-            }
-
-            @include breakpoint(tablet-range) {
-                // max-width: 18.5rem;
-                padding: 2rem 1rem;
-            }
-
-            @include breakpoint(mobile-only) {
-                padding: 2rem 0.5rem;
-            }
-
-            @include breakpoint(small-mobile-range) {
-                // max-width: 14.5rem;
-            }
-
+            
+            
+            @include breakpoint(no-desktop) {
+                padding: 2rem 0;
+                
+            }            
+            
+            
             // Label
             .item-label {
                 display: inline-block;
@@ -83,24 +73,36 @@
                 border-radius: 2.5rem;
                 text-align: center;
             }
-
+            
             // Title
             .item-title {
-                font-size: $core-font-size + 1.5;
+                @include breakpoint(no-desktop) {
+                    font-size: 2vw;
+                }
+
+                // typically max 47.938 rem
+                @include breakpoint(mobile-only) {
+                    font-size: $core-font-size + 1.5;
+                }   
+
+
+                font-size: $core-font-size + 0.5;
                 font-weight: $font-weight-semibold;
                 line-height: $core-line-height - 0.22;
                 margin-bottom: 1rem;
+                
 
+                
                 a.item-link {
                     display: block;
                     // color: $white ;
-
+                    
                     .item-link-text {
                         display: inline-block;
                         margin-left: 0.25rem;
                         @include transition(transform 0.3s);
                     }
-
+                    
                     &:hover {
                         .item-link-text {
                             @include transform(translate3d(15px, 0, 0));
@@ -108,7 +110,7 @@
                     }
                 }
             }
-
+            
             // Tags
             .item-tags {
                 .tag {
@@ -120,7 +122,7 @@
                     font-size: $core-font-size - 0.1875;
                     font-weight: $font-weight-semibold;
                     line-height: $core-line-height - 0.85;
-
+                    
                     .fa {
                         margin-right: 0.15rem;
                         font-size: $core-font-size;
@@ -128,10 +130,10 @@
                     }
                 }
             }
-
+            
             .button {
                 margin: 1rem 1rem 1rem 0;
-
+                
                 @include breakpoint(no-desktop) {
                     margin: 0.7rem 0;
                 }
