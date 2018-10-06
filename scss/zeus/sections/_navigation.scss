@@ -255,7 +255,15 @@
                 color: $white;
             }
         }
+
+        .nav-outline {
+            background: transparent !important;
+            border: 1px solid !important;
+            border-radius: 0;
+            padding: 0.5rem 1rem;
+        }
     }
+
     
     
 }
@@ -266,3 +274,4 @@
         color: #000 !important;
     }
 }
+

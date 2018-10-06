@@ -229,7 +229,7 @@
     font-weight: 800;
     
     @include breakpoint(no-desktop) {
-    font-size: 11vw;
+        font-size: 11vw;
     }
 }
 
@@ -266,32 +266,37 @@
     @include breakpoint(no-mobile) {
         margin-top: -100px;
     }
-
+    
 }
 .sz-negative-margin-top-120 {
     @include breakpoint(no-mobile) {
         margin-top: -120px;
     }
-
+    
 }
 
 .sz-negative-margin-top-140 {
     @include breakpoint(no-mobile) {
         margin-top: -140px;
     }
-
+    
 }
 
 .sz-negative-margin-top-160 {
     @include breakpoint(no-mobile) {
         margin-top: -160px;
     }
-
 }
 
 
 .button {
-    margin: 1rem;
+    margin: 1rem;  
 }
 
-
+// create outline in menu links
+.nav-outline {
+    background: transparent;
+    border: 1px solid;
+    border-radius: 0;
+    padding: 0.5rem 1rem;
+}
