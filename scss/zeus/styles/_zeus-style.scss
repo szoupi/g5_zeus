@@ -293,10 +293,36 @@
     margin: 1rem;  
 }
 
-// create outline in menu links
+// menu link outline
 .nav-outline {
     background: transparent;
     border: 1px solid;
     border-radius: 0;
     padding: 0.5rem 1rem;
+}
+
+// menu column header
+li.sz-nav-heading {
+    text-align: center !important;  
+    div {
+        padding: 1rem 0 !important;
+        font-size: 1.2rem !important;
+    }
+}
+
+li.sz-nav-image {
+    max-width: 15rem;
+    margin: 1rem !important;
+    float: left;
+    text-align: center;
+    
+    a {
+        img {
+            margin-bottom: 1rem;
+        }
+        // link text
+        span {
+
+        }
+    }
 }
