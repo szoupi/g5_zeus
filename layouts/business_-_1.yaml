@@ -186,20 +186,6 @@ structure:
     attributes:
       boxed: '0'
       class: ''
-      background: ''
-      backgroundOverlay: 'rgba(0, 0, 0, 0)'
-      backgroundAttachment: ''
-      backgroundRepeat: ''
-      backgroundPosition: ''
-      backgroundSize: cover
-      paddingTop: 4rem
-      paddingBottom: 3rem
-      paddingLeft: ''
-      paddingRight: ''
-      marginTop: ''
-      marginBottom: ''
-      marginLeft: ''
-      marginRight: ''
   expanded:
     type: section
     attributes:

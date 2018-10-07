@@ -10,9 +10,7 @@ layout:
     -
       - 'logo-9501 25'
       - 'menu-6609 75'
-  /header/:
-    -
-      - customcontentSZ-5107
+  /header/: {  }
   /intro/: {  }
   /features/: {  }
   /utility/: {  }
@@ -60,55 +58,25 @@ structure:
     attributes:
       boxed: '0'
       class: ''
-      background: ''
-      backgroundOverlay: 'rgba(0, 0, 0, 0)'
-      backgroundAttachment: ''
-      backgroundRepeat: ''
-      backgroundPosition: ''
-      backgroundSize: ''
   header:
     attributes:
       boxed: ''
       class: ''
-      background: 'gantry-media://demos/gabriele-motter.jpg'
-      backgroundOverlay: ''
-      backgroundAttachment: fixed
-      backgroundRepeat: ''
-      backgroundPosition: 'center center'
-      backgroundSize: cover
   intro:
     type: section
     attributes:
       boxed: '0'
       class: ''
-      background: ''
-      backgroundOverlay: 'rgba(0, 0, 0, 0)'
-      backgroundAttachment: ''
-      backgroundRepeat: ''
-      backgroundPosition: ''
-      backgroundSize: ''
   features:
     type: section
     attributes:
       boxed: '2'
       class: ''
-      background: 'gantry-media://demos/background_blue_lines.png'
-      backgroundOverlay: 'rgba(0, 0, 0, 0)'
-      backgroundAttachment: ''
-      backgroundRepeat: ''
-      backgroundPosition: ''
-      backgroundSize: cover
   utility:
     type: section
     attributes:
       boxed: '0'
       class: ''
-      background: ''
-      backgroundOverlay: 'rgba(0, 0, 0, 0)'
-      backgroundAttachment: ''
-      backgroundRepeat: ''
-      backgroundPosition: ''
-      backgroundSize: ''
   above:
     type: section
     attributes:
@@ -118,12 +86,6 @@ structure:
     attributes:
       boxed: ''
       class: ''
-      background: 'gantry-media://demos/background_blue_lines.png'
-      backgroundOverlay: 'rgba(0, 0, 0, 0)'
-      backgroundAttachment: ''
-      backgroundRepeat: ''
-      backgroundPosition: ''
-      backgroundSize: cover
   expanded:
     type: section
     attributes:
@@ -175,18 +137,6 @@ structure:
 content:
   logo-9501:
     title: 'Logo / Image'
-  customcontentSZ-5107:
-    title: 'Custom Content'
-    attributes:
-      height: 40vh
-      headline: ''
-      description: "\n"
-      link: ''
-      linktext: ''
-      link2: ''
-      linktext2: ''
-    block:
-      variations: center
   logo-9571:
     title: 'Logo / Image'
   horizontalmenu-9034:

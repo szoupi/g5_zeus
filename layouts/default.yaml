@@ -120,22 +120,6 @@ structure:
     type: section
     attributes:
       boxed: ''
-      class: ''
-      background: ''
-      backgroundOverlay: 'rgba(0, 0, 0, 0)'
-      backgroundAttachment: ''
-      backgroundRepeat: ''
-      backgroundPosition: ''
-      backgroundSize: ''
-      paddingTop: ''
-      paddingBottom: ''
-      paddingLeft: ''
-      paddingRight: ''
-      marginTop: ''
-      marginBottom: ''
-      marginLeft: ''
-      marginRight: ''
-      blockHeight: ''
   footer:
     attributes:
       boxed: ''
