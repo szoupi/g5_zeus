@@ -1,6 +1,6 @@
 version: 2
 preset:
-  image: 'gantry-admin://layout/homepage1.png'
+  image: 'gantry-admin://images/layouts/default.png'
   name: personal_-_3_-_Full
   timestamp: 1537468273
 layout:
@@ -57,7 +57,8 @@ layout:
   nadir: {  }
   offcanvas:
     -
-      - mobile-menu-5697
+      - 'position-module-7909 50'
+      - 'mobile-menu-5697 50'
 structure:
   zenith:
     type: section
@@ -186,6 +187,21 @@ structure:
     attributes:
       boxed: '0'
       class: ''
+      background: ''
+      backgroundOverlay: 'rgba(0, 0, 0, 0)'
+      backgroundAttachment: ''
+      backgroundRepeat: ''
+      backgroundPosition: ''
+      backgroundSize: cover
+      paddingTop: ''
+      paddingBottom: ''
+      paddingLeft: ''
+      paddingRight: ''
+      marginTop: ''
+      marginBottom: ''
+      marginLeft: ''
+      marginRight: ''
+      blockHeight: ''
   expanded:
     type: section
     attributes:
@@ -260,8 +276,8 @@ content:
     title: 'search module'
     attributes:
       module_id: '93'
-      key: search-module
     block:
+      class: 'hidden-phone hidden-tablet'
       variations: align-right
   headlineSZ-6808:
     title: Headline
@@ -557,3 +573,7 @@ content:
           effect: arrow
           class: ''
           title: quote3
+  position-module-7909:
+    title: 'search module'
+    attributes:
+      module_id: '93'

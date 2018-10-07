@@ -309,22 +309,37 @@ $css_multipliers: 2, 3;
 
 // distance from top
 .margin-top-10 {
-    margin-top: 10vh;
+    // typically min 48rem
+    @include breakpoint(no-mobile) {
+        margin-top: 10vh;
+    }
 }
 
 .margin-top-20 {
-    margin-top: 20vh;
+    // typically min 48rem
+    @include breakpoint(no-mobile) {
+        margin-top: 20vh;
+    }
 }
 .margin-top-30 {
-    margin-top: 30vh;
+    // typically min 48rem
+    @include breakpoint(no-mobile) {
+        margin-top: 30vh;
+    }
 }
 
 .margin-top-40 {
-    margin-top: 40vh;
+    // typically min 48rem
+    @include breakpoint(no-mobile) {
+        margin-top: 40vh;
+    }
 }
 
 .margin-top-50 {
-    margin-top: 40vh;
+    // typically min 48rem
+    @include breakpoint(no-mobile) {
+        margin-top: 50vh;
+    }
 }
 
 .no-padding-vertical,

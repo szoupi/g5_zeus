@@ -78,3 +78,14 @@ browser-sync start --proxy "http://localhost/zeus-news/index.php/layouts-presets
 // For large computer screens
 @media all and (min-width: $breakpoints-large-desktop-container) {
 }
+
+                30      48      60      75
+Class	        Phones	Tablets	Desktops	Large Desktops
+visible-phone	Visible	Hidden	Hidden	Hidden
+visible-tablet	Hidden	Visible	Hidden	Hidden
+visible-desktop	Hidden	Hidden	Visible	Visible
+visible-large	Hidden	Hidden	Hidden	Visible
+hidden-phone	Hidden	Visible	Visible	Visible
+hidden-tablet	Visible	Hidden	Visible	Visible
+hidden-desktop	Visible	Visible	Hidden	Hidden
+hidden-large	Visible	Visible	Visible	Hidden
