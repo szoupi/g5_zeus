@@ -18,9 +18,9 @@ form:
       placeholder: 'Select...'
       default:  none
       options:
-        default: default
-        list: list
-        featured: featured
+        default: Default
+        list: List
+        featured: Features
         # Headlines: Headlines
         # Mosaic: Mosaic
         # Strips: Strips
