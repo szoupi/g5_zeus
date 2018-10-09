@@ -202,26 +202,23 @@
 	    {% if particle.filterPortfolios == 'Yes' %}
 		    {{ parent() }}
 
-            <script src="https://code.jquery.com/jquery-3.3.1.min.js" 
-                integrity="sha256-FgpCb/KJQlLNfOu91ta32o/NMZxltwRo8QtmkMRdAu8=" 
-                crossorigin="anonymous">
-            </script>
-            
-    		{#<script src="{{ url('gantry-theme://xxx.min.js') }}" type="text/javascript"></script>#}
-            {#{{ joomla.html('jquery.framework') }}#}
-            {#{% do gantry.document.addFramework('jquery.framework') %}#}
+            {% do gantry.load('jquery') %}
             
             <script>
-                $(function () {
+                var $j = jQuery.noConflict();
+                // $j is now an alias to the jQuery function; creating the new alias is optional.
+                // otherwise conflicts with contenttab
+
+                $j(function () {
                     var selectedClass = "";
                     var portfolio_wrapper = document.getElementsByClassName("portfolio-sz-wrapper");
-                    $(".sz-filter-tags").click(function () {
-                        selectedClass = $(this).attr("data-rel");
-                        $(".portfolio-sz-wrapper").fadeTo(100, 0.1);
-                        $(".portfolio-sz-item").not("." + selectedClass).fadeOut().removeClass('scale-effect');
+                    $j(".sz-filter-tags").click(function () {
+                        selectedClass = $j(this).attr("data-rel");
+                        $j(".portfolio-sz-wrapper").fadeTo(100, 0.1);
+                        $j(".portfolio-sz-item").not("." + selectedClass).fadeOut().removeClass('scale-effect');
                         setTimeout(function () {
-                            $("." + selectedClass).fadeIn().addClass('scale-effect');
-                            $(".portfolio-sz-wrapper").fadeTo(300, 1);
+                            $j("." + selectedClass).fadeIn().addClass('scale-effect');
+                            $j(".portfolio-sz-wrapper").fadeTo(300, 1);
                         }, 300);
             
                     });
