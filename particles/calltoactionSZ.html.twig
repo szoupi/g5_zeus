@@ -7,10 +7,10 @@
                 <div class="g-content">
                     <div class="calltoactionSZ-buttons">
                         {#BUTTONS-LINKS#}
-                        {% if particle.linktext %}
+                        {% if particle.linktext1 %}
                             <a href="{{ particle.link1|e }}" 
-                                class="button {{ particle.linkstyle|default('') }}" 
-                                role="button">{{ particle.linktext|e }}</a>
+                                class="button {{ particle.linkstyle1|default('') }}" 
+                                role="button">{{ particle.linktext1|e }}</a>
                         {% endif %}
                         {% if particle.linktext2 %}
                             <a href="{{ particle.link2|e }}" 

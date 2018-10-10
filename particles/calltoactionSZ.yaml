@@ -18,17 +18,17 @@ form:
         _tab_link1:
           label: Link 1
           fields:    
-            .link:
+            .link1:
               type: input.text
               label: Address (href)
               description: Specify the link address.
 
-            .linktext:
+            .linktext1:
               type: input.text
               label: Text
               description: Customize the link text.
 
-            .linkstyle:
+            .linkstyle1:
               type: select.select
               label: Style
               description: 'Select a button style. These are button classes'
