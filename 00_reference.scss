@@ -13,12 +13,39 @@ browser-sync start --proxy "http://localhost/zeus-news/index.php/layouts-presets
 // so that is why the code below uses mixins to get the actual
 // values from Gantry 5 template.
 
-// commonly used media queries
+
+// typically min 48rem
+@include breakpoint(no-mobile) {
+
+}
+
+// typically min 60rem
+@include breakpoint(desktop-only) {
+    
+}
 
 // typically min 75rem
 @include breakpoint(large-desktop-range) {
 
 }
+
+//////////////////////////////////
+// typically max 30rem
+@include breakpoint(small-mobile-range) {
+
+}
+
+
+// typically max 47.938 rem
+@include breakpoint(mobile-only) {
+
+}
+//////////// typically max 59.938rem
+@include breakpoint(no-desktop) {
+
+}
+
+////////////////////////////////////
 // typically range 60rem to 74.938rem
 @include breakpoint(desktop-range) {
 
@@ -32,29 +59,7 @@ browser-sync start --proxy "http://localhost/zeus-news/index.php/layouts-presets
 @include breakpoint(large-mobile-range) {
 
 }
-// typically max 30rem
-@include breakpoint(small-mobile-range) {
 
-}
-
-// Less commonly used media queries
-
-//////////////// typically min 60rem
-@include breakpoint(desktop-only) {
-
-}
-// typically min 48rem
-@include breakpoint(no-mobile) {
-
-}
-// typically max 47.938 rem
-@include breakpoint(mobile-only) {
-
-}
-//////////// typically max 59.938rem
-@include breakpoint(no-desktop) {
-
-}
 
 // Mobile Menu Breakpoint
 @media only all and (max-width: $breakpoints-mobile-menu-breakpoint) { ... your css in here ... }

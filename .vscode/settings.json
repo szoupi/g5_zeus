@@ -4,7 +4,8 @@
         "scss/zeus/particles/_contentcubes.scss",
         "particles/contentcubes.html.twig",
         "scss/zeus/styles/_zeus-style.scss",
-        "00_reference.css"
+        "00_reference.css",
+        "00_reference.scss"
     ],
     "search.useIgnoreFiles": false
 }

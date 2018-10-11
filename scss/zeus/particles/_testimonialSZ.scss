@@ -1,8 +1,8 @@
 .sz-testimonial { 
     position: relative;
-
-
-
+    
+    
+    
     // CARD EFFECT
     .card {
         box-shadow: 0 4px 8px 0 rgba(0,0,0,0.2);
@@ -12,21 +12,21 @@
         color: $base-text-color;
         border: 1px solid #dedede;
         box-shadow: inset 0px 0 0px 1px white, 0 0 8px rgba(0, 0, 0, 0.1);
-
+        
         // ICON
         i {
             display: block;
             float:left;
             color: $accent-color-2;
-                @include breakpoint(mobile-only) {
-                    float:none;
-                }
-
-                @include breakpoint(small-mobile-range) {
-                    float:none;
-                }
+            @include breakpoint(mobile-only) {
+                float:none;
+            }
+            
+            @include breakpoint(small-mobile-range) {
+                float:none;
+            }
         }
-
+        
         // QUOTE CONTAINER
         div.sz-quote-container {
             padding: 2rem 2rem 4rem;
@@ -38,20 +38,20 @@
                 @include breakpoint(mobile-only) {
                     margin-left: 0;
                 }
-
+                
                 @include breakpoint(small-mobile-range) {
                     margin-left: 0;
                 }
             }
         }
-
+        
         // AUTHOR CONTAINER
         div.sz-author-container {
             position: relative;
             background-color: $accent-color-2;
             padding: 0.1rem 1.5rem 0.5rem;
             border-radius: 0 0 5px 5px;
-
+            
             // IMAGE
             img {
                 height: 100px;
@@ -68,19 +68,19 @@
             
             @include breakpoint(mobile-only) {
                 img{
-                   top:-3rem; 
-                //   left:33%;
+                    top:-3rem; 
+                    //   left:33%;
                 }
                 
                 h5 {
                     margin-top:4rem;
                 }
             }
-
+            
             @include breakpoint(small-mobile-range) {
                 img{
-                   top:-3rem; 
-                //   left:33%;
+                    top:-3rem; 
+                    //   left:33%;
                 }
                 
                 h5 {
@@ -89,7 +89,7 @@
             }
         }
     }
-
+    
     // ARROW EFFECT
     .arrow {
         box-shadow: 0 4px 8px 0 rgba(0,0,0,0.2);
@@ -97,14 +97,14 @@
         border-radius: 5px; 
         background-color: $base-background; 
         color: $base-text-color;
-
+        
         // ICON
         i {
             display: block;
             float:left;
             color: $accent-color-2;
         }
-
+        
         // QUOTE CONTAINER
         div.sz-quote-container {
             font-family: get-font-family($font-family-quote);
@@ -112,26 +112,34 @@
             
             .sz-quote {
                 margin-left: 4rem;
+                
+                // typically 48rem to 59.938rem
+                @include breakpoint(tablet-range) {
+                    margin-left: 0;
+    
+                }
             }
-        }
 
-
-
+            
+        }            
+        
+        
+        
         // AUTHOR CONTAINER
         div.sz-author-container {
             position: relative;
             background-color: $accent-color-2;
             border-radius: 0 0 5px 5px;
             text-align: center;
-
+            
             h5 {
                 padding: 0 2rem;
                 text-transform: uppercase;
-                }
+            }
             .sz-author-attr {
                 padding: 0 2rem 1rem;
             }
         }
     }
-
+    
 }
