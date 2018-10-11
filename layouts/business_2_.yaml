@@ -1,0 +1,690 @@
+version: 2
+preset:
+  image: 'gantry-admin://images/layouts/default.png'
+  name: business_-_1
+  timestamp: 1538952133
+layout:
+  /zenith/: {  }
+  /navtop/:
+    -
+      - system-messages-2617
+  /navigation/:
+    -
+      - 'logo-9501 20'
+      - 'menu-6609 60'
+      - 'position-module-7180 20'
+  /header/:
+    -
+      - headlineSZ-6808
+    -
+      - headlineSZ-8118
+    -
+      - calltoactionSZ-4059
+  /intro/:
+    -
+      - customcontentSZ-1008
+  /features/:
+    -
+      - imagegallerySZ-8302
+  /utility/:
+    -
+      - headlineSZ-1019
+    -
+      - 'contentframeSZ-8716 33.3'
+      - 'contentframeSZ-1415 33.3'
+      - 'contentframeSZ-3112 33.3'
+    -
+      - 'contentframeSZ-2818 33.3'
+      - 'contentframeSZ-1724 33.3'
+      - 'contentframeSZ-4287 33.3'
+  /above/:
+    -
+      - customcontentSZ-4521
+    -
+      - 'contenttabs-5623 50'
+      - 'skillsbarSZ-9426 50'
+  /testimonials/:
+    -
+      - testimonialSZ-3083
+  /expanded/:
+    -
+      - contentcubesSZ-3230
+    -
+      - portfolioSZ-9515
+  /container-main/:
+    -
+      -
+        'aside 25': {  }
+      -
+        'mainbar 50': {  }
+      -
+        'sidebar 25': {  }
+  /mainbottom/: {  }
+  footertop: {  }
+  footer: {  }
+  footerbottom: {  }
+  nadir: {  }
+  offcanvas:
+    -
+      - 'position-module-7909 50'
+      - 'mobile-menu-5697 50'
+structure:
+  zenith:
+    type: section
+    attributes:
+      boxed: ''
+  navtop:
+    type: section
+    attributes:
+      boxed: ''
+  navigation:
+    type: section
+    attributes:
+      boxed: '3'
+      class: sz-transparent-bg-desktop
+      background: ''
+      backgroundOverlay: ''
+      backgroundAttachment: ''
+      backgroundRepeat: ''
+      backgroundPosition: ''
+      backgroundSize: ''
+      paddingTop: ''
+      paddingBottom: ''
+      paddingLeft: ''
+      paddingRight: ''
+      marginTop: ''
+      marginBottom: ''
+      marginLeft: ''
+      marginRight: ''
+  header:
+    attributes:
+      boxed: ''
+      class: sz-negative-margin-top-120
+      background: 'gantry-media://default.jpg'
+      backgroundOverlay: 'rgba(0, 0, 0, 0.75)'
+      backgroundAttachment: fixed
+      backgroundRepeat: no-repeat
+      backgroundPosition: 'center center'
+      backgroundSize: cover
+      paddingTop: ''
+      paddingBottom: ''
+      paddingLeft: ''
+      paddingRight: ''
+      marginTop: ''
+      marginBottom: ''
+      marginLeft: ''
+      marginRight: ''
+      blockHeight: 100vh
+  intro:
+    type: section
+    attributes:
+      boxed: '0'
+      class: ''
+      background: ''
+      backgroundOverlay: 'rgba(0, 0, 0, 0)'
+      backgroundAttachment: ''
+      backgroundRepeat: ''
+      backgroundPosition: ''
+      backgroundSize: ''
+      paddingTop: ''
+      paddingBottom: ''
+      paddingLeft: ''
+      paddingRight: ''
+      marginTop: ''
+      marginBottom: ''
+      marginLeft: ''
+      marginRight: ''
+      blockHeight: ''
+  features:
+    type: section
+    attributes:
+      boxed: '2'
+      class: ''
+      background: ''
+      backgroundOverlay: 'rgba(0, 0, 0, 0)'
+      backgroundAttachment: ''
+      backgroundRepeat: ''
+      backgroundPosition: ''
+      backgroundSize: cover
+      paddingTop: ''
+      paddingBottom: ''
+      paddingLeft: ''
+      paddingRight: ''
+      marginTop: ''
+      marginBottom: ''
+      marginLeft: ''
+      marginRight: ''
+      blockHeight: ''
+  utility:
+    type: section
+    attributes:
+      boxed: '0'
+      class: ''
+      background: ''
+      backgroundOverlay: 'rgba(3, 3, 3, 0.52)'
+      backgroundAttachment: ''
+      backgroundRepeat: ''
+      backgroundPosition: ''
+      backgroundSize: cover
+      paddingTop: ''
+      paddingBottom: ''
+      paddingLeft: ''
+      paddingRight: ''
+      marginTop: ''
+      marginBottom: ''
+      marginLeft: ''
+      marginRight: ''
+      blockHeight: ''
+  above:
+    type: section
+    attributes:
+      boxed: '0'
+      class: ''
+      background: ''
+      backgroundOverlay: 'rgba(0, 0, 0, 0.67)'
+      backgroundAttachment: ''
+      backgroundRepeat: ''
+      backgroundPosition: ''
+      backgroundSize: cover
+      paddingTop: ''
+      paddingBottom: ''
+      paddingLeft: ''
+      paddingRight: ''
+      marginTop: ''
+      marginBottom: ''
+      marginLeft: ''
+      marginRight: ''
+      blockHeight: ''
+  testimonials:
+    type: section
+    attributes:
+      boxed: '0'
+      class: ''
+      background: 'gantry-media://default.jpg'
+      backgroundOverlay: 'rgba(0, 0, 0, 0.45)'
+      backgroundAttachment: ''
+      backgroundRepeat: ''
+      backgroundPosition: 'center center'
+      backgroundSize: cover
+      paddingTop: ''
+      paddingBottom: ''
+      paddingLeft: ''
+      paddingRight: ''
+      marginTop: ''
+      marginBottom: ''
+      marginLeft: ''
+      marginRight: ''
+      blockHeight: ''
+  expanded:
+    type: section
+    attributes:
+      boxed: '2'
+      class: ''
+      background: ''
+      backgroundOverlay: 'rgba(0, 0, 0, 0)'
+      backgroundAttachment: ''
+      backgroundRepeat: ''
+      backgroundPosition: 'center center'
+      backgroundSize: cover
+      paddingTop: ''
+      paddingBottom: ''
+      paddingLeft: ''
+      paddingRight: ''
+      marginTop: ''
+      marginBottom: ''
+      marginLeft: ''
+      marginRight: ''
+      blockHeight: ''
+  aside:
+    attributes:
+      class: ''
+    block:
+      fixed: '1'
+  mainbar:
+    type: section
+    subtype: main
+  sidebar:
+    type: section
+    subtype: aside
+    attributes:
+      class: ''
+    block:
+      fixed: '1'
+  container-main:
+    attributes:
+      boxed: ''
+  mainbottom:
+    type: section
+    attributes:
+      boxed: ''
+  footertop:
+    type: section
+    inherit:
+      outline: default
+      include:
+        - attributes
+        - children
+  footer:
+    inherit:
+      outline: default
+      include:
+        - attributes
+        - children
+  footerbottom:
+    type: section
+    inherit:
+      outline: default
+      include:
+        - attributes
+        - children
+  nadir:
+    type: section
+    inherit:
+      outline: default
+      include:
+        - attributes
+        - children
+  offcanvas:
+    attributes:
+      position: g-offcanvas-left
+      class: ''
+      extra: {  }
+      swipe: '1'
+      css3animation: '1'
+content:
+  logo-9501:
+    title: 'Logo / Image'
+    attributes:
+      text: ''
+  menu-6609:
+    attributes:
+      menu: mainmenu
+    block:
+      variations: center
+  position-module-7180:
+    title: 'search module'
+    attributes:
+      module_id: '93'
+      key: search-module
+    block:
+      class: 'hidden-phone hidden-tablet'
+      variations: align-right
+  headlineSZ-6808:
+    title: 'Headline desktop visible'
+    attributes:
+      maintitle: 'Success is no accident'
+      maintitlesize: 5rem
+      maintitlecolor: '#089cff'
+      subtitle: 'It is hard work'
+      subtitlesize: 3.5rem
+      subtitlecolor: '#ffffff'
+      description: 'Perseverance, learning, studying, sacrifice and most of all, love of what you are doing or learning to do'
+      descriptionsize: 1.6rem
+      descriptioncolor: '#ffffff'
+    block:
+      class: 'visible-desktop visible-large'
+      variations: margin-top-20
+  headlineSZ-8118:
+    title: 'Headline phone visible'
+    attributes:
+      maintitle: 'Success is no accident'
+      maintitlecolor: '#ffffff'
+      subtitle: 'It is hard work'
+      subtitlecolor: '#ffffff'
+      description: 'Perseverance, learning, studying, sacrifice and most of all, love of what you are doing or learning to do'
+      descriptioncolor: '#ffffff'
+    block:
+      class: 'visible-phone visible-tablet'
+      variations: margin-top-20
+  calltoactionSZ-4059:
+    title: 'Call to action'
+    attributes:
+      link: '#'
+      linktext: 'Discover Zeus'
+      link2: '#'
+      linktext2: 'Enroll Now!'
+      linkstyle2: button-outline
+      linktext3: ''
+    block:
+      variations: 'center nomargintop nopaddingtop'
+  customcontentSZ-1008:
+    title: 'Custom Content'
+    attributes:
+      maintitle: 'Lorem ipsum dolor sit amet'
+      subtitle: 'Ut enim ad minim'
+      description: 'Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud nisi ut aliquip ex eacommodo consequat. '
+  imagegallerySZ-8302:
+    title: 'Image Gallery'
+    attributes:
+      galleryimages:
+        -
+          image: 'gantry-media://default.jpg'
+          effect: card
+          headline: Headline
+          description: 'some text goes here'
+          link: '#'
+          linktext: 'Read More'
+          title: 'item 1'
+        -
+          image: 'gantry-media://default.jpg'
+          effect: card
+          headline: Headline
+          description: 'some text goes here'
+          link: '#'
+          linktext: 'Shop Now'
+          title: 'item 2'
+        -
+          image: 'gantry-media://default.jpg'
+          effect: card
+          headline: Headline
+          description: 'some text goes here'
+          link: '#'
+          linktext: 'Buy Now'
+          title: 'item 3'
+        -
+          image: 'gantry-media://default.jpg'
+          effect: card
+          headline: Headline
+          description: 'some text goes here'
+          link: '#'
+          linktext: 'Read More'
+          title: 'item 4'
+  headlineSZ-1019:
+    title: 'My Services'
+    attributes:
+      maintitle: 'Our Services'
+      subtitle: 'Content Frame Particle'
+      description: 'Aim straight to the point with Content Frame Particle. Create attractive and well-balanced blocks of content combined with icons or images'
+  contentframeSZ-8716:
+    title: 'Web Design'
+    attributes:
+      mainicon: 'fa fa-mobile fa-5x'
+      maintitle: 'Web Design'
+      subtitle: ''
+      description: 'I have not failed. I''ve just found 10,000 ways that won''t work'
+    block:
+      variations: center
+  contentframeSZ-1415:
+    title: 'Custom Support'
+    attributes:
+      mainicon: 'fa fa-user fa-5x'
+      maintitle: 'Custom Support'
+      subtitle: ''
+      description: 'I have not failed. I''ve just found 10,000 ways that won''t work'
+    block:
+      variations: center
+  contentframeSZ-3112:
+    title: Debugging
+    attributes:
+      mainicon: 'fa fa-bug fa-5x'
+      maintitle: Debugging
+      subtitle: ''
+      description: 'I have not failed. I''ve just found 10,000 ways that won''t work'
+    block:
+      variations: center
+  contentframeSZ-2818:
+    title: Development
+    attributes:
+      mainicon: 'fa fa-sitemap fa-5x'
+      maintitle: Development
+      subtitle: ''
+      description: 'I have not failed. I''ve just found 10,000 ways that won''t work'
+    block:
+      variations: center
+  contentframeSZ-1724:
+    title: Variations
+    attributes:
+      mainicon: 'fa fa-tag fa-5x'
+      maintitle: Variations
+      subtitle: ''
+      description: 'Use variations to attract user''s attention.'
+    block:
+      variations: 'center box1'
+  contentframeSZ-4287:
+    title: UI/UX
+    attributes:
+      mainicon: 'fa fa-desktop fa-5x'
+      maintitle: UI/UX
+      subtitle: ''
+      description: 'I have not failed. I''ve just found 10,000 ways that won''t work'
+    block:
+      variations: center
+  customcontentSZ-4521:
+    title: 'Why us'
+    attributes:
+      height: ''
+      image: 'gantry-media://default.jpg'
+      maintitle: 'WHY US'
+      description: "Success is no accident, It is hard work.\nPerseverance, learning, studying, sacrifice and most of all, love of what you are doing or learning to do.\n"
+    block:
+      variations: 'center margin-top-10'
+  contenttabs-5623:
+    title: 'Content Tabs'
+    attributes:
+      items:
+        -
+          content: "<ul>\n<li>Visual Menu Editor</li>\n<li>Visual Layout Manager</li>\n<li>Unlimited Undo/Redo</li>\n<li>SCSS / LESS Support</li>\n<li>Off-Canvas Panel</li>\n<li>Particles System</li>\n<li>Twig-based Templating</li>\n<li>YAML-based Configuration</li>\n</ul>"
+          title: Benefits
+        -
+          content: "<ul>\n<li>Visual Menu Editor</li>\n<li>Visual Layout Manager</li>\n<li>Unlimited Undo/Redo</li>\n<li>SCSS / LESS Support</li>\n<li>Off-Canvas Panel</li>\n<li>Particles System</li>\n<li>Twig-based Templating</li>\n<li>YAML-based Configuration</li>\n</ul>"
+          title: Features
+        -
+          content: "<ul>\n<li>Visual Menu Editor</li>\n<li>Visual Layout Manager</li>\n<li>Unlimited Undo/Redo</li>\n<li>SCSS / LESS Support</li>\n<li>Off-Canvas Panel</li>\n<li>Particles System</li>\n<li>Twig-based Templating</li>\n<li>YAML-based Configuration</li>\n</ul>"
+          title: Support
+  skillsbarSZ-9426:
+    title: 'Skills bar'
+    attributes:
+      maintitle: ''
+      subtitle: ''
+      description: ''
+      bars:
+        -
+          skillTitle: Confidentiality
+          percentance: '85'
+          color: '#0071bc'
+          title: Confidentiality
+        -
+          skillTitle: Support
+          percentance: '100'
+          color: '#00bd5b'
+          title: Support
+        -
+          skillTitle: Professionalism
+          percentance: '85'
+          color: '#c2cc00'
+          title: Professionalism
+  testimonialSZ-3083:
+    title: references
+    attributes:
+      maintitle: ''
+      subtitle: ''
+      description: ''
+  contentcubesSZ-3230:
+    title: 'Content Cubes'
+    attributes:
+      maintitle: ''
+      subtitle: ''
+      description: ''
+      items:
+        -
+          label: label1
+          title: 'My Title'
+          content: "Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. \n\n"
+          tags: {  }
+          link: ''
+          linktext: '&rarr;'
+          buttonclass: ''
+          buttontarget: _self
+          image: 'gantry-media://default.jpg'
+          imageposition: left
+          link1: 'https://threethemes.com/'
+          linktext1: Demo
+          linkstyle1: ''
+          link2: ''
+          linktext2: ''
+          linkstyle2: ''
+          link3: ''
+          linktext3: ''
+          linkstyle3: ''
+          name: item1
+        -
+          label: label2
+          title: 'Linkable Title'
+          content: 'Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud nisi ut aliquip ex eacommodo consequat.'
+          link: www.threethemes.com
+          linktext: '&rarr;'
+          buttonclass: ''
+          buttontarget: _self
+          image: 'gantry-media://default.jpg'
+          imageposition: right
+          link1: 'https://threethemes.com/'
+          linktext1: Demo
+          linkstyle1: ''
+          link2: ''
+          linktext2: ''
+          linkstyle2: ''
+          link3: ''
+          linktext3: ''
+          linkstyle3: ''
+          name: item2
+  portfolioSZ-9515:
+    title: Portfolio
+    attributes:
+      maintitle: 'Our Portfolio'
+      subtitle: 'Awesome responsive portfolios with portfolio particle'
+      description: 'At his best, man is the noblest of all animals. Separated from law and justice he is the worst, Aristotle. Something inspirational instead of lorem ipsum'
+      columns: grid4
+      gutter: 'No'
+      filterPortfolios: 'Yes'
+      displayTags: 'Yes'
+      displayImageOnly: 'Yes'
+      portfolios:
+        -
+          image: 'gantry-media://default.jpg'
+          maintitle: ''
+          description: ''
+          tags:
+            -
+              text: Productivity
+          link1: '#'
+          linktext1: Demo
+          linkstyle1: ''
+          link2: '#'
+          linktext2: Documentation
+          linkstyle2: button-2
+          link3: '#'
+          linktext3: Download
+          linkstyle3: button-outline
+          title: 'item 1'
+        -
+          image: 'gantry-media://default.jpg'
+          maintitle: ''
+          description: ''
+          tags:
+            -
+              text: Design
+          link1: '#'
+          linktext1: Demo
+          linkstyle1: ''
+          link2: '#'
+          linktext2: Documentation
+          linkstyle2: ''
+          link3: '#'
+          linktext3: Download
+          linkstyle3: ''
+          title: 'item 2'
+        -
+          image: 'gantry-media://default.jpg'
+          maintitle: ''
+          description: ''
+          tags: {  }
+          link1: '#'
+          linktext1: Demo
+          linkstyle1: ''
+          link2: '#'
+          linktext2: Documentation
+          linkstyle2: ''
+          link3: '#'
+          linktext3: Download
+          linkstyle3: ''
+          title: 'item 3'
+        -
+          image: 'gantry-media://default.jpg'
+          maintitle: ''
+          description: ''
+          tags: {  }
+          link1: '#'
+          linktext1: Demo
+          linkstyle1: ''
+          link2: '#'
+          linktext2: Documentation
+          linkstyle2: ''
+          link3: '#'
+          linktext3: Download
+          linkstyle3: ''
+          title: 'item 4'
+        -
+          image: 'gantry-media://default.jpg'
+          maintitle: ''
+          description: ''
+          tags: {  }
+          link1: '#'
+          linktext1: Demo
+          linkstyle1: ''
+          link2: '#'
+          linktext2: Documentation
+          linkstyle2: ''
+          link3: '#'
+          linktext3: Download
+          linkstyle3: ''
+          title: 'item 5'
+        -
+          image: 'gantry-media://default.jpg'
+          maintitle: ''
+          description: ''
+          tags: {  }
+          link1: '#'
+          linktext1: Demo
+          linkstyle1: ''
+          link2: '#'
+          linktext2: Documentation
+          linkstyle2: ''
+          link3: '#'
+          linktext3: Download
+          linkstyle3: ''
+          title: 'item 6'
+        -
+          image: 'gantry-media://default.jpg'
+          maintitle: ''
+          description: ''
+          tags: {  }
+          link1: '#'
+          linktext1: Demo
+          linkstyle1: ''
+          link2: '#'
+          linktext2: Documentation
+          linkstyle2: ''
+          link3: '#'
+          linktext3: Download
+          linkstyle3: ''
+          title: 'item 7'
+        -
+          image: 'gantry-media://default.jpg'
+          maintitle: ''
+          description: ''
+          tags: {  }
+          link1: '#'
+          linktext1: Demo
+          linkstyle1: ''
+          link2: '#'
+          linktext2: Documentation
+          linkstyle2: ''
+          link3: '#'
+          linktext3: Download
+          linkstyle3: ''
+          title: 'item 8'
+  position-module-7909:
+    title: 'search module'
+    attributes:
+      module_id: '93'
+      key: search-module
