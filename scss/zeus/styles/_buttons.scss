@@ -16,73 +16,80 @@
     vertical-align: middle;
     text-shadow: none;
     @include transition(all 0.2s);
-
+    
 }
 
 // colors are customized inside sections scss
 .button {
     @extend %g-button;
-
+    
     &.fa {
         line-height: 1.15;
-
+        
         &[class*="fa-"] {
             &:before, &:after {
                 font-family: FontAwesome;
             }
         }
     }
-
+    
     &.button-block {
         width: 100%;
         display: block;
     }
-
+    
     &.button-xlarge {
         font-size: $core-font-size + 0.2;
         padding: 1.9rem 3.525rem;
         border-radius: 3.5rem;
     }
-
+    
     &.button-large {
         font-size: $core-font-size;
         padding: 1.7rem 3.325rem;
     }
-
+    
     &.button-small {
         font-size: $core-font-size - 0.3;
         padding: 1.2rem 2.825rem;
     }
-
+    
     &.button-xsmall {
         font-size: $core-font-size - 0.4;
         padding: 1.1rem 2.725rem;
     }
-
+    
     &.button-2 {
         @include transition(all 0.2s);
     }
-
+    
     &.button-outline {
         background: transparent;
+        
     }
 
+    &.button-filter-tags {
+        margin: 1rem 0;
+        padding: 12px 1rem;
+        border-radius: 1px;
+    }
+    
     &.button-gradient {
         @include linear-gradient(90deg, $base-dominant-color, $accent-color-1);
         border: none;
-
+        
         &:hover, &:active, &:focus {
             background: $base-dominant-color;
             color: $white;
         }
     }
-
+    
     &.button-bevel {
         border-radius: 0.4rem;
     }
-
+    
     &.button-square {
         border-radius: 0;
     }
-
+    
 }

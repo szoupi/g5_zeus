@@ -35,7 +35,7 @@
                         {# https://stackoverflow.com/questions/17788424/how-to-remove-duplicated-items-in-array-on-twig #}
                         {% if particle.filterPortfolios == 'Yes' %}
                             <div class="sz-filter-tags-wrapper">
-                            <button class="button sz-filter-tags" href="" data-rel="all">All</button>
+                            <button class="button button-outline button-filter-tags sz-filter-tags" href="" data-rel="all">All</button>
                             
                             {% set tagsUniqueArray = [] %}
                             {% for portfolio in particle.portfolios %}
@@ -43,7 +43,7 @@
                                 
                                        {% if tag not in tagsUniqueArray %}
                                             <button data-rel="{{ tag.text|raw }}"
-                                                    class="button sz-filter-tags {{ tag.text|raw }}">
+                                                    class="button button-outline button-filter-tags sz-filter-tags {{ tag.text|raw }}">
                                                 {{ tag.text|raw }}
                                             </button>
                                             {% set tagsUniqueArray = tagsUniqueArray|merge([tag]) %}
