@@ -5,7 +5,9 @@
         "particles/contentcubes.html.twig",
         "scss/zeus/styles/_zeus-style.scss",
         "00_reference.css",
-        "00_reference.scss"
+        "00_reference.scss",
+        "templateDetails.xml",
+        "gantry/theme.yaml"
     ],
     "search.useIgnoreFiles": false
 }
