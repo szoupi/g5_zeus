@@ -19,8 +19,8 @@ form:
       default:  none
       options:
         default: Default
+        Showcase: Showcase
         list: List
-        featured: Features
         # Headlines: Headlines
         # Mosaic: Mosaic
         # Strips: Strips

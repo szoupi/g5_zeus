@@ -45,15 +45,15 @@
             grid-template-columns: repeat(2, 1fr);
             
             &.portfolio-sz-2-column {
-                grid-template-columns: repeat(2, 1fr)
+                grid-template-columns: repeat(2, 1fr);
             }
             
             &.portfolio-sz-3-column {
-                grid-template-columns: repeat(3, 1fr)
+                grid-template-columns: repeat(3, 1fr);
             }
         
             &.portfolio-sz-4-column {
-                grid-template-columns: repeat(4, 1fr)
+                grid-template-columns: repeat(4, 1fr);
             }
             
             &.portfolio-sz-gutter {
