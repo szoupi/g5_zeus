@@ -44,7 +44,7 @@
                 {# LAYOUT  DEFAULT ############################}
                 {% if particle.layout == 'default' %}
                     
-                    <div class="g-grid">
+                    <div class="g-grid sz-article-default-layout">
                         {% for article in column %}
     
 
@@ -284,56 +284,106 @@
                             <div class="g-block">
                                 <div class="g-content">
                                     <div class="sz-article">
-                                            {% if display.image.enabled and article.images.image_intro or article.images.image_fulltext %}
-                                                <div class ="sz-article-image-container">
-                                                    {% if article.images.image_intro and display.image.enabled == 'intro' or display.image.enabled == 'show' %}
-                                                        <div class="sz-article-image">
-                                                            <a href="{{ article.route }}">
-                                                                <img src="{{ url(article.images.image_intro) }}" {{ article.images.image_intro|imagesize|raw }} alt="{{ article.images.image_intro_alt }}" />
-                                                            </a>
-                                                        </div>
-                                                    {% elseif article.images.image_fulltext and display.image.enabled == 'full' %}
-                                                        <div class="sz-article-image">
-                                                            <a href="{{ article.route }}">
-                                                                <img src="{{ url(article.images.image_fulltext) }}" {{ article.images.image_fulltext|imagesize|raw }} alt="{{ article.images.image_fulltext_alt }}" />
-                                                            </a>
-                                                        </div>
-                                                    {% endif %}
-                                                </div>
-                                            {% endif %}
-
-
-                                        {% if display.title.enabled %}
-                                            <div class="sz-article-title">
-                                                <h3 class="g-item-title">
-                                                    <a href="{{ article.route }}">
-                                                        {{ display.title.limit ? article.title|truncate_text(display.title.limit) : article.title }}
-                                                    </a>
-                                                </h3>
-                                            </div>
-                                        {% endif %}
-                
-                                        {% if display.text.type %}
-                                            {% set article_text = display.text.type == 'intro' ? article.introtext : article.text %}
-                                            <div class="sz-article-text">
-                                                {% if display.text.formatting == 'text' %}
-                                                    {{ article_text|truncate_text(display.text.limit)|raw }}
-                                                {% else %}
-                                                    {{ article_text|truncate_html(display.text.limit)|raw }}
+                                        {% if display.image.enabled and article.images.image_intro or article.images.image_fulltext %}
+                                            <div class ="sz-article-image-container">
+                                                {% if article.images.image_intro and display.image.enabled == 'intro' or display.image.enabled == 'show' %}
+                                                    <div class="sz-article-image">
+                                                        <a href="{{ article.route }}">
+                                                            <img src="{{ url(article.images.image_intro) }}" {{ article.images.image_intro|imagesize|raw }} alt="{{ article.images.image_intro_alt }}" />
+                                                        </a>
+                                                    </div>
+                                                {% elseif article.images.image_fulltext and display.image.enabled == 'full' %}
+                                                    <div class="sz-article-image">
+                                                        <a href="{{ article.route }}">
+                                                            <img src="{{ url(article.images.image_fulltext) }}" {{ article.images.image_fulltext|imagesize|raw }} alt="{{ article.images.image_fulltext_alt }}" />
+                                                        </a>
+                                                    </div>
                                                 {% endif %}
                                             </div>
                                         {% endif %}
-        
-                                        {% if display.read_more.enabled %}
-                                            <div class="sz-article-read-more">
-                                                <a href="{{ article.route }}">
-                                                    {# <button class="button{% if display.read_more.css %} {{ display.read_more.css }}{% endif %}"> #}
-                                                        {{ display.read_more.label|default('Read More...') }}
-                                                    {# </button> #}
-        
-                                                </a>
-                                            </div>
-                                        {% endif %}
+
+                                        <div class="sz-article-content-container">
+
+                                            {#META INFO#}
+                                            {% if display.date.enabled or display.author.enabled or display.category.enabled or display.hits.enabled %}
+                                                <div class="sz-article-details">
+                                                    {#DATE ############################}
+                                                    {% if display.date.enabled %}
+                                                        <span class="sz-article-date">
+                                                            {% if display.date.enabled == 'published' %}
+                                                                <i class="fa fa-clock-o" aria-hidden="true"></i>{{ article.publish_up|date(display.date.format) }}
+                                                            {% elseif display.date.enabled == 'modified' %}
+                                                                <i class="fa fa-clock-o" aria-hidden="true"></i>{{ article.modified|date(display.date.format) }}
+                                                            {% else %}
+                                                                <i class="fa fa-clock-o" aria-hidden="true"></i>{{ article.created|date(display.date.format) }}
+                                                            {% endif %}
+                                                        </span>
+                                                    {% endif %}
+                                                    
+                                                    {#AUTHOR ############################}
+                                                    {% if display.author.enabled %}
+                                                        <span class="sz-article-author">
+                                                            <i class="fa fa-user" aria-hidden="true"></i>{{ article.author.name }}
+                                                        </span>
+                                                    {% endif %}
+            
+                                                    {#CATEGORY ############################}
+                                                    {% if display.category.enabled %}
+                                                        {% set category_link = display.category.enabled == 'link' %}
+                                                        <span class="sz-article-category">
+                                                            {% set cat = article.categories|last %}
+                                                            {% if category_link %}
+                                                                <a href="{{ cat.route }}">
+                                                                    <i class="fa fa-folder-open" aria-hidden="true"></i>{{ cat.title }}
+                                                                </a>
+                                                            {% else %}
+                                                                <i class="fa fa-folder-open" aria-hidden="true"></i>{{ cat.title }}
+                                                            {% endif %}
+                                                        </span>
+                                                    {% endif %}
+                                                    
+                                                    {#HITS ############################}
+                                                    {% if display.hits.enabled %}
+                                                        <span class="sz-article-hits">
+                                                            <i class="fa fa-eye" aria-hidden="true"></i>{{ article.hits }}
+                                                        </span>
+                                                    {% endif %}
+                                                </div>
+                                            {% endif %}
+                                            
+                                            {#TITLE ############################}
+                                            {% if display.title.enabled %}
+                                                <div class="sz-article-title">
+                                                    <h3 class="g-item-title">
+                                                        <a href="{{ article.route }}">
+                                                            {{ display.title.limit ? article.title|truncate_text(display.title.limit) : article.title }}
+                                                        </a>
+                                                    </h3>
+                                                </div>
+                                            {% endif %}
+                    
+                                            {% if display.text.type %}
+                                                {% set article_text = display.text.type == 'intro' ? article.introtext : article.text %}
+                                                <div class="sz-article-text">
+                                                    {% if display.text.formatting == 'text' %}
+                                                        {{ article_text|truncate_text(display.text.limit)|raw }}
+                                                    {% else %}
+                                                        {{ article_text|truncate_html(display.text.limit)|raw }}
+                                                    {% endif %}
+                                                </div>
+                                            {% endif %}
+            
+                                            {% if display.read_more.enabled %}
+                                                <div class="sz-article-read-more">
+                                                    <a href="{{ article.route }}">
+                                                        {# <button class="button{% if display.read_more.css %} {{ display.read_more.css }}{% endif %}"> #}
+                                                            {{ display.read_more.label|default('Read More...') }}
+                                                        {# </button> #}
+            
+                                                    </a>
+                                                </div>
+                                            {% endif %}
+                                        </div>
                                     </div>
                                 </div>
                             </div>
