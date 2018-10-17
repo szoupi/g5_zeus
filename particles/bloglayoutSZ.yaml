@@ -21,8 +21,8 @@ form:
         default: Default
         Showcase: Showcase
         list: List
+        Mosaic: Mosaic
         # Headlines: Headlines
-        # Mosaic: Mosaic
         # Strips: Strips
         # Tabs: Tabs
         # Grids: Grids

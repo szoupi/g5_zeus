@@ -62,7 +62,6 @@
     // LAYOUT SHOWCASE ========================
     div.sz-article-showcase-layout {
         
-        
         .sz-article {
             overflow: hidden;
             position: relative;
@@ -109,19 +108,18 @@
                 .sz-article-title {
                     // text-transform: uppercase;
                     text-align: center;
+                    a {
+                        color: $white !important;
+                    }
                     // position: relative;
                     padding:  0 2rem;
-                    @include breakpoint(desktop-only) {
-                        // h3 {
-                        //     font-size: 1.8vw;
-                        // }
-                    }
                 }
                 
                 .sz-article-text {
                     // position: relative;
                     color: #fff;
-                    padding: 0 2rem; 
+                    padding: 0 2rem;
+                    font-style: oblique;
                 }
                 
                 .sz-article-read-more {
@@ -137,7 +135,34 @@
                 }
             }
             
-            
+            // used with columnNum twig variable
+            .sz-one-column {
+                @include breakpoint(no-mobile) {
+                    font-size: 3rem;
+                }         
+            }
+            .sz-two-columns {
+                @include breakpoint(no-mobile) {
+                    font-size: 1.9rem;
+                }
+            }
+            .sz-three-columns {
+                // typically min 48rem
+                @include breakpoint(no-mobile) {
+                    font-size: 1.1rem;
+                }
+            }
+            .sz-four-columns {
+                @include breakpoint(no-mobile) {
+                    font-size: 1rem;
+                }
+            }
+
+            //more than 4 columns are not wise choice for this layout...
+            .sz-five-columns {
+            }
+            .sz-five-columns {
+            }
         }
     }
     

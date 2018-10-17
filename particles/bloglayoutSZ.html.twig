@@ -33,6 +33,22 @@
 {% set total = article_finder.count() %}
 {% set articles = article_finder.find() %}
 
+{# assign specific class according to columns number
+    usually  for title size #}
+{% if limit.columns == '1' %}
+    {% set columnNum = 'sz-one-column' %}
+{% elseif limit.columns == '2' %}
+    {% set columnNum = 'sz-two-columns' %}
+{% elseif limit.columns == '3' %}
+    {% set columnNum = 'sz-three-columns' %}
+{% elseif limit.columns == '4' %}
+    {% set columnNum = 'sz-four-columns' %}
+{% elseif limit.columns == '5' %}
+    {% set columnNum = 'sz-five-columns' %}
+{% elseif limit.columns == '6' %}
+    {% set columnNum = 'sz-five-columns' %}
+{% endif %}
+
 {% block particle %}
 
 
@@ -276,7 +292,7 @@
 
                 {# LAYOUT SHOWCASE ################################}
                 {% elseif particle.layout == 'Showcase' %}
-            
+
                     <div class="g-grid sz-article-showcase-layout">
                         {% for article in column %}
     
@@ -354,7 +370,7 @@
                                             {#TITLE ############################}
                                             {% if display.title.enabled %}
                                                 <div class="sz-article-title">
-                                                    <h3 class="g-item-title">
+                                                    <h3 class="g-item-title {{ columnNum }}">
                                                         <a href="{{ article.route }}">
                                                             {{ display.title.limit ? article.title|truncate_text(display.title.limit) : article.title }}
                                                         </a>
