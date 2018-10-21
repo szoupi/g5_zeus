@@ -42,119 +42,122 @@
         {# TODO: CONFIGURE LAYOUTS #}
         {% if particle.layout == 'hierarchical_horizontal' %} hierarchical-horizontal 
         {% elseif particle.layout == 'hierarchical_vertical' %} hierarchical-vertical 
-        {% elseif particle.layout == 'symmetrical' %} symmetrical {% endif %}
+        {% elseif particle.layout == 'symmetrical' %} symmetrical 
+        {% elseif particle.layout == 'list' %} list 
+        {% elseif particle.layout == 'two_column_list' %} two-column-list
+        {% endif %}
         
         {% if particle.css.class %} {{ particle.css.class }}{% endif %}" {{- attr_extra|raw }}>
         
 
         {% for article in articles  %}
             <div class="g-grid sz-featured-box 
-                
                 {# classes for number of articles #}
                 {%  if limit.total == 5 %} five {% endif %}
                 {%  if limit.total == 4 %} four {% endif %}
                 {%  if limit.total == 3 %} three {% endif %}
             ">
+                {% if display.image.enabled and article.images.image_intro or article.images.image_fulltext %}
+                    
                     {#IMAGE ############################}
-                    {% if display.image.enabled and article.images.image_intro or article.images.image_fulltext %}
-                        
-                        {% if article.images.image_intro and display.image.enabled == 'intro' or display.image.enabled == 'show' %}
-                            <div class="g-block">
+                    {% if article.images.image_intro and display.image.enabled == 'intro' or display.image.enabled == 'show' %}
+                        <div class="g-block container"> {# the div closes #}
+                            <div class="sz-article-image">
                                 <a href="{{ article.route }}">
                                     <div class="darken-pseudo">
                                         <img src="{{ url(article.images.image_intro) }}" alt="{{ article.title }}"> 
                                     </div>
                                 </a>
-                        {% elseif article.images.image_fulltext and display.image.enabled == 'full' %}
-                            <div class="g-block">
+                            </div>
+                    {% elseif article.images.image_fulltext and display.image.enabled == 'full' %}
+                        <div class="g-block">
+                            <div class="sz-article-image">
                                 <a href="{{ article.route }}">
                                     <div class="darken-pseudo">
                                         <img src="{{ url(article.images.image_fulltext) }}" alt="{{ article.title }}"> 
                                     </div>
                                 </a>
-                        {% endif %}
-                        
-                    {#if no image available, show default.jpg image#}
-                    {% else %}
-                                              
-                    <div class="g-block">
-                            <a href="{{ article.route }}">
-                                <div class="darken-pseudo">
-                                    <img src="{{ url('gantry-theme://images/default.jpg') }}"
-                                        alt="{{ article.title }}">
-                                </div>
-                            </a>
+                            </div>
                     {% endif %}
-
-                                <div class="sz-content 
-                                    {% if particle.overlay == 'Yes' %}
-                                        overlay
-                                    {% endif %}
-                                ">
-
-                                    {#META INFO#}
-                                    {% if display.date.enabled or display.author.enabled or display.category.enabled or display.hits.enabled %}
-                                        <div class="g-array-item-category">
+                    
+                {#if no image available, show default.jpg image#}
+                {% else %}
                                             
-                                            {#CATEGORY ############################}
-                                            {% if display.category.enabled %}
-                                                {% set category_link = display.category.enabled == 'link' %}
-                                                <span class="g-array-item-category label">
-                                                    {% set cat = article.categories|last %}
-                                                    {% if category_link %}
-                                                        <a href="{{ cat.route }}">
-                                                            {{ cat.title }}
-                                                        </a>
-                                                    {% else %}
-                                                        {{ cat.title }}
-                                                    {% endif %}
-                                                </span>
-                                            {% endif %}
-                                                
-                                        </div>
-                                    {% endif %}
-
-                                    {#TITLE ############################}
-                                    <div class="g-array-item-title">
-                                        <h1 class="g-item-title">
-                                            <a href="{{ article.route }}">{{ display.title.limit ? article.title|truncate_text(display.title.limit) : article.title }}</a>
-                                        </h1>
+                        <div class="g-block">
+                            <div class="sz-article-image">
+                                <a href="{{ article.route }}">
+                                    <div class="darken-pseudo">
+                                        <img src="{{ url('gantry-theme://images/default.jpg') }}"
+                                            alt="{{ article.title }}">
                                     </div>
-                                        
-                                    {#REST METADATA#}
-                                    <div class="g-array-item-category">
-                                        {#DATE ############################}
-                                        {% if display.date.enabled %}
-                                            <span class="g-array-item-date">
-                                                {% if display.date.enabled == 'published' %}
-                                                   {{ article.publish_up|date(display.date.format) }}
-                                                {% elseif display.date.enabled == 'modified' %}
-                                                       {{ article.modified|date(display.date.format) }}
-                                                    {% else %}
-                                                       {{ article.created|date(display.date.format) }}
-                                                    {% endif %}
-                                                </span>
+                                </a>
+                            </div>
+                {% endif %}
+
+                            <div class="sz-content 
+                                {% if particle.overlay == 'Yes' %}
+                                    overlay
+                                {% endif %}
+                            ">
+
+                            {#META INFO#}
+                            {% if display.date.enabled or display.author.enabled or display.category.enabled or display.hits.enabled %}
+                                <div class="g-array-item-category">
+                                    
+                                    {#CATEGORY ############################}
+                                    {% if display.category.enabled %}
+                                        {% set category_link = display.category.enabled == 'link' %}
+                                        <span class="g-array-item-category label">
+                                            {% set cat = article.categories|last %}
+                                            {% if category_link %}
+                                                <a href="{{ cat.route }}">
+                                                    {{ cat.title }}
+                                                </a>
+                                            {% else %}
+                                                {{ cat.title }}
                                             {% endif %}
-                                            
-                                            {#AUTHOR ############################}
-                                        {% if display.author.enabled %}
-                                            <span class="g-array-item-author">
-                                                <i class="fa fa-user" aria-hidden="true"></i> {{ article.author.name }}
+                                        </span>
+                                    {% endif %}
+                                        
+                                </div>
+                            {% endif %}
+
+                                {#TITLE ############################}
+                                <div class="g-array-item-title">
+                                    <h1 class="g-item-title">
+                                        <a href="{{ article.route }}">{{ display.title.limit ? article.title|truncate_text(display.title.limit) : article.title }}</a>
+                                    </h1>
+                                </div>
+                                    
+                                {#REST METADATA#}
+                                <div class="g-array-item-category">
+                                    {#DATE ############################}
+                                    {% if display.date.enabled %}
+                                        <span class="g-array-item-date">
+                                            {% if display.date.enabled == 'published' %}
+                                                {{ article.publish_up|date(display.date.format) }}
+                                            {% elseif display.date.enabled == 'modified' %}
+                                                    {{ article.modified|date(display.date.format) }}
+                                                {% else %}
+                                                    {{ article.created|date(display.date.format) }}
+                                                {% endif %}
                                             </span>
                                         {% endif %}
-                                    </div>
+                                        
+                                        {#AUTHOR ############################}
+                                    {% if display.author.enabled %}
+                                        <span class="g-array-item-author">
+                                            <i class="fa fa-user" aria-hidden="true"></i> {{ article.author.name }}
+                                        </span>
+                                    {% endif %}
+                                </div>
 
-                                 </div>
-                                    
-                            </div>    {# END g-block sz-featured #}
-                        
-                
-        
+                            </div> {# end sz-article-image sz-content #}
                     
-                
-                
-            </div>
-            {# END GRID #}
+                        </div>    {# end g-block #}
+                 
+            </div>  {# g-grid sz-featured-box  #}
+            
         {% endfor %}
         {# END ARTICLe #}
             

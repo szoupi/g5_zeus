@@ -1,4 +1,4 @@
-name: Latest News
+name: Top Articles
 description: Display up to five selected articles in various layouts.
 type: particle
 icon: fa-newspaper-o
@@ -20,7 +20,9 @@ form:
       options:
         hierarchical_horizontal: Hierarchical horizontal
         hierarchical_vertical: Hierarchical vertical
-        symmetrical: symmetrical
+        symmetrical: Symmetrical
+        list: List
+        two_column_list: 2 Column list
 
     gutter:
       type: select.select
