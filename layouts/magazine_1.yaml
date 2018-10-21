@@ -5,13 +5,13 @@ preset:
   timestamp: 1537303636
 layout:
   /zenith/: {  }
-  /navtop/:
-    -
-      - spacer-3541
+  /navtop/: {  }
   /navigation/:
     -
       - 'logo-9501 50'
       - 'menu-6609 50'
+  /header/: {  }
+  /intro/: {  }
   /container-main/:
     -
       -
@@ -19,40 +19,22 @@ layout:
           -
             - system-messages-2617
           -
-            - customcontentSZ-5538
-          -
-            - social-1004
+            - system-content-1966
       -
-        'aside 50':
+        'aside 25':
           -
-            - spacer-4141
-  /header/:
-    -
-      - skillsbarSZ-2274
-  /intro/:
-    -
-      - portfolioSZ-9515
-  /features/:
-    -
-      - timelineSZ-7015
+            - spacer-spacer-2395
+      -
+        'sidebar 25':
+          -
+            - spacer-spacer-4623
+  /features/: {  }
   /utility/:
     -
       - 'headlineSZ-9131 75'
       - 'calltoactionSZ-2587 25'
-  /above/:
-    -
-      - headlineSZ-1019
-    -
-      - 'contentframeSZ-8716 33.3'
-      - 'contentframeSZ-1415 33.3'
-      - 'contentframeSZ-3112 33.3'
-    -
-      - 'contentframeSZ-2818 33.3'
-      - 'contentframeSZ-1724 33.3'
-      - 'contentframeSZ-4287 33.3'
-  /testimonials/:
-    -
-      - testimonialSZ-3083
+  /above/: {  }
+  /testimonials/: {  }
   /expanded/: {  }
   /mainbottom/: {  }
   /footertop/: {  }
@@ -75,99 +57,33 @@ structure:
     type: section
     attributes:
       boxed: '3'
-      class: sz-transparent-bg-desktop
-      background: ''
-      backgroundOverlay: 'rgba(0, 0, 0, 0)'
-      backgroundAttachment: ''
-      backgroundRepeat: ''
-      backgroundPosition: ''
-      backgroundSize: ''
-      paddingTop: ''
-      paddingBottom: ''
-      paddingLeft: ''
-      paddingRight: ''
-      marginTop: ''
-      marginBottom: ''
-      marginLeft: ''
-      marginRight: ''
+      class: ''
+
   mainbar:
     type: section
     subtype: main
   aside:
     attributes:
       class: sz-negative-margin-top
-      background: 'gantry-media://default.jpg'
-      backgroundOverlay: 'rgba(0, 0, 0, 0)'
-      backgroundAttachment: ''
-      backgroundRepeat: ''
-      backgroundPosition: 'center center'
-      backgroundSize: cover
-      paddingTop: ''
-      paddingBottom: ''
-      paddingLeft: ''
-      paddingRight: ''
-      marginTop: ''
-      marginBottom: ''
-      marginLeft: ''
-      marginRight: ''
-    block:
-      fixed: '1'
   container-main:
     attributes:
-      boxed: '2'
-      class: sz-negative-margin-top-120
-      extra: {  }
+      boxed: '0'
+
   header:
     attributes:
       boxed: ''
-      class: ''
-      background: 'gantry-media://demos/gabriele-motter.jpg'
-      backgroundOverlay: ''
-      backgroundAttachment: fixed
-      backgroundRepeat: ''
-      backgroundPosition: 'center center'
-      backgroundSize: cover
   intro:
     type: section
     attributes:
-      boxed: '0'
-      class: ''
-      background: ''
-      backgroundOverlay: 'rgba(0, 0, 0, 0)'
-      backgroundAttachment: ''
-      backgroundRepeat: ''
-      backgroundPosition: ''
-      backgroundSize: ''
+      boxed: ''
   features:
     type: section
     attributes:
-      boxed: '2'
-      class: ''
-      background: 'gantry-media://demos/background_blue_lines.png'
-      backgroundOverlay: 'rgba(0, 0, 0, 0)'
-      backgroundAttachment: ''
-      backgroundRepeat: ''
-      backgroundPosition: ''
-      backgroundSize: cover
+      boxed: ''
   utility:
     type: section
     attributes:
-      boxed: '0'
-      class: ''
-      background: 'gantry-media://default.jpg'
-      backgroundOverlay: 'rgba(0, 0, 0, 0.64)'
-      backgroundAttachment: fixed
-      backgroundRepeat: ''
-      backgroundPosition: ''
-      backgroundSize: cover
-      paddingTop: ''
-      paddingBottom: ''
-      paddingLeft: ''
-      paddingRight: ''
-      marginTop: ''
-      marginBottom: ''
-      marginLeft: ''
-      marginRight: ''
+      boxed: ''
   above:
     type: section
     attributes:
@@ -176,13 +92,6 @@ structure:
     type: section
     attributes:
       boxed: ''
-      class: ''
-      background: 'gantry-media://demos/background_blue_lines.png'
-      backgroundOverlay: 'rgba(0, 0, 0, 0)'
-      backgroundAttachment: ''
-      backgroundRepeat: ''
-      backgroundPosition: ''
-      backgroundSize: cover
   expanded:
     type: section
     attributes:
@@ -232,18 +141,6 @@ content:
       menu: mainmenu
     block:
       variations: align-right
-  customcontentSZ-5538:
-    title: 'I am Ryan'
-    attributes:
-      height: ''
-      maintitle: 'Hello, I am Ryan!'
-      subtitle: 'I am a UX & UI designer from Spain'
-      description: "<strong>How to change the image on the right:</strong>\n<br />In layout manager:<br />\n1. Select Section Settings (the cog wheel) of aside section<br />\n2. Select background tab\n"
-      link: '#'
-      linktext: 'Hire me!'
-      linkstyle: button-2
-    block:
-      variations: 'center margin-top-20'
   social-1004:
     attributes:
       items:
@@ -270,287 +167,7 @@ content:
         -
           icon: 'fa fa-envelope fa-3x'
           text: ''
-          link: 'mailto:szoupi@gmail.com'
+          link: 'mailto:youremail@yourdomain.com'
           name: email
     block:
       variations: center
-  spacer-4141:
-    block:
-      extra:
-        -
-          style: 'min-height:100vh;'
-  skillsbarSZ-2274:
-    title: 'Skills bar'
-    attributes:
-      style: style2
-      bars:
-        -
-          skillTitle: Strength
-          percentance: '85'
-          color: '#ff4580'
-          title: strength
-        -
-          skillTitle: Courage
-          percentance: '100'
-          color: '#edf513'
-          title: courage
-        -
-          skillTitle: Patience
-          percentance: '70'
-          color: '#00bd55'
-          title: patience
-  portfolioSZ-9515:
-    title: Portfolio
-    attributes:
-      maintitle: 'My Portfolio'
-      subtitle: 'Awesome responsive portfolios with portfolio particle'
-      description: 'At his best, man is the noblest of all animals. Separated from law and justice he is the worst, Aristotle. Something inspirational instead of lorem ipsum'
-      gutter: 'No'
-      displayImageOnly: 'Yes'
-      portfolios:
-        -
-          image: 'gantry-media://default.jpg'
-          maintitle: ''
-          description: ''
-          link1: '#'
-          linktext1: Demo
-          linkstyle1: ''
-          link2: '#'
-          linktext2: Documentation
-          linkstyle2: button-2
-          link3: '#'
-          linktext3: Download
-          linkstyle3: button-outline
-          title: 'item 1'
-        -
-          image: 'gantry-media://default.jpg'
-          maintitle: ''
-          description: ''
-          link1: '#'
-          linktext1: Demo
-          linkstyle1: ''
-          link2: '#'
-          linktext2: Documentation
-          linkstyle2: ''
-          link3: '#'
-          linktext3: Download
-          linkstyle3: ''
-          title: 'item 2'
-        -
-          image: 'gantry-media://default.jpg'
-          maintitle: ''
-          description: ''
-          link1: '#'
-          linktext1: Demo
-          linkstyle1: ''
-          link2: '#'
-          linktext2: Documentation
-          linkstyle2: ''
-          link3: '#'
-          linktext3: Download
-          linkstyle3: ''
-          title: 'item 3'
-        -
-          image: 'gantry-media://default.jpg'
-          maintitle: ''
-          description: ''
-          link1: '#'
-          linktext1: Demo
-          linkstyle1: ''
-          link2: '#'
-          linktext2: Documentation
-          linkstyle2: ''
-          link3: '#'
-          linktext3: Download
-          linkstyle3: ''
-          title: 'item 4'
-        -
-          image: 'gantry-media://default.jpg'
-          maintitle: ''
-          description: ''
-          link1: '#'
-          linktext1: Demo
-          linkstyle1: ''
-          link2: '#'
-          linktext2: Documentation
-          linkstyle2: ''
-          link3: '#'
-          linktext3: Download
-          linkstyle3: ''
-          title: 'item 5'
-        -
-          image: 'gantry-media://default.jpg'
-          maintitle: ''
-          description: ''
-          link1: '#'
-          linktext1: Demo
-          linkstyle1: ''
-          link2: '#'
-          linktext2: Documentation
-          linkstyle2: ''
-          link3: '#'
-          linktext3: Download
-          linkstyle3: ''
-          title: 'item 6'
-        -
-          image: 'gantry-media://default.jpg'
-          maintitle: ''
-          description: ''
-          link1: '#'
-          linktext1: Demo
-          linkstyle1: ''
-          link2: '#'
-          linktext2: Documentation
-          linkstyle2: ''
-          link3: '#'
-          linktext3: Download
-          linkstyle3: ''
-          title: 'item 7'
-        -
-          image: 'gantry-media://default.jpg'
-          maintitle: ''
-          description: ''
-          link1: '#'
-          linktext1: Demo
-          linkstyle1: ''
-          link2: '#'
-          linktext2: Documentation
-          linkstyle2: ''
-          link3: '#'
-          linktext3: Download
-          linkstyle3: ''
-          title: 'item 8'
-        -
-          image: 'gantry-media://default.jpg'
-          maintitle: ''
-          description: ''
-          link1: '#'
-          linktext1: Demo
-          linkstyle1: ''
-          link2: '#'
-          linktext2: Documentation
-          linkstyle2: ''
-          link3: '#'
-          linktext3: Download
-          linkstyle3: ''
-          title: 'item 9'
-  timelineSZ-7015:
-    title: Experience
-  headlineSZ-9131:
-    title: 'Hire Ryan'
-    attributes:
-      maintitle: 'Hire Ryan!'
-      maintitlecolor: '#f7f7f7'
-      subtitle: ''
-      subtitlesize: ''
-      subtitlecolor: ''
-      description: ''
-      descriptioncolor: ''
-  calltoactionSZ-2587:
-    title: 'Call to action'
-    attributes:
-      link: '#'
-      linktext: 'Download CV'
-      linkstyle: button-outline
-      link2: ''
-      linktext2: ''
-      linkstyle2: ''
-      link3: ''
-      linktext3: ''
-  headlineSZ-1019:
-    title: 'My Awesome Services'
-    attributes:
-      maintitle: 'My Awesome Services'
-      maintitlecolor: '#ffffff'
-      subtitle: 'Content Frame Particle'
-      subtitlecolor: '#ffffff'
-      description: 'Aim straight to the point with Content Frame Particle. Create attractive and well-balanced blocks of content combined with icons or images'
-      descriptioncolor: '#ffffff'
-  contentframeSZ-8716:
-    title: 'Web Design'
-    attributes:
-      mainicon: 'fa fa-mobile fa-5x'
-      maintitle: 'Web Design'
-      subtitle: ''
-      description: 'I have not failed. I''ve just found 10,000 ways that won''t work'
-    block:
-      variations: center
-  contentframeSZ-1415:
-    title: 'Custom Support'
-    attributes:
-      mainicon: 'fa fa-user fa-5x'
-      maintitle: 'Custom Support'
-      subtitle: ''
-      description: 'I have not failed. I''ve just found 10,000 ways that won''t work'
-    block:
-      variations: center
-  contentframeSZ-3112:
-    title: Debugging
-    attributes:
-      mainicon: 'fa fa-bug fa-5x'
-      maintitle: Debugging
-      subtitle: ''
-      description: 'I have not failed. I''ve just found 10,000 ways that won''t work'
-    block:
-      variations: center
-  contentframeSZ-2818:
-    title: Development
-    attributes:
-      mainicon: 'fa fa-sitemap fa-5x'
-      maintitle: Development
-      subtitle: ''
-      description: 'I have not failed. I''ve just found 10,000 ways that won''t work'
-    block:
-      variations: center
-  contentframeSZ-1724:
-    title: Variations
-    attributes:
-      mainicon: 'fa fa-tag fa-5x'
-      maintitle: Variations
-      subtitle: ''
-      description: 'Use variations to attract user''s attention.'
-    block:
-      variations: 'center box1'
-  contentframeSZ-4287:
-    title: UI/UX
-    attributes:
-      mainicon: 'fa fa-desktop fa-5x'
-      maintitle: UI/UX
-      subtitle: ''
-      description: 'I have not failed. I''ve just found 10,000 ways that won''t work'
-    block:
-      variations: center
-  testimonialSZ-3083:
-    title: references
-    attributes:
-      maintitle: 'They have said about us'
-      subtitle: 'Testimonial Particle in action'
-      description: ''
-      testimonials:
-        -
-          icon: 'fa fa-quote-left fa-3x'
-          quote: 'If you tell the truth, you don''t have to remember anything'
-          author: 'My mom'
-          authorattribute: CEO
-          image: 'gantry-media://default.jpg'
-          effect: card
-          class: ''
-          title: quote1
-        -
-          icon: 'fa fa-quote-left fa-3x'
-          quote: 'I have not failed. I''ve just found 10,000 ways that won''t work'
-          author: 'Thomas A. Edison'
-          authorattribute: Scientist
-          image: 'gantry-media://default.jpg'
-          effect: card
-          class: ''
-          title: quote2
-        -
-          icon: 'fa fa-quote-left fa-3x'
-          quote: 'The only true wisdom is in knowing you know nothing'
-          author: Socrates
-          authorattribute: Designer
-          image: 'gantry-media://default.jpg'
-          effect: card
-          class: ''
-          title: quote3

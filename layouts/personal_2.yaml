@@ -121,12 +121,6 @@ structure:
     attributes:
       boxed: ''
       class: ''
-      background: 'gantry-media://demos/gabriele-motter.jpg'
-      backgroundOverlay: ''
-      backgroundAttachment: fixed
-      backgroundRepeat: ''
-      backgroundPosition: 'center center'
-      backgroundSize: cover
   intro:
     type: section
     attributes:
@@ -143,12 +137,6 @@ structure:
     attributes:
       boxed: '2'
       class: ''
-      background: 'gantry-media://demos/background_blue_lines.png'
-      backgroundOverlay: 'rgba(0, 0, 0, 0)'
-      backgroundAttachment: ''
-      backgroundRepeat: ''
-      backgroundPosition: ''
-      backgroundSize: cover
   utility:
     type: section
     attributes:
@@ -177,12 +165,6 @@ structure:
     attributes:
       boxed: ''
       class: ''
-      background: 'gantry-media://demos/background_blue_lines.png'
-      backgroundOverlay: 'rgba(0, 0, 0, 0)'
-      backgroundAttachment: ''
-      backgroundRepeat: ''
-      backgroundPosition: ''
-      backgroundSize: cover
   expanded:
     type: section
     attributes:

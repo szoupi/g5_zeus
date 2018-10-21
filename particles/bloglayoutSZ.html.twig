@@ -58,7 +58,7 @@
             {% for column in articles|batch(limit.columns) %}
                 
                 {# LAYOUT  DEFAULT ############################}
-                {% if particle.layout == 'default' %}
+                {% if particle.layout == 'Default' %}
                     
                     <div class="g-grid sz-article-default-layout">
                         {% for article in column %}
@@ -165,7 +165,7 @@
                     {# END GRID #}
                     
                 {# LAYOYT LIST ################################}
-                {% elseif particle.layout == 'list' %}
+                {% elseif particle.layout == 'List' %}
                 
                     <div class="g-grid sz-article-list-layout">
                         {% for article in column %}
@@ -409,7 +409,9 @@
                         
                     </div>
                     {# END GRID #}
-                    
+
+
+
                 {% endif %}
                 {# END LAYOUT STYLE #}
                 

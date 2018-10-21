@@ -7,7 +7,8 @@
         "00_reference.css",
         "00_reference.scss",
         "templateDetails.xml",
-        "gantry/theme.yaml"
+        "gantry/theme.yaml",
+        "scss/zeus/particles/_bloglayoutSZ.scss"
     ],
     "search.useIgnoreFiles": false
 }
