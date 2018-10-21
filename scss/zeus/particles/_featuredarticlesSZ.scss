@@ -66,7 +66,7 @@
                 }
 
                 .g-item-title {
-                    font-size: 1.2rem;
+                    font-size: 1rem;
                     margin: 0.2rem 0;
                     a {
                         color: white !important;
@@ -483,9 +483,6 @@
                     }                // overlay background
                     
                     .g-array-item-category {
-                        @include breakpoint(no-mobile) {
-
-                        }
                         padding: 0;
                         margin: 0;
                         .label {
@@ -512,10 +509,11 @@
                 grid-column-start: 1;
                 grid-column-end: 12; 
                 
+                padding: 0.5rem 0;
                 
                 .container {
                     display: flex;
-                    // distibut items in one row
+                    // distribute items in one row
                     flex-flow: row nowrap;
                     
                     // left item
@@ -534,11 +532,13 @@
                     .container {
                         display: block
                     }
-                    
-                        .sz-content {
-                            padding: 1rem 0;
+                    .sz-content {
+                        padding: 1rem 0;
+                        .g-item-title {
+                            font-size: 2rem;
                         }
                     }
+                }
             }                
             
         }
