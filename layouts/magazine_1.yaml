@@ -1,25 +1,40 @@
 version: 2
 preset:
   image: 'gantry-admin://layout/homepage1.png'
-  name: personal_3
-  timestamp: 1537303368
+  name: magazine_1
+  timestamp: 1537303636
 layout:
   /zenith/: {  }
   /navtop/:
     -
-      - system-messages-2617
+      - spacer-3541
   /navigation/:
     -
-      - 'logo-9501 25'
+      - 'logo-9501 50'
       - 'menu-6609 50'
-      - 'social-1788 25'
+  /container-main/:
+    -
+      -
+        'mainbar 50':
+          -
+            - system-messages-2617
+          -
+            - customcontentSZ-5538
+          -
+            - social-1004
+      -
+        'aside 50':
+          -
+            - spacer-4141
   /header/:
     -
-      - customcontentSZ-5538
-  /intro/: {  }
+      - skillsbarSZ-2274
+  /intro/:
+    -
+      - portfolioSZ-9515
   /features/:
     -
-      - skillsbarSZ-2274
+      - timelineSZ-7015
   /utility/:
     -
       - 'headlineSZ-9131 75'
@@ -35,22 +50,10 @@ layout:
       - 'contentframeSZ-2818 33.3'
       - 'contentframeSZ-1724 33.3'
       - 'contentframeSZ-4287 33.3'
-    -
-      - portfolioSZ-9515
   /testimonials/:
     -
       - testimonialSZ-3083
-  /expanded/:
-    -
-      - timelineSZ-7015
-  /container-main/:
-    -
-      -
-        'aside 25': {  }
-      -
-        'mainbar 50': {  }
-      -
-        'sidebar 25': {  }
+  /expanded/: {  }
   /mainbottom/: {  }
   /footertop/: {  }
   footer: {  }
@@ -74,7 +77,7 @@ structure:
       boxed: '3'
       class: sz-transparent-bg-desktop
       background: ''
-      backgroundOverlay: ''
+      backgroundOverlay: 'rgba(0, 0, 0, 0)'
       backgroundAttachment: ''
       backgroundRepeat: ''
       backgroundPosition: ''
@@ -87,25 +90,43 @@ structure:
       marginBottom: ''
       marginLeft: ''
       marginRight: ''
-  header:
+  mainbar:
+    type: section
+    subtype: main
+  aside:
     attributes:
-      boxed: ''
-      class: ''
+      class: sz-negative-margin-top
       background: 'gantry-media://default.jpg'
-      backgroundOverlay: 'rgba(0, 0, 0, 0.59)'
-      backgroundAttachment: fixed
-      backgroundRepeat: no-repeat
+      backgroundOverlay: 'rgba(0, 0, 0, 0)'
+      backgroundAttachment: ''
+      backgroundRepeat: ''
       backgroundPosition: 'center center'
       backgroundSize: cover
       paddingTop: ''
       paddingBottom: ''
       paddingLeft: ''
       paddingRight: ''
-      marginTop: '-120px'
+      marginTop: ''
       marginBottom: ''
       marginLeft: ''
       marginRight: ''
-      blockHeight: ''
+    block:
+      fixed: '1'
+  container-main:
+    attributes:
+      boxed: '2'
+      class: sz-negative-margin-top-120
+      extra: {  }
+  header:
+    attributes:
+      boxed: ''
+      class: ''
+      background: 'gantry-media://demos/gabriele-motter.jpg'
+      backgroundOverlay: ''
+      backgroundAttachment: fixed
+      backgroundRepeat: ''
+      backgroundPosition: 'center center'
+      backgroundSize: cover
   intro:
     type: section
     attributes:
@@ -117,41 +138,25 @@ structure:
       backgroundRepeat: ''
       backgroundPosition: ''
       backgroundSize: ''
-      paddingTop: ''
-      paddingBottom: ''
-      paddingLeft: ''
-      paddingRight: ''
-      marginTop: ''
-      marginBottom: ''
-      marginLeft: ''
-      marginRight: ''
   features:
     type: section
     attributes:
-      boxed: '0'
+      boxed: '2'
       class: ''
-      background: ''
+      background: 'gantry-media://demos/background_blue_lines.png'
       backgroundOverlay: 'rgba(0, 0, 0, 0)'
       backgroundAttachment: ''
       backgroundRepeat: ''
       backgroundPosition: ''
       backgroundSize: cover
-      paddingTop: ''
-      paddingBottom: ''
-      paddingLeft: ''
-      paddingRight: ''
-      marginTop: ''
-      marginBottom: ''
-      marginLeft: ''
-      marginRight: ''
   utility:
     type: section
     attributes:
       boxed: '0'
       class: ''
       background: 'gantry-media://default.jpg'
-      backgroundOverlay: 'rgba(3, 3, 3, 0.52)'
-      backgroundAttachment: ''
+      backgroundOverlay: 'rgba(0, 0, 0, 0.64)'
+      backgroundAttachment: fixed
       backgroundRepeat: ''
       backgroundPosition: ''
       backgroundSize: cover
@@ -166,61 +171,20 @@ structure:
   above:
     type: section
     attributes:
-      boxed: '0'
-      class: ''
-      background: ''
-      backgroundOverlay: 'rgba(0, 0, 0, 0.67)'
-      backgroundAttachment: ''
-      backgroundRepeat: ''
-      backgroundPosition: ''
-      backgroundSize: cover
-      paddingTop: ''
-      paddingBottom: ''
-      paddingLeft: ''
-      paddingRight: ''
-      marginTop: ''
-      marginBottom: ''
-      marginLeft: ''
-      marginRight: ''
+      boxed: ''
   testimonials:
     type: section
     attributes:
-      boxed: '0'
+      boxed: ''
       class: ''
-      background: ''
+      background: 'gantry-media://demos/background_blue_lines.png'
       backgroundOverlay: 'rgba(0, 0, 0, 0)'
       backgroundAttachment: ''
       backgroundRepeat: ''
       backgroundPosition: ''
       backgroundSize: cover
-      paddingTop: 4rem
-      paddingBottom: 3rem
-      paddingLeft: ''
-      paddingRight: ''
-      marginTop: ''
-      marginBottom: ''
-      marginLeft: ''
-      marginRight: ''
   expanded:
     type: section
-    attributes:
-      boxed: ''
-  aside:
-    attributes:
-      class: ''
-    block:
-      fixed: '1'
-  mainbar:
-    type: section
-    subtype: main
-  sidebar:
-    type: section
-    subtype: aside
-    attributes:
-      class: ''
-    block:
-      fixed: '1'
-  container-main:
     attributes:
       boxed: ''
   mainbottom:
@@ -269,20 +233,52 @@ content:
     block:
       variations: align-right
   customcontentSZ-5538:
-    title: 'I am James'
+    title: 'I am Ryan'
     attributes:
-      height: 80vh
-      maintitle: 'Hello, I am James!'
+      height: ''
+      maintitle: 'Hello, I am Ryan!'
       subtitle: 'I am a UX & UI designer from Spain'
-      description: "<strong>How to change the background image:</strong>\n<br />In layout manager:<br />\n1. Select Section Settings (the cog wheel) of aside section<br />\n2. Select background tab\n"
+      description: "<strong>How to change the image on the right:</strong>\n<br />In layout manager:<br />\n1. Select Section Settings (the cog wheel) of aside section<br />\n2. Select background tab\n"
       link: '#'
       linktext: 'Hire me!'
       linkstyle: button-2
-      link2: '#'
-      linktext2: Portfolio
-      linkstyle2: button-outline
     block:
       variations: 'center margin-top-20'
+  social-1004:
+    attributes:
+      items:
+        -
+          icon: 'fa fa-facebook-square fa-3x'
+          text: ''
+          link: '#'
+          name: facebook
+        -
+          icon: 'fa fa-twitter fa-3x'
+          text: ''
+          link: '#'
+          name: twitter
+        -
+          icon: 'fa fa-google-plus-official fa-3x'
+          text: ''
+          link: '#'
+          name: google+
+        -
+          icon: 'fa fa-linkedin-square fa-3x'
+          text: ''
+          link: '#'
+          name: linkendin
+        -
+          icon: 'fa fa-envelope fa-3x'
+          text: ''
+          link: 'mailto:szoupi@gmail.com'
+          name: email
+    block:
+      variations: center
+  spacer-4141:
+    block:
+      extra:
+        -
+          style: 'min-height:100vh;'
   skillsbarSZ-2274:
     title: 'Skills bar'
     attributes:
@@ -303,87 +299,6 @@ content:
           percentance: '70'
           color: '#00bd55'
           title: patience
-  headlineSZ-9131:
-    title: 'Hire Ryan'
-    attributes:
-      maintitle: 'Hire Ryan!'
-      maintitlecolor: '#f7f7f7'
-      subtitle: ''
-      subtitlesize: ''
-      subtitlecolor: ''
-      description: ''
-      descriptioncolor: ''
-  calltoactionSZ-2587:
-    title: 'Call to action'
-    attributes:
-      link: '#'
-      linktext: 'Download CV'
-      linkstyle: button-outline
-      link2: ''
-      linktext2: ''
-      linkstyle2: ''
-      link3: ''
-      linktext3: ''
-  headlineSZ-1019:
-    title: 'My Services'
-    attributes:
-      maintitle: 'My Services'
-      subtitle: 'Content Frame Particle'
-      description: 'Aim straight to the point with Content Frame Particle. Create attractive and well-balanced blocks of content combined with icons or images'
-  contentframeSZ-8716:
-    title: 'Web Design'
-    attributes:
-      mainicon: 'fa fa-mobile fa-5x'
-      maintitle: 'Web Design'
-      subtitle: ''
-      description: 'I have not failed. I''ve just found 10,000 ways that won''t work'
-    block:
-      variations: center
-  contentframeSZ-1415:
-    title: 'Custom Support'
-    attributes:
-      mainicon: 'fa fa-user fa-5x'
-      maintitle: 'Custom Support'
-      subtitle: ''
-      description: 'I have not failed. I''ve just found 10,000 ways that won''t work'
-    block:
-      variations: center
-  contentframeSZ-3112:
-    title: Debugging
-    attributes:
-      mainicon: 'fa fa-bug fa-5x'
-      maintitle: Debugging
-      subtitle: ''
-      description: 'I have not failed. I''ve just found 10,000 ways that won''t work'
-    block:
-      variations: center
-  contentframeSZ-2818:
-    title: Development
-    attributes:
-      mainicon: 'fa fa-sitemap fa-5x'
-      maintitle: Development
-      subtitle: ''
-      description: 'I have not failed. I''ve just found 10,000 ways that won''t work'
-    block:
-      variations: center
-  contentframeSZ-1724:
-    title: Variations
-    attributes:
-      mainicon: 'fa fa-tag fa-5x'
-      maintitle: Variations
-      subtitle: ''
-      description: 'Use variations to attract user''s attention.'
-    block:
-      variations: 'center box1'
-  contentframeSZ-4287:
-    title: UI/UX
-    attributes:
-      mainicon: 'fa fa-desktop fa-5x'
-      maintitle: UI/UX
-      subtitle: ''
-      description: 'I have not failed. I''ve just found 10,000 ways that won''t work'
-    block:
-      variations: center
   portfolioSZ-9515:
     title: Portfolio
     attributes:
@@ -519,6 +434,92 @@ content:
           linktext3: Download
           linkstyle3: ''
           title: 'item 9'
+  timelineSZ-7015:
+    title: Experience
+  headlineSZ-9131:
+    title: 'Hire Ryan'
+    attributes:
+      maintitle: 'Hire Ryan!'
+      maintitlecolor: '#f7f7f7'
+      subtitle: ''
+      subtitlesize: ''
+      subtitlecolor: ''
+      description: ''
+      descriptioncolor: ''
+  calltoactionSZ-2587:
+    title: 'Call to action'
+    attributes:
+      link: '#'
+      linktext: 'Download CV'
+      linkstyle: button-outline
+      link2: ''
+      linktext2: ''
+      linkstyle2: ''
+      link3: ''
+      linktext3: ''
+  headlineSZ-1019:
+    title: 'My Awesome Services'
+    attributes:
+      maintitle: 'My Awesome Services'
+      maintitlecolor: '#ffffff'
+      subtitle: 'Content Frame Particle'
+      subtitlecolor: '#ffffff'
+      description: 'Aim straight to the point with Content Frame Particle. Create attractive and well-balanced blocks of content combined with icons or images'
+      descriptioncolor: '#ffffff'
+  contentframeSZ-8716:
+    title: 'Web Design'
+    attributes:
+      mainicon: 'fa fa-mobile fa-5x'
+      maintitle: 'Web Design'
+      subtitle: ''
+      description: 'I have not failed. I''ve just found 10,000 ways that won''t work'
+    block:
+      variations: center
+  contentframeSZ-1415:
+    title: 'Custom Support'
+    attributes:
+      mainicon: 'fa fa-user fa-5x'
+      maintitle: 'Custom Support'
+      subtitle: ''
+      description: 'I have not failed. I''ve just found 10,000 ways that won''t work'
+    block:
+      variations: center
+  contentframeSZ-3112:
+    title: Debugging
+    attributes:
+      mainicon: 'fa fa-bug fa-5x'
+      maintitle: Debugging
+      subtitle: ''
+      description: 'I have not failed. I''ve just found 10,000 ways that won''t work'
+    block:
+      variations: center
+  contentframeSZ-2818:
+    title: Development
+    attributes:
+      mainicon: 'fa fa-sitemap fa-5x'
+      maintitle: Development
+      subtitle: ''
+      description: 'I have not failed. I''ve just found 10,000 ways that won''t work'
+    block:
+      variations: center
+  contentframeSZ-1724:
+    title: Variations
+    attributes:
+      mainicon: 'fa fa-tag fa-5x'
+      maintitle: Variations
+      subtitle: ''
+      description: 'Use variations to attract user''s attention.'
+    block:
+      variations: 'center box1'
+  contentframeSZ-4287:
+    title: UI/UX
+    attributes:
+      mainicon: 'fa fa-desktop fa-5x'
+      maintitle: UI/UX
+      subtitle: ''
+      description: 'I have not failed. I''ve just found 10,000 ways that won''t work'
+    block:
+      variations: center
   testimonialSZ-3083:
     title: references
     attributes:
@@ -553,5 +554,3 @@ content:
           effect: card
           class: ''
           title: quote3
-  timelineSZ-7015:
-    title: Experience

@@ -1,5 +1,5 @@
 name: Top Headlines
-description: Display Joomla Articles in various layouts.
+description: Display only headlines from Joomla Articles .
 type: particle
 icon: fa-joomla
 
@@ -19,16 +19,8 @@ form:
       default:  none
       options:
         default: Default
-        Showcase: Showcase
         list: List
-        Mosaic: Mosaic
-        # Headlines: Headlines
-        # Strips: Strips
-        # Tabs: Tabs
-        # Grids: Grids
-        # Sliders: Sliders
-        # Tables: Tables
-        # Quotes: Quotes
+
         
     _tabs:
       type: container.tabs

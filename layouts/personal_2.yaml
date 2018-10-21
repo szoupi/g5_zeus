@@ -1,7 +1,7 @@
 version: 2
 preset:
   image: 'gantry-admin://layout/homepage1.png'
-  name: personal_-_2
+  name: personal_2
   timestamp: 1537303636
 layout:
   /zenith/: {  }
