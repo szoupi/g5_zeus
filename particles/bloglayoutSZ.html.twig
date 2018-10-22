@@ -58,7 +58,7 @@
             {% for column in articles|batch(limit.columns) %}
                 
                 {# LAYOUT  DEFAULT ############################}
-                {% if particle.layout == 'Default' %}
+                {% if particle.layout == 'Classic' %}
                     
                     <div class="g-grid sz-article-default-layout">
                         {% for article in column %}
@@ -291,7 +291,7 @@
                     
 
                 {# LAYOUT SHOWCASE ################################}
-                {% elseif particle.layout == 'Showcase' %}
+                {% elseif particle.layout == 'Grid' %}
 
                     <div class="g-grid sz-article-showcase-layout">
                         {% for article in column %}

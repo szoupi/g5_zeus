@@ -18,17 +18,9 @@ form:
       placeholder: 'Select...'
       default:  none
       options:
-        default: Default
-        Showcase: Showcase
-        list: List
-        Mosaic: Mosaic
-        ListHierarchy: List - hierarchy
-        # Strips: Strips
-        # Tabs: Tabs
-        # Grids: Grids
-        # Sliders: Sliders
-        # Tables: Tables
-        # Quotes: Quotes
+        Classic: Classic
+        List: List
+        Grid: Grid
         
     _tabs:
       type: container.tabs
