@@ -40,18 +40,18 @@
         {% if particle.gutter == 'Yes' %} gutter {% endif %}
         
         {# TODO: CONFIGURE LAYOUTS #}
-        {% if particle.layout == 'hierarchical_horizontal' %} hierarchical-horizontal 
-        {% elseif particle.layout == 'hierarchical_vertical' %} hierarchical-vertical 
-        {% elseif particle.layout == 'symmetrical' %} symmetrical 
-        {% elseif particle.layout == 'list' %} list 
-        {% elseif particle.layout == 'two_column_list' %} two-column-list
+        {% if particle.layout == 'Horizontal' %} horizontal 
+        {% elseif particle.layout == 'Vertical' %} vertical 
+        {% elseif particle.layout == 'Symmetry' %} symmetry 
+        {% elseif particle.layout == 'List' %} list 
+        {% elseif particle.layout == 'Two_column_list' %} two-column-list
         {% endif %}
         
         {% if particle.css.class %} {{ particle.css.class }}{% endif %}" {{- attr_extra|raw }}>
         
 
         {% for article in articles  %}
-            <div class="g-grid sz-featured-box 
+            <div class="g-grid sz-box 
                 {# classes for number of articles #}
                 {%  if limit.total == 5 %} five {% endif %}
                 {%  if limit.total == 4 %} four {% endif %}
@@ -156,7 +156,7 @@
                     
                         </div>    {# end g-block #}
                  
-            </div>  {# g-grid sz-featured-box  #}
+            </div>  {# g-grid sz-box  #}
             
         {% endfor %}
         {# END ARTICLe #}

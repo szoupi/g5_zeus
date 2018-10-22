@@ -18,11 +18,11 @@ form:
       placeholder: 'Select...'
       default:  Hierarchical horizontal
       options:
-        hierarchical_horizontal: Hierarchical horizontal
-        hierarchical_vertical: Hierarchical vertical
-        symmetrical: Symmetrical
-        list: List
-        two_column_list: 2 Column list
+        Horizontal: Horizontal
+        Vertical: Vertical
+        Symmetry: Symmetry
+        List: List
+        Two_column_list: 2 Column list
 
     gutter:
       type: select.select

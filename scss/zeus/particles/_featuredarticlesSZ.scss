@@ -30,7 +30,7 @@
     }
     
     //common setting for all layouts:
-    div.g-grid.sz-featured-box {
+    div.g-grid.sz-box {
         
         .g-block {
             position: relative;
@@ -93,9 +93,9 @@
     * to be overiden
     */
     ////////////// HIERARCHICAL HORIZONTAL //////////////////
-    &.hierarchical-horizontal {
+    &.horizontal {
         
-        div.g-grid.sz-featured-box {
+        div.g-grid.sz-box {
             @include breakpoint(no-mobile) {
                 
                 
@@ -223,9 +223,9 @@
     }
     
     ////////////// HIERARCHICAL VERTICAL //////////////////
-    &.hierarchical-vertical {
+    &.vertical {
         
-        div.g-grid.sz-featured-box {
+        div.g-grid.sz-box {
             @include breakpoint(no-mobile) {
                 grid-row: 1;
                 
@@ -313,19 +313,15 @@
         }
     }
     
-    
-    
-            
-
 ////////////// SYMMETRICAL ////////////////////////////
     
-    &.symmetrical {
+    &.symmetry {
         
         // @include breakpoint(no-mobile) {
         //     grid-template-columns: repeat(5, 1fr);
         // }
         
-        div.g-grid.sz-featured-box {
+        div.g-grid.sz-box {
             @include breakpoint(no-mobile) {
                 grid-row: 1;
                 
@@ -369,7 +365,7 @@
         //     grid-template-columns: repeat(4, 1fr);
         // }
         
-        div.g-grid.sz-featured-box {
+        div.g-grid.sz-box {
             @include breakpoint(no-mobile) {
                 grid-row: 1;        
 
@@ -403,7 +399,7 @@
         //     grid-template-columns: repeat(3, 1fr);
         // }
         
-        div.g-grid.sz-featured-box {
+        div.g-grid.sz-box {
             @include breakpoint(no-mobile) {
                 grid-row: 1;        
 
@@ -444,7 +440,7 @@
         // count of articles is no taken into account 
         // one column only, 
         // the first article is displayed bigger than the others
-        div.g-grid.sz-featured-box {
+        div.g-grid.sz-box {
             border-bottom: 1px solid #DDD;
             margin-bottom: 1rem;
             
