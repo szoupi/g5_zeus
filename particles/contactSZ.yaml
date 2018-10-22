@@ -1,0 +1,41 @@
+name: Contact
+description: Displays Contact Info
+type: particle
+icon: fa fa-users
+
+form:
+  fields:
+    enabled:
+      type: input.checkbox
+      label: Enabled
+      description: Globally enable the particle.
+      default: true
+
+    samples:
+      type: collection.list
+      array: true
+      label: Sample Items
+      description: Create each item to appear in the content row.
+      value: title
+      ajax: true
+
+      fields:
+        .icon:
+          type: input.icon
+          label: Icon
+
+        .title:
+          type: input.text
+          label: Title
+
+        .subtitle:
+          type: input.text
+          label: Sub Title
+
+        .description:
+          type: textarea.textarea
+          label: Description
+
+        .class:
+          type: input.block-variations
+          label: Variations
