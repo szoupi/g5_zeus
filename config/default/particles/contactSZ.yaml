@@ -1,0 +1,42 @@
+enabled: '1'
+contactinfo:
+  -
+    icon: 'fa fa-map-marker'
+    label: 'Address:'
+    text: '101 Some Avenue, Los Angeles, DC 12345, United States'
+    link: ''
+    linktarget: _self
+    variations: line-bottom
+    title: Address
+  -
+    icon: 'fa fa-phone'
+    label: 'Phone:'
+    text: '+1 123-456-7890'
+    link: 'tel:+11234567890'
+    linktarget: _self
+    variations: ''
+    title: phone
+  -
+    icon: 'fa fa-fax'
+    label: 'Fax:'
+    text: '+1 123-456-7890'
+    link: ''
+    linktarget: _self
+    variations: ''
+    title: fax
+  -
+    icon: 'fa fa-envelope'
+    label: 'Email:'
+    text: info@test.abc
+    link: 'mailto:info@test.abc'
+    linktarget: _self
+    variations: ''
+    title: email
+  -
+    icon: 'fa fa-globe'
+    label: 'Website:'
+    text: 'https://threethemes.com/'
+    link: 'https://threethemes.com/'
+    linktarget: _blank
+    variations: ''
+    title: Website
