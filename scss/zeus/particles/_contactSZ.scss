@@ -1,0 +1,24 @@
+.sz-contact {
+
+    span.contact-label {
+        padding: 0 6px;
+    }
+
+    // STYLES
+    .sz-horizontal {
+        flex-direction: row;
+        
+        .g-content {
+            margin: 0;
+            padding: 0.5rem 1rem;
+        }
+    }
+    .sz-vertical {
+        flex-direction: column;
+        
+        .g-content {
+            margin: 0;
+            padding: 5px 0;
+        }
+    }
+}

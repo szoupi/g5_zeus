@@ -45,14 +45,14 @@
 
                             <div class="item-title">
                                 {% if item.link %}
-                                <a target="{{ item.buttontarget|default('_self')|e }}" class="item-link {{ item.buttonclass|e }}" href="{{ item.link|e }}">
-                                    {% endif %}
+                                    <a target="{{ item.buttontarget|default('_self')|e }}" class="item-link {{ item.buttonclass|e }}" href="{{ item.link|e }}">
+                                {% endif %}
 
-                                    {{ item.title|e }}
+                                {{ item.title|e }}
 
-                                    {% if item.link %}
+                                {% if item.link %}
                                     <span class="item-link-text">{{ item.linktext|raw }}</span>
-                                </a>
+                                    </a>
                                 {% endif %}
                             </div>
                             

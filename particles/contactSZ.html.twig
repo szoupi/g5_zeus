@@ -1,0 +1,41 @@
+{% extends '@nucleus/partials/particle.html.twig' %}
+
+{% block particle %}
+    <div class="sz-contact" >
+        <div class="g-grid 
+            {# styles #}
+            {% if particle.style == 'vertical' %} sz-vertical
+            {% elseif particle.style == 'horizontal' %} sz-horizontal
+            {% endif %}
+        ">
+
+            {% for item in particle.contactinfo %}
+                <div class="g-block {{ item.variations }}">
+                    <div class="g-content">
+                        {# icon #}
+                        <i class="{{ item.icon }} contact-icons"></i>
+
+                        {# label #}
+                        <span class="contact-label">{{ item.label|raw }}</span>
+
+                        {# link start #}
+                        {% if item.link %}
+                            <a target="{{ item.linktarget|default('_self')|e }}" 
+                               class="item-link" href="{{ item.link|e }}">
+                        {% endif %}
+
+                        {# info #}
+                        <span class="item-link-text">{{ item.text|raw }}</span>
+                        
+                        {# link end #}
+                        {% if item.link %}
+                            </a>
+                        {% endif %}
+                        
+                    </div>
+                </div>
+            {% endfor %}
+        </div>
+    </div>
+    
+{% endblock %}

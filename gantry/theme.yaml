@@ -80,6 +80,8 @@ configuration:
       spaced : Spaced
       shadow : Shadow
       rounded : Rounded
+      line-bottom: Line bottom
+      line-top: Line top
     Utility:
       center: Center
       title-center: Centered Title
