@@ -8,7 +8,12 @@
             {% elseif particle.style == 'horizontal' %} sz-horizontal
             {% endif %}
         ">
-
+            {#TITLE#}
+            {% if particle.maintitle %}
+                    <h3>
+                        {{ particle.maintitle|raw }}
+                    </h3>
+            {% endif %}
             {% for item in particle.contactinfo %}
                 <div class="g-block {{ item.variations }}">
                     <div class="g-content">

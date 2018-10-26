@@ -1,4 +1,6 @@
 enabled: '1'
+style: vertical
+maintitle: Contact
 contactinfo:
   -
     icon: 'fa fa-map-marker'

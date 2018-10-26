@@ -2,45 +2,58 @@ version: 2
 preset:
   image: 'gantry-admin://layout/homepage1.png'
   name: magazine_1
-  timestamp: 1537303636
+  timestamp: 1540136425
 layout:
   /zenith/: {  }
-  /navtop/: {  }
+  /navtop/:
+    -
+      - 'custom-6219 50'
+      - 'social-5901 50'
   /navigation/:
     -
-      - 'logo-9501 50'
-      - 'menu-6609 50'
-  /header/: {  }
-  /intro/: {  }
+      - 'logo-9501 15'
+      - 'menu-6609 65'
+      - 'position-module-4768 20'
+  /header/:
+    -
+      - featuredarticlesSZ-6228
+  /intro/:
+    -
+      - bloglayoutSZ-6871
+  /features/: {  }
+  /utility/: {  }
   /container-main/:
     -
       -
         'mainbar 50':
           -
             - system-messages-2617
-          -
-            - system-content-1966
       -
         'aside 25':
           -
-            - spacer-spacer-2395
+            - spacer-2395
       -
-        'sidebar 25':
-          -
-            - spacer-spacer-4623
-  /features/: {  }
-  /utility/:
-    -
-      - 'headlineSZ-9131 75'
-      - 'calltoactionSZ-2587 25'
+        'sidebar 25': {  }
   /above/: {  }
   /testimonials/: {  }
   /expanded/: {  }
   /mainbottom/: {  }
-  /footertop/: {  }
-  footer: {  }
-  footerbottom: {  }
-  nadir: {  }
+  /footertop/:
+    -
+      - 'custom-9805 25'
+      - 'custom-7729 25'
+      - 'position-module-8441 25'
+      - 'position-module-1221 25'
+  /footer/:
+    -
+      - 'logo-9571 21'
+      - 'copyright-1736 26'
+      - 'horizontalmenu-9034 24'
+      - 'totop-8670 29'
+    -
+      - socialfloatingSZ-2700
+  /footerbottom/: {  }
+  /nadir/: {  }
   offcanvas:
     -
       - mobile-menu-5697
@@ -52,30 +65,62 @@ structure:
   navtop:
     type: section
     attributes:
-      boxed: ''
+      boxed: '3'
+      class: ''
+      background: ''
+      backgroundOverlay: 'rgba(0, 0, 0, 0)'
+      backgroundAttachment: ''
+      backgroundRepeat: ''
+      backgroundPosition: ''
+      backgroundSize: ''
+      paddingTop: ''
+      paddingBottom: ''
+      paddingLeft: ''
+      paddingRight: ''
+      marginTop: ''
+      marginBottom: ''
+      marginLeft: ''
+      marginRight: ''
+      blockHeight: ''
   navigation:
     type: section
     attributes:
       boxed: '3'
       class: ''
-
+  header:
+    attributes:
+      boxed: '3'
+      class: ''
+      background: ''
+      backgroundOverlay: 'rgba(0, 0, 0, 0)'
+      backgroundAttachment: ''
+      backgroundRepeat: ''
+      backgroundPosition: ''
+      backgroundSize: ''
+      paddingTop: ''
+      paddingBottom: ''
+      paddingLeft: ''
+      paddingRight: ''
+      marginTop: ''
+      marginBottom: ''
+      marginLeft: ''
+      marginRight: ''
+      blockHeight: ''
+  intro:
+    type: section
+    attributes:
+      boxed: ''
   mainbar:
     type: section
     subtype: main
   aside:
     attributes:
       class: sz-negative-margin-top
+  sidebar:
+    type: section
   container-main:
     attributes:
       boxed: '0'
-
-  header:
-    attributes:
-      boxed: ''
-  intro:
-    type: section
-    attributes:
-      boxed: ''
   features:
     type: section
     attributes:
@@ -105,25 +150,16 @@ structure:
     attributes:
       boxed: ''
   footer:
-    inherit:
-      outline: default
-      include:
-        - attributes
-        - children
+    attributes:
+      boxed: ''
   footerbottom:
     type: section
-    inherit:
-      outline: default
-      include:
-        - attributes
-        - children
+    attributes:
+      boxed: ''
   nadir:
     type: section
-    inherit:
-      outline: default
-      include:
-        - attributes
-        - children
+    attributes:
+      boxed: ''
   offcanvas:
     attributes:
       position: g-offcanvas-left
@@ -132,42 +168,68 @@ structure:
       swipe: '1'
       css3animation: '1'
 content:
+  custom-6219:
+    title: 'Custom HTML'
+    attributes:
+      html: 'Magazine Lifestyle'
+    block:
+      variations: 'nomarginall align-left'
+  social-5901:
+    block:
+      variations: 'align-right nomarginall nopaddingall'
   logo-9501:
     title: 'Logo / Image'
-    attributes:
-      text: ZEUS
-  menu-6609:
-    attributes:
-      menu: mainmenu
-    block:
-      variations: align-right
-  social-1004:
-    attributes:
-      items:
-        -
-          icon: 'fa fa-facebook-square fa-3x'
-          text: ''
-          link: '#'
-          name: facebook
-        -
-          icon: 'fa fa-twitter fa-3x'
-          text: ''
-          link: '#'
-          name: twitter
-        -
-          icon: 'fa fa-google-plus-official fa-3x'
-          text: ''
-          link: '#'
-          name: google+
-        -
-          icon: 'fa fa-linkedin-square fa-3x'
-          text: ''
-          link: '#'
-          name: linkendin
-        -
-          icon: 'fa fa-envelope fa-3x'
-          text: ''
-          link: 'mailto:youremail@yourdomain.com'
-          name: email
     block:
       variations: center
+  position-module-4768:
+    title: 'search module'
+    attributes:
+      module_id: '93'
+      key: search-module
+    block:
+      variations: center
+  featuredarticlesSZ-6228:
+    title: 'Top Articles'
+    attributes:
+      layout: Vertical
+      gutter: 'Yes'
+  bloglayoutSZ-6871:
+    title: 'Blog layout'
+    attributes:
+      layout: Classic
+      article:
+        filter:
+          categories: ''
+          articles: ''
+          featured: include
+        limit:
+          total: '10'
+          columns: '2'
+          start: '0'
+        sort:
+          orderby: publish_up
+          ordering: ASC
+  custom-9805:
+    title: 'Discover Zeus'
+    attributes:
+      html: "<h3>Discover Zeus</h3>\n<p>Exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu </p>"
+  custom-7729:
+    title: 'USEFUL LINKS'
+    attributes:
+      html: "<h3>Useful Links</h3>\n<ul>\n    <li><a href=\"#\">General Information</a></li>\n    <li><a href=\"#\">Discover Zeus Template</a></li>\n    <li><a href=\"#\">Learn from the best</a></li>\n    <li><a href=\"#\">Everyday inspiration</a></li>\n    <li><a href=\"#\">Check the demos</a></li>\n</ul>"
+  position-module-8441:
+    title: 'Module Instance'
+    attributes:
+      key: module-instance
+  position-module-1221:
+    title: 'Module Instance'
+    attributes:
+      key: module-instance
+  logo-9571:
+    title: 'Logo / Image'
+  horizontalmenu-9034:
+    title: 'Horizontal Menu'
+  totop-8670:
+    title: 'To Top'
+  socialfloatingSZ-2700:
+    title: 'Social Floating'
