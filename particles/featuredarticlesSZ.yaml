@@ -11,6 +11,12 @@ form:
       description: Globally enable Top Posts particles.
       default: true
 
+    maintitle:
+      type: input.text
+      label: Title
+      description: Customize the title text.
+      placeholder: Enter free text
+      
     layout:
       type: select.selectize
       label: Layout

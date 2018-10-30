@@ -29,6 +29,12 @@
         grid-gap: 1rem;
     }
     
+    // see also _zeus-style.scss
+    .sz-featuredarticles-title {
+        grid-column-start: 1;
+        grid-column-end: 13;
+
+    }    
     //common setting for all layouts:
     div.g-grid.sz-box {
         
@@ -47,11 +53,24 @@
             
             .sz-content {
                 padding: 1.5rem;
+                @include breakpoint(tablet-range) {
+                    padding: 0.5rem;
+                }                    
+                
                 position: absolute;
                 bottom: 0;
                 color: $white;
                 font-size: 0.9rem; // title overides this
-                
+
+ 
+                font-size: 90%;
+                span {
+                    margin-right: 10px;
+                }
+                i {
+                    margin-right: 5px;
+                }
+              
                 
                 // overlay background
                 &.overlay {
@@ -502,9 +521,9 @@
     // etc -----|    
     &.one-column {
         div.g-grid.sz-box {
+            grid-column-start: 1;
+            grid-column-end: 13; 
             @include breakpoint(no-mobile) {
-                grid-column-start: 1;
-                grid-column-end: 13; 
                 
                 padding: 0.5rem 0;
                 

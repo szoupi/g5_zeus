@@ -82,6 +82,8 @@ configuration:
       rounded : Rounded
       line-bottom: Line bottom
       line-top: Line top
+      line-left: Line left
+      line-right: Line right
     Utility:
       center: Center
       title-center: Centered Title

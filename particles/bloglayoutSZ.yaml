@@ -19,8 +19,14 @@ form:
       default:  none
       options:
         Classic: Classic
-        List: List
         Grid: Grid
+        List: List
+
+    maintitle:
+      type: input.text
+      label: Title
+      description: Customize the title text.
+      placeholder: Enter free text        
         
     _tabs:
       type: container.tabs
@@ -61,14 +67,6 @@ form:
               pattern: '\d{1,2}'
               overridable: false
 
-            article.display.pagination_buttons:
-              type: select.select
-              label: Pagination
-              description: Select if the pagination buttons should be shown to allow users to see more articles.
-              default: ''
-              options:
-                show: Show
-                '': Hide
 
             article.limit.columns:
               type: select.select
@@ -117,6 +115,15 @@ form:
                 ASC: Ascending
                 DESC: Descending
               overridable: false
+
+            article.display.pagination_buttons:
+              type: select.select
+              label: Pagination
+              description: Select if the pagination buttons should be shown to allow users to see more articles.
+              default: ''
+              options:
+                show: Show
+                '': Hide
 
         _tab_display:
           label: Display
@@ -171,6 +178,34 @@ form:
               description: Enter the maximum number of characters the article title should be limited to.
               pattern: '\d+(\.\d+){0,1}'
 
+
+        _tab_readmore:
+          label: Read More
+          fields:
+            article.display.read_more.enabled:
+              type: select.select
+              label: Read More
+              description: Select if the article 'Read More' button should be shown.
+              default: show
+              options:
+                show: Show
+                '': Hide
+
+            article.display.read_more.label:
+              type: input.text
+              label: Read More Label
+              description: Type in the label for the 'Read More' button.
+              placeholder: 'Read More...'
+
+            article.display.read_more.css:
+              type: input.selectize
+              label: Button CSS Classes
+              description: CSS class name for the 'Read More' button.
+
+        _tab_extras:
+          label: Extras
+          fields:
+
             article.display.date.enabled:
               type: select.select
               label: Date
@@ -203,32 +238,6 @@ form:
                   'j F Y': Date11
                   'F d, Y': Date12
 
-        _tab_readmore:
-          label: Read More
-          fields:
-            article.display.read_more.enabled:
-              type: select.select
-              label: Read More
-              description: Select if the article 'Read More' button should be shown.
-              default: show
-              options:
-                show: Show
-                '': Hide
-
-            article.display.read_more.label:
-              type: input.text
-              label: Read More Label
-              description: Type in the label for the 'Read More' button.
-              placeholder: 'Read More...'
-
-            article.display.read_more.css:
-              type: input.selectize
-              label: Button CSS Classes
-              description: CSS class name for the 'Read More' button.
-
-        _tab_extras:
-          label: Extras
-          fields:
             article.display.author.enabled:
               type: select.select
               label: Author
@@ -256,6 +265,30 @@ form:
               options:
                 show: Show
                 '': Hide
+
+        _tab_list:
+          label: List layout
+          fields:
+
+            imgposition:
+              type: select.selectize
+              label: Image position
+              description: Image should be placed left or right of the content? 
+              default:  Left
+              options:
+                Left: Left
+                Right: Right
+
+            imgsize:
+              type: select.selectize
+              label: Image Size
+              description: How much place should image take in comparison to content area?
+              default:  Small
+              options:
+                xSmall: xSmall
+                Small: Small
+                Equal: Equal
+                Large: Large      
 
     css.class:
       type: input.selectize

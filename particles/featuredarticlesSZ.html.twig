@@ -49,6 +49,12 @@
         
         {% if particle.css.class %} {{ particle.css.class }}{% endif %}" {{- attr_extra|raw }}>
         
+        {# PARTICLE TITLE #}
+        {% if particle.maintitle %}
+                <h3 class="sz-featuredarticles-title">
+                    <span>{{ particle.maintitle|raw }}</span>
+                </h3>
+        {% endif %}
 
         {% for article in articles  %}
             <div class="g-grid sz-box 
@@ -129,10 +135,13 @@
                                     {% if display.date.enabled %}
                                         <span class="g-array-item-date">
                                             {% if display.date.enabled == 'published' %}
+                                                <i class="fa fa-clock-o" aria-hidden="true"></i>
                                                 {{ article.publish_up|date(display.date.format) }}
                                             {% elseif display.date.enabled == 'modified' %}
+                                                    <i class="fa fa-clock-o" aria-hidden="true"></i>
                                                     {{ article.modified|date(display.date.format) }}
                                                 {% else %}
+                                                    <i class="fa fa-clock-o" aria-hidden="true"></i>
                                                     {{ article.created|date(display.date.format) }}
                                                 {% endif %}
                                             </span>

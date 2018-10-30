@@ -1,5 +1,5 @@
 name: Top Headlines
-description: Display only headlines from Joomla Articles .
+description: Display only headlines from Joomla Articles - BETA MODE.
 type: particle
 icon: fa-joomla
 
@@ -9,7 +9,7 @@ form:
       type: input.checkbox
       label: Enabled
       description: Globally enable Joomla Articles particles.
-      default: true
+      default: false
 
     layout:
       type: select.selectize

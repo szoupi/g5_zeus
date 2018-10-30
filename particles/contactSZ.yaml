@@ -15,6 +15,12 @@ form:
       description: Globally enable the particle.
       default: true
 
+    maintitle:
+      type: input.text
+      label: Title
+      description: Customize the title text.
+      placeholder: Enter free text
+
     style:
       type: select.selectize
       label: Style
@@ -23,12 +29,6 @@ form:
       options:
         vertical: Vertical
         horizontal: Horizontal
-
-    maintitle:
-      type: input.text
-      label: Title
-      description: Customize the title text.
-      placeholder: Enter free text
 
     contactinfo:
       type: collection.list

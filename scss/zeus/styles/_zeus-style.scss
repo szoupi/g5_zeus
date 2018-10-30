@@ -50,6 +50,15 @@
     margin-bottom: 1rem;  // below margin auto
 }
 
+.sz-blog-title,
+.sz-featuredarticles-title {
+    border-bottom: 2px solid $accent-color-1;
+    span {
+        background-color:$accent-color-1;
+        color: lighten($base-text-color, 80%) ;
+        padding: 0 0.5rem;
+    }
+}
 
 //  make block transparent (eg navigation)
 // section transparent transparent color
