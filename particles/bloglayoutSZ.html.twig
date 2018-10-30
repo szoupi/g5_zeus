@@ -181,7 +181,12 @@
                 {# if List_lg_img then a .sz-flex-1 class that changes flex is added g-content #}
                 {% elseif particle.layout == 'List' %}
                 
-                    <div class="g-grid sz-article-list-layout">
+                    <div class="g-grid sz-article-list-layout
+                        {# justify image to the right #}
+                        {% if particle.imgposition == 'Right' %} 
+                            sz-flex-right 
+                        {% endif %}                    
+                    ">
                         {% for article in column %}
                             
                             {#IMAGE ############################}

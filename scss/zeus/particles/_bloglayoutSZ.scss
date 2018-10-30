@@ -184,6 +184,10 @@
     
     // LIST LAYOUT ////////////////////////
     .sz-article-list-layout {
+
+        &.sz-flex-right {
+            flex-direction: row-reverse;
+        }
         // typically min 60rem
         @include breakpoint(no-mobile) {
             border-bottom: 1px solid #ddd;
