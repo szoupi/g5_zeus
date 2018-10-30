@@ -1,8 +1,8 @@
 details:
   name: Zeus
-  version: '5.4.2610'
+  version: '5.4.2611'
   icon: linux
-  date: 'October 25, 2018'
+  date: 'October 30, 2018'
   author:
     name: threethemes
     email: support@threethemes.com
@@ -17,7 +17,7 @@ details:
   # updates:
   #   link: http://updates.rockettheme.com/themes/zeus.yaml
 
-  copyright: (C) 2018 three_themes. All rights reserved.
+  copyright: (C) 2018 ThreeThemes. All rights reserved.
   license: GPLv2
   description: Zeus Theme
   images:
