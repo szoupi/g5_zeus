@@ -68,10 +68,10 @@ layout:
       - 'position-module-3439 25'
   /footer/:
     -
-      - 'logo-9571 21'
-      - 'copyright-1736 26'
-      - 'horizontalmenu-9034 24'
-      - 'totop-8670 29'
+      - 'logo-9571 15'
+      - 'copyright-1736 35'
+      - 'horizontalmenu-9034 35'
+      - 'totop-8670 15'
     -
       - socialfloatingSZ-2700
   /footerbottom/:
