@@ -34,14 +34,15 @@
 {% block particle %}
 
 
-        {# PARTICLE TITLE #}
-        {% if particle.layout == 'List' or particle.layout == 'Two_column_list' %} 
-            {% if particle.maintitle %}
-                    <h3 class="sz-featuredarticles-title">
-                        <span>{{ particle.maintitle|raw }}</span>
-                    </h3>
-            {% endif %}
+    {# PARTICLE TITLE #}
+    {% if particle.layout == 'List' or particle.layout == 'Two_column_list' %} 
+        {% if particle.maintitle %}
+                <h3 class="sz-featuredarticles-title">
+                    <span>{{ particle.maintitle|raw }}</span>
+                </h3>
         {% endif %}
+        {% endif %}
+
     {# All Articles  ############################}
     {# CONTAINER #}
     <div class="g-featuredarticles-sz sz-wrapper 
