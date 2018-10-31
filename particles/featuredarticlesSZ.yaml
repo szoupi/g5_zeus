@@ -10,47 +10,59 @@ form:
       label: Enabled
       description: Globally enable Top Posts particles.
       default: true
-
-    maintitle:
-      type: input.text
-      label: Title
-      description: Customize the title text.
-      placeholder: Enter free text
       
-    layout:
-      type: select.selectize
-      label: Layout
-      description: Select a layout 
-      placeholder: 'Select...'
-      default:  Hierarchical horizontal
-      options:
-        Horizontal: Horizontal
-        Vertical: Vertical
-        Symmetry: Symmetry
-        List: List
-        Two_column_list: 2 Column list
-
-    gutter:
-      type: select.select
-      label: Use gutter?
-      description: Display gutter between grid items?
-      default: No
-      options:
-        No: No
-        Yes: Yes
-      
-    overlay:
-      type: select.select
-      label: Content background
-      description: Display dark background for content (title, date etc)?
-      default: No background
-      options:
-        No: No background
-        Yes: Dark transparent
         
     _tabs:
       type: container.tabs
       fields:
+        _tab_layout:
+          label: Layout
+          fields:
+
+            layout:
+              type: select.selectize
+              label: Layout
+              description: Select a layout 
+              placeholder: 'Select...'
+              default:  Hierarchical horizontal
+              options:
+                Horizontal: Horizontal
+                Vertical: Vertical
+                Symmetry: Symmetry
+                List: List
+                Two_column_list: 2 Column list
+
+            gutter:
+              type: select.select
+              label: Use gutter?
+              description: Display gutter between grid items?
+              default: No
+              options:
+                No: No
+                Yes: Yes
+              
+            overlay:
+              type: select.select
+              label: Content background
+              description: Display dark background for content (title, date etc)?
+              default: No background
+              options:
+                No: No background
+                Yes: Dark transparent
+
+            css.class:
+              type: input.selectize
+              label: CSS Classes
+              description: CSS class name for the particle.
+
+            extra:
+              type: collection.keyvalue
+              label: Tag Attributes
+              description: Extra Tag attributes.
+              key_placeholder: Key (data-*, style, ...)
+              value_placeholder: Value
+              exclude: ['id', 'class']
+
         _tab_articles:
           label: Articles
           fields:
@@ -161,6 +173,21 @@ form:
               description: Enter the maximum number of characters the article title should be limited to.
               pattern: '\d+(\.\d+){0,1}'
 
+
+        _tab_extras:
+          label: Extras
+          fields:
+
+            article.display.category.enabled:
+              type: select.select
+              label: Category
+              description: Select if and how the article category should be shown.
+              default: link
+              options:
+                show: Show
+                link: Show with Link
+                '': Hide
+
             article.display.date.enabled:
               type: select.select
               label: Date
@@ -193,9 +220,6 @@ form:
                   'j F Y': Date11
                   'F d, Y': Date12
 
-        _tab_extras:
-          label: Extras
-          fields:
             article.display.author.enabled:
               type: select.select
               label: Author
@@ -205,25 +229,13 @@ form:
                 show: Show
                 '': Hide
 
-            article.display.category.enabled:
-              type: select.select
-              label: Category
-              description: Select if and how the article category should be shown.
-              default: link
-              options:
-                show: Show
-                link: Show with Link
-                '': Hide
 
-    css.class:
-      type: input.selectize
-      label: CSS Classes
-      description: CSS class name for the particle.
+        _tab_listlayout:
+          label: List Layout
+          fields:                  
+            maintitle:
+              type: input.text
+              label: Title
+              description: Customize the title text.
+              placeholder: Enter free text                  
 
-    extra:
-      type: collection.keyvalue
-      label: Tag Attributes
-      description: Extra Tag attributes.
-      key_placeholder: Key (data-*, style, ...)
-      value_placeholder: Value
-      exclude: ['id', 'class']

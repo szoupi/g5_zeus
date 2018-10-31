@@ -1,0 +1,553 @@
+version: 2
+preset:
+  image: 'gantry-admin://layout/homepage1.png'
+  name: magazine_elegant
+  timestamp: 1540867339
+layout:
+  /zenith/:
+    -
+      - 'custom-6219 20'
+      - 'horizontalmenu-7701 47'
+      - 'social-5901 33'
+  /navtop/:
+    -
+      - 'logo-9501 20'
+      - 'imageSZ-3234 80'
+  /navigation/:
+    -
+      - 'menu-6609 80'
+      - 'position-module-4768 20'
+  /header/:
+    -
+      - system-messages-2617
+    -
+      - featuredarticlesSZ-6228
+  /intro/:
+    -
+      - headlineSZ-6992
+    -
+      - featuredarticlesSZ-2445
+    -
+      - bloglayoutSZ-2396
+  /container-main/:
+    -
+      -
+        'mainbar 50':
+          -
+            - bloglayoutSZ-1855
+      -
+        'aside 25':
+          -
+            - bloglayoutSZ-9600
+      -
+        'sidebar 25':
+          -
+            - featuredarticlesSZ-3587
+  /features/:
+    -
+      - headlineSZ-5913
+    -
+      - featuredarticlesSZ-2808
+    -
+      - bloglayoutSZ-3276
+  /utility/: {  }
+  /above/:
+    -
+      - headlineSZ-8713
+    -
+      - featuredarticlesSZ-9734
+  /testimonials/:
+    -
+      - headlineSZ-1407
+    -
+      - featuredarticlesSZ-2548
+  /expanded/: {  }
+  /mainbottom/: {  }
+  /footertop/:
+    -
+      - 'contactSZ-1644 25'
+      - 'custom-9805 25'
+      - 'custom-7729 25'
+      - 'position-module-3439 25'
+  /footer/:
+    -
+      - 'logo-9571 15'
+      - 'copyright-1736 35'
+      - 'horizontalmenu-9034 35'
+      - 'totop-8670 15'
+    -
+      - socialfloatingSZ-2700
+  /footerbottom/:
+    -
+      - social-3809
+  /nadir/: {  }
+  offcanvas:
+    -
+      - mobile-menu-5697
+structure:
+  zenith:
+    type: section
+    attributes:
+      boxed: '3'
+      class: ''
+      background: ''
+      backgroundOverlay: 'rgba(0, 0, 0, 0)'
+      backgroundAttachment: ''
+      backgroundRepeat: ''
+      backgroundPosition: ''
+      backgroundSize: ''
+      paddingTop: ''
+      paddingBottom: ''
+      paddingLeft: ''
+      paddingRight: ''
+      marginTop: ''
+      marginBottom: ''
+      marginLeft: ''
+      marginRight: ''
+      blockHeight: ''
+  navtop:
+    type: section
+    attributes:
+      boxed: '3'
+      class: ''
+      background: ''
+      backgroundOverlay: 'rgba(0, 0, 0, 0)'
+      backgroundAttachment: ''
+      backgroundRepeat: ''
+      backgroundPosition: ''
+      backgroundSize: ''
+      paddingTop: ''
+      paddingBottom: ''
+      paddingLeft: ''
+      paddingRight: ''
+      marginTop: ''
+      marginBottom: ''
+      marginLeft: ''
+      marginRight: ''
+      blockHeight: ''
+  navigation:
+    type: section
+    attributes:
+      boxed: '3'
+      class: ''
+      background: ''
+      backgroundOverlay: 'rgba(0, 0, 0, 0)'
+      backgroundAttachment: ''
+      backgroundRepeat: ''
+      backgroundPosition: ''
+      backgroundSize: ''
+      paddingTop: ''
+      paddingBottom: ''
+      paddingLeft: ''
+      paddingRight: ''
+      marginTop: ''
+      marginBottom: ''
+      marginLeft: ''
+      marginRight: ''
+      blockHeight: ''
+  header:
+    attributes:
+      boxed: '3'
+      class: ''
+      background: ''
+      backgroundOverlay: 'rgba(0, 0, 0, 0)'
+      backgroundAttachment: ''
+      backgroundRepeat: ''
+      backgroundPosition: ''
+      backgroundSize: ''
+      paddingTop: ''
+      paddingBottom: ''
+      paddingLeft: ''
+      paddingRight: ''
+      marginTop: ''
+      marginBottom: ''
+      marginLeft: ''
+      marginRight: ''
+      blockHeight: ''
+  intro:
+    type: section
+    attributes:
+      boxed: ''
+  features:
+    type: section
+    attributes:
+      boxed: ''
+  utility:
+    type: section
+    attributes:
+      boxed: '3'
+      class: ''
+      background: ''
+      backgroundOverlay: 'rgba(0, 0, 0, 0)'
+      backgroundAttachment: ''
+      backgroundRepeat: ''
+      backgroundPosition: ''
+      backgroundSize: ''
+      paddingTop: ''
+      paddingBottom: ''
+      paddingLeft: ''
+      paddingRight: ''
+      marginTop: ''
+      marginBottom: ''
+      marginLeft: ''
+      marginRight: ''
+      blockHeight: ''
+  mainbar:
+    type: section
+    subtype: main
+    attributes:
+      class: ''
+      background: ''
+      backgroundOverlay: 'rgba(0, 0, 0, 0)'
+      backgroundAttachment: ''
+      backgroundRepeat: ''
+      backgroundPosition: ''
+      backgroundSize: ''
+      paddingTop: ''
+      paddingBottom: ''
+      paddingLeft: ''
+      paddingRight: ''
+      marginTop: ''
+      marginBottom: ''
+      marginLeft: ''
+      marginRight: ''
+      blockHeight: ''
+    block:
+      variations: line-right
+  aside:
+    attributes:
+      class: sz-negative-margin-top
+  sidebar:
+    type: section
+  container-main:
+    attributes:
+      boxed: '0'
+      class: ''
+      extra: {  }
+  above:
+    type: section
+    attributes:
+      boxed: ''
+  testimonials:
+    type: section
+    attributes:
+      boxed: '3'
+      class: ''
+      background: ''
+      backgroundOverlay: 'rgba(0, 0, 0, 0)'
+      backgroundAttachment: ''
+      backgroundRepeat: ''
+      backgroundPosition: ''
+      backgroundSize: ''
+      paddingTop: ''
+      paddingBottom: ''
+      paddingLeft: ''
+      paddingRight: ''
+      marginTop: ''
+      marginBottom: ''
+      marginLeft: ''
+      marginRight: ''
+      blockHeight: ''
+  expanded:
+    type: section
+    attributes:
+      boxed: ''
+  mainbottom:
+    type: section
+    attributes:
+      boxed: ''
+  footertop:
+    type: section
+    attributes:
+      boxed: ''
+  footer:
+    attributes:
+      boxed: ''
+  footerbottom:
+    type: section
+    attributes:
+      boxed: ''
+  nadir:
+    type: section
+    attributes:
+      boxed: ''
+  offcanvas:
+    attributes:
+      position: g-offcanvas-left
+      class: ''
+      extra: {  }
+      swipe: '1'
+      css3animation: '1'
+content:
+  custom-6219:
+    title: 'Custom HTML'
+    attributes:
+      html: 'Newspaper: modern'
+    block:
+      variations: 'nomarginall align-left'
+  horizontalmenu-7701:
+    title: 'Horizontal Menu'
+    block:
+      variations: 'nomarginall nopaddingbottom'
+  social-5901:
+    block:
+      variations: 'align-right nomarginall'
+  logo-9501:
+    title: 'Logo / Image'
+    attributes:
+      image: 'gantry-media://logos-zeus-4-dark.png'
+    block:
+      variations: center
+  imageSZ-3234:
+    title: 'svg banner'
+    attributes:
+      svg: '<svg width="400" height="60" xmlns="http://www.w3.org/2000/svg"><rect x="2" y="2" width="396" height="56" style="fill:#dedede;stroke:#555555;stroke-width:2"/><text x="50%" y="50%" font-size="18" text-anchor="middle" alignment-baseline="middle" font-family="monospace, sans-serif" fill="#555555">svg banner 400x60 </text></svg>'
+    block:
+      variations: 'align-right nomarginall'
+  position-module-4768:
+    title: 'search module'
+    attributes:
+      module_id: '93'
+    block:
+      variations: 'center nomarginall'
+  featuredarticlesSZ-6228:
+    title: 'Top Articles'
+    attributes:
+      layout: Horizontal
+      gutter: 'No'
+      article:
+        limit:
+          total: '5'
+        display:
+          date:
+            enabled: ''
+          author:
+            enabled: ''
+          category:
+            enabled: show
+  headlineSZ-6992:
+    title: 'Popular Stories'
+    attributes:
+      maintitle: 'Popular Stories'
+      subtitle: ''
+  featuredarticlesSZ-2445:
+    title: 'Top Articles 3'
+    attributes:
+      layout: Symmetry
+      gutter: 'Yes'
+      overlay: 'Yes'
+      article:
+        limit:
+          total: '3'
+        display:
+          image:
+            enabled: intro
+          date:
+            enabled: ''
+          author:
+            enabled: ''
+          category:
+            enabled: show
+  bloglayoutSZ-2396:
+    title: 'Blog layout'
+    attributes:
+      layout: List
+      article:
+        filter:
+          categories: ''
+          articles: ''
+          featured: include
+        limit:
+          total: '1'
+          columns: '1'
+          start: '0'
+        sort:
+          orderby: publish_up
+          ordering: ASC
+        display:
+          read_more:
+            enabled: show
+          date:
+            enabled: ''
+          author:
+            enabled: ''
+          hits:
+            enabled: ''
+      imgsize: Large
+  headlineSZ-5913:
+    title: 'Must read'
+    attributes:
+      maintitle: 'Must read'
+      maintitlecolor: '#dedede'
+      subtitle: ''
+  featuredarticlesSZ-2808:
+    title: 'Top Articles'
+    attributes:
+      layout: Symmetry
+      gutter: 'Yes'
+      article:
+        limit:
+          total: '4'
+        display:
+          text:
+            limit: '50'
+          date:
+            enabled: ''
+          author:
+            enabled: ''
+          category:
+            enabled: link
+    block:
+      variations: line-bottom
+  bloglayoutSZ-3276:
+    title: 'Blog layout'
+    attributes:
+      layout: List
+      article:
+        filter:
+          categories: ''
+          articles: ''
+          featured: include
+        limit:
+          total: '1'
+          columns: '1'
+          start: '0'
+        sort:
+          orderby: publish_up
+          ordering: ASC
+        display:
+          read_more:
+            enabled: ''
+      imgposition: Left
+      imgsize: Large
+      css:
+        class: ''
+  bloglayoutSZ-1855:
+    title: 'Blog layout'
+    attributes:
+      layout: List
+      maintitle: Celebrities
+      article:
+        filter:
+          categories: ''
+          articles: ''
+          featured: include
+        limit:
+          total: '3'
+          columns: '1'
+          start: '0'
+        sort:
+          orderby: publish_up
+          ordering: ASC
+        display:
+          image:
+            enabled: intro
+          text:
+            type: intro
+            limit: '100'
+          date:
+            enabled: ''
+          read_more:
+            enabled: ''
+          author:
+            enabled: ''
+          category:
+            enabled: ''
+          hits:
+            enabled: ''
+  bloglayoutSZ-9600:
+    title: 'Blog layout'
+    attributes:
+      layout: Classic
+      maintitle: Lifestyle
+      article:
+        filter:
+          categories: ''
+          articles: ''
+          featured: include
+        limit:
+          total: '2'
+          columns: '1'
+          start: '0'
+        sort:
+          orderby: publish_up
+          ordering: ASC
+        display:
+          text:
+            type: ''
+          date:
+            enabled: ''
+          read_more:
+            enabled: ''
+          author:
+            enabled: ''
+          category:
+            enabled: ''
+          hits:
+            enabled: ''
+  featuredarticlesSZ-3587:
+    title: 'Top Articles'
+    attributes:
+      maintitle: 'Latest News'
+      layout: List
+      overlay: 'No'
+      article:
+        limit:
+          total: '3'
+        display:
+          date:
+            enabled: ''
+          author:
+            enabled: ''
+    block:
+      variations: 'line-left line-right'
+  headlineSZ-8713:
+    title: 'Worth Reading'
+    attributes:
+      maintitle: 'Worth Reading'
+      subtitle: ''
+  featuredarticlesSZ-9734:
+    title: 'Top Articles'
+    attributes:
+      layout: Vertical
+      article:
+        limit:
+          total: '3'
+  headlineSZ-1407:
+    title: 'Latest Articles'
+    attributes:
+      enabled: 0
+      maintitle: 'Latest Articles'
+      subtitle: ''
+  featuredarticlesSZ-2548:
+    title: 'Top Articles'
+    attributes:
+      layout: Symmetry
+      article:
+        limit:
+          total: '5'
+  contactSZ-1644:
+    title: 'Contact Info'
+  custom-9805:
+    title: 'Discover Zeus'
+    attributes:
+      html: "<h3>Discover Zeus</h3>\n<p>Exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu </p>"
+  custom-7729:
+    title: 'USEFUL LINKS'
+    attributes:
+      html: "<h3>Useful Links</h3>\n<ul>\n    <li><a href=\"#\">General Information</a></li>\n    <li><a href=\"#\">Discover Zeus Template</a></li>\n    <li><a href=\"#\">Learn from the best</a></li>\n    <li><a href=\"#\">Everyday inspiration</a></li>\n    <li><a href=\"#\">Check the demos</a></li>\n</ul>"
+  position-module-3439:
+    title: 'Module Instance'
+    attributes:
+      key: module-instance
+  logo-9571:
+    title: 'Logo / Image'
+  horizontalmenu-9034:
+    title: 'Horizontal Menu'
+  totop-8670:
+    title: 'To Top'
+  socialfloatingSZ-2700:
+    title: 'Social Floating'
+  social-3809:
+    block:
+      variations: center

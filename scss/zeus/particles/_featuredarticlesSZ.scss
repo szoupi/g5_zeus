@@ -29,14 +29,9 @@
         grid-gap: 1rem;
     }
     
-    // see also _zeus-style.scss
-    .sz-featuredarticles-title {
-        grid-column-start: 1;
-        grid-column-end: 13;
-
-    }    
     //common setting for all layouts:
     div.g-grid.sz-box {
+
         
         .g-block {
             position: relative;
@@ -444,6 +439,7 @@
 
     ////////////// LIST ////////////////////////////
     &.list {
+  
         // ARTICLES  ///////////////////////
         // one column only, 
         // the first article is displayed bigger than the others
@@ -568,6 +564,7 @@
     // ---------|------------    
     // in conjuction with .list
     &.two-column {
+        
         grid-column-gap: 2rem;
         div.g-grid.sz-box {
             @include breakpoint(no-mobile) {
@@ -595,14 +592,14 @@
                 
                 // first article
                 &:nth-of-type(1) {
-                grid-column-start: 1;
-                grid-column-end: 7;
-                grid-row-start: 1;
-                // should be the last line. 
-                // The Number is +1 the max articles
-                // should be auto number
-                grid-row-end: 6;
-
+                    grid-column-start: 1;
+                    grid-column-end: 7;
+                    grid-row-start: 1;
+                    // should be the last line. 
+                    // The Number is +1 the max articles
+                    // should be auto number
+                    grid-row-end: 6;
+                    
                     .container {
                         flex-direction: column;
                     }
