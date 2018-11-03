@@ -112,7 +112,7 @@
 
                             {#META INFO#}
                             {% if display.date.enabled or display.author.enabled or display.category.enabled or display.hits.enabled %}
-                                <div class="g-array-item-category">
+                                <div class="g-array-item-content">
                                     
                                     {#CATEGORY ############################}
                                     {% if display.category.enabled %}
@@ -129,12 +129,6 @@
                                         </span>
                                     {% endif %}
                                         
-                                </div>
-                            {% endif %}
-
-                                    
-                                {#REST METADATA#}
-                                <div class="g-array-item-category">
                                     {#DATE ############################}
                                     {% if display.date.enabled %}
                                         <span class="g-array-item-date">
@@ -142,14 +136,14 @@
                                                 <i class="fa fa-clock-o" aria-hidden="true"></i>
                                                 {{ article.publish_up|date(display.date.format) }}
                                             {% elseif display.date.enabled == 'modified' %}
-                                                    <i class="fa fa-clock-o" aria-hidden="true"></i>
-                                                    {{ article.modified|date(display.date.format) }}
-                                                {% else %}
-                                                    <i class="fa fa-clock-o" aria-hidden="true"></i>
-                                                    {{ article.created|date(display.date.format) }}
-                                                {% endif %}
-                                            </span>
-                                        {% endif %}
+                                                <i class="fa fa-clock-o" aria-hidden="true"></i>
+                                                {{ article.modified|date(display.date.format) }}
+                                            {% else %}
+                                                <i class="fa fa-clock-o" aria-hidden="true"></i>
+                                                {{ article.created|date(display.date.format) }}
+                                            {% endif %}
+                                        </span>
+                                    {% endif %}
                                         
                                     {#AUTHOR ############################}
                                     {% if display.author.enabled %}
@@ -157,7 +151,11 @@
                                             <i class="fa fa-user" aria-hidden="true"></i> {{ article.author.name }}
                                         </span>
                                     {% endif %}
+
                                 </div>
+                            {% endif %}
+
+                                    
 
                                 {#TITLE ############################}
                                 <div class="g-array-item-title">

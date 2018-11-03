@@ -11,26 +11,45 @@ form:
       description: Globally enable Joomla Articles particles.
       default: true
 
-    layout:
-      type: select.selectize
-      label: Layout
-      description: Select an layout for the portfolio 
-      placeholder: 'Select...'
-      default:  none
-      options:
-        Classic: Classic
-        Grid: Grid
-        List: List
-
-    maintitle:
-      type: input.text
-      label: Title
-      description: Customize the title text.
-      placeholder: Enter free text        
         
     _tabs:
       type: container.tabs
       fields:
+        _tab_layout:
+          label: Layout
+          overridable: false
+          fields:
+
+            layout:
+              type: select.selectize
+              label: Layout
+              description: Select an layout for the portfolio 
+              placeholder: 'Select...'
+              default:  none
+              options:
+                Classic: Classic
+                Grid: Grid
+                List: List
+
+            maintitle:
+              type: input.text
+              label: Title
+              description: Customize the title text.
+              placeholder: Enter free text
+
+            css.class:
+              type: input.selectize
+              label: CSS Classes
+              description: CSS class name for the particle.
+
+            extra:
+              type: collection.keyvalue
+              label: Tag Attributes
+              description: Extra Tag attributes.
+              key_placeholder: Key (data-*, style, ...)
+              value_placeholder: Value
+              exclude: ['id', 'class']                   
+
         _tab_articles:
           label: Articles
           overridable: false
@@ -116,15 +135,6 @@ form:
                 DESC: Descending
               overridable: false
 
-            article.display.pagination_buttons:
-              type: select.select
-              label: Pagination
-              description: Select if the pagination buttons should be shown to allow users to see more articles.
-              default: ''
-              options:
-                show: Show
-                '': Hide
-
         _tab_display:
           label: Display
           fields:
@@ -177,30 +187,6 @@ form:
               label: Title Limit
               description: Enter the maximum number of characters the article title should be limited to.
               pattern: '\d+(\.\d+){0,1}'
-
-
-        _tab_readmore:
-          label: Read More
-          fields:
-            article.display.read_more.enabled:
-              type: select.select
-              label: Read More
-              description: Select if the article 'Read More' button should be shown.
-              default: show
-              options:
-                show: Show
-                '': Hide
-
-            article.display.read_more.label:
-              type: input.text
-              label: Read More Label
-              description: Type in the label for the 'Read More' button.
-              placeholder: 'Read More...'
-
-            article.display.read_more.css:
-              type: input.selectize
-              label: Button CSS Classes
-              description: CSS class name for the 'Read More' button.
 
         _tab_extras:
           label: Extras
@@ -265,6 +251,39 @@ form:
               options:
                 show: Show
                 '': Hide
+                
+            article.display.pagination_buttons:
+              type: select.select
+              label: Pagination
+              description: Select if the pagination buttons should be shown to allow users to see more articles.
+              default: ''
+              options:
+                show: Show
+                '': Hide
+
+
+        _tab_readmore:
+          label: Read More
+          fields:
+            article.display.read_more.enabled:
+              type: select.select
+              label: Read More
+              description: Select if the article 'Read More' button should be shown.
+              default: show
+              options:
+                show: Show
+                '': Hide
+
+            article.display.read_more.label:
+              type: input.text
+              label: Read More Label
+              description: Type in the label for the 'Read More' button.
+              placeholder: 'Read More...'
+
+            article.display.read_more.css:
+              type: input.selectize
+              label: Button CSS Classes
+              description: CSS class name for the 'Read More' button.
 
         _tab_list:
           label: List layout
@@ -290,15 +309,4 @@ form:
                 Equal: Equal
                 Large: Large      
 
-    css.class:
-      type: input.selectize
-      label: CSS Classes
-      description: CSS class name for the particle.
 
-    extra:
-      type: collection.keyvalue
-      label: Tag Attributes
-      description: Extra Tag attributes.
-      key_placeholder: Key (data-*, style, ...)
-      value_placeholder: Value
-      exclude: ['id', 'class']

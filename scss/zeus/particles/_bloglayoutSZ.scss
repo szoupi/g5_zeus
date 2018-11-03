@@ -3,7 +3,7 @@
     margin-left: -($base-content-padding);
     margin-right: -($base-content-padding);
     .g-grid {
-        margin-bottom: ($base-content-padding + $base-content-margin) * 1.5;
+        // margin-bottom: ($base-content-padding + $base-content-margin) * 1.5;
         &:last-child {
             margin-bottom: 0;
             .g-block {
@@ -119,6 +119,7 @@
                 }
 
                 .sz-article-details {
+                    text-align: center;
                     color: white;
                     padding:  0 2rem;
                     font-size: 0.8rem;
@@ -157,12 +158,12 @@
             // used with columnNum twig variable
             .sz-one-column {
                 @include breakpoint(no-mobile) {
-                    font-size: 3rem;
+                    font-size: 1.3rem;
                 }         
             }
             .sz-two-columns {
                 @include breakpoint(no-mobile) {
-                    font-size: 1.9rem;
+                    font-size: 1.3rem;
                 }
             }
             .sz-three-columns {
@@ -188,10 +189,21 @@
         &.sz-flex-right {
             flex-direction: row-reverse;
         }
+
+        // hide image container
+        &.sz-flex-none {
+            flex: 0;
+        }
+
         // typically min 60rem
         @include breakpoint(no-mobile) {
             border-bottom: 1px solid #ddd;
             padding: 0.5rem 0;
+        }
+        .sz-article-title {
+            h3 {
+                font-size: 1.1rem;
+            }
         }
 
         .sz-article-content-container {

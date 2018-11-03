@@ -75,8 +75,8 @@
                                 <div class="g-content">
                                     <div class="sz-article">
                                         {# IMAGE #}
-                                        <div class="sz-article-image-container">
-                                            {% if display.image.enabled and article.images.image_intro or article.images.image_fulltext %}
+                                        {% if display.image.enabled and article.images.image_intro or article.images.image_fulltext %}
+                                            <div class="sz-article-image-container">
                                                 {% if article.images.image_intro and display.image.enabled == 'intro' or display.image.enabled == 'show' %}
                                                     <div class="sz-article-image">
                                                         <a href="{{ article.route }}">
@@ -90,8 +90,8 @@
                                                         </a>
                                                     </div>
                                                 {% endif %}
-                                            {% endif %}
-                                        </div>
+                                            </div>
+                                        {% endif %}
 
                                         {# CONTENT #}
                                         <div class="sz-article-content-container">
@@ -190,28 +190,29 @@
                         {% for article in column %}
                             
                             {#IMAGE ############################}
-                            <div class="g-block sz-article-image-container">
+                            {% if not display.image.enabled == ''  %}
                                 {% if display.image.enabled and article.images.image_intro or article.images.image_fulltext %}
-                                    {% if article.images.image_intro and display.image.enabled == 'intro' or display.image.enabled == 'show' %}
-                                        <div class="sz-article-image">
-                                            <a href="{{ article.route }}">
-                                                <img 
-                                                    src="{{ url(article.images.image_intro) }}" 
-                                                    {{ article.images.image_intro|imagesize|raw }} 
-                                                    alt="{{ article.images.image_intro_alt }}"
-                                                />
-                                            </a>
-                                        </div>
-                                    {% elseif article.images.image_fulltext and display.image.enabled == 'full' %}
-                                        <div class="sz-article-image">
-                                            <a href="{{ article.route }}">
-                                                <img src="{{ url(article.images.image_fulltext) }}" {{ article.images.image_fulltext|imagesize|raw }} alt="{{ article.images.image_fulltext_alt }}" />
-                                            </a>
-                                        </div>
-                                    {% endif %}
+                                    <div class="g-block sz-article-image-container">
+                                        {% if article.images.image_intro and display.image.enabled == 'intro' or display.image.enabled == 'show' %}
+                                            <div class="sz-article-image">
+                                                <a href="{{ article.route }}">
+                                                    <img 
+                                                        src="{{ url(article.images.image_intro) }}" 
+                                                        {{ article.images.image_intro|imagesize|raw }} 
+                                                        alt="{{ article.images.image_intro_alt }}"
+                                                    />
+                                                </a>
+                                            </div>
+                                        {% elseif article.images.image_fulltext and display.image.enabled == 'full' %}
+                                            <div class="sz-article-image">
+                                                <a href="{{ article.route }}">
+                                                    <img src="{{ url(article.images.image_fulltext) }}" {{ article.images.image_fulltext|imagesize|raw }} alt="{{ article.images.image_fulltext_alt }}" />
+                                                </a>
+                                            </div>
+                                        {% endif %}
+                                    </div>    
                                 {% endif %}
-                            </div>    
-                        
+                            {% endif %}
                         
                             <div class="g-block sz-article-content-container 
                                 {% if particle.imgsize == 'xSmall' %} sz-flex-xsmall 
@@ -228,6 +229,21 @@
                                         {#META INFO#}
                                         {% if display.date.enabled or display.author.enabled or display.category.enabled or display.hits.enabled %}
                                             <div class="sz-article-details">
+                                                {#CATEGORY ############################}
+                                                {% if display.category.enabled %}
+                                                    {% set category_link = display.category.enabled == 'link' %}
+                                                    <span class="sz-article-category">
+                                                        {% set cat = article.categories|last %}
+                                                        {% if category_link %}
+                                                            <a href="{{ cat.route }}">
+                                                                <i class="fa fa-folder-open" aria-hidden="true"></i>{{ cat.title }}
+                                                            </a>
+                                                        {% else %}
+                                                            <i class="fa fa-folder-open" aria-hidden="true"></i>{{ cat.title }}
+                                                        {% endif %}
+                                                    </span>
+                                                {% endif %}
+                                                
                                                 {#DATE ############################}
                                                 {% if display.date.enabled %}
                                                     <span class="sz-article-date">
@@ -248,20 +264,6 @@
                                                     </span>
                                                 {% endif %}
         
-                                                {#CATEGORY ############################}
-                                                {% if display.category.enabled %}
-                                                    {% set category_link = display.category.enabled == 'link' %}
-                                                    <span class="sz-article-category">
-                                                        {% set cat = article.categories|last %}
-                                                        {% if category_link %}
-                                                            <a href="{{ cat.route }}">
-                                                                <i class="fa fa-folder-open" aria-hidden="true"></i>{{ cat.title }}
-                                                            </a>
-                                                        {% else %}
-                                                            <i class="fa fa-folder-open" aria-hidden="true"></i>{{ cat.title }}
-                                                        {% endif %}
-                                                    </span>
-                                                {% endif %}
                                                 
                                                 {#HITS ############################}
                                                 {% if display.hits.enabled %}
