@@ -6,8 +6,8 @@ preset:
 layout:
   /zenith/:
     -
-      - 'custom-6219 20'
       - 'horizontalmenu-7701 80'
+      - 'custom-6219 20'
   /navtop/:
     -
       - 'logo-9501 20'
@@ -109,7 +109,7 @@ structure:
   zenith:
     type: section
     attributes:
-      boxed: '3'
+      boxed: '0'
       class: ''
       background: ''
       backgroundOverlay: 'rgba(0, 0, 0, 0)'
@@ -129,7 +129,7 @@ structure:
   navtop:
     type: section
     attributes:
-      boxed: '3'
+      boxed: '0'
       class: ''
       background: ''
       backgroundOverlay: 'rgba(0, 0, 0, 0)'
@@ -149,7 +149,7 @@ structure:
   navigation:
     type: section
     attributes:
-      boxed: '3'
+      boxed: '0'
       class: ''
       background: ''
       backgroundOverlay: 'rgba(0, 0, 0, 0)'
@@ -341,16 +341,16 @@ structure:
       swipe: '1'
       css3animation: '1'
 content:
+  horizontalmenu-7701:
+    title: 'Horizontal Menu'
+    block:
+      variations: 'nomarginall nopaddingbottom'
   custom-6219:
     title: 'Custom HTML'
     attributes:
       html: 'Newspaper: Classic'
     block:
-      variations: 'nomarginall align-left'
-  horizontalmenu-7701:
-    title: 'Horizontal Menu'
-    block:
-      variations: 'nomarginall nopaddingbottom'
+      variations: 'nomarginall center'
   logo-9501:
     title: 'Logo / Image'
     attributes:
