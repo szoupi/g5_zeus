@@ -31,6 +31,13 @@ form:
                 Symmetry: Symmetry
                 List: List
                 Two_column_list: 2 Column list
+            
+            height:
+              type: input.text
+              label: Height
+              description: Optional - Specify the minimum height of the block in vh, rem, em or px units.      
+              placeholder: eg 40vh, 20rem etc
+              pattern: '\d+(\.\d+){0,1}(rem|em|px|vh)'                
 
             gutter:
               type: select.select

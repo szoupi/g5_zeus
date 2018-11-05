@@ -31,6 +31,17 @@
         }
     }
 
+    // center the logo, used in some layouts
+    &.center-logo {
+        display: block;
+		text-align: center;
+        
+        img, svg {
+            margin: 0 auto;
+        }
+    }
+    
+    
 	@include breakpoint(mobile-only) {
 		display: block;
 		text-align: center;

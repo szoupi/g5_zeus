@@ -56,8 +56,15 @@
         {% elseif particle.layout == 'Two_column_list' %} list two-column
         {% endif %}
         
-        {% if particle.css.class %} {{ particle.css.class }}{% endif %}" {{- attr_extra|raw }}>
-
+        {% if particle.css.class %} 
+            {{ particle.css.class }}
+        {% endif %}" {{- attr_extra|raw }} 
+        
+        {#HEIGHT#}
+        {% if (particle.height) %}     
+            style='min-height:{{ particle.height }};'
+        {% endif %}
+    >
 
 
         {% for article in articles  %}
