@@ -1,0 +1,32 @@
+{% extends '@nucleus/partials/particle.html.twig' %}
+
+{% block particle %}
+    <div class="lineSZ" style=" 
+
+        {# WIDTH #}
+        {% if particle.width %} 
+            width:{{ particle.width }};
+        {% endif %}
+
+        {# HEIGHT #}
+        {% if particle.height %} 
+            height:{{ particle.height }};
+        {% endif %}
+
+        {# HEIGHT #}
+        {% if particle.color %} 
+            background-color:{{ particle.color }};
+        {% endif %}
+
+        {# ALIGNMENT #}
+        {% if particle.alignment == 'left' %} margin-right: auto; 
+        {% elseif particle.alignment == 'center' %} margin: auto; 
+        {% elseif particle.alignment == 'right' %} margin-left: auto; 
+        {% endif %}
+    
+    " >
+                    {#LINE#}
+    </div>
+
+
+{% endblock %}

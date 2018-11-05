@@ -1,0 +1,41 @@
+name: Line
+description: Draw a line  
+type: particle
+icon: fa-minus
+
+form:
+  fields:
+    enabled:
+      type: input.checkbox
+      label: Enabled
+      description: Globally enable the particle.
+      default: true
+
+    width:
+      type: input.text
+      label: Width
+      description: Optional - Specify the line width in units. 
+      placeholder: 100%
+      pattern: '\d+(\.\d+){0,1}(rem|em|ex|ch|vw|vh|vmin|vmax|%|px|cm|mm|in|pt|pc)'
+
+    height:
+      type: input.text
+      label: Height
+      description: Optional - Specify the line height in units. 
+      placeholder: 2px
+      pattern: '\d+(\.\d+){0,1}(rem|em|ex|ch|vw|vh|vmin|vmax|%|px|cm|mm|in|pt|pc)'          
+
+    color:
+      type: input.colorpicker
+      label: Color
+      description: Optional - Set the color of the line.
+
+    alignment:
+      type: input.radios
+      label: Alignment
+      description: Optional - Align the line
+      default: left
+      options:
+        left: Left
+        center: Center
+        right: Right

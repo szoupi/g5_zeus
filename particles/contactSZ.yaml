@@ -60,6 +60,7 @@ form:
           label: Link
           description: Optional. Input the item link. Leave empty to display only the Contant. Examples mailto:support@threethemes.com https://threethemes.com/ tel:+123456789
           placeholder: 'eg mailto:support@threethemes.com'
+          
         .linktarget:
           type: select.selectize
           label: Link Target
