@@ -8,49 +8,43 @@
                     <div>
                         {#HEADLINE#}
                         {% if particle.maintitle %}
-                            <h2 class="sz-particles-title sz-headline-main"
-                                style="
+                            {# TAG #}
+                            
+                            {% if particle.tag == 'h1' %} <h1 
+                            {% elseif particle.tag == 'h2' %} <h2 
+                            {% elseif particle.tag == 'h3' %} <h3 
+                            {% elseif particle.tag == 'h4' %} <h4 
+                            {% elseif particle.tag == 'h5' %} <h5 
+                            {% elseif particle.tag == 'h6' %} <h6 
+                            {% endif %}
+
+                            class="sz-headline-main"
+                            style="
                                 {% if particle.maintitlesize %} 
                                     font-size: {{ particle.maintitlesize }};
                                 {% endif %}
                                 {% if particle.maintitlecolor %} 
                                     color: {{ particle.maintitlecolor }};
-                                {% endif %}                                
+                                {% endif %}    
+
+                                {# ALIGNMENT #}
+                                {% if particle.maintitlealignment == 'left' %} text-align: left; 
+                                {% elseif particle.maintitlealignment == 'center' %} text-align: center; 
+                                {% elseif particle.maintitlealignment == 'right' %} text-align: right; 
+                                {% endif %}                                                            
                             ">
-                            {{ particle.maintitle|raw }}</h2>
+
+                                {{ particle.maintitle|raw }}
+                            
+                                {% if particle.tag == 'h1' %} </h1> 
+                                {% elseif particle.tag == 'h2' %} </h2> 
+                                {% elseif particle.tag == 'h3' %} </h3> 
+                                {% elseif particle.tag == 'h4' %} </h4> 
+                                {% elseif particle.tag == 'h5' %} </h5> 
+                                {% elseif particle.tag == 'h6' %} </h6> 
+                                {% endif %}
                         {% endif %}
 
-                        {#SUBTITLE#}
-                        {% if particle.subtitle %}
-                            <div>
-                                <h3 class="sz-particles-subtitle sz-headline-sub"
-                                    style="
-                                    {% if particle.subtitlesize %} 
-                                        font-size: {{ particle.subtitlesize }};
-                                    {% endif %}
-                                    {% if particle.subtitlecolor %} 
-                                        color: {{ particle.subtitlecolor }};
-                                    {% endif %}                                
-                                ">
-                                    {{ particle.subtitle|raw }}
-                                </h3>
-                            </div>
-                        {% endif %}                          
-                        
-                        {#DESCRIPTION#}
-                        {% if particle.description %}
-                            <p class="sz-particles-description sz-headline-description" 
-                                style="
-                                    {% if particle.descriptionsize %} 
-                                        font-size: {{ particle.descriptionsize }};
-                                    {% endif %}
-                                    {% if particle.descriptioncolor %} 
-                                        color: {{ particle.descriptioncolor }};
-                                    {% endif %}                                
-                                ">
-                                {{ particle.description|raw }}
-                            </p>
-                        {% endif %}
                         
                     </div>
                 </div>

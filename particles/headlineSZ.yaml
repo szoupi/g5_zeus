@@ -11,76 +11,44 @@ form:
       description: Globally enable the particle.
       default: true
 
-    _tabs:
-      type: container.tabs
-      fields:
+    maintitle:
+      type: input.text
+      label: Title
+      description: The main headline
+      placeholder: Enter free text
 
-        _tab_maintitle:
-          label: Title
-          fields:  
+    tag:
+      type: input.radios
+      label: Tag
+      description: 'Set the tag for the headline. Default is h2'
+      default: h2
+      options:
+        h1: h1
+        h2: h2
+        h3: h3
+        h4: h4
+        h5: h5
+        h6: h6                
 
-            .maintitle:
-              type: input.text
-              label: Title
-              description: The main headline
-              placeholder: Enter free text
+    maintitlesize:
+      type: input.text
+      label: Size
+      description: Optional - Specify the font size of the title in rem, em or px units. 
+      placeholder: eg 2.5rem
+      pattern: '\d+(\.\d+){0,1}(rem|em|ex|ch|vw|vh|vmin|vmax|%|px|cm|mm|in|pt|pc)'
 
-            .maintitlesize:
-              type: input.text
-              label: Size
-              description: Optional - Specify the font size of the title in rem, em or px units. 
-              placeholder: eg 2.5rem
-              pattern: '\d+(\.\d+){0,1}(rem|em|ex|ch|vw|vh|vmin|vmax|%|px|cm|mm|in|pt|pc)'
+    maintitlecolor:
+      type: input.colorpicker
+      label: Color
+      description: Optional - Set the color of the title.
 
-            .maintitlecolor:
-              type: input.colorpicker
-              label: Color
-              description: Optional - Set the color of the title.
-              default: "rgba(0, 0, 0, 0)"      
 
-        _tab_mainsubtitle:
-          label: Subtitle
-          fields:  
-
-            .subtitle:
-              type: input.text
-              label: Subtitle
-              description: Customize the subtitle text.
-              placeholder: Enter free text
-
-            .subtitlesize:
-              type: input.text
-              label: Size
-              description: Optional - Specify the font size of the title in rem, em or px units.     
-              placeholder: eg 2.5rem
-              pattern: '\d+(\.\d+){0,1}(rem|em|ex|ch|vw|vh|vmin|vmax|%|px|cm|mm|in|pt|pc)'
-
-            .subtitlecolor:
-              type: input.colorpicker
-              label: Color
-              description: Optional - Set the color of the title.
-              default: "rgba(0, 0, 0, 0)"                 
-
-        _tab_description:
-          label: Description
-          fields:
-
-            .description:
-              type: textarea.textarea
-              label: Description
-              description: Short description.
-              placeholder: Enter short description
-
-            .descriptionsize:
-              type: input.text
-              label: Size
-              description: Optional - Specify the font size of the title in rem, em or px units.       
-              placeholder: eg 2.5rem
-              pattern: '\d+(\.\d+){0,1}(rem|em|ex|ch|vw|vh|vmin|vmax|%|px|cm|mm|in|pt|pc)'          
-
-            .descriptioncolor:
-              type: input.colorpicker
-              label: Color
-              description: Optional - Set the color of the title.
-              default: "rgba(0, 0, 0, 0)"                        
-      
+    maintitlealignment:
+      type: input.radios
+      label: Alignment
+      description: Optional - Align the line
+      default: left
+      options:
+        left: Left
+        center: Center
+        right: Right
