@@ -1,10 +1,10 @@
 details:
   name: Zeus
-  version: '5.4.2612'
+  version: '5.4.2613'
   icon: linux
-  date: 'October 30, 2018'
+  date: 'November 5, 2018'
   author:
-    name: threethemes
+    name: ThreeThemes
     email: support@threethemes.com
     link: https://threethemes.com
 
