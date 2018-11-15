@@ -45,17 +45,18 @@
         
         // Content
         .cube-content-wrapper {
-            max-width: 80%;
+            max-width: 90%;
             margin: 0 auto;
-            padding: 2rem;
+            padding: 0 1rem;
             //3 next lines for aligning vertically
             position: relative;
             top: 50%;
             transform: translateY(-50%);
             
             
-            @include breakpoint(no-desktop) {
+            @include breakpoint(mobile-only) {
                 padding: 2rem 0;
+                max-width: unset;
                 
             }            
             
