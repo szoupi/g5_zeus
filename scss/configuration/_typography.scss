@@ -15,22 +15,23 @@ $font-weight-bold:				700;
 $font-weight-ultrabold:		  	900;
 
 // Base Sizes
-$core-font-size:		1rem !default;
+$core-font-size:		100 !default; // Converts to 16px
 $responsive-font-size:	1vw !default;
-$core-line-height:		1.5 !default;
+$core-line-height:		1.6 !default;
+// $leading: $core-font-size * $core-line-height; // not used
 
 // Navigation Sizes
 $navigation-line-height:        1.5 !default;
 $navtop-line-height:			1.5 !default;
 
-// Heading Sizes
-$h1-font-size:					$core-font-size + 1.667 !default;
-$h2-font-size:					$core-font-size + 1 !default;
-$h3-font-size:					$core-font-size + 0.667 !default;
-$h4-font-size:					$core-font-size + 0.5 !default;
-$h5-font-size:					$core-font-size !default;
+// Heading Sizes 1.200 minor third scale
+$h1-font-size:					$core-font-size + 1.488 !default;
+$h2-font-size:					$core-font-size + 1.074 !default;
+$h3-font-size:					$core-font-size + 0.728 !default;
+$h4-font-size:					$core-font-size + 0.44 !default;
+$h5-font-size:					$core-font-size + 0.2 !default;
 $h6-font-size:					$core-font-size - 0.15 !default;
 
 $figure-caption-font-size:		$core-font-size -0.25 !default; //for later use
-$small-font-size:				$core-font-size -0.5 !default;	//for later use
+$small-font-size:				$core-font-size -0.25 !default;	//for later use
  
