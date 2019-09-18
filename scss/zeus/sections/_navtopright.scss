@@ -1,4 +1,4 @@
-#g-navtop {
+#g-navtopright {
     
     //SECTION PRESETS    
 	@if $navtop-section-preset {
@@ -71,6 +71,31 @@
         }
     }
 
+    // // HEADING2
+    // h2 {
+    //     font-weight: 300;
+    //     line-height: $core-line-height;
+
+    //     @include breakpoint(large-mobile-range) {
+    //         font-size: 1.35rem;
+    //     }
+
+    //     em {
+    //         font-weight: $font-weight-medium;
+    //     }
+
+    //     &.large-heading {
+    //         font-size: $h2-font-size * 2;
+
+    //         @include breakpoint(tablet-range) {
+    //             font-size: $h2-font-size * 1.25;
+    //         }
+
+    //         @include breakpoint(mobile-only) {
+    //             font-size: $h2-font-size;
+    //         }
+    //     }
+    // }
 
     // BUTTONS
     .button {
@@ -79,23 +104,10 @@
 
     ///////////////////////////////////////////////
 
-
-    // Logo
-    .g-logo {
-        color: $navtop-text-color;
-        line-height: 2.8rem;
-
-        &.g-logo-zeus {
-            svg {
-                fill: $navtop-text-color;
-            }
-        }
-    }
-
-
     .g-social {
-        text-align: right;
         line-height: 3.125;
+        margin-left: 0;
+        margin-right: 0;
 
         @include breakpoint(mobile-only) {
             text-align: center;

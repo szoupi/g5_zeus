@@ -6,13 +6,20 @@ preset:
 layout:
   /zenith/:
     -
-      - 'horizontalmenu-7701 80'
       - 'custom-6219 20'
-  /navtop/:
+  /container-navtop/:
     -
-      - 'logo-9501 20'
-      - 'social-5901 60'
-      - 'position-module-4768 20'
+      -
+        'navtop 50':
+          -
+            - 'logo-9501'
+      -
+        'navtopright 50':
+          -      
+            - 'social-5901 60'
+            - 'position-module-4768 20'
+          -
+            - 'horizontalmenu-7701'
   /navigation/:
     -
       - menu-6609
@@ -344,7 +351,7 @@ content:
   horizontalmenu-7701:
     title: 'Horizontal Menu'
     block:
-      variations: 'nomarginall nopaddingbottom'
+      variations: 'nomarginall nopaddingbottom align-right'
   custom-6219:
     title: 'Custom HTML'
     attributes:

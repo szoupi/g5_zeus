@@ -7,9 +7,14 @@ layout:
   /zenith/:
     -
       - custom-2801
-  /navtop/:
+  /container-navtop/:
     -
-      - spacer-3541
+      -
+        'navtop 50':
+          -
+      -
+        'navtopright 50':
+          -
   /navigation/:
     -
       - 'logo-9501 25'

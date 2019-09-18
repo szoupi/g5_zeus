@@ -5,7 +5,14 @@ preset:
   timestamp: 1538948791
 layout:
   /zenith/: {  }
-  /navtop/: {  }
+  /container-navtop/:
+    -
+      -
+        'navtop 50':
+          -
+      -
+        'navtopright 50':
+          -
   /navigation/:
     -
       - 'logo-9501 25'
