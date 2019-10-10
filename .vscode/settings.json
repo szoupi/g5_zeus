@@ -11,5 +11,20 @@
         "scss/zeus/particles/_bloglayoutSZ.scss",
         "scss/zeus/particles/_featuredarticlesSZ.scss"
     ],
-    "search.useIgnoreFiles": false
+    "search.useIgnoreFiles": false,
+    "workbench.colorCustomizations": {
+        "activityBar.background": "#8554c7",
+        "activityBar.foreground": "#e7e7e7",
+        "activityBar.inactiveForeground": "#e7e7e799",
+        "activityBarBadge.background": "#d0986f",
+        "activityBarBadge.foreground": "#15202b",
+        "titleBar.activeBackground": "#6b39af",
+        "titleBar.inactiveBackground": "#6b39af99",
+        "titleBar.activeForeground": "#e7e7e7",
+        "titleBar.inactiveForeground": "#e7e7e799",
+        "statusBar.background": "#6b39af",
+        "statusBarItem.hoverBackground": "#8554c7",
+        "statusBar.foreground": "#e7e7e7"
+    },
+    "peacock.color": "#6b39af"
 }
