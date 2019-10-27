@@ -15,7 +15,7 @@ $font-weight-bold:				700;
 $font-weight-ultrabold:		  	900;
 
 // Base Sizes
-$core-font-size:		16px !default; 
+$core-font-size:		1rem !default; // Converts to 16px
 $responsive-font-size:	1vw !default;
 $core-line-height:		1.6 !default;
 // $leading: $core-font-size * $core-line-height; // not used
