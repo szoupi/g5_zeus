@@ -1,8 +1,8 @@
 <?xml version="1.0" encoding="UTF-8" standalone="no"?>
 <extension version="3.4" type="template" client="site" method="upgrade">
     <name>g5_zeus</name>
-    <creationDate>November 5, 2018</creationDate>
-    <version>5.4.2613</version>
+    <creationDate>October 27, 2019</creationDate>
+    <version>5.4.2615</version>
     <author>ThreeThemes</author>
     <authorEmail>support@threethemes.com</authorEmail>
     <authorUrl>https://threethemes.com</authorUrl>
