@@ -87,7 +87,7 @@
             {%- if attr_marginLeft -%} margin-left: {{ attr_marginLeft }}; {%- endif -%}
             {%- if attr_marginRight -%} margin-right: {{ attr_marginRight }}; {%- endif -%}
 
-            {# height #}
+            {# height - also used on background div#}
             {%- if attr_blockHeight -%} min-height: {{ attr_blockHeight }}; {%- endif -%}
         "
 
@@ -106,6 +106,7 @@
                 {%- if attr_backgroundRepeat -%} background-repeat: {{ attr_backgroundRepeat }};  {%- endif -%}
                 {%- if attr_backgroundPosition -%} background-position: {{ attr_backgroundPosition }};  {%- endif -%}            
                 {%- if attr_backgroundSize -%} background-size: {{ attr_backgroundSize }}; {%- endif -%}
+                {%- if attr_blockHeight -%} min-height: {{ attr_blockHeight }}; {%- endif -%}
             ">
         {% endif %}   
         
