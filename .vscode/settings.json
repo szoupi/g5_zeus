@@ -14,6 +14,7 @@
     "search.useIgnoreFiles": false,
     "workbench.colorCustomizations": {
         "activityBar.background": "#8554c7",
+        "activityBar.activeBackground": "#8554c7",
         "activityBar.activeBorder": "#d0986f",
         "activityBar.foreground": "#e7e7e7",
         "activityBar.inactiveForeground": "#e7e7e799",
