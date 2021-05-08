@@ -1,0 +1,65 @@
+name: Floating Banner
+description: Display floating banner in specific place.
+type: particle
+icon: fa-times-rectangle
+
+configuration:
+  caching:
+    type: static
+
+form:
+  fields:
+    enabled:
+      type: input.checkbox
+      label: Enabled
+      description: Globally enable floating social particles.
+      default: true
+
+    top:
+      type: input.text
+      label: Top
+      description: Optional - Specify the top corner position in vh, rem, em or px units.      
+      pattern: '\d+(\.\d+){0,1}(rem|em|px|vh|vw|%)'
+
+    right:
+      type: input.text
+      label: Right
+      description: Optional - Specify the right corner position in vh, rem, em or px units.      
+      default: 1rem
+      pattern: '\d+(\.\d+){0,1}(rem|em|px|vh|vw|%)'
+
+    bottom:
+      type: input.text
+      label: Bottom
+      description: Optional - Specify the bottom corner position in vh, rem, em or px units.      
+      default: 1rem
+      pattern: '\d+(\.\d+){0,1}(rem|em|px|vh|vw|%)'
+
+    left:
+      type: input.text
+      label: Left
+      description: Optional - Specify the left corner position in vh, rem, em or px units.      
+      pattern: '\d+(\.\d+){0,1}(rem|em|px|vh|vw|%)'                  
+
+    customhtml:
+      type: textarea.textarea
+      label: Custom html
+      description: Add your html code. Be careful!
+      placeholder: Add your html code. Be careful     
+
+    textcolor:
+      type: input.colorpicker
+      label: Text Color
+      description: Set the text color. Optional
+      default: "rgba(230, 230, 230, 1)"  
+
+    backgroundcolor:
+      type: input.colorpicker
+      label: Background Color
+      description: Set the background color. Optional
+      default: "rgba(20, 20, 20, 1)"  
+
+    css.class:
+      type: input.selectize
+      label: CSS Classes
+      description: CSS class name for the particle.

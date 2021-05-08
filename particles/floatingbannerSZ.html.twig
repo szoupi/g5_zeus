@@ -1,0 +1,33 @@
+{% extends '@nucleus/partials/particle.html.twig' %}
+
+{% block particle %}
+    <div class="{{ particle.css.class }} sz-floating-banner"
+		style="
+			{% if particle.top %} 
+				top: {{ particle.top }};
+			{% endif %}
+
+			{% if particle.right %} 
+				right: {{ particle.right }};
+			{% endif %}
+
+			{% if particle.bottom %} 
+				bottom: {{ particle.bottom }};
+			{% endif %}
+
+			{% if particle.left %} 
+				left: {{ particle.left }};
+			{% endif %}
+
+			{% if particle.textcolor %} 
+				color: {{ particle.textcolor }};
+			{% endif %}
+
+			{% if particle.backgroundcolor %} 
+				background-color: {{ particle.backgroundcolor }};
+			{% endif %}									
+		"	
+	>
+		{{ particle.customhtml|raw }}
+    </div>
+{% endblock %}

@@ -1,0 +1,21 @@
+
+.sz-floating-banner{
+
+    @include breakpoint(mobile-only) {
+		padding: 0.25;
+    }
+
+    z-index: 10000000;
+	position: fixed;
+
+	//default values, particle may overide them
+	background-color: $black; 
+	color: $white;
+
+	padding: 0.5rem;
+	border-radius: 0.5rem;
+
+
+
+
+}
