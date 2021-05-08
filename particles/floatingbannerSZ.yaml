@@ -18,27 +18,27 @@ form:
     top:
       type: input.text
       label: Top
-      description: Optional - Specify the top corner position in vh, rem, em or px units.      
+      description: Optional - Specify the top corner position in vh, rem, em, px, vh, vw or % units.      
       pattern: '\d+(\.\d+){0,1}(rem|em|px|vh|vw|%)'
 
     right:
       type: input.text
       label: Right
-      description: Optional - Specify the right corner position in vh, rem, em or px units.      
+      description: Optional - Specify the right corner position in vh, rem, em, px, vh, vw or % units.      
       default: 1rem
       pattern: '\d+(\.\d+){0,1}(rem|em|px|vh|vw|%)'
 
     bottom:
       type: input.text
       label: Bottom
-      description: Optional - Specify the bottom corner position in vh, rem, em or px units.      
+      description: Optional - Specify the bottom corner position in vh, rem, em, px, vh, vw or % units.      
       default: 1rem
       pattern: '\d+(\.\d+){0,1}(rem|em|px|vh|vw|%)'
 
     left:
       type: input.text
       label: Left
-      description: Optional - Specify the left corner position in vh, rem, em or px units.      
+      description: Optional - Specify the left corner position in vh, rem, em, px, vh, vw or % units.      
       pattern: '\d+(\.\d+){0,1}(rem|em|px|vh|vw|%)'                  
 
     customhtml:
@@ -58,6 +58,12 @@ form:
       label: Background Color
       description: Set the background color. Optional
       default: "rgba(20, 20, 20, 1)"  
+
+    borderradius:
+      type: input.text
+      label: Border radius
+      description: Optional - Specify the Border radius in rem, em or px units.      
+      pattern: '\d+(\.\d+){0,1}(rem|em|px|vh|vw|%)'
 
     css.class:
       type: input.selectize

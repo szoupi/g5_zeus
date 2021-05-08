@@ -40,8 +40,6 @@
 
     <positions>
         <position>debug</position>
-        <position>main-bottom</position>
-        <position>sidebar</position>
     </positions>
 
     <config>

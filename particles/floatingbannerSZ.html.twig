@@ -25,7 +25,12 @@
 
 			{% if particle.backgroundcolor %} 
 				background-color: {{ particle.backgroundcolor }};
-			{% endif %}									
+			{% endif %}	
+			
+			{# border radius #}
+			{% if particle.borderradius %} 
+				border-radius: {{ particle.borderradius }};
+			{% endif %}												
 		"	
 	>
 		{{ particle.customhtml|raw }}
