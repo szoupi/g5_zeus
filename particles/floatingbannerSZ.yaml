@@ -65,7 +65,15 @@ form:
       description: Optional - Specify the Border radius in rem, em or px units.      
       pattern: '\d+(\.\d+){0,1}(rem|em|px|vh|vw|%)'
 
+    shadow:
+      type: input.checkbox
+      label: Drop shadow.
+      description: Select whether to apply shadow or not.
+      default: true      
+
     css.class:
       type: input.selectize
       label: CSS Classes
       description: CSS class name for the particle.
+
+      

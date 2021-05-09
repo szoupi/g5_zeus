@@ -1,7 +1,11 @@
 {% extends '@nucleus/partials/particle.html.twig' %}
 
 {% block particle %}
-    <div class="{{ particle.css.class }} sz-floating-banner"
+    <div class="{{ particle.css.class }} sz-floating-banner 
+		{%  if particle.shadow %}
+			shadow
+		{% endif %}
+	"
 		style="
 			{% if particle.top %} 
 				top: {{ particle.top }};
