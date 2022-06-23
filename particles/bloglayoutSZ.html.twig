@@ -109,18 +109,18 @@
                                                     {% if display.date.enabled %}
                                                         <span class="sz-article-date">
                                                             {% if display.date.enabled == 'published' %}
-                                                                <i class="fa fa-clock-o" aria-hidden="true"></i>{{ article.publish_up|date(display.date.format) }}
+                                                                <span class="fa fa-clock-o" aria-hidden="true"></span> {{ article.publish_up|date(display.date.format) }}
                                                             {% elseif display.date.enabled == 'modified' %}
-                                                                <i class="fa fa-clock-o" aria-hidden="true"></i>{{ article.modified|date(display.date.format) }}
+                                                                <span class="fa fa-clock-o" aria-hidden="true"></span> {{ article.modified|date(display.date.format) }}
                                                             {% else %}
-                                                                <i class="fa fa-clock-o" aria-hidden="true"></i>{{ article.created|date(display.date.format) }}
+                                                                <span class="fa fa-clock-o" aria-hidden="true"></span> {{ article.created|date(display.date.format) }}
                                                             {% endif %}
                                                         </span>
                                                     {% endif %}
             
                                                     {% if display.author.enabled %}
                                                         <span class="sz-article-author">
-                                                            <i class="fa fa-user" aria-hidden="true"></i>{{ article.author.name }}
+                                                            <span class="fa fa-user" aria-hidden="true"></span> {{ article.author.name }}
                                                         </span>
                                                     {% endif %}
             
@@ -130,17 +130,17 @@
                                                             {% set cat = article.categories|last %}
                                                             {% if category_link %}
                                                                 <a href="{{ cat.route }}">
-                                                                    <i class="fa fa-folder-open" aria-hidden="true"></i>{{ cat.title }}
+                                                                    <span class="fa fa-folder-open" aria-hidden="true"></span> {{ cat.title }}
                                                                 </a>
                                                             {% else %}
-                                                                <i class="fa fa-folder-open" aria-hidden="true"></i>{{ cat.title }}
+                                                                <span class="fa fa-folder-open" aria-hidden="true"></span> {{ cat.title }}
                                                             {% endif %}
                                                         </span>
                                                     {% endif %}
             
                                                     {% if display.hits.enabled %}
                                                         <span class="sz-article-hits">
-                                                            <i class="fa fa-eye" aria-hidden="true"></i>{{ article.hits }}
+                                                            <span class="fa fa-eye" aria-hidden="true"></span> {{ article.hits }}
                                                         </span>
                                                     {% endif %}
                                                 </div>
@@ -235,10 +235,10 @@
                                                         {% set cat = article.categories|last %}
                                                         {% if category_link %}
                                                             <a href="{{ cat.route }}">
-                                                                <i class="fa fa-folder-open" aria-hidden="true"></i>{{ cat.title }}
+                                                                <span class="fa fa-folder-open" aria-hidden="true"></span> {{ cat.title }}
                                                             </a>
                                                         {% else %}
-                                                            <i class="fa fa-folder-open" aria-hidden="true"></i>{{ cat.title }}
+                                                            <span class="fa fa-folder-open" aria-hidden="true"></span> {{ cat.title }}
                                                         {% endif %}
                                                     </span>
                                                 {% endif %}
@@ -247,11 +247,11 @@
                                                 {% if display.date.enabled %}
                                                     <span class="sz-article-date">
                                                         {% if display.date.enabled == 'published' %}
-                                                            <i class="fa fa-clock-o" aria-hidden="true"></i>{{ article.publish_up|date(display.date.format) }}
+                                                            <span class="fa fa-clock-o" aria-hidden="true"></span> {{ article.publish_up|date(display.date.format) }}
                                                         {% elseif display.date.enabled == 'modified' %}
-                                                            <i class="fa fa-clock-o" aria-hidden="true"></i>{{ article.modified|date(display.date.format) }}
+                                                            <span class="fa fa-clock-o" aria-hidden="true"></span> {{ article.modified|date(display.date.format) }}
                                                         {% else %}
-                                                            <i class="fa fa-clock-o" aria-hidden="true"></i>{{ article.created|date(display.date.format) }}
+                                                            <span class="fa fa-clock-o" aria-hidden="true"></span> {{ article.created|date(display.date.format) }}
                                                         {% endif %}
                                                     </span>
                                                 {% endif %}
@@ -259,7 +259,7 @@
                                                 {#AUTHOR ############################}
                                                 {% if display.author.enabled %}
                                                     <span class="sz-article-author">
-                                                        <i class="fa fa-user" aria-hidden="true"></i>{{ article.author.name }}
+                                                        <span class="fa fa-user" aria-hidden="true"></span> {{ article.author.name }}
                                                     </span>
                                                 {% endif %}
         
@@ -267,7 +267,7 @@
                                                 {#HITS ############################}
                                                 {% if display.hits.enabled %}
                                                     <span class="sz-article-hits">
-                                                        <i class="fa fa-eye" aria-hidden="true"></i>{{ article.hits }}
+                                                        <span class="fa fa-eye" aria-hidden="true"></span> {{ article.hits }}
                                                     </span>
                                                 {% endif %}
                                             </div>
@@ -354,11 +354,11 @@
                                                     {% if display.date.enabled %}
                                                         <span class="sz-article-date">
                                                             {% if display.date.enabled == 'published' %}
-                                                                <i class="fa fa-clock-o" aria-hidden="true"></i>{{ article.publish_up|date(display.date.format) }}
+                                                                <span class="fa fa-clock-o" aria-hidden="true"></span> {{ article.publish_up|date(display.date.format) }}
                                                             {% elseif display.date.enabled == 'modified' %}
-                                                                <i class="fa fa-clock-o" aria-hidden="true"></i>{{ article.modified|date(display.date.format) }}
+                                                                <span class="fa fa-clock-o" aria-hidden="true"></span> {{ article.modified|date(display.date.format) }}
                                                             {% else %}
-                                                                <i class="fa fa-clock-o" aria-hidden="true"></i>{{ article.created|date(display.date.format) }}
+                                                                <span class="fa fa-clock-o" aria-hidden="true"></span> {{ article.created|date(display.date.format) }}
                                                             {% endif %}
                                                         </span>
                                                     {% endif %}
@@ -366,7 +366,7 @@
                                                     {#AUTHOR ############################}
                                                     {% if display.author.enabled %}
                                                         <span class="sz-article-author">
-                                                            <i class="fa fa-user" aria-hidden="true"></i>{{ article.author.name }}
+                                                            <span class="fa fa-user" aria-hidden="true"></span> {{ article.author.name }}
                                                         </span>
                                                     {% endif %}
             
@@ -377,10 +377,10 @@
                                                             {% set cat = article.categories|last %}
                                                             {% if category_link %}
                                                                 <a href="{{ cat.route }}">
-                                                                    <i class="fa fa-folder-open" aria-hidden="true"></i>{{ cat.title }}
+                                                                    <span class="fa fa-folder-open" aria-hidden="true"></span> {{ cat.title }}
                                                                 </a>
                                                             {% else %}
-                                                                <i class="fa fa-folder-open" aria-hidden="true"></i>{{ cat.title }}
+                                                                <span class="fa fa-folder-open" aria-hidden="true"></span> {{ cat.title }}
                                                             {% endif %}
                                                         </span>
                                                     {% endif %}
@@ -388,7 +388,7 @@
                                                     {#HITS ############################}
                                                     {% if display.hits.enabled %}
                                                         <span class="sz-article-hits">
-                                                            <i class="fa fa-eye" aria-hidden="true"></i>{{ article.hits }}
+                                                            <span class="fa fa-eye" aria-hidden="true"></span> {{ article.hits }}
                                                         </span>
                                                     {% endif %}
                                                 </div>
