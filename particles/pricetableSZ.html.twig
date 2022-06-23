@@ -34,7 +34,7 @@
                                 <img src="{{ url(pricetable.image) }}" class="sz-price-image" alt="{{ pricetable.title|e }}" />
                             {% endif %}
                             {% if pricetable.icon %}
-                                <li class="sz-icon"><i class="{{ pricetable.icon }} pricetable-icons"></i> </li>
+                                <li class="sz-icon"><span class="{{ pricetable.icon }} pricetable-icons"></span> </li>
                             {% endif %}
                             {% if pricetable.title %}
                                 <li class="sz-title">{{ pricetable.title|raw }}</li>

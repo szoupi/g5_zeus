@@ -140,13 +140,13 @@
                                     {% if display.date.enabled %}
                                         <span class="g-array-item-date">
                                             {% if display.date.enabled == 'published' %}
-                                                <i class="fa fa-clock-o" aria-hidden="true"></i>
+                                                <span class="fa fa-clock-o" aria-hidden="true"></span>
                                                 {{ article.publish_up|date(display.date.format) }}
                                             {% elseif display.date.enabled == 'modified' %}
-                                                <i class="fa fa-clock-o" aria-hidden="true"></i>
+                                                <span class="fa fa-clock-o" aria-hidden="true"></span>
                                                 {{ article.modified|date(display.date.format) }}
                                             {% else %}
-                                                <i class="fa fa-clock-o" aria-hidden="true"></i>
+                                                <span class="fa fa-clock-o" aria-hidden="true"></span>
                                                 {{ article.created|date(display.date.format) }}
                                             {% endif %}
                                         </span>
@@ -155,7 +155,7 @@
                                     {#AUTHOR ############################}
                                     {% if display.author.enabled %}
                                         <span class="g-array-item-author">
-                                            <i class="fa fa-user" aria-hidden="true"></i> {{ article.author.name }}
+                                            <span class="fa fa-user" aria-hidden="true"></span> {{ article.author.name }}
                                         </span>
                                     {% endif %}
 

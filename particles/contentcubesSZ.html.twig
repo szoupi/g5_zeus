@@ -80,7 +80,7 @@
                                     {% for tag in item.tags %}
                                         <span class=" tag">
                                             <a target="{{ tag.target|default('_self')|e }}" href="{{ tag.link|e }}">
-                                                {% if tag.icon %}<i class="{{ tag.icon }}"></i> {% endif %}
+                                                {% if tag.icon %}<span class="{{ tag.icon }}"></span> {% endif %}
                                                 {{ tag.text|raw }}
                                             </a>
                                         </span>

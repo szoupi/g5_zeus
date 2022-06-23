@@ -31,13 +31,13 @@
                         {#ICON#}
                         {% if particle.mainicon %}  
                             <div>
-                                <i class="{{ particle.mainicon }} sz-customcontent-icons" 
+                                <span class="{{ particle.mainicon }} sz-customcontent-icons" 
                                     style="display:block; 
                                     {% if particle.textalign %} 
                                         text-align: {{ particle.textalign }}
                                     {% endif %}
                                 ">
-                                </i>
+                                </span>
                             </div>
                         {% endif %}
                         
@@ -101,7 +101,7 @@
             {% for subitem in particle.subitems %}
                 <div class="g-block {{ subitem.class }}">
                     <div class="g-content">
-                        <i class="{{ subitem.icon }} subitem-icons"></i>
+                        <span class="{{ subitem.icon }} subitem-icons"></span>
                         <h2 class="sz-subitem-title">{{ subitem.title|raw }}</h2>
                         <h3 class="sz-subitem-subtitle">{{ subitem.subtitle|raw }}</h3>
                         <p>{{ subitem.description|raw }}</p>
