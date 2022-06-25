@@ -31,7 +31,7 @@ a.muted:focus {
     .alert-link,
     .alert-link:hover {
         right: 0 !important;
-        color: darken($warning-color, 25%);
+        color: darken($warning-color, 0.25);
         font-weight: bold;
         text-decoration: none;
     }
@@ -45,7 +45,7 @@ a.muted:focus {
 
 a.text-warning:hover,
 a.text-warning:focus {
-    color: darken($warning-color, 5%);
+    color: darken($warning-color, 0.05);
 }
 
 .alert-success {
@@ -73,7 +73,7 @@ a.text-warning:focus {
 
 a.text-success:hover,
 a.text-success:focus {
-    color: darken($success-color, 5%);
+    color: darken($success-color, 0.05);
 }
 
 .alert-danger,
@@ -103,13 +103,13 @@ a.text-success:focus {
 
 a.text-error:hover,
 a.text-error:focus {
-    color: darken($error-color, 5%);
+    color: darken($error-color, 0.05);
 }
 
 .alert-info {
     color: $info-color;
     background-color: lighten($info-color, 47%);
-    border-color: lighten($info-color, 40%);
+    border-color: lighten($info-color, 0.4);
 
     a,
     a:hover,
@@ -131,7 +131,7 @@ a.text-error:focus {
 
 a.text-info:hover,
 a.text-info:focus {
-    color: darken($info-color, 5%);
+    color: darken($info-color, 0.05);
 }
 
 // Pull Left & Pull Right

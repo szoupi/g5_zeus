@@ -211,7 +211,7 @@ $css_multipliers: 2, 3;
     
     .button {
         color: $white;
-        background: darken($base-dominant-color, 5%);
+        background: darken($base-dominant-color, 0.05);
         
         &:hover {
             background: darken($base-dominant-color, 15%);
@@ -219,7 +219,7 @@ $css_multipliers: 2, 3;
     }
     
     a {
-        color: lighten($base-dominant-color, 30%);
+        color: lighten($base-dominant-color, 0.3);
         
         &:hover {
             color: $white;

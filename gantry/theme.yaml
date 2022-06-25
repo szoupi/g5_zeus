@@ -1,8 +1,8 @@
 details:
   name: Zeus
-  version: '5.4.2620'
+  version: '5.5.1401'
   icon: linux
-  date: 'June 23, 2022'
+  date: 'June 25, 2022'
   author:
     name: ThreeThemes
     email: support@threethemes.com
@@ -47,11 +47,14 @@ configuration:
       200: 'gantry-theme://fonts/lato/lato-light/lato-light-webfont'
 
   css:
-    compiler: \Gantry\Component\Stylesheet\ScssCompiler
-    target: gantry-theme://css-compiled
+    compiler: '\Gantry\Component\Stylesheet\ScssCompiler'
+    options:
+      compatibility: '5.5'
+      deprecations: true
+    target: 'gantry-theme://css-compiled'
     paths:
-      - gantry-theme://scss
-      - gantry-engine://scss
+      - 'gantry-theme://scss'
+      - 'gantry-engine://scss'
     files:
       - zeus
       - zeus-joomla
@@ -63,7 +66,7 @@ configuration:
       - custom
 
   dependencies:
-    gantry: 5.4.0
+    gantry: 5.5
 
   block-variations:
     Title Variations:

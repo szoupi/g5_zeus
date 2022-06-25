@@ -1,6 +1,7 @@
 {% set tag_type = segment.subtype|default('section') %}
 {% set attr_id = segment.attributes.id ?: 'g-' ~ segment.id %}
-{% set attr_class = segment.attributes.class %}
+{% set attr_class = segment.attributes.class
+    ~ (segment.attributes.variations ? ' ' ~ segment.attributes.variations|join(' ')) %}
 {% set attr_extra = segment.attributes.extra|attribute_array %}
 {% set boxed = segment.attributes.boxed %}
 {% if boxed is not null %}
@@ -55,20 +56,14 @@
 {% endset %}
 
 {%- if segment.attributes.sticky or html|trim %}
-
     {%- if boxed is not null and (boxed == 0 or boxed == 2) %}
         {% set html %}
-            <div class="g-container">{{ html|raw }}</div>
+        <div class="g-container">{{ html|raw }}</div>
         {% endset %}
     {% endif %}
 
     {% set html %}
-
-
-    {% if boxed == 2 %}
-        {% set attr_class = attr_class ~ ' g-flushed' %}
-    {% endif %}
-
+    {% if boxed == 2 %}{% set attr_class = attr_class ~ ' g-flushed' %}{% endif %}
     {% set attr_class = attr_class ? ' class="' ~ attr_class|trim ~ '"' -%}
     
     {# section #}
@@ -118,13 +113,13 @@
     {%- endset %}
 
     {%- if boxed == 1 %}
-        <div class="g-container">{{ html|raw }}</div>
+    <div class="g-container">{{ html|raw }}</div>
     {% else %}
-        {{ html|raw }}
+    {{ html|raw }}
     {% endif %}
 {% endif %}
 
 
 {# SET VARIABLES#}
 {# in conjuction with /custom/admin/blueprints/layout/section.yaml #}
-{# Original:  /media/gantry5/engines/nucleus/teplates/layout/section #}
+{# Original:  /media/gantry5/engines/nucleus/teplates/layout/section.html.twig #}

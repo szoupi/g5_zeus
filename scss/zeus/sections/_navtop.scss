@@ -8,7 +8,7 @@
             a {
                 color: $accent-color-1;
                 &:hover {
-                    color: fadeout($accent-color-1, 40%);
+                    color: fadeout($accent-color-1, 0.3);
                 }
             }
             background-color: $base-dominant-color;
@@ -19,7 +19,7 @@
             a {
                 color: $base-dominant-color;
                 &:hover {
-                    color: fadeout($base-dominant-color, 40%);
+                    color: fadeout($base-dominant-color, 0.4);
                 }
             }
             background-color: $base-background;
@@ -30,7 +30,7 @@
             a {
                 color: $base-dominant-color;
                 &:hover {
-                    color: fadeout($base-dominant-color, 40%);
+                    color: fadeout($base-dominant-color, 0.4);
                 }
             }
             background-color: $accent-color-1;
@@ -41,7 +41,7 @@
             a {
                 color: $accent-color-3;
                 &:hover {
-                    color: fadeout($accent-color-3, 40%);
+                    color: fadeout($accent-color-3, 0.4);
                 }
             }
             background-color: $accent-color-2;
@@ -52,7 +52,7 @@
             a {
                 color: $accent-color-1;
                 &:hover {
-                    color: fadeout($accent-color-1, 40%);
+                    color: fadeout($accent-color-1, 0.3);
                 }
             }
             background-color: $accent-color-3;
@@ -64,7 +64,7 @@
             a {
                 color: $navtop-link-color;
                 &:hover {
-                    color: fadeout($navtop-link-color, 40%);
+                    color: fadeout($navtop-link-color, 0.4);
                 }
             }
             background-color:$navtop-background;
@@ -152,10 +152,10 @@
 
                 &:hover {
                     > .g-menu-item-container {
-                        color: fadeout($navtop-text-color, 30%);
+                        color: fadeout($navtop-text-color, 0.3);
 
                         > .g-selected {
-                            color: fadeout($navtop-text-color, 30%);
+                            color: fadeout($navtop-text-color, 0.3);
                         }
                     }
                 }
@@ -163,11 +163,11 @@
                 &.active {
                     > .g-menu-item-container {
                         > .g-menu-item-content {
-                            box-shadow: 0 2px 0 fadeout($navtop-text-color, 80%);
+                            box-shadow: 0 2px 0 fadeout($navtop-text-color, 0.8);
                         }
 
                         > .g-selected {
-                            box-shadow: 0 2px 0 fadeout($navtop-text-color, 80%);
+                            box-shadow: 0 2px 0 fadeout($navtop-text-color, 0.8);
                         }
                     }
                 }
@@ -176,7 +176,7 @@
 
         .g-dropdown {
             background: lighten($navtop-background, 2%);
-            border: 1px solid fadeout($navtop-text-color, 80%);
+            border: 1px solid fadeout($navtop-text-color, 0.8);
             border-radius: $border-radius;
 
             > .g-dropdown-column {
@@ -214,10 +214,10 @@
 
                 &:not(:last-child) {
                     > .g-menu-item-container {
-                        border-bottom: 1px solid fadeout($navtop-text-color, 80%);
+                        border-bottom: 1px solid fadeout($navtop-text-color, 0.8);
 
                         > .g-selected {
-                            border-bottom: 1px solid fadeout($navtop-text-color, 80%);
+                            border-bottom: 1px solid fadeout($navtop-text-color, 0.8);
                         }
                     }
                 }

@@ -2,7 +2,7 @@
 /*MODULES ARTICLES CATEGORY*/
 #mod-articles-category-group h3{
 	background-color: black;
-	color: lighten($base-text-color, 80%) ;
+	color: lighten($base-text-color, 0.8) ;
 	padding-left: 10px;
 
 }
@@ -161,7 +161,7 @@ ul.newsflash-vert {
 // Module titles
 h2.sz-module-title  {
 		background-color: black;
-		color: lighten($base-text-color, 80%) !important;
+		color: lighten($base-text-color, 0.8) !important;
 		padding-left: 10px;
 
 	

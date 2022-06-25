@@ -135,4 +135,4 @@ $border-color-focus:            $base-dominant-color;
 $border-color-light:            rgba(0, 0, 0, 0.1);
 
 // Shadows
-$base-box-shadow:               0 0 4px fadeout($base-dominant-color, 50%);
+$base-box-shadow:               0 0 4px fadeout($base-dominant-color, 0.5);

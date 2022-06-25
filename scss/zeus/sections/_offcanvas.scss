@@ -7,7 +7,7 @@
 		color: $offcanvas-text-color;
 
 		&:hover {
-			color: darken($base-dominant-color, 25%);
+			color: darken($base-dominant-color, 0.25);
 		}
 	}
 
@@ -19,15 +19,15 @@
         background: $accent-color-1;
         color: $offcanvas-text-color;
         &:hover {
-            background: lighten($accent-color-1, 5%);
+            background: lighten($accent-color-1, 0.05);
         }
         &:active {
-            background: darken($accent-color-1, 5%);
+            background: darken($accent-color-1, 0.05);
         }
     }
 
 	hr {
-		border-bottom: 1px solid fadeout($white, 50%);
+		border-bottom: 1px solid fadeout($white, 0.5);
 	}
 
 	.g-offcanvas-toggle {
@@ -83,7 +83,7 @@
 	z-index: 100001;
 
     .g-offcanvas-open & {
-        color: fadeout($white, 40%);
+        color: fadeout($white, 0.4);
     }
 
     @if $offcanvas-toggle-visibility == 1 {
@@ -152,7 +152,7 @@
 					}
 
 					&:hover {
-						background: darken($base-dominant-color, 5%);
+						background: darken($base-dominant-color, 0.05);
 					}
 				}
 

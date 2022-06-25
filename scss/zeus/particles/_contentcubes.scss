@@ -1,8 +1,9 @@
 .g-contentcubes {
-    
-    
+
     .cube-items-wrapper {
-        
+        background: linear-gradient(45deg, $accent-color-2, $accent-color-1);
+        color: $white;
+
         // Images Position
         .cube-row {
             &.g-grid {
@@ -11,27 +12,27 @@
                 }
             }
         }
-        
+
         // Images
         .cube-image-wrapper {
             position: relative;
             z-index: 1;
             overflow: hidden;
-            
+
             img {
                 display: block;
                 height: auto;
-                
-                // @include transform(scale3d(1.8, 1.8, 1));
-                // @include transition(transform 0.5s cubic-bezier(0.7, 0, 0.3, 1));
+
+                transform: scale3d(1.8, 1.8, 1);
+                transition: transform 0.5s cubic-bezier(0.7, 0, 0.3, 1);
             }
-            
+
             &:hover {
                 img {
-                    @include transform(scale3d(1, 1, 1));
+                    transform: scale3d(1, 1, 1);
                 }
             }
-            
+
             &:after {
                 position: absolute;
                 top: 0;
@@ -40,32 +41,45 @@
                 width: 100%;
                 height: 100%;
                 content: "";
+                background-color: fade-out($white, 0.25);
+                opacity: 0.6;
+                transition: opacity 0.3s;
+            }
+
+            &:hover {
+                &:after {
+                    opacity: 0;
+                }
             }
         }
-        
+
         // Content
         .cube-content-wrapper {
-            max-width: 90%;
+            max-width: 22.5rem;
+            padding: 6.5rem 0;
             margin: 0 auto;
-            padding: 0 1rem;
-            //3 next lines for aligning vertically
-            position: relative;
-            top: 50%;
-            transform: translateY(-50%);
-            
-            
+
+            @include breakpoint(desktop-range) {
+                padding: 4.6rem 0;
+            }
+
+            @include breakpoint(tablet-range) {
+                max-width: 18.5rem;
+                padding: 2.6rem 0;
+            }
+
             @include breakpoint(mobile-only) {
-                padding: 2rem 0;
-                max-width: unset;
-                
-            }            
-            
-            
+                padding: 3rem 0;
+            }
+
+            @include breakpoint(small-mobile-range) {
+                max-width: 14.5rem;
+            }
+
             // Label
             .item-label {
                 display: inline-block;
-                background: $base-dominant-color;
-                color:$white;
+                background: $accent-color-1;
                 padding: 0.35em 0.85em;
                 margin-bottom: 0.5rem;
                 font-size: $core-font-size - 0.1875;
@@ -74,69 +88,55 @@
                 border-radius: 2.5rem;
                 text-align: center;
             }
-            
+
             // Title
             .item-title {
-                @include breakpoint(no-desktop) {
-                    font-size: 2vw;
-                }
-
-                // typically max 47.938 rem
-                @include breakpoint(mobile-only) {
-                    font-size: $core-font-size + 1.5;
-                }   
-
-
-                font-size: $core-font-size + 0.5;
+                font-size: $core-font-size + 0.125;
                 font-weight: $font-weight-semibold;
                 line-height: $core-line-height - 0.22;
                 margin-bottom: 1rem;
-                
 
-                
                 a.item-link {
                     display: block;
-                    // color: $white ;
-                    
+                    color: $white;
+
                     .item-link-text {
                         display: inline-block;
                         margin-left: 0.25rem;
-                        @include transition(transform 0.3s);
+                        transition: transform 0.3s;
                     }
-                    
+
                     &:hover {
                         .item-link-text {
-                            @include transform(translate3d(15px, 0, 0));
+                            transform: translate3d(15px, 0, 0);
                         }
                     }
                 }
             }
-            
+
             // Tags
             .item-tags {
                 .tag {
                     margin-right: 0.5rem;
                     margin-bottom: 0.5rem;
                     padding: 0.35rem 0;
-                    color: fadeout($white, 0.4);
+                    color: fade-out($white, 0.4);
                     text-transform: uppercase;
                     font-size: $core-font-size - 0.1875;
                     font-weight: $font-weight-semibold;
                     line-height: $core-line-height - 0.85;
-                    
+
                     .fa {
                         margin-right: 0.15rem;
                         font-size: $core-font-size;
                         vertical-align: text-top;
                     }
-                }
-            }
-            
-            .button {
-                margin: 1rem 1rem 1rem 0;
-                
-                @include breakpoint(no-desktop) {
-                    margin: 0.7rem 0;
+
+                    a {
+                        &:hover {
+                            color: inherit;
+                        }
+                    }
                 }
             }
         }

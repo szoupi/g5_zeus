@@ -8,7 +8,7 @@
             a {
                 color: $accent-color-1;
                 &:hover {
-                    color: fadeout($accent-color-1, 40%);
+                    color: fadeout($accent-color-1, 0.3);
                 }
             }
             background-color: $base-dominant-color;
@@ -19,7 +19,7 @@
             a {
                 color: $base-dominant-color;
                 &:hover {
-                    color: fadeout($base-dominant-color, 40%);
+                    color: fadeout($base-dominant-color, 0.4);
                 }
             }
             background-color: $base-background;
@@ -30,7 +30,7 @@
             a {
                 color: $base-dominant-color;
                 &:hover {
-                    color: fadeout($base-dominant-color, 40%);
+                    color: fadeout($base-dominant-color, 0.4);
                 }
             }
             background-color: $accent-color-1;
@@ -41,7 +41,7 @@
             a {
                 color: $accent-color-3;
                 &:hover {
-                    color: fadeout($accent-color-3, 40%);
+                    color: fadeout($accent-color-3, 0.4);
                 }
             }
             background-color: $accent-color-2;
@@ -52,7 +52,7 @@
             a {
                 color: $accent-color-1;
                 &:hover {
-                    color: fadeout($accent-color-1, 40%);
+                    color: fadeout($accent-color-1, 0.3);
                 }
             }
             background-color: $accent-color-3;
@@ -64,7 +64,7 @@
             a {
                 color: $zenith-link-color;
                 &:hover {
-                    color: fadeout($zenith-link-color, 40%);
+                    color: fadeout($zenith-link-color, 0.4);
                 }
             }
             background-color:$zenith-background;
@@ -280,7 +280,7 @@
                 &:hover,
                 &:active,
                 &:focus {
-                    background: lighten($base-dominant-color, 30%);
+                    background: lighten($base-dominant-color, 0.3);
                     color: $black;
                 }
 
